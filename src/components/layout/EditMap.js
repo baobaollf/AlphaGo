@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import MapScreen from '../maplayout/MapScreen';
 
 class EditMapPage extends Component {
 
   render() {
-    const id = this.props.match.params.id;
+    //const id = this.props.match.params.id;
     return (
-      <div>Edit your map - {id}</div>
+        <MapScreen />
+  
     )
   }
 }

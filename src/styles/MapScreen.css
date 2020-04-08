@@ -1,0 +1,38 @@
+.mapboxgl-popup-content {
+  padding: 0px !important;
+  position: relative;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: none;
+  pointer-events: auto;
+}
+
+.navControl {
+  width: 29px;
+  position: 'absolute';
+  float: right;
+  top: 36;
+  right: 0;
+  padding: '10px';
+}
+
+.scale {
+  width: fit-content;
+  position: 'absolute';
+  bottom: 30;
+  left: 0;
+  float: right;
+  padding: '10px';
+}
+
+.fullscreenControl {
+  width: 29px;
+  position: 'absolute';
+  right: 0;
+  top: 0;
+  float: right;
+  padding: '10px';
+}
+
+
+
