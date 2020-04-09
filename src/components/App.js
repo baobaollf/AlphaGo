@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Navbar from './components/layout/Navbar';
-import CitiesPage from './components/layout/Cities';
-import EditMapPage from './components/layout/EditMap';
-import ProfilePage from './components/layout/Profile';
-import SignInPage from './components/auth/Signin';
-import SignUpPage from './components/auth/Signup';
+import Navbar from './layout/Navbar';
+import Dashboard from "./Dashboard/Dashboard";
+import CitiesPage from './layout/Cities';
+import EditMapPage from './layout/EditMap';
+import ProfilePage from './layout/Profile';
+import SignInPage from './auth/Signin';
+import SignUpPage from './auth/Signup';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar />
+          <Dashboard />
           <Switch>
             <Route exact path='/' component={CitiesPage} />
             <Route path='/profile/:id' component={ProfilePage} />
