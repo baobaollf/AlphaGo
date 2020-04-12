@@ -3,14 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 const SignedInLinks = () => {
   return (
-    <div id="div_top_bar">
-      <ul id="top_bar">
-        <li>If user signedIn</li>
-        <li><NavLink to='/profile/3'>Profile</NavLink></li>
-        <li><NavLink to='/'>Log Out</NavLink></li>
-      </ul>
-    </div>
-    
+    <ul className="right">
+      <li><NavLink to='/'>Log out</NavLink></li>
+      <li><NavLink to='/' className='btn btn-floating pink lighten-1'>NAME</NavLink></li>
+    </ul>
   )
 }
 

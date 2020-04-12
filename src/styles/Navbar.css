@@ -1,7 +1,19 @@
-#top_bar li {
-  display: inline;
+.nav-wrapper {
+  background-color: darkslategrey;
 }
 
-#div_top_bar {
-  display: inline;
+.app-logo {
+  height: 50px;
+  float: left;
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-left: -180px;
+}
+
+.brand-name {
+  font-family: Arial, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 100%;
+  margin-left: -130px;
 }

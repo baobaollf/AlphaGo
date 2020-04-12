@@ -1,23 +1,27 @@
 import React, { Component } from 'react';
 import { MAPBOX_TOKEN, MAP_STYLE_URL } from '../../constants';
 import MapGL, { Popup, NavigationControl, FullscreenControl, ScaleControl } from 'react-map-gl';
-import * as parkData from "../../testData/skateboard-parks.json";
+//import * as parkData from "../../testData/skateboard-parks.json";
+import * as placeData from "../../testData/response.json";
+
+
 import {Pin} from './pin';
 import CityInfo from './CityInfo';
 import DeckGL from '@deck.gl/react';
 import { LineLayer } from '@deck.gl/layers';
-import  ControlPanel  from './control-panel'
+import  ControlPanel  from './control-panel';
+import TopList from './TopList';
 
-const data = [{ sourcePosition: [-75.3372987731628, 45.383321536272049], targetPosition: [-75.546518086577947, 45.467134581917357]},
-  { sourcePosition: [-75.898610599532319, 45.295014379864874], targetPosition: [-75.546518086577947, 45.467134581917357] },
-  { sourcePosition: [-75.468561642270757, 45.23032561834377], targetPosition: [-75.898610599532319, 45.295014379864874] }];
+const data = [{ sourcePosition: [116.3825557924188,39.92688614402743], targetPosition: [116.39065017431723,39.92429690589674]},
+  { sourcePosition: [116.3825557924188, 39.92688614402743], targetPosition: [116.29725103615023, 40.00681320113558] },
+  { sourcePosition: [116.28141283451184, 39.808964553296384], targetPosition: [116.29725103615023, 40.00681320113558] }];
 
 export class MapScreen extends Component {
   state = {
     data: data,
     viewport: {
-      latitude: 45.4211,
-      longitude: -75.6903,
+      latitude: placeData.results[0].coordinates.latitude,
+      longitude: placeData.results[0].coordinates.longitude,
       zoom: 10
     },
     popupinfo: null,
@@ -39,8 +43,8 @@ export class MapScreen extends Component {
     return (
       popupInfo && (
         <Popup
-          longitude={popupInfo.geometry.coordinates[0]}
-          latitude={popupInfo.geometry.coordinates[1]}
+          longitude={popupInfo.coordinates.longitude}
+          latitude={popupInfo.coordinates.latitude}
           closeOnClick={false}
           onClose={() => this.setState({ popupInfo: null })}
         >
@@ -53,7 +57,7 @@ export class MapScreen extends Component {
   render() {
     const {viewport , data} = this.state;
     const layers = [
-      new LineLayer({ id: 'line-layer', data ,getWidth: 8})
+      new LineLayer({ id: 'line-layer', data, getWidth: 8, getColor: [52,63,103]})
     ];
     return (
       
@@ -68,11 +72,13 @@ export class MapScreen extends Component {
         
       
         <DeckGL viewState={viewport} layers={layers}>
-          <Pin data={parkData.features} onClickMarker={this._onClickMarker} />
+          <Pin data={placeData.results} onClickMarker={this._onClickMarker} />
           {this._renderPopup()}
         </DeckGL>
 
         <ControlPanel />
+        <TopList className="TopList" data={placeData.results}/>
+
         <div className="scale">
           <ScaleControl />
         </div>

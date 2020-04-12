@@ -3,13 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 const SignedOutLinks = () => {
   return (
-    <div id="div_top_bar">
-      <ul id = "top_bar">
-        <li>If user signedout</li>
-        <li><NavLink to='/signup'>Signup</NavLink></li>
-        <li><NavLink to='/signin'>Login</NavLink></li>
-      </ul>
-    </div>
+    <ul className="right">
+      <li><NavLink to='/'>Login</NavLink></li>
+      <li><NavLink to='/'>Sign up</NavLink></li>
+    </ul>
   )
 }
 

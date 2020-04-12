@@ -3,12 +3,11 @@ import { NavLink } from 'react-router-dom';
 
 class CitiesPage extends Component {
   render() {
-    return (
+    return(
       <div>
-        Select Cities
-        <NavLink to='/map/3'>next</NavLink>
+        <NavLink to='/map/3'>submit</NavLink>
       </div>
-    )
+    );
   }
 }
 

@@ -8,31 +8,41 @@
 }
 
 .navControl {
-  width: 29px;
-  position: 'absolute';
+  width: fit-content;
+  position: fixed;
+  bottom: 0;
+  right: 0px;
   float: right;
-  top: 36;
-  right: 0;
   padding: '10px';
 }
 
 .scale {
   width: fit-content;
-  position: 'absolute';
-  bottom: 30;
-  left: 0;
+  position: fixed;
+  bottom: 0;
+  right: 50px;
   float: right;
   padding: '10px';
 }
 
 .fullscreenControl {
   width: 29px;
-  position: 'absolute';
-  right: 0;
-  top: 0;
+  position: fixed;
+  bottom: 0;
+  right: 29px;
   float: right;
   padding: '10px';
 }
 
+.TopList{
+  position: absolute;
+  top: 0;
+  right: 15px;
+  float: right;
+}
+
+.MuiListItemIcon-root {
+  min-width: 35px !important;
+}
 
 

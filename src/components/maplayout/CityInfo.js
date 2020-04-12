@@ -1,5 +1,4 @@
-import React from 'react';
-import Switch from '@material-ui/core/Switch';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
@@ -7,6 +6,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import { Link } from 'react-router-dom';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 const useStyles = makeStyles({
   card: {
@@ -22,35 +22,37 @@ export default function CityInfo(props)  {
 
   const {info} = props;
   const classes = useStyles();
-  const [state, setState] = React.useState({
-    checkedA: true,
-  });
+  const [color, setColor] = useState('disabled');
 
-  const handleChange = (event) => {
-    setState({ ...state, [event.target.name]: event.target.checked });
-  };
+  const _setColor = () => {
+    if (color === 'disabled') {
+      setColor('secondary')
+    } else {
+      setColor('disabled')
+    }
+  }
+
 
   return (
     <div>
       <Card className={classes.card}>
           <CardMedia component="img" 
             className={classes.cardMedia} 
-            image={"http://parisbym.com/wp-content/uploads/2014/06/paris_1984746c-300x187.jpg"} 
+            image={info.images[0].sizes.medium.url} 
             />
           <CardContent>
             <Typography component="h2" variant="h5">
-              {info.properties.NAME}
+              {info.name}
             </Typography>
             <Typography variant="body2" component="p" color="textSecondary">
-              {info.properties.DESCRIPTIO}
+              {info.intro.substring(0,150) + "..."}
             </Typography>
-            <span>Add to plan</span>
-            <Switch
-              checked={state.checkedA}
-              onChange={handleChange}
-              name="checkedA"
-              inputProps={{ 'aria-label': 'secondary checkbox' }}
-            />
+            <FavoriteIcon 
+              className="FavoriteIcon" 
+              fontSize="large"
+              color = {color}
+            onClick={() => _setColor()}
+            ></FavoriteIcon>
             <Typography variant="subtitle1" color="primary">
               <Link to = "" href="#" onClick={()=> console.log("more information")}>
                 More information...

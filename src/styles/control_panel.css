@@ -1,6 +1,6 @@
 .control-panel {
   position: absolute;
-  max-width: 320px;
+  max-width: 300px;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   padding: 12px 24px;
