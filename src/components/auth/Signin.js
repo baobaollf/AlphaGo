@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./Style.css";
+import TextField from '@material-ui/core/TextField';
 
 
 class SignInPage extends Component {
@@ -9,11 +10,11 @@ class SignInPage extends Component {
         <div className="form">
           <div className="form-group">
             <label className="label">Username</label>
-            <input className="input" type="text" name="username" placeholder="Please input your username" />
+            <TextField id="outlined-basic" type="text" label="Username" variant="filled" color="primary"/>
           </div>
           <div className="form-group">
             <label className="label">Password</label>
-            <input className="input" maxLength="8" type="password" name="password" placeholder="Please input your password" />
+            <TextField id="outlined-basic" type="password" label="password" variant="filled" color="primary"/>
           </div>
           <div className="footer">
           <button className="button" type="button">
