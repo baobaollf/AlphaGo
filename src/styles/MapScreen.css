@@ -37,7 +37,7 @@
 .TopList{
   position: absolute;
   top: 0;
-  right: 15px;
+  right: 0px;
   float: right;
 }
 
@@ -45,4 +45,10 @@
   min-width: 35px !important;
 }
 
+.EditMap {
+  position: relative;
+}
 
+.MapGL {
+  position: absolute;
+}

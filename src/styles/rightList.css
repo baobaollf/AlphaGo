@@ -1,0 +1,16 @@
+.flexbox {
+  display: flex;
+  position: absolute;
+}
+
+.dayList-style {
+  max-height: 60vh;
+}
+
+.items-style {
+  max-height: 60vh;
+}
+
+.deleteIcon {
+  cursor: pointer;
+}
