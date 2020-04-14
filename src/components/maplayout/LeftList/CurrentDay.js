@@ -1,34 +1,38 @@
 import React, {Component} from 'react';
 import {DragDropContext, Draggable, Droppable} from "react-beautiful-dnd";
+import DeleteIcon from '@material-ui/icons/Delete';
+
 
 const getListStyle = isDraggingOver => ({
-    //background: isDraggingOver ? "lightblue" : "blue",
-    background: "white",
+    // background: isDraggingOver ? "lightblue" : "lightblue",
+    background: 'white',
     padding: 8,
-    width: 100,
-    borderColor: '#000000',
-
+    position: "absolute",
+    overflow: "auto",
 });
 
 const getItemStyle = (isDragging, draggableStyle) => ({
     // some basic styles to make the items look a bit nicer
+
     userSelect: "none",
-    padding: 8 * 2,
+    position: 'relative',
+    padding: 10,
     margin: `0 0 ${8}px 0`,
-    borderWidth: 200,
-    borderColor: "black",
-    borderRadius: 7,
+    borderRadius: 8,
     // change background colour if dragging
     background: isDragging ? "#FA6585" : '#f7fcff',
     fontWeight: "bold",
     color: '#343F67',
-    // color: '#FFFFFF',
+
+    flexWrap: "wrap",
+    width: 250,
+
     // styles we need to apply on draggables
     ...draggableStyle
 });
 
 
-class DayOverView extends Component {
+class CurrentDay extends Component {
     constructor(props) {
         super(props);
         this.onDragEnd = this.onDragEnd.bind(this);
@@ -36,10 +40,6 @@ class DayOverView extends Component {
 
     re_order(list, start, end) {
         return this.props.reorder(list, start, end);
-    }
-
-    add(poi) {
-        this.props.updateItem(poi);
     }
 
     onDragEnd(result) {
@@ -60,28 +60,37 @@ class DayOverView extends Component {
                 <DragDropContext onDragEnd={this.onDragEnd} className="dragDropContext">
                     <Droppable droppableId="droppable">
                         {(provided, snapshot) => (
-                            <div 
-                                className="items-style"
+                            <div
+                                className="dayList-style"
                                 {...provided.droppableProps}
                                 ref={provided.innerRef}
                                 style={getListStyle()}
                             >
                                 {this.props.items.map((item, index) => (
-                                    <Draggable key={item.id} draggableId={item.id} index={index}>
+                                    <Draggable key={item.poi.id} draggableId={item.poi.id} index={index} >
                                         {(provided, snapshot) => (
                                             <div
-                                                onClick={() => {
-                                                    this.add(item.poi);
-                                                }}
                                                 ref={provided.innerRef}
                                                 {...provided.draggableProps}
                                                 {...provided.dragHandleProps}
+                                                className="items-style"
                                                 style={getItemStyle(
                                                     snapshot.isDragging,
                                                     provided.draggableProps.style
                                                 )}
                                             >
-                                                {`Day ${index + 1}`}
+                                                {item.poi.name}
+                                                <DeleteIcon
+                                                    className="deleteIcon"
+                                                    onClick={() => {
+                                                        this.props.deleteItem(index);
+                                                    }}
+                                                    style={{
+                                                        position: 'absolute',
+                                                        right: 5,
+                                                        top: 8,
+                                                    }}
+                                                />
                                             </div>
                                         )}
                                     </Draggable>
@@ -96,4 +105,4 @@ class DayOverView extends Component {
     }
 }
 
-export default DayOverView;
+export default CurrentDay;
