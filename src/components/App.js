@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Navbar from './layout/Navbar';
 import Dashboard from "./Dashboard/Dashboard";
-import CitiesPage from './layout/Cities';
 import EditMapPage from './layout/EditMap';
 import ProfilePage from './layout/Profile';
 import SignInPage from './auth/Signin';
@@ -13,10 +11,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Navbar />
-          <Dashboard />
           <Switch>
-            <Route exact path='/' component={CitiesPage} />
+            <Route exact path='/' component={Dashboard} />
             <Route path='/profile/:id' component={ProfilePage} />
             <Route path='/map/:id' component={EditMapPage}/>
             <Route path='/signin' component={SignInPage} />

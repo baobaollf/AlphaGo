@@ -1,18 +1,23 @@
 .nav-wrapper {
-    background-color: darkslategrey;
-}
-.app-logo {
+    background-color: #202639;
+    max-height: fit-content;
     height: 50px;
+}
+
+.app-logo {
+    height: 55px;
     float: left;
     padding-top: 5px;
-    margin-top: 5px;
-    margin-left: -180px;
+    margin-top: -3px;
+    margin-left: 10px;
 }
 
 .brand-name {
     font-family: Arial, serif;
     font-style: italic;
     font-weight: bold;
-    font-size: 100%;
-    margin-left: -130px;
+    font-size: 65%;
+    margin-left: 60px;
+    margin-bottom: 15px;
+    margin-top: -6px;
 }
