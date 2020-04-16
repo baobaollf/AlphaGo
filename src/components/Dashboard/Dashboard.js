@@ -1,10 +1,8 @@
 import React, {Component} from "react";
-import * as placeData from "../../tests/response.json";
 import * as alphaCityList from '../../tests/alphacityFront.json';
 import SearchBar from "./SearchBar";
 import DaySeletcor from "./DaySelector";
 import NextPageButton from "./NextPageButton";
-import Navbar from "../layout/Navbar";
 import CityGrid from "./CityGrid";
 import logo from "../../assets/images/logo2.png"
 
@@ -25,7 +23,6 @@ class Dashboard extends Component {
     render() {
         return (
             <div>
-                <Navbar/>
                 <body className="dashboard-container">
                 <div className="left-side">
                     <p className="promo-text">

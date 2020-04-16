@@ -2,14 +2,6 @@ import React, {Component} from 'react';
 import 'antd/dist/antd.css';
 import {AutoComplete, Input} from 'antd';
 
-const citiesName = [
-    'Beijing',
-    'Shanghai',
-    'Tianjin',
-    'Guangzhou',
-    'Wuhan',
-];
-
 
 class SearchBar extends Component {
 

@@ -5,7 +5,7 @@ import {Select} from "antd";
 const { Option } = Select;
 
 function onChange(value) {
-    console.log('selected ${value}');
+    console.log('selected {value}');
 }
 
 function onBlur() {

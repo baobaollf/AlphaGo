@@ -5,12 +5,14 @@ import EditMapPage from './layout/EditMap';
 import ProfilePage from './layout/Profile';
 import SignInPage from './auth/Signin';
 import SignUpPage from './auth/Signup';
+import Navbar from './layout/Navbar'
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
         <div className="App">
+          <Navbar />
           <Switch>
             <Route exact path='/' component={Dashboard} />
             <Route path='/profile/:id' component={ProfilePage} />
