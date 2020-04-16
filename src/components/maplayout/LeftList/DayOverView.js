@@ -67,11 +67,11 @@ class DayOverView extends Component {
                 style={getListStyle()}
               >
                 {this.props.items.map((item, index) => (
-                  <Draggable key={item.date} draggableId={item.date} index={index}>
+                  <Draggable key={index} draggableId={index + ""} index={index}>
                     {(provided, snapshot) => (
                       <div
                         onClick={() => {
-                          this.add(item.itinerary_items);
+                          this.add(item);
                         }}
                         ref={provided.innerRef}
                         {...provided.draggableProps}

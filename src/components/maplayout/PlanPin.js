@@ -12,9 +12,9 @@ export class PlanPin extends Component {
     }
     return data.map(point => (
       <Marker
-        key={point.poi.id}
-        latitude={point.poi.coordinates.latitude}
-        longitude={point.poi.coordinates.longitude}
+        key={point.id}
+        latitude={point.lat}
+        longitude={point.long}
       >
 
         <RoomIcon style={iconStyle} className="marker-btn" fontSize="large"

@@ -1,6 +1,7 @@
 import React, { Component, createContext } from 'react'
 // import * as TopPlacesData from "../testData/response.json";
-import backEndData from "../testData/dayPlannerTemplate.json"
+//import backEndData from "../testData/dayPlannerTemplate.json"
+import backEndData from "../testData/dayScheduleList.json"
 
 export const TripdataContext = createContext();
 
@@ -14,8 +15,8 @@ class TripdataContextProvider extends Component {
 
   componentDidMount() {
     this.setState({
-      dayList: backEndData[0].days,
-      currentDayList: backEndData[0].days[0].itinerary_items,
+      dayList: backEndData,
+      currentDayList: backEndData[0],
     })
   }
 

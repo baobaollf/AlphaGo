@@ -57,8 +57,8 @@ export class MapScreen extends Component {
   }
 
   createLinearElement = (cur, next) => {
-    const curPoilist = this.createPoilist(cur.poi.coordinates.longitude, cur.poi.coordinates.latitude)
-    const nextPoilist = this.createPoilist(next.poi.coordinates.longitude, next.poi.coordinates.latitude)
+    const curPoilist = this.createPoilist(cur.long, cur.lat)
+    const nextPoilist = this.createPoilist(next.long, next.lat)
     return {
       sourcePosition: curPoilist,
       targetPosition: nextPoilist

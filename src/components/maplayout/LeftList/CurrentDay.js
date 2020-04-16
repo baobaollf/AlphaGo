@@ -67,7 +67,7 @@ class CurrentDay extends Component {
                 style={getListStyle()}
               >
                 {this.props.items.map((item, index) => (
-                  <Draggable key={item.poi.id} draggableId={item.poi.id} index={index} >
+                  <Draggable key={item.id} draggableId={item.id} index={index} >
                     {(provided, snapshot) => (
                       <div
                         ref={provided.innerRef}
@@ -79,7 +79,7 @@ class CurrentDay extends Component {
                           provided.draggableProps.style
                         )}
                       >
-                        {item.poi.name}
+                        {item.name}
                         <DeleteIcon
                           className="deleteIcon"
                           onClick={() => {
