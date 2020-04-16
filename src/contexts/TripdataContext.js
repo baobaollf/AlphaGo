@@ -11,6 +11,14 @@ class TripdataContextProvider extends Component {
     dayList: [],
     currentDayList: [],
     TopList:[],
+    showplan: false
+  }
+
+  showPlan() {
+    this.setState({
+      showplan: !this.state.showplan
+    })
+    console.log(this.state.showplan)
   }
 
   componentDidMount() {
@@ -21,9 +29,15 @@ class TripdataContextProvider extends Component {
   }
 
   updateItem = (list) => {
+    if (list === this.state.currentDayList) {
+      this.showPlan();
+    } else if (this.state.showplan === false) {
+      this.showPlan();
+    }
     this.setState({
       currentDayList: list,
     });
+    
   }
 
   reorder = (list, startIndex, endIndex) => {
@@ -64,6 +78,7 @@ class TripdataContextProvider extends Component {
           reorder: this.reorder,
           reorder_day: this.reorder_day,
           deleteItem: this.deleteItem,
+          showPlan: this.showPlan,
           }}>
         {this.props.children}
       </TripdataContext.Provider>
