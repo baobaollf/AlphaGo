@@ -6,7 +6,6 @@ import CityInfo from './CityInfo';
 import DeckGL from '@deck.gl/react';
 import { LineLayer } from '@deck.gl/layers';
 import { TripdataContext } from "../../contexts/TripdataContext";
-import { PlanPin } from "./PlanPin";
 
 
 export class MapScreen extends Component {
@@ -96,7 +95,7 @@ export class MapScreen extends Component {
         
           <DeckGL viewState={viewport} layers={layers}>
             <Pin data={this.state.data} onClickMarker={this._onClickMarker} color={"#FA6585"} />
-            <PlanPin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>
+            <Pin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>
             {this._renderPopup()}
           </DeckGL>
 
