@@ -1,63 +1,70 @@
-body {
-    background-image: url("../../assets/images/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
 .form {
-    margin-left: 36%;
+    margin-left: 35%;
     margin-right: 30%;
     margin-bottom: 50%;
     margin-top: 10%;
     width: 30%;
-    height: 30%;
-    border: 1px solid lightslategray;
+    height: auto;
+    border: 3px solid lightgrey;
     padding: 20px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    background-color: transparent;
     position: relative;
-    background: transparent;
 }
 
 .form-group {
-    padding: 0px;
+    display: flex;
+    padding: 0px 0px 50px 0px;
     flex-direction: column;
     align-content: center;
-    margin-top: 5%;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-bottom: 0px;
     width: 100%;
-    height: 100%;
     position: relative;
 }
 
 .label {
-    font-size: 16px;
-    color: darkslategrey;
+    color: blue;
+    padding-left: 0px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+
+#outlined-basic {
+    width: 100%;
+    border: 1px solid rgb(136, 133, 133);
+    margin-bottom: 0px;
+}
+
+.footer {
+    margin: auto;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding-top: 0px;
+    position:relative;
 }
 
 .button {
-  border-radius: 50px;
+  border-radius: 10px;
   font-size: 20px;
-  background-color: #F8B08B;
-  width: 50%;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  position: relative;
+  background-color: lightsalmon;
+  width: 200%;
+  padding: 7%;
+  align-items: center;
 }
 
-#password {
-    display: block;
-    height: calc(1.5em + 0.75rem + 2px);
-    padding-left: 0.6em;
-    width: 97%;
-    margin-right: 5em;
-    border-radius: 0.25rem;
-    background-origin: padding-box;
-    border: 1px solid #ced4da;
-    background-clip: padding-box;
-    background-color: #fff;
-    align-content: center;
+#checkbox {
+    font-size: 15px;
+    margin-left: 0px;
+}
+
+#checkedbox {
+    margin-right: 0px;
+    padding: 0%;
 }
