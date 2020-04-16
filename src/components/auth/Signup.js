@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Form } from 'react-bootstrap';
-import background from "../../assets/images/background.jpg";
 
 
 class SignUpPage extends Component {
