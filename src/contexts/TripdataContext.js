@@ -9,12 +9,13 @@ class TripdataContextProvider extends Component {
   state = {
     dayList: [],
     currentDayList: [],
+    TopList:[],
   }
 
   componentDidMount() {
     this.setState({
       dayList: backEndData[0].days,
-      currentDayList: backEndData[0].days[0].itinerary_items
+      currentDayList: backEndData[0].days[0].itinerary_items,
     })
   }
 

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
-//import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import { Link } from 'react-router-dom';
@@ -38,14 +37,14 @@ export default function CityInfo(props)  {
       <Card className={classes.card}>
           <CardMedia component="img" 
             className={classes.cardMedia} 
-            image={info.images[0].sizes.medium.url} 
+            image={info.img[0]} 
             />
           <CardContent>
             <Typography component="h2" variant="h5">
               {info.name}
             </Typography>
             <Typography variant="body2" component="p" color="textSecondary">
-              {info.intro.substring(0,150) + "..."}
+              {info.snippet.substring(0,150) + "..."}
             </Typography>
             <FavoriteIcon 
               className="FavoriteIcon" 

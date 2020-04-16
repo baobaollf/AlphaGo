@@ -34,7 +34,6 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     height: "65vh",
     width: 250,
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
     transform: 'translateZ(0)',
   },
 }));
@@ -65,7 +64,7 @@ export default function NestedList(props) {
     }
     return data.map((point) => (
       <GridListTile key={point.id}>
-        <img src={point.images[0].sizes.medium.url} alt=" "/>} />
+        <img src={point.img[0]} alt=" "/>} />
         <GridListTileBar
           title={point.name}
           classes={{

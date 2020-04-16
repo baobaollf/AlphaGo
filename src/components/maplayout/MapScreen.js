@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { MAPBOX_TOKEN, MAP_STYLE_URL } from '../../constants';
 import MapGL, { Popup, NavigationControl, FullscreenControl, ScaleControl } from 'react-map-gl';
-import * as placeData from "../../testData/response.json";
 import {Pin} from './pin';
 import CityInfo from './CityInfo';
 import DeckGL from '@deck.gl/react';
@@ -9,20 +8,18 @@ import { LineLayer } from '@deck.gl/layers';
 import { TripdataContext } from "../../contexts/TripdataContext";
 import { PlanPin } from "./PlanPin";
 
-//longtitude，latitude
-const data = [{ sourcePosition: [116.3825557924188,39.92688614402743], targetPosition: [116.39065017431723,39.92429690589674]},
-  { sourcePosition: [116.3825557924188, 39.92688614402743], targetPosition: [116.29725103615023, 40.00681320113558] },
-  { sourcePosition: [116.28141283451184, 39.808964553296384], targetPosition: [116.29725103615023, 40.00681320113558] }];
 
 export class MapScreen extends Component {
   static contextType = TripdataContext
   
   state = {
-    data: data,
+    data: this.props.data,
     viewport: {
-      latitude: placeData.results[0].coordinates.latitude,
-      longitude: placeData.results[0].coordinates.longitude,
-      zoom: 10
+      latitude: this.props.data[0].lat,
+      longitude: this.props.data[0].long,
+      zoom: 12,
+      pitch: 40
+      
     },
     popupinfo: null,
   }
@@ -34,7 +31,9 @@ export class MapScreen extends Component {
   }
 
   _onClickMarker = pointInfo => {
-    this.setState({ popupInfo: pointInfo });
+    this.setState({ 
+      popupInfo: pointInfo 
+    });
   };
 
   _renderPopup() {
@@ -42,8 +41,8 @@ export class MapScreen extends Component {
     return (
       popupInfo && (
         <Popup
-          longitude={popupInfo.coordinates.longitude}
-          latitude={popupInfo.coordinates.latitude}
+          longitude={popupInfo.long}
+          latitude={popupInfo.lat}
           closeOnClick={false}
           onClose={() => this.setState({ popupInfo: null })}
         >
@@ -76,7 +75,6 @@ export class MapScreen extends Component {
   }
 
 
-
   render() {
     const { currentDayList } = this.context;
     const data = this.createLinear(currentDayList)
@@ -97,7 +95,7 @@ export class MapScreen extends Component {
           
         
           <DeckGL viewState={viewport} layers={layers}>
-            <Pin data={placeData.results} onClickMarker={this._onClickMarker} color={"#FA6585"} />
+            <Pin data={this.state.data} onClickMarker={this._onClickMarker} color={"#FA6585"} />
             <PlanPin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>
             {this._renderPopup()}
           </DeckGL>

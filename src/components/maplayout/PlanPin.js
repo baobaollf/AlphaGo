@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Marker } from 'react-map-gl';
 //import pin from '../../assets/images/pin2.svg';
-import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined';
+//import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined';
+import RoomIcon from '@material-ui/icons/Room';
 
 export class PlanPin extends Component {
   render() {
@@ -15,16 +16,10 @@ export class PlanPin extends Component {
         latitude={point.poi.coordinates.latitude}
         longitude={point.poi.coordinates.longitude}
       >
-        {/* <button
-          className="marker-btn"
-          onClick={() => onClickMarker(point)}
-          > */}
-        {/* <img src={pin} alt={point.properties.NAME}/> primary for blue*/}
 
-        <RoomOutlinedIcon style={iconStyle} className="marker-btn" fontSize="large"
+        <RoomIcon style={iconStyle} className="marker-btn" fontSize="large"
           onClick={() => onClickMarker(point)}>
-        </RoomOutlinedIcon>
-        {/* </button> */}
+        </RoomIcon>
 
       </Marker>
     ));

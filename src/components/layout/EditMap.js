@@ -2,31 +2,20 @@ import React, { Component } from 'react';
 import MapScreen from '../maplayout/MapScreen';
 import ListView from '../maplayout/LeftList/ListView'
 import TopList from '../maplayout/TopList';
-import * as placeData from "../../testData/response.json";
 import TripdataContextProvider from "../../contexts/TripdataContext"
+import { TopListData } from "../../testData/data format"
 
 class EditMapPage extends Component {
 
-  constructor() {
-    super();
-    this.state = {
-      //dayList: backEndData[0].days,
-      //currentDayList: backEndData[0].days[0].itinerary_items,
-    }
-  }
-
   render() {
-    //const id = this.props.match.params.id;
-    console.log(this.props.location.details)
     return (
       <div className="EditMap">
         <TripdataContextProvider>
-          <MapScreen />
+          <MapScreen data={TopListData}/>
           <ListView />
-          <TopList className="TopList" data={placeData.results} />
+          <TopList className="TopList" data={TopListData} />
         </TripdataContextProvider>
       </div>
-      
     )
   }
 }
