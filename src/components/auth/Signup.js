@@ -1,40 +1,68 @@
 import React, { Component } from 'react';
 import "./Style.css";
-import TextField from '@material-ui/core/TextField';
-import Checkbox from '@material-ui/core/Checkbox';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Form } from 'react-bootstrap';
+import background from "../../assets/images/background.jpg";
 
 
 class SignUpPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: '',
+      email: '',
+      password: ''
+    }
+  }
+
+  // functions handle state change and submit
+  handleChange = (e) => {
+    this.setState({
+      [e.target.id]: e.target.value
+    })
+  }
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state);
+  }
+
   render() {
+    // const backgroundPic = {
+    //   // backgroundImage: "url(" + this.props.image + ")
+    //   backgroundImage: `url(${background})`
+    // }
+
     return (
-      
       <div>
-        <div className="form">
-          <div className="form-group">
-            <label className="label">Username</label>
-            <TextField id="outlined-basic" type="text" label="Username" variant="filled" color="primary"/>
-          </div>
-          <div className="form-group">
-            <label className="label">Email</label>
-            <TextField id="outlined-basic" type="text" label="Email" variant="filled" color="primary"/>
-          </div>
-          <div className="form-group">
-            <label className="label">Password</label>
-            <TextField id="outlined-basic" type="password" label="password" variant="filled" color="primary"/>
-          </div>
-          <div>
-            <Checkbox id="checkedbox"
-              defaultChecked size="small" inputProps={{ 'aria-label': 'checkbox with small size' }}
-            />
-            <label className="label" id="checkbox">By Signing up, you agree to User Agreement terms</label>
-          </div>
-          <div className="footer">
-            <button className="button" type="button">
-              Sign Up
-            </button>
-          </div>
-        </div>
+        {/* <div className="background" 
+          // style={{  
+          //   backgroundImage: background,
+          //   backgroundPosition: 'center',
+          //   backgroundSize: 'cover',
+          //   backgroundRepeat: 'no-repeat'
+          // }}>
+          </div> */}
+        <Form className="form" onSubmit={this.handleSubmit}>
+          <Form.Group size="lg">
+            <Form.Label className="label">Username</Form.Label>
+            <Form.Control id="username" type="username" placeholder="Username" onChange={this.handleChange}/>
+          </Form.Group>
+          <Form.Group size="lg">
+            <Form.Label className="label">Email address</Form.Label>
+            <Form.Control id="email" type="emails" placeholder="Email" onChange={this.handleChange}/>
+          </Form.Group>
+          <Form.Group size="lg">
+            <Form.Label className="label">Password</Form.Label>
+            <Form.Control id="password" type="password" placeholder="Password" onChange={this.handleChange}/>
+          </Form.Group>
+          
+          <Form.Text className="text-muted">
+            By signing up, you agree to all user terms.
+          </Form.Text>
+          <Button className="button" size="sm" variant="warning" type="submit" >
+            Sign up
+          </Button>
+        </Form>
       </div>
 
     )
