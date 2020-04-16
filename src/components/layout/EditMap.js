@@ -9,7 +9,6 @@ import TopListData from "../../testData/topPOIList.json"
 class EditMapPage extends Component {
 
   render() {
-    console.log(TopListData)
     return (
       <div className="EditMap">
         <TripdataContextProvider>

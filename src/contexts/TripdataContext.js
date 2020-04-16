@@ -18,7 +18,6 @@ class TripdataContextProvider extends Component {
     this.setState({
       showplan: !this.state.showplan
     })
-    console.log(this.state.showplan)
   }
 
   componentDidMount() {

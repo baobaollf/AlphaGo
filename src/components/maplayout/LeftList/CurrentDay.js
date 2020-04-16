@@ -13,7 +13,6 @@ const getListStyle = isDraggingOver => ({
 
 const getItemStyle = (isDragging, draggableStyle) => ({
   // some basic styles to make the items look a bit nicer
-
   userSelect: "none",
   position: 'relative',
   padding: 10,
