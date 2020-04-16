@@ -1,5 +1,9 @@
 @import "./styles/Navbar.css";
 @import "./styles/Dashboard.css";
+@import "./styles/SignInLinks.css";
+@import "./styles/SignOutLinks.css";
+@import "./styles/DaySelector.css";
+@import "./styles/NextPageButton.css";
 
 body {
   margin: 0;
@@ -14,3 +18,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
