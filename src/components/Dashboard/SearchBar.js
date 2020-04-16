@@ -2,15 +2,6 @@ import React, {Component} from 'react';
 import 'antd/dist/antd.css';
 import {AutoComplete, Input} from 'antd';
 
-const citiesName = [
-    'Beijing',
-    'Shanghai',
-    'Tianjin',
-    'Guangzhou',
-    'Wuhan',
-];
-
-
 class SearchBar extends Component {
 
     onSearch = (value) => {
@@ -24,13 +15,12 @@ class SearchBar extends Component {
     cityList = (data) => {
         var cityName = []
         for(var i = 0; i < data.length; i++) {
-            cityName.push(data[i].name);
+            cityName.push(data[i].name + ", " + data[i].country);
         }
         return cityName
     }
 
     render() {
-        this.cityList(this.props.data.default)
         return (
             <div className="search-box">
                 <AutoComplete

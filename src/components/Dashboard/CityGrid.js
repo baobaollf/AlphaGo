@@ -43,17 +43,6 @@ export default function CityGrid(props) {
         setOpen(!open);
     };
 
-    // const createList = (data) => {
-    //   return data.map((point) => (
-    //     <ListItem button className={classes.nested}>
-    //       <ListItemIcon>
-    //         <StarBorder />
-    //       </ListItemIcon>
-    //       <ListItemText primary={point.name} />
-    //     </ListItem>
-    //   ))
-    // }
-
     const createGridList = (data) => {
 
         // const iconStyle = {
@@ -61,7 +50,7 @@ export default function CityGrid(props) {
         // }
         return data.map((point) => (
             <GridListTile key={point.id}>
-                <img onClick={()=>props.setCity(point.name)} src={point.images[0]} alt=" "/>} />
+                <img onClick={()=>props.setCity(point.name + ", " + point.country)} src={point.images[0]} alt=" "/>} />
                 <GridListTileBar
                     title={point.name}
                     classes={{
@@ -88,20 +77,13 @@ console.log(props.data)
                     <ListItemIcon>
                         <CollectionsIcon color="secondary"/>
                     </ListItemIcon>
-                    <ListItemText primary="Popular Places" />
-                    {/*{open ? <ExpandLess /> : <ExpandMore />}*/}
+                    <ListItemText primary="Alpha Cities" />
                 </ListItem>
-                {/*<Collapse in={open} timeout="auto" unmountOnExit>*/}
-                    {/* <List component="div" disablePadding>
-            {props.data && createList(props.data)}
-          </List> */}
                     <div className={classes.gridroot}>
                         <GridList cellHeight={200} spacing={1} className={classes.gridList} cols={1}>
                             {props.data.default && createGridList(props.data.default)}
                         </GridList>
                     </div>
-
-                {/*</Collapse>*/}
             </List>
         </div>
     );
