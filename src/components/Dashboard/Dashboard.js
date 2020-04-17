@@ -11,13 +11,25 @@ class Dashboard extends Component {
     state = {
         day: 1,
         city: "",
+        coordinates: {latitude: "", longitude: ""},
     }
 
     setCity = (city) => {
         this.setState({
-            city: city
+            city: city,
         })
-        console.log(this.state.city)
+    }
+
+    setCoordinates = (lat, lon) => {
+        this.setState({
+            coordinates: {latitude: lat, longitude: lon}
+        })
+    }
+
+    setDay = (day) => {
+        this.setState({
+            day: day
+        })
     }
 
     render() {
@@ -36,11 +48,24 @@ class Dashboard extends Component {
                         <p className="name-text">AlphaGo</p>
                     </div>
                     <div className="search-bar">
-                        <SearchBar data={alphaCityList} city={this.state.city} setCity={this.setCity} />
+                        <SearchBar
+                            data={alphaCityList}
+                            city={this.state.city}
+                            coordinates={this.state.coordinates}
+                            setCity={this.setCity}
+                            setCoordinates={this.setCoordinates.bind(this)}
+                        />
                     </div>
                     <div>
-                        <DaySeletcor/>
-                        <NextPageButton city={this.state.city}/>
+                        <DaySeletcor
+                            day={this.state.day}
+                            setDay={this.setDay}
+                        />
+                        <NextPageButton
+                            city={this.state.city}
+                            coordinates={this.state.coordinates}
+                            day={this.state.day}
+                        />
                     </div>
                 </div>
                 <div className="right-side">
