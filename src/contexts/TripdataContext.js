@@ -14,8 +14,6 @@ class TripdataContextProvider extends Component {
     TopList:[],
     showplan: false,
     popupInfo: null,
-    lat: 40.730610,
-    long: -73.935242,
   }
 
   showPlan() {
@@ -50,8 +48,6 @@ class TripdataContextProvider extends Component {
     }
     this.setState({
       currentDayList: list,
-      lat: list[0].lat,
-      long: list[0].long
     });
     
   }

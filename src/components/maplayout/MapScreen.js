@@ -16,7 +16,7 @@ export class MapScreen extends Component {
       latitude: 40.730610,
       longitude: -73.935242,
       zoom: 12,
-      pitch: 40
+      pitch: 40,
     },
   }
 
