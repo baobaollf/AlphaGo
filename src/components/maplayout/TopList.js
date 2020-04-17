@@ -13,6 +13,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import { TripdataContext } from "../../contexts/TripdataContext";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,30 +42,20 @@ const useStyles = makeStyles((theme) => ({
 export default function NestedList(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
+  const { TopList, setPopupinfo } = React.useContext(TripdataContext)
 
   const handleClick = () => {
     setOpen(!open);
   };
-
-  // const createList = (data) => {
-  //   return data.map((point) => (
-  //     <ListItem button className={classes.nested}>
-  //       <ListItemIcon>
-  //         <StarBorder />
-  //       </ListItemIcon>
-  //       <ListItemText primary={point.name} />
-  //     </ListItem>
-  //   ))
-  // }
 
   const createGridList = (data) => {
 
     const iconStyle = {
       color: "#ffff",
     }
-    return data.map((point) => (
-      <GridListTile key={point.id}>
-        <img src={point.img[0]} alt=" "/>} />
+    return TopList.map((point) => (
+      <GridListTile key={point.id} onClick={() => setPopupinfo(point)}>
+        <img src={point.img[0]} alt=" " />} />
         <GridListTileBar
           title={point.name}
           classes={{
@@ -100,7 +91,7 @@ export default function NestedList(props) {
           </List> */}
           <div className={classes.gridroot}>
             <GridList cellHeight={200} spacing={1} className={classes.gridList} cols={1}>
-              {props.data && createGridList(props.data)}
+              {TopList && createGridList(TopList)}
             </GridList>
           </div>
 

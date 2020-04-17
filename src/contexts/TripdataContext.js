@@ -2,6 +2,7 @@ import React, { Component, createContext } from 'react'
 // import * as TopPlacesData from "../testData/response.json";
 //import backEndData from "../testData/dayPlannerTemplate.json"
 import backEndData from "../testData/dayScheduleList.json"
+import TopList from "../testData/topPOIList.json"
 
 export const TripdataContext = createContext();
 
@@ -11,7 +12,10 @@ class TripdataContextProvider extends Component {
     dayList: [],
     currentDayList: [],
     TopList:[],
-    showplan: false
+    showplan: false,
+    popupInfo: null,
+    lat: 40.730610,
+    long: -73.935242,
   }
 
   showPlan() {
@@ -20,10 +24,21 @@ class TripdataContextProvider extends Component {
     })
   }
 
+  setPopupinfo = (info) => {
+    this.setState({
+      popupInfo: info
+    })
+  }
+
+  closePopup = () => {
+    this.setState({ popupInfo: null })
+  }
+
   componentDidMount() {
     this.setState({
       dayList: backEndData,
       currentDayList: backEndData[0],
+      TopList: TopList
     })
   }
 
@@ -35,6 +50,8 @@ class TripdataContextProvider extends Component {
     }
     this.setState({
       currentDayList: list,
+      lat: list[0].lat,
+      long: list[0].long
     });
     
   }
@@ -83,6 +100,7 @@ class TripdataContextProvider extends Component {
   addItem = (item) => {
     const result = [...this.state.currentDayList];
     result.push(item);
+
     this.setState({
       currentDayList: result,
     });
@@ -99,8 +117,11 @@ class TripdataContextProvider extends Component {
           reorder_day: this.reorder_day,
           deleteItem: this.deleteItem,
           showPlan: this.showPlan,
+
           addItem: this.addItem,
           deleteByLoop: this.deleteByLoop,
+          setPopupinfo: this.setPopupinfo,
+          closePopup: this.closePopup
           }}>
         {this.props.children}
       </TripdataContext.Provider>

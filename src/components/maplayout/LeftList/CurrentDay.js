@@ -69,6 +69,9 @@ class CurrentDay extends Component {
                   <Draggable key={item.id} draggableId={item.id} index={index} >
                     {(provided, snapshot) => (
                       <div
+                        onClick={() => {
+                          this.props.setPopupinfo(item);
+                        }}
                         ref={provided.innerRef}
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
