@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button'
-import { Form } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
+
 
 class SignInPage extends Component {
   constructor(props) {
