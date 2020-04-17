@@ -57,14 +57,35 @@ class TripdataContextProvider extends Component {
     });
   }
 
+  // delete by loop
+  deleteByLoop = (item) => {
+    const result = this.state.currentDayList;
+    for (let i = 0; i < result.length; i++) {
+      if (result[i].name === item.name) {
+        this.deleteItem(i);
+      }
+    }
+    this.setState({
+      currentDayList: result,
+    });
+  }
+
+  // delete by index
   deleteItem = (index) => {
-    // console.log(index);
     const result = this.state.currentDayList;
     result.splice(index, 1);
     this.setState({
       currentDayList: result,
     });
     // console.log(this.state.currentDayList)
+  }
+
+  addItem = (item) => {
+    const result = [...this.state.currentDayList];
+    result.push(item);
+    this.setState({
+      currentDayList: result,
+    });
   }
 
 
@@ -78,6 +99,8 @@ class TripdataContextProvider extends Component {
           reorder_day: this.reorder_day,
           deleteItem: this.deleteItem,
           showPlan: this.showPlan,
+          addItem: this.addItem,
+          deleteByLoop: this.deleteByLoop,
           }}>
         {this.props.children}
       </TripdataContext.Provider>

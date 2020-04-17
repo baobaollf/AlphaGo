@@ -18,10 +18,13 @@ class ListView extends Component {
           updateItem={updateItem.bind(this.context)}
           reorder={reorder_day.bind(this.context)} 
           showPlan={showPlan}/>
-        {showplan && <CurrentDay
+        {
+          showplan &&
+          <CurrentDay
           items={currentDayList}
           reorder={reorder.bind(this.context)}
-          deleteItem={deleteItem.bind(this.context)} />}
+          deleteItem={deleteItem.bind(this.context)} />
+        }
       </div>
     );
   }
