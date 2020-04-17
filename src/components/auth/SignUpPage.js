@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, FormGroup, FormControl, ControlLabel, FieldGroup} from 'react-bootstrap';
+// import TextArea from 'antd/es/input/TextArea'
 
 
 class SignUpPage extends Component {
@@ -42,22 +43,23 @@ class SignUpPage extends Component {
           // }}>
           </div> */}
         <Form className="form" onSubmit={this.handleSubmit}>
-          <Form.Group size="lg">
-            <Form.Label className="label">Username</Form.Label>
-            <Form.Control id="username" type="username" placeholder="Username" onChange={this.handleChange}/>
-          </Form.Group>
-          <Form.Group size="lg">
-            <Form.Label className="label">Email address</Form.Label>
-            <Form.Control id="email" type="emails" placeholder="Email" onChange={this.handleChange}/>
-          </Form.Group>
-          <Form.Group size="lg">
-            <Form.Label className="label">Password</Form.Label>
-            <Form.Control id="password" type="password" placeholder="Password" onChange={this.handleChange}/>
-          </Form.Group>
+          <FormGroup size="lg">
+            <ControlLabel className="label">Username</ControlLabel>
+            <FormControl id="username" type="username" placeholder="Username" onChange={this.handleChange}/>
+          </FormGroup>
+          <FormGroup size="lg">
+            <ControlLabel className="label">Email address</ControlLabel>
+            <FormControl id="email" type="emails" placeholder="Email" onChange={this.handleChange}/>
+          </FormGroup>
+          <FormGroup size="lg">
+            <ControlLabel className="label">Password</ControlLabel>
+            <FormControl id="password" type="password" placeholder="Password" onChange={this.handleChange}/>
+          </FormGroup>
           
-          <Form.Text className="text-muted">
-            By signing up, you agree to all user terms.
-          </Form.Text>
+          {/*<TextArea className="text-muted">*/}
+          <ControlLabel>By signing up, you agree to all user terms.</ControlLabel>
+          {/*  By signing up, you agree to all user terms.*/}
+          {/*</TextArea>*/}
           <Button className="button" size="sm" variant="warning" type="submit" >
             Sign up
           </Button>

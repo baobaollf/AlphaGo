@@ -18,6 +18,7 @@ class Admin extends Component {
       fixedClasses: "dropdown show-dropdown open"
     };
   }
+
   handleNotificationClick = position => {
     var color = Math.floor(Math.random() * 4 + 1);
     var level;

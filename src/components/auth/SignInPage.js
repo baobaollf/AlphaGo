@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
 
 
 class SignInPage extends Component {
@@ -27,20 +27,19 @@ class SignInPage extends Component {
     return (
       <div>
         <Form className="form" onSubmit={this.handleSubmit}>
-          <Form.Group className="form-group" size="sm">
-            <Form.Label className="label">Username</Form.Label>
-            <Form.Control id="username" type="username" placeholder="Username" onChange={this.handleChange}/>
-          </Form.Group>
-          <Form.Group  className="form-group" size="sm">
-            <Form.Label className="label">Password</Form.Label>
-            <Form.Control id="password" type="password" placeholder="Password" onChange={this.handleChange}/>
-          </Form.Group>
+          <FormGroup className="form-group" size="sm">
+            <ControlLabel className="label">Username</ControlLabel>
+            <FormControl id="username" type="username" placeholder="Username" onChange={this.handleChange}/>
+          </FormGroup>
+          <FormGroup  className="form-group" size="sm">
+            <ControlLabel className="label">Password</ControlLabel>
+            <FormControl id="password" type="password" placeholder="Password" onChange={this.handleChange}/>
+          </FormGroup>
           <Button className="button" size="sm" variant="warning" type="submit">
             Sign In
           </Button>
         </Form>
       </div>
-
     )
   }
 }

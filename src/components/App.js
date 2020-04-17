@@ -3,8 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Dashboard from "./Dashboard/Dashboard";
 import EditMapPage from './layout/EditMap';
 import ProfilePage from './layout/ProfilePage/ProfilePage';
-import SignInPage from './auth/Signin';
-import SignUpPage from './auth/Signup';
+import SignInPage from './auth/SignInPage';
+import SignUpPage from './auth/SignUpPage';
 import Navbar from './layout/Navbar';
 
 class App extends Component{
@@ -25,7 +25,7 @@ class App extends Component{
               component={(props)=> (<Component {...props} />)}
           />
       );
-    };
+    }
 
     return (
       <BrowserRouter>
