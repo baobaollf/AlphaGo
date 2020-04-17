@@ -1747,6 +1747,7 @@ body > .navbar-collapse[data-color="purple"]:after {
     filter: alpha(opacity=100); }
   .card .content {
     padding: 15px 15px 10px 15px;
+    fl
   }
   .card .header {
     padding: 15px 15px 0; }

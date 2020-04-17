@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Form, FormGroup, FormControl, ControlLabel, FieldGroup} from 'react-bootstrap';
-// import TextArea from 'antd/es/input/TextArea'
-
+import { Button, Form, FormGroup, FormControl, ControlLabel} from 'react-bootstrap';
 
 class SignUpPage extends Component {
   constructor(props) {

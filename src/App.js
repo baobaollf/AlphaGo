@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Dashboard from "./Dashboard/Dashboard";
-import EditMapPage from './layout/EditMap';
-import ProfilePage from './layout/ProfilePage/ProfilePage';
-import SignInPage from './auth/SignInPage';
-import SignUpPage from './auth/SignUpPage';
-import Navbar from './layout/Navbar';
+import Dashboard from "./components/Dashboard/Dashboard";
+import EditMapPage from './components/layout/EditMap';
+import ProfilePage from './components/layout/ProfilePage/ProfilePage';
+import SignInPage from './components/auth/SignInPage';
+import SignUpPage from './components/auth/SignUpPage';
+import Navbar from './components/layout/Navbar';
 
 class App extends Component{
   render() {
@@ -15,7 +15,8 @@ class App extends Component{
               <div>
                 <Navbar/> {/* Navbar ALWAYS VISIBLE */}
                 <Component {...props} />
-              </div>)}
+              </div>
+          )}
     />
     )}
     const AdminRoute = ({ component: Component, ...rest }) => {

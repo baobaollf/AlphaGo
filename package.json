@@ -36,7 +36,7 @@
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "node-sass src/assets/sass/react-profile.scss src/assets/css/react-profile.css",
-    "minify-sass": "node-sass src/assets/sass/react-profile.scss src/assets/css/reacr-profile.min.css --output-style compressed",
+    "minify-sass": "node-sass src/assets/sass/react-profile.scss src/assets/css/react-profile.min.css --output-style compressed",
     "map-sass": "node-sass src/assets/sass/react-profile.scss src/assets/css/react-profile.css --source-map true"
   },
   "eslintConfig": {

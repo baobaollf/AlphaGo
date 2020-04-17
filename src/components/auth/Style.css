@@ -4,7 +4,9 @@ body {
     background-repeat: no-repeat;
 }
 
-
+/*TODO: 1. Signup,signin Button touchup
+          2. Form grid shape revise
+          3.change background image(not for body)*/
 .form {
     margin-left: 36%;
     margin-right: 30%;

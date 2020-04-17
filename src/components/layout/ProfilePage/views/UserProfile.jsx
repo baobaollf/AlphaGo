@@ -7,12 +7,10 @@ import {
   ControlLabel,
   FormControl
 } from "react-bootstrap";
-
 import { Card } from "../Card/Card.jsx";
 import { FormInputs } from "../FormInputs/FormInputs.jsx";
 import { UserCard } from "../UserCard/UserCard.jsx";
 import Button from "../CustomButton/CustomButton.jsx";
-
 import avatar from "../../../../assets/images/faces/rick.png";
 
 class UserProfile extends Component {
@@ -21,7 +19,7 @@ class UserProfile extends Component {
       <div className="content">
         <Grid fluid>
           <Row>
-            <Col md={8}>
+            <Col md={8} >
               <Card
                 title="Edit Profile"
                 content={
@@ -75,7 +73,7 @@ class UserProfile extends Component {
                       ncols={["col-md-12"]}
                       properties={[
                         {
-                          label: "Adress",
+                          label: "Address",
                           type: "text",
                           bsClass: "form-control",
                           placeholder: "Home Adress",
@@ -132,7 +130,7 @@ class UserProfile extends Component {
                 }
               />
             </Col>
-            {/*<Col md={4}>*/}
+            {/*<Col md={3}>*/}
             {/*  <UserCard*/}
             {/*    bgImage="https://image.freepik.com/free-photo/vintage-color-wood-walls-floor-background_1249-936.jpg"*/}
             {/*    avatar={avatar}*/}
