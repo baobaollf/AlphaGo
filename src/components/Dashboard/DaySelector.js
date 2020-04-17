@@ -4,10 +4,6 @@ import {Select} from "antd";
 
 const { Option } = Select;
 
-function onChange(value) {
-    console.log('selected ${value}');
-}
-
 function onBlur() {
     console.log('blur');
 }
@@ -16,11 +12,16 @@ function onFocus() {
     console.log('focus');
 }
 
-function onSearch(val) {
-    console.log('search', val);
-}
-
 class DaySelector extends Component {
+    onChange = (value) => {
+        this.props.setDay(value);
+    }
+
+    onSearch = (value) => {
+        this.props.setDay(value);
+    }
+
+
     render() {
         return (
             <div className="selector">
@@ -28,11 +29,11 @@ class DaySelector extends Component {
                     className="select-box"
                     showSearch
                     placeholder="How many days"
-                    optionFilterProp="children"
-                    onChange={onChange}
+                    onChange={this.onChange}
                     onFocus={onFocus}
                     onBlur={onBlur}
-                    onSearch={onSearch}
+                    onSearch={this.onSearch}
+                    onSelect={this.onSearch}
                     filterOption={(input, option) =>
                         option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
                     }

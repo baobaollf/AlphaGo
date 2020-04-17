@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
-import 'antd/dist/antd.css'
+import 'antd/dist/antd.css';
 import {Button} from "antd";
 
 class NextPageButton extends Component {
@@ -10,14 +10,16 @@ class NextPageButton extends Component {
                 <NavLink to={{
                     pathname: '/map/3',
                     details: {
-                        cities: this.props.city, days: 4
+                        city: this.props.city,
+                        coordinates: this.props.coordinates,
+                        days: this.props.day
                     }
                 }}>
-                <Button type="primary" icon="thunderbolt">
-                    Let's Go
-                </Button>
+                    <Button type="primary" icon="thunderbolt">
+                        Let's Go
+                    </Button>
                 </NavLink>
-            < /div>
+            </div>
         );
     }
 }

@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import * as placeData from "../../tests/response.json";
 import * as alphaCityList from '../../tests/alphacityFront.json';
 import SearchBar from "./SearchBar";
 import DaySeletcor from "./DaySelector";
@@ -13,15 +12,25 @@ class Dashboard extends Component {
     state = {
         day: 1,
         city: "",
-        coordinate: ""
+        coordinates: {latitude: "", longitude: ""},
     }
 
-    setCity = (city, coordinate) => {
+    setCity = (city) => {
         this.setState({
             city: city,
-            coordinate: coordinate
         })
-        console.log(this.state.city)
+    }
+
+    setCoordinates = (lat, lon) => {
+        this.setState({
+            coordinates: {latitude: lat, longitude: lon}
+        })
+    }
+
+    setDay = (day) => {
+        this.setState({
+            day: day
+        })
     }
 
     render() {
@@ -44,14 +53,21 @@ class Dashboard extends Component {
                         <SearchBar
                             data={alphaCityList}
                             city={this.state.city}
-                            coordinate={this.state.coordinate}
-                            setCity={this.setCity} />
+                            coordinates={this.state.coordinates}
+                            setCity={this.setCity}
+                            setCoordinates={this.setCoordinates.bind(this)}
+                        />
                     </div>
                     <div>
-                        <DaySeletcor/>
+                        <DaySeletcor
+                            day={this.state.day}
+                            setDay={this.setDay}
+                        />
                         <NextPageButton
                             city={this.state.city}
-                            coordinate={this.state.coordinate}/>
+                            coordinates={this.state.coordinates}
+                            day={this.state.day}
+                        />
                     </div>
                 </div>
                 <div className="right-side">
