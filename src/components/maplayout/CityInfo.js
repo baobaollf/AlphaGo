@@ -11,6 +11,7 @@ const useStyles = makeStyles({
   card: {
     //display: 'flex',
     maxWidth: 300,
+    minWidth: 280,
   },
   cardMedia: {
     height: 140,

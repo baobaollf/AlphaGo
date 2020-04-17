@@ -10,17 +10,14 @@ import { TripdataContext } from "../../contexts/TripdataContext";
 
 export class MapScreen extends Component {
   static contextType = TripdataContext
-  
+
   state = {
-    data: this.props.data,
     viewport: {
-      latitude: this.props.data[0].lat,
-      longitude: this.props.data[0].long,
+      latitude: 40.730610,
+      longitude: -73.935242,
       zoom: 12,
       pitch: 40
-      
     },
-    popupinfo: null,
   }
 
   _updateViewport = viewport => {
@@ -30,20 +27,27 @@ export class MapScreen extends Component {
   }
 
   _onClickMarker = pointInfo => {
-    this.setState({ 
-      popupInfo: pointInfo 
-    });
+    const { setPopupinfo } = this.context;
+    this.setState({
+      viewport: {
+        latitude: pointInfo.lat,
+        longitude: pointInfo.long,
+        zoom: 12,
+        pitch: 40
+      },
+    })
+    setPopupinfo(pointInfo);
   };
 
   _renderPopup() {
-    const { popupInfo } = this.state;
+    const { popupInfo, closePopup } = this.context;
     return (
       popupInfo && (
         <Popup
           longitude={popupInfo.long}
           latitude={popupInfo.lat}
           closeOnClick={false}
-          onClose={() => this.setState({ popupInfo: null })}
+          onClose={() => closePopup()}
         >
           <CityInfo info={popupInfo} />
         </Popup>
@@ -75,13 +79,14 @@ export class MapScreen extends Component {
 
 
   render() {
-    const { currentDayList } = this.context;
+    const { currentDayList, TopList } = this.context;
     const data = this.createLinear(currentDayList)
     const {viewport} = this.state;
     const layers = [
       new LineLayer({ id: 'line-layer', data, getWidth: 6, getColor: [52,63,103]})
     ];
     return (
+      
       <div className="MapGL">
         <MapGL
           {...viewport}
@@ -94,7 +99,7 @@ export class MapScreen extends Component {
           
         
           <DeckGL viewState={viewport} layers={layers}>
-            <Pin data={this.state.data} onClickMarker={this._onClickMarker} color={"#FA6585"} />
+            <Pin data={TopList} onClickMarker={this._onClickMarker} color={"#FA6585"} />
             <Pin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>
             {this._renderPopup()}
           </DeckGL>

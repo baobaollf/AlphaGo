@@ -10,7 +10,7 @@ class ListView extends Component {
   
 
   render() {
-    const { showPlan, dayList, currentDayList, updateItem, reorder, reorder_day, deleteItem, showplan} = this.context;
+    const { showPlan, dayList, currentDayList, updateItem, reorder, reorder_day, deleteItem, showplan, setPopupinfo} = this.context;
     return (
       <div className="flexbox">
         <DayOverView
@@ -21,7 +21,8 @@ class ListView extends Component {
         {showplan && <CurrentDay
           items={currentDayList}
           reorder={reorder.bind(this.context)}
-          deleteItem={deleteItem.bind(this.context)} />}
+          deleteItem={deleteItem.bind(this.context)} 
+          setPopupinfo={setPopupinfo.bind(this.context)}/>}
       </div>
     );
   }
