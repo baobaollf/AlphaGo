@@ -1,10 +1,6 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import CollectionsIcon from '@material-ui/icons/Collections';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
@@ -37,17 +33,9 @@ const useStyles = makeStyles((theme) => ({
 
 export default function CityGrid(props) {
     const classes = useStyles();
-    const [open, setOpen] = React.useState(true);
-
-    const handleClick = () => {
-        setOpen(!open);
-    };
 
     const createGridList = (data) => {
 
-        // const iconStyle = {
-        //     color: "#ffff",
-        // }
         return data.map((point) => (
             <GridListTile key={point.id}>
                 <img onClick={() => props.setCity(point.name + ", " + point.country)} src={point.images[0]} alt=" "/>}
