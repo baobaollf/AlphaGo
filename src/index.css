@@ -4,6 +4,12 @@
 @import "./styles/SignOutLinks.css";
 @import "./styles/DaySelector.css";
 @import "./styles/NextPageButton.css";
+@import 'styles/pin.css';
+@import 'styles/MapScreen.css';
+@import 'styles/CityInfo.css';
+@import 'styles/control_panel.css';
+@import 'styles/rightList.css';
+
 
 body {
   margin: 0;

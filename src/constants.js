@@ -1,0 +1,2 @@
+export const MAPBOX_TOKEN = "pk.eyJ1IjoieXVxaXNoYSIsImEiOiJjazhrZ2lxdmowMW5pM3Nud3Y5czFteTBxIn0.kXd9PaP0RJZe3obGN1zWWQ";
+export const MAP_STYLE_URL = "mapbox://styles/yuqisha/ck91uiudq01yy1ip8j74db6ke";

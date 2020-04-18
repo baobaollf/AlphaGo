@@ -1,0 +1,54 @@
+.mapboxgl-popup-content {
+  padding: 0px !important;
+  position: relative;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: none;
+  pointer-events: auto;
+}
+
+.navControl {
+  width: fit-content;
+  position: fixed;
+  bottom: 0;
+  right: 0px;
+  float: right;
+  padding: '10px';
+}
+
+.scale {
+  width: fit-content;
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  float: right;
+  padding: '10px';
+}
+
+.fullscreenControl {
+  width: 29px;
+  position: fixed;
+  bottom: 0;
+  right: 29px;
+  float: right;
+  padding: '10px';
+}
+
+.TopList{
+  position: absolute;
+  top: 0;
+  right: 0px;
+  float: right;
+}
+
+.MuiListItemIcon-root {
+  min-width: 35px !important;
+}
+
+.EditMap {
+  position: relative;
+}
+
+.MapGL {
+  position: absolute;
+}
