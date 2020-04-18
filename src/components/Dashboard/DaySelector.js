@@ -5,11 +5,11 @@ import {Select} from "antd";
 const { Option } = Select;
 
 function onBlur() {
-    console.log('blur');
+    
 }
 
 function onFocus() {
-    console.log('focus');
+    
 }
 
 class DaySelector extends Component {

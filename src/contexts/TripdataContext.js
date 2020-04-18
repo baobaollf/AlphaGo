@@ -1,24 +1,32 @@
 import React, { Component, createContext } from 'react'
 // import * as TopPlacesData from "../testData/response.json";
 //import backEndData from "../testData/dayPlannerTemplate.json"
-import backEndData from "../testData/dayScheduleList.json"
-import TopList from "../testData/topPOIList.json"
 
 export const TripdataContext = createContext();
 
 class TripdataContextProvider extends Component {
 
-  state = {
-    dayList: [],
-    currentDayList: [],
-    TopList:[],
-    showplan: false,
-    popupInfo: null,
+  constructor(props) {
+    super(props);
+    this.state = {
+      dayList: [],
+      currentDayList: [],
+      TopList: [],
+      showplan: false,
+      popupInfo: null,
+      city: this.props.city
+    }
   }
 
   showPlan() {
     this.setState({
       showplan: !this.state.showplan
+    })
+  }
+
+  setTopList = (list) => {
+    this.setState({
+      TopList: list
     })
   }
 
@@ -33,11 +41,26 @@ class TripdataContextProvider extends Component {
   }
 
   componentDidMount() {
-    this.setState({
-      dayList: backEndData,
-      currentDayList: backEndData[0],
-      TopList: TopList
-    })
+    
+    this.fetchTopListData()
+    this.fetchDayPlanData()
+  }
+
+  fetchTopListData() {
+    console.log(this.props.city)
+    const url = "http://13.58.39.66/api/topPoi?cityName=New York&type=all"
+    return fetch(url)
+      .then(response => response.json())
+      .then(data => this.setState({ TopList: data   }))
+      .catch(error => console.log("Load data failed"));
+  }
+
+  fetchDayPlanData() {
+    const url = "http://13.58.39.66/api/dayPlan?cityName=New%20York&days=3"
+    return fetch(url)
+      .then(response => response.json())
+      .then(data => this.setState({ dayList: data, currentDayList: data[0] }))
+      .catch(error => console.log("Load data failed"));
   }
 
   updateItem = (list) => {
@@ -102,9 +125,7 @@ class TripdataContextProvider extends Component {
       currentDayList: result,
     });
   }
-
-
-
+  
   render() {
     return (
       <TripdataContext.Provider value={{
@@ -119,6 +140,7 @@ class TripdataContextProvider extends Component {
           deleteByLoop: this.deleteByLoop,
           setPopupinfo: this.setPopupinfo,
           closePopup: this.closePopup,
+          setTopList: this.setTopList
           }}>
         {this.props.children}
       </TripdataContext.Provider>
