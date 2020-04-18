@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar";
 import DaySeletcor from "./DaySelector";
 import NextPageButton from "./NextPageButton";
 import CityGrid from "./CityGrid";
-import logo from "../../assets/images/logo 1.png"
+// import logo from "../../assets/images/logo 1.png"
 import bigLogo from "../../assets/images/bigLogo.png"
 
 class Dashboard extends Component {
