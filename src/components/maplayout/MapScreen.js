@@ -39,10 +39,18 @@ export class MapScreen extends Component {
     setPopupinfo(pointInfo);
   };
 
+  findPOIinDayList(popupInfo) {
+    const { currentDayList } = this.context;
+    for (let i = 0; i < currentDayList.length; i++) {
+      if  (popupInfo.name === currentDayList[i].name) {
+        return currentDayList[i];
+      }
+    }
+    return popupInfo;
+  }
+
   _renderPopup() {
-
     const { popupInfo, closePopup, addItem, deleteByLoop } = this.context;
-
     return (
       popupInfo && (
         <Popup
@@ -51,7 +59,7 @@ export class MapScreen extends Component {
           closeOnClick={false}
           onClose={() => closePopup()}
         >
-          <CityInfo info={popupInfo}
+          <CityInfo info={this.findPOIinDayList(popupInfo)}
                     addItem={addItem.bind(this.context)}
                     deleteByLoop={deleteByLoop.bind(this.context)}
           />

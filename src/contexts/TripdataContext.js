@@ -98,9 +98,9 @@ class TripdataContextProvider extends Component {
   }
 
   addItem = (item) => {
-    const result = [...this.state.currentDayList];
+    const result = this.state.currentDayList;
+    item.inPlan = true;
     result.push(item);
-
     this.setState({
       currentDayList: result,
     });
@@ -121,7 +121,7 @@ class TripdataContextProvider extends Component {
           addItem: this.addItem,
           deleteByLoop: this.deleteByLoop,
           setPopupinfo: this.setPopupinfo,
-          closePopup: this.closePopup
+          closePopup: this.closePopup,
           }}>
         {this.props.children}
       </TripdataContext.Provider>

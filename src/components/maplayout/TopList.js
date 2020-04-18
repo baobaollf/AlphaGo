@@ -62,11 +62,6 @@ export default function NestedList(props) {
             root: classes.titleBar,
             title: classes.title,
           }}
-          actionIcon={
-            <IconButton>
-              <FavoriteIcon style={iconStyle} />
-            </IconButton>
-          }
         />
       </GridListTile>
     ))

@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import {Link} from 'react-router-dom';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import { TripdataContext } from "../../contexts/TripdataContext";
+import {TripdataContext} from "../../contexts/TripdataContext";
 
 const useStyles = makeStyles({
     card: {
@@ -16,9 +16,7 @@ const useStyles = makeStyles({
     cardMedia: {
         height: 140,
     },
-
 });
-
 
 
 export default function CityInfo(props) {
@@ -26,12 +24,12 @@ export default function CityInfo(props) {
     const {info} = props;
     const {addItem, deleteByLoop} = props;
     const classes = useStyles();
-    const [color, setColor] = useState('disabled');
+    const [color, setColor] = useState(info.inPlan === true ? 'secondary' : 'disabled');
+
 
     const _setColor = () => {
         if (color === 'disabled') {
             addItem(info);
-            console.log(info);
             setColor('secondary')
         } else {
             deleteByLoop(info);
