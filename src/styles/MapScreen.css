@@ -51,4 +51,5 @@
 
 .MapGL {
   position: absolute;
+  margin-top: -13px;
 }
