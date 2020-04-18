@@ -4,13 +4,15 @@ import SearchBar from "./SearchBar";
 import DaySeletcor from "./DaySelector";
 import NextPageButton from "./NextPageButton";
 import CityGrid from "./CityGrid";
-import logo from "../../assets/images/logo2.png"
+import logo from "../../assets/images/logo 1.png"
 
 
 class Dashboard extends Component {
     state = {
         day: 1,
         city: "",
+        name: "Plan your own unique itinerary as detailed as you'd like.",
+        snippet: "Experience the most visual and collaborative workspace to plan travel itineraries. Coordinate anywhere, with anyone, at anytime",
         coordinates: {latitude: "", longitude: ""},
     }
 
@@ -32,16 +34,24 @@ class Dashboard extends Component {
         })
     }
 
+    setCityInfo = (snippet, cityName) => {
+        this.setState({
+            snippet: snippet,
+            name: cityName,
+        })
+    }
+
+
     render() {
         return (
             <div>
                 <body className="dashboard-container">
                 <div className="left-side">
                     <p className="promo-text">
-                        Plan your own unique itinerary as detailed as you'd like.
+                        {this.state.name}
                     </p>
-                    <p className="small-promo-text">Experience the most visual and collaborative workspace to plan
-                        travel itineraries. Coordinate anywhere, with anyone, at anytime.
+                    <p className="small-promo-text">
+                        {this.state.snippet}
                     </p>
                     <div>
                         <img src={logo} className="big-logo" alt="web-logo"/>
@@ -70,7 +80,9 @@ class Dashboard extends Component {
                 </div>
                 <div className="right-side">
                     <CityGrid data={alphaCityList}
-                              setCity={this.setCity}
+                              setCity={this.setCity.bind(this)}
+                              setCoordinates={this.setCoordinates.bind(this)}
+                              setCityInfo={this.setCityInfo.bind(this)}
                     />
                 </div>
                 </body>

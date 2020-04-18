@@ -35,17 +35,17 @@ export default function CityGrid(props) {
     const classes = useStyles();
 
     const createGridList = (data) => {
-
         return data.map((point) => (
             <GridListTile key={point.id}>
-                <img onClick={() => props.setCity(point.name + ", " + point.country)} src={point.images[0]} alt=" "/>}
-                />
+                <img onClick={() => {
+                        props.setCity(point.name + ", " + point.country);
+                        props.setCoordinates(point.coordinates.latitude, point.coordinates.longitude);
+                        props.setCityInfo(point.snippet, point.name);
+                    }
+                }
+                     src={point.images[0]} alt=" "/>
                 <GridListTileBar
                     title={point.name}
-                    classes={{
-                        root: classes.titleBar,
-                        title: classes.title,
-                    }}
                 />
             </GridListTile>
         ))
