@@ -11,8 +11,8 @@ import CollectionsIcon from '@material-ui/icons/Collections';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
-import IconButton from '@material-ui/core/IconButton';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+// import IconButton from '@material-ui/core/IconButton';
+// import FavoriteIcon from '@material-ui/icons/Favorite';
 import { TripdataContext } from "../../contexts/TripdataContext";
 
 const useStyles = makeStyles((theme) => ({
@@ -50,9 +50,6 @@ export default function NestedList(props) {
 
   const createGridList = (data) => {
 
-    const iconStyle = {
-      color: "#ffff",
-    }
     return TopList.map((point) => (
       <GridListTile key={point.id} onClick={() => setPopupinfo(point)}>
         <img src={point.img[0]} alt=" " />} />
@@ -62,11 +59,6 @@ export default function NestedList(props) {
             root: classes.titleBar,
             title: classes.title,
           }}
-          actionIcon={
-            <IconButton>
-              <FavoriteIcon style={iconStyle} />
-            </IconButton>
-          }
         />
       </GridListTile>
     ))
