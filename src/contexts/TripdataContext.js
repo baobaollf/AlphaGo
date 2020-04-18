@@ -47,7 +47,6 @@ class TripdataContextProvider extends Component {
   }
 
   fetchTopListData() {
-    console.log(this.props.city)
     const url = "http://13.58.39.66/api/topPoi?cityName=New York&type=all"
     return fetch(url)
       .then(response => response.json())
@@ -56,7 +55,7 @@ class TripdataContextProvider extends Component {
   }
 
   fetchDayPlanData() {
-    const url = "http://13.58.39.66/api/dayPlan?cityName=New%20York&days=3"
+    const url = "http://13.58.39.66/api/dayPlan?cityName=New%20York&days=" + this.props.city.days
     return fetch(url)
       .then(response => response.json())
       .then(data => this.setState({ dayList: data, currentDayList: data[0] }))

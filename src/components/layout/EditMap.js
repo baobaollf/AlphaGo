@@ -10,7 +10,7 @@ class EditMapPage extends Component {
     return (
       <div className="EditMap">
         <TripdataContextProvider city={this.props.location.details}>
-          <MapScreen />
+          <MapScreen coordinates={this.props.location.details.coordinates}/>
           <ListView />
           <TopList className="TopList"/>
         </TripdataContextProvider>
