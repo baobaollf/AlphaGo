@@ -41,7 +41,6 @@ class TripdataContextProvider extends Component {
   }
 
   componentDidMount() {
-    
     this.fetchTopListData()
     this.fetchDayPlanData()
   }
