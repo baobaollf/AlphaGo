@@ -22,7 +22,6 @@ class SearchBar extends Component {
     }
 
     render() {
-        console.log(this.props.coordinates)
         return (
             <div className="search-box">
                 <AutoComplete
