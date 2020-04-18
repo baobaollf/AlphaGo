@@ -42,8 +42,9 @@ export default function CityGrid(props) {
                         props.setCoordinates(point.coordinates.latitude, point.coordinates.longitude);
                         props.setCityInfo(point.snippet, point.name);
                     }
+
                 }
-                     src={point.images[0]} alt=" "/>
+                     src={point.images[0]} alt=" " className="cityListImg"/>
                 <GridListTileBar
                     title={point.name}
                 />

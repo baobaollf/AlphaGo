@@ -36,7 +36,7 @@ class SignInPage extends Component {
             <Form.Control id="password" type="password" placeholder="Password" onChange={this.handleChange}/>
           </Form.Group>
           <Button className="button" size="sm" variant="warning" type="submit">
-            Sign In
+          <p className="signup">Sign In</p>
           </Button>
         </Form>
       </div>
