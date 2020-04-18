@@ -7,7 +7,6 @@ import TripdataContextProvider from "../../contexts/TripdataContext"
 class EditMapPage extends Component {
 
   render() {
-    const id = this.props.match.params.id;
 
     return (
       <div className="EditMap">

@@ -1,7 +1,11 @@
 .nav-wrapper {
     background-color: #202639;
     max-height: fit-content;
-    height: 50px;
+    height: 50px !important;
+}
+
+.navbar-fixed {
+  height:51px !important;
 }
 
 .app-logo {
