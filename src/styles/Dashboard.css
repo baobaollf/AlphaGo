@@ -8,7 +8,7 @@
     position: absolute;
     width: 60%;
     height: 100vh;
-    background-image: url("../assets/images/map.jpg");
+    background-image: url("../assets/images/mapbackground.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: lighten;
@@ -82,3 +82,18 @@
     /*right: 0px;*/
     /*float: left;*/
 }
+
+.cityListImg {
+    height: 100%;
+    width: 100%;
+}
+
+.cityListImg:hover {
+    border: 5px solid #9966ff;
+    border-width: thick;
+    border-style: groove;
+    opacity: 0.6;
+    transition: 0.7s ease;
+    background-color: #9966ff;
+}
+

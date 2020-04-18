@@ -5,7 +5,7 @@ import DaySeletcor from "./DaySelector";
 import NextPageButton from "./NextPageButton";
 import CityGrid from "./CityGrid";
 import logo from "../../assets/images/logo 1.png"
-
+import bigLogo from "../../assets/images/bigLogo.png"
 
 class Dashboard extends Component {
     state = {
@@ -41,10 +41,14 @@ class Dashboard extends Component {
         })
     }
 
+    
+    
 
     render() {
         return (
+            
             <div>
+                
                 <body className="dashboard-container">
                 <div className="left-side">
                     <p className="promo-text">
@@ -54,7 +58,7 @@ class Dashboard extends Component {
                         {this.state.snippet}
                     </p>
                     <div>
-                        <img src={logo} className="big-logo" alt="web-logo"/>
+                        <img src={bigLogo} className="big-logo" alt="web-logo"/>
                         <p className="name-text">AlphaGo</p>
                     </div>
                     <div className="search-bar">
