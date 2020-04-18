@@ -50,10 +50,9 @@ export default function CityGrid(props) {
             </GridListTile>
         ))
     }
-    console.log(props.data)
     return (
 
-        <div className="TopList">
+        <div className="MainPageRightList">
             <div className="TopList-text">
                 Alpha Cities
             </div>
