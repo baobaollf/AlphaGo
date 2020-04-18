@@ -8,10 +8,13 @@ class NextPageButton extends Component {
         if (this.props.city) {
             return (
                 <div className="next-page">
+                    {/* const cityNames = this.props.city;
+                    console.log(cityNames);
+                    const cityNamesArray = cityNames.split(','); */}
                     <NavLink to={{
                         pathname: '/map/3',
                         details: {
-                            city: this.props.city,
+                            city: this.props.city.split(',')[0],
                             coordinates: this.props.coordinates,
                             days: this.props.day
                         }
