@@ -8,7 +8,7 @@
     position: absolute;
     width: 60%;
     height: 100vh;
-    background-image: url("../assets/images/map.jpg");
+    background-image: url("../assets/images/mapbackground.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: lighten;
