@@ -90,6 +90,7 @@ class TripdataContextProvider extends Component {
   // delete by index
   deleteItem = (index) => {
     const result = this.state.currentDayList;
+
     result.splice(index, 1);
     this.setState({
       currentDayList: result,
