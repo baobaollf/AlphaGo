@@ -25,9 +25,12 @@ export default function CityInfo(props) {
     const {addItem, deleteByLoop} = props;
     const classes = useStyles();
     const [color, setColor] = useState(info.inPlan === true ? 'secondary' : 'disabled');
-    useEffect(() => {
-        setColor(info.inPlan === true ? 'secondary' : 'disabled');
-    })
+    useEffect(
+        () => {
+           setColor(info.inPlan === true ? 'secondary' : 'disabled');
+        },
+        [info.inPlan],
+    );
 
     const _setColor = () => {
         if (color === 'disabled') {
