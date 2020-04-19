@@ -52,7 +52,7 @@ class DaySelector extends Component {
                     <Option value="13">13 days</Option>
                     <Option value="14">14 days</Option>
                     <Option value="15">15 days</Option>
-                </Select>,
+                </Select>
             </div>
         );
     }
