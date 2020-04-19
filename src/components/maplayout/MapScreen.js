@@ -43,11 +43,9 @@ export class MapScreen extends Component {
     const { currentDayList } = this.context;
     for (let i = 0; i < currentDayList.length; i++) {
       if  (popupInfo.name === currentDayList[i].name) {
-        console.log(currentDayList[i].inPlan)
         return currentDayList[i];
       }
     }
-    console.log(popupInfo.inPlan)
     return popupInfo;
   }
 
@@ -59,8 +57,7 @@ export class MapScreen extends Component {
         <Popup
           longitude={popupInfo.long}
           latitude={popupInfo.lat}
-          closeOnClick={true}
-          closeOnMove={true}
+          closeOnClick={false}
           onClose={() => closePopup()}
         >
           <CityInfo info={this.findPOIinDayList(popupInfo)}
