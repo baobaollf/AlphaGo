@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
@@ -25,7 +25,9 @@ export default function CityInfo(props) {
     const {addItem, deleteByLoop} = props;
     const classes = useStyles();
     const [color, setColor] = useState(info.inPlan === true ? 'secondary' : 'disabled');
-
+    useEffect(() => {
+        setColor(info.inPlan === true ? 'secondary' : 'disabled');
+    })
 
     const _setColor = () => {
         if (color === 'disabled') {

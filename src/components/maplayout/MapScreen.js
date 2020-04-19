@@ -43,20 +43,24 @@ export class MapScreen extends Component {
     const { currentDayList } = this.context;
     for (let i = 0; i < currentDayList.length; i++) {
       if  (popupInfo.name === currentDayList[i].name) {
+        console.log(currentDayList[i].inPlan)
         return currentDayList[i];
       }
     }
+    console.log(popupInfo.inPlan)
     return popupInfo;
   }
 
   _renderPopup() {
     const { popupInfo, closePopup, addItem, deleteByLoop } = this.context;
+    // {closePopup()}
     return (
       popupInfo && (
         <Popup
           longitude={popupInfo.long}
           latitude={popupInfo.lat}
-          closeOnClick={false}
+          closeOnClick={true}
+          closeOnMove={true}
           onClose={() => closePopup()}
         >
           <CityInfo info={this.findPOIinDayList(popupInfo)}
@@ -109,8 +113,8 @@ export class MapScreen extends Component {
           onViewportChange={this._updateViewport}
           mapboxApiAccessToken={MAPBOX_TOKEN}
         >
-          
-        
+
+
           <DeckGL viewState={viewport} layers={layers}>
             <Pin data={TopList} onClickMarker={this._onClickMarker} color={"#FA6585"} />
             <Pin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>

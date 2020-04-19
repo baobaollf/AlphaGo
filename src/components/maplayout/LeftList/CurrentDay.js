@@ -7,6 +7,7 @@ const getListStyle = isDraggingOver => ({
   // background: isDraggingOver ? "lightblue" : "lightblue",
   background: 'white',
   padding: 8,
+  marginLeft: 110,
   position: "absolute",
   overflow: "auto",
 });
@@ -70,7 +71,8 @@ class CurrentDay extends Component {
                     {(provided, snapshot) => (
                       <div
                         onClick={() => {
-                          this.props.setPopupinfo(item);
+                          this.props.
+                          setPopupinfo(item);
                         }}
                         ref={provided.innerRef}
                         {...provided.draggableProps}

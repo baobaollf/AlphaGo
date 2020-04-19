@@ -171,6 +171,710 @@
     ],
     [
         {
+            "lat": 40.759817643930866,
+            "long": -73.97927424753343,
+            "name": "Radio City Music Hall",
+            "score": 9.49979031538213,
+            "id": "W__118472379",
+            "snippet": "See the Rockettes, another show, or just tour the famous Art Deco masterpiece.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMmZUEm_ZigqulXZzuZ_NI66Rf2gGB7R_a_Ej-CK15pzqbWnqdkzm3G5J8u8atMVRytT-2Jw8zZwWSEeHhCGBiw6jvgLhyqkVszvqEi_yE_m2Oh8zhteKazhs2zYINRTQGeQ2LwMAF0w36JSst3wHioa6NCcwx4xkj7jU85-qNIZM_s9hJhJ9TN5l8czA21VoNMbc_DYXY23h2JfnGinYfZOSkxJI1qqPdhQxg3kbLUFqkQbmMQRbc63IfHl7acadw4rfa2jNeNJMfcThLWMSF9sZbd6-QNADeCe_hRjDRaQc=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMRes7WP0ku9ISoa9QR3Fv-8nQ032DRnbNC850MP_59DVnpYsoKwckbohpXF2KYyi0xPCORB05KHW401jV0U6YhZJfmtQYpq8AI5Ched34BZxHZADLnh6L2I-Za3WGpL9DItMbMbchTV0HePpuv7dUlxiOiqBJZVPuKcPZF6V8O7Wl6SLZQyXNtS4P8zONE0-L-06wCJ6uUWO8gm2HRhGcKSXna6H2XLsR04osqnuSaJ4yMZMyF3J8HqlZkliEmJ1PWno-AtkU7v_w08oBthYT6UXFll0OvKJtURnlSWtqMBk=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMnBSYV2kHHvnhcnkgJCqx9OMStgUeW-UJKGtfE_VkZlxOHLNnkdm4bC3HUw56zAhXawKz-VDzuOmDhRbIuHKKYXfwczrae7pL_Nh4L0wlkDh0riek7AeJdQt3oLPLXRlNI42CbMkCasgilNrLTfaQzElf0-G9lA32FQ2yrX0PgF1Vs0d7Mhg9dNsE5gHc4C-yGNNr5gAXaA3apSZY7a-XEKLY8gVwT49RNeATyK_Wg0OIix0kRGrVm3039qyqgUUY5EuCQvuiVaiunzng8w15phrZA2F7LPG9Z3xT8eThFRE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM6bteRbkqswGAYnASdUOMdHzlImEmMv3GsSXbQ-OUO20tx9gTXK4MwsieMvM7RP3LWOlt5VcB2jT6LIRhExv2znrF_faJWJOygJ0IBa3L2o0rlKHjDzDCh86-1izgrMLuf2IxquNiq1HRu8vwjKwQfWVvjY5e8eLMHaHm_T2nL2MDcVZmg5z5hFDkVDjvoWSASm_J_l_l0QLLv42Yzyx1vcU1RX6py_GhbnnkmFcInd8MgxYKr6q3SBr50KG8apvDx4KM7TPvzK9yIJ7bYqoTKdA21iAjwqYkvoUZECqAW3Y=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM2Ky9kRwrq0uij69RIKQGNBeaK7u-voFf9gqPIACA9zg1kJm8zMWs-Z-ZTXIqS6fResMXuy-v50vIqS5Frmhfc89Hfi9HofPpGL4Cr26q5NRD89jaeB8A6z-L3LqGJGaDmSP_T-ko7-7fgeQJfZJowSbPvVPGAbkxRh1NQnoCMuZOWW7p3w_2dtCZd_iwgGLjN5pdC8CWZI_yg4CyVacYKvC-b5xuzwqY7M_nLhjJ_0PxHhsCwH2cjwuG5k0onsnfdMwqW-SohZ-rSgOQ1_oPTQItFVI04IEefL9T70XY1jQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMrYfCyycY1kbSg7MfHikBQLUgzgTiRigFVhcbA8aNgnOfgH4DRgmpcginh-9TeMly6z4KGFPl3HNU1CZL0QpLh910oQjLie86O4Aj9lo0IFGXRGsMvQlMewbrFE8rKmcR9Ukvd8PsBjBzxuk45nGvi5PFHUaEKZS9jq0F83h0YatMhtrZxhk3Wq7_azLoKLvPWTTqrzYDY6gDDyKyJkmgj7fo1A1x6GrE1FBIlyYwh2H2cCBlhlia4WyCV9g6jJCfYM2RPMPnFXhU7OjiA6UnbQAki0MSI9S8KrOvOWAvTC8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM5AVX-JbGeqO7efASOdeF1sBRyGQClVlZPJ2vdN1IwRkE78P7kLX3yK8sk1rtn4hGU6B4NOnNRr-RGDIW3oLL_42MP_WXT-9E3dMV5Ki8XTQ9O7zpXmVnbjMcLMmrfqG2amcJ9KiY3QWv-pw0w_wihdEbqCLPcnJHaFFKHBoJ8t2qRTxUHf8sv4ndfgH46oRb7vEYd0gh_uI-oJ0t8KAnoEC1OH_5XJK9o-gfgXO1O3txWtBH_S6q6xQhIlm5fSViXeGSYZ_ibhB_fMesbt1YScWS4WWACxfudUxI_QBn6ZI=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLLk8hM_bF4RD4bYsOl9L5bWi2qCz0L6DiYfXRzBkMuBa1ntikwp0z3BSvqjF5eHP5zu_TcXwgbFxuV2637nRIFoXN4MlDnlj2KSqN9EubIXQacOxQVinGldPrSR4VaMFpWPlm3gxjsYMroz84P0y-sonYp16_GQyLqK0Zpco830nlpo8phQGCp2Ti6m0iayMI1YXeBGykktwUAu9hFqlvvhlkHpt-JVgyDxNKmBEGgbSHZszs-e5em1HX0aHIR5l-ImfWY2aoswiOmBUaBMyAn5uOkMktKTtWXVPrjYjA_A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMIBiCKTu_p9kwlYO1eAIyscEq3O1Snxvq3aX6mKs3uJCHUvHwmEZ1oU43NgocS7hDFaExkfMgL7AE5YXXvH4c_bcZ-i0NtAEl8CnP07cNT4cL_hSyXuhJL1ld0ZvFFjmVc6WI404bDeirOUZNYSioV555xo2zrMyQWrZ_7CIjoknrYIptM5ZT8FPmSIRGdTtY0H08q4IOybzxlTfqTQz0vL0CU6JFMOfW2Mwf-bQ88Oz2U-3dWtAHPYnsZN3_RAKKXO5REFD-vNUi6AbEuKyo5NslZdSP5nSG8JlsY4eCnnU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM32dZKznqAamAB9v0bePamxRYW_Yh8of-ookhdK5xeOVw4UVP5K4QneAT5wHEkIOtLEsrEVkiNFN6zwA0bQMzewtDaZd4WzV8brO-irQI8HKbVdMiXli8NPEc-e3ea0fmtWGG0wcXkNm76C8aiS_bxnYtdzW3zveihltggjhgXJOBfvX2QpTaUZNXsV8rkghwrM6-YbJl4ieyS_9jqAUbGHZ0A7ZAZNSZ1KDT4FWL_4lDknukLJh9atKZEkjxVtluZcvfXvl5wCXN2SGglGL9q8r2xHLDHYUSnF2X2hpWIXk="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7616338,
+            "long": -73.9778136,
+            "name": "Museum of Modern Art",
+            "score": 9.98764116201725,
+            "id": "W__118476494",
+            "snippet": "One of the greatest and most popular collections of modern art, on a par with the Tate Modern in London or Paris's Centre Georges Pompidou.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMXS4UNuPAUHVKMQtAlN7ixaub71NOmsKrZpAJMd1k6_8nd_hWp7aqYh0JJxK4dHgnUaDTlVnLwO8ViF3rT7hHG2HKicGZWj2M5M9dpcFoFcymGZHU9jGYPYq0aG2PJxpvZI5JotjQbmWyQdQi-ju-Tj2RVDU6D84AboK94WatzeYbYWRdF9zzSsRkyVdT-Z_40NbnwAuLcX96cj3KfHMax_jal-h42SEVPiXUlZ_uxLkg47MuUcTMsN4Li3Jb13DibyVlr1OnzLMQL1aFJuq8BO-E2kZSIfqdgNke3zd4C6E=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvJ1zJrTyHwYiBip0hd883Z6KRYnKSr_v-9j9Wv88lgYWzlLBJmrLGsLypzUOekjLBS_NtxIoHURTx1FgSxPp-QVksF_iJjVqNB0RMuxaqthejkmawNhWoRn_HaYeiz4_N37hr2Qq35Js6N6BhgUbZkqTteD8MzqkAKN-cEYGlXt78lnhvCBS-Ga-r4cKbqoqdk6mq1s4cVuA4nH2grRy_fiHl7IEdv1m0JIan6zHbZc1d4__yh_LHFX9YkufUezqI-k1nfRBk2s4r2Dga7jZC79EiGQJpR8I10pc6oWgTeQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuw9RXX4Z7l9PwSKza9umFwqiTwLHB3Jsxa7w_AC3Fl2LLYYGHBSlxDeHqK3nUvhhT8KXCBmvJE0jQcpc6o6y9wHOkK5dMTDyvWSZVQVA4JQ_kcxV6ax_f0gEpf_4lXG9jjLLPlqzm24xpogucJYGA1xeRU_zLCUhxlNH4BB9z-xrdl6Eg90P39U3uy7nbCxpv9volY7plNOuRMXrezM44OD6vv6RunZeQdKyL8-SFiCSoZEaiLN3U3Rhk8fJX1JfKrIiIf_Iwou48LIgalgnWZsAg5DSSu77PgO0m8cUjPo=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMbQDdA4-0NwaoIoL1EReQZYcG64fR4NMkjs-fiRmwMgf1WCU4rIi2f3-hGgwm6rkWbSY4We7W1OzDK8xLbLFn-wxM8lCh2l6J1BhxftyCWiQEE0j2m4G6xzrvver6CRXrlexb1eXpoSj7XJ5QIWoioYL_5Rkq7uuFfOfWQBrxuBx5HXvT1eRs8uDdYz1rvR6vhUREY9yAy6_zA-QV5naYIXcr1jRgdYcJpBmrVjFMdB-fkJ_2DXIHD5M0t8WIdXz2zv1XUKAwQuK7sN8l4G2wugbH4zWK1yOLH5Z4DUAalWw=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMW1I4z69rhKpzk3WSMwayzWw4qSR2x8Q7gSJgoFPzMO65xrlwSIjpnbp2-D1QiPt5_qdl-mn8DZFPzrsecLnRc5D-uU7cSlx4rOZy1G8Ai_AjfdcoO1zqpRtOFsw5eNgEqZAJuUqy56NxSk5x96LFUBn5-iOsmHy9-rI3YNC5XxiAteJv89K7sCXIEK-h1BQCREG6OqJkexdTwiNUGDrz7PNp2Sry60-RpS7E-Ue_yaEIHVo6BzLBsRw-D0-wARSydJLN0FvQYEwPcb0foxm39H-J6F7JO4kB-OYSnEqg9Ds=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuLbd69UnuIiRuvfoFjL9--gB9Ah9v0_tBFqsPFanuZO2YlXG6per8FAp6OzvuUlNQV9R9V6W2_bHMFnZyRYbDexchTDf44R-kQxjM1aXbccTAFTDyUupntR32Rbr9VIjcfgbzETpq_lt2ECsVZ3ntmqpOjo6sBznXf2V2AXtghu_eQJx9_orJdoCzFnSssULllytU2DpgjMfsAtQiVGOtEbAn2-T2Gnkekvvq-__JeL2cEqBa7PSqBbjfNG8BFZwQ4mW44OOWdBDuQwNl2TfxBvx2lvuIKLpaRAChl9SfpU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMD0_q8U_H6MMkontgjMhjOgHxjp5BUe4NBWg3Yd5fuRZ555b69Kw9dIsHmzQulZfm1LaAO-LrQDrZSRkr2HgRsgvarzopghA-mlj3qjQjGeGeydmI3rlA2bPs2lyWONUEByKrZnEIqod5-nD4Lv0-oKai9kAx6dhudVSpKKpDWDHl0HNRg1jkeuY_WAHzXUr0ueoHYS6Xsy_JUH3rispsGRI2Bhqibivbz4IFqYp8j1F_YoIp87dyl3D4WCbuGPCwpmwfYVpQjsdbvNuM9n4zYZx2WodYhrea8rNWos5XJeg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMJ0EdN7j3_Iq0s4QO_B6IofyOgXN0GtG-uFlZubvfViOcbFzHfPVs7_QG9pd8V2Tvdjtziq8BPIZF8sLzPSgMvc123mPLjT2i0zIU-ICH3xzMojy9JlTiHLthIVblFA057lrEk9r_zpBkkuBDFPnMKT6ZaVDeUM90Uws0kDcZ2hKrlMVTMT0LVXU5xid58U3UdP5RZif5WUwHJPKOw1XJiZfbQeCdTSKMqA5h91i01qlcbLX6AhUYuZV-27ktwICDUHd_irq9isDai8UX3FP3rnZN91EBmWvndQepCUVrL0c=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvfhNgWPifitkQmoGdQ3a5puJdwbbE0uLhDkrg8DE9dY1hFN3D7aS68zay2Ssb6WWQtA2N9cCy1ifo06WHiAkfc3rZFbV378UQzEqnUnfl_-s9pSKMBU86vWiZHrVPK4hAXs5zLWu3g3sRRgxTsWqJ_0rOBh8V7smfwGD9CMN5pNO5eU_yVGS2W8PhA_Y4JGL6EgAHHWpeQU7p4FpfBVrDAxGFeAKX-u3uXbQTLJOPo0aRA8RB_9WpfXWrGc1lb89dmNopyQuXa2x5oAIdpez07tygbYBSSJL8csmDpnweI8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM1ig2eaZn4VrmjANzY_pw1xEHUt0jisGP6a-mPl940tDLjwDLSkGQB8hFh2lwsY2OYLgkCHq1YX7dKaWCIY5b0RlN1rF9RbphIa6uRBJCl45dR40MvTEKQ7gQjAvBCn_l3CLZNbHN1_uR7zo6guFOqTOK39x8qHGxcmdxA7q8IFQY3ZrfvbAQorGyqbDIZgQRmkZ2WBmI2shRYPL4vRp_hVMdH-1t9J40ASpQ1KY3QlON_fGz4XWdXWQQY5pDg20fXJKuSMtvlXT6eQN9M4sKRersmxsMOlCRFeOH1BfArdA="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.706124830328655,
+            "long": -73.99689784264993,
+            "name": "Brooklyn Bridge",
+            "score": 9.86701506842443,
+            "id": "Brooklyn_Bridge",
+            "snippet": "It was designated a National Historic Landmark in 1964 and a National Historic Civil Engineering Landmark by the American Society of Civil Engineers in 1972.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM_tdotnZq0Nf7RUGUpTnS3m1hNs-6SUOjvbECn5q9-vdjORwjIEquSHIwmJd3vDRR_ilFe4E4r64R-fP4XkDpHldVfzYH9qXVoq7p_Op82mrIMLJ3i7YbA6DCfwys_IQjCMSM_ZM_8o8hXt6I06RruL3rIhUb9Bb8IoMujCIYEhdGqgMSi3TgsRc65yDbdbRfWc2zeTDUqBcLn3FehivHsFF0DiC6bnnZqioeY9HnjZhNuFSPop0p5PcSaWqaLnNJlnTEzTFtWBrpBv8M7BZcNKAZvgnhi5DEjR1IgwXYQQQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM8p8mTuDNNFOrBaqCDaDmGMMaxuUqdSRE_SKtXWICn7PX4JKkFAN3z8Pmt55lZSp9JuDwY8Yq5JvR5PrEbKk0SY3dnrqHpoe27m8k2U6Of6GmSRTH7AufyL-NR-vCpOIMS50T3zwJtDk3ZKAsv5RaIzmzE7KMEq7nI4TF0Hxk50fKKT1ytwH3j4Ch8CeC3j-6WlHQD7eTJPPZD9Csx8p9S2258mCnP0uS0MxPJgfjodzPgmUfyZFNI32kexqfAr-Leb5fnltol6eHpAZxlfjqSg2lQIDEwS5DkgLrmFQCSus=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMY4KLvUdUdkNQ1zdpkkhs_xl-bvtNrXOtlA1Qh6pbEeN9xrr6quDYYaThcRIG3LqJNIiXUH5Jc2GeqyP8WIpaiVgy1EjMWiMLgyNWz729L0lIFdagJ_siSIVPngwcuB9jg6Y8E7KF-8vykSPR0OWcCPm220STO7cdjkLgoDFEwz5X3raFT1ugbSec-lkwPNutCCKcDsgWH4WbfkljQYBo4bf9dmPZHv4C_eS2AtFfSNg-vwoUmxPutAOg6WstgJxP9tLAQjb_lMnbGC8hyxACQoSE_MFFNieRgJlJfwNEmF0=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM4xF8dFzdsq5SPpYz8A7fIkMUsFXAK4Tunh1MbE6Td0kILyB65OAHoVoagMn8RqxAw92OYS166I1PKPfT15heZbHSnt9bE24FZAg6MJocsB2xBXSsdGVY9WYaVef6-NkJgT4vWN-vOvQ3kpq0lvCRRLbXL0Tkf21MZ2U9B_hinhqa2UYZSeiiSNqyCKEZt4I9ShxgH5xWW3Tf3rrW8aM26XdzEyFlmF-H3EctBdwlNMh4xVGY3VKNtGLlBTqmGmyQjzaM-h7VH1hC1Z17DVAxq9hHKJvB4fA8OMoEaBBPgBE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMeKukNL6Kvv4BRxPeiGWAEQYOQcuwwU8kQMtPK29-wu8-Rcdt_m0kcB9iNoth2sF-EbywSM3nxSrsVZxFrw7mxlO7xulWKrgwqxdHFdh1kI8Rd7nhUUnaMfdDueB7EbgBT-b1Dk5qgjbnDcr6srs_GDHavMzn7iDzOH3TaYaC-dyOKD1K4WqPLPOA4Dpuh6NsLP8POQh7eiHq0WogjXOgxOtOpTT7M_ivfaomp8-KVdymbW15oGp1yZ4RyaMuIMdzkbU7Qod6nh6zycKbLaG_igaFzT8eujkZfJt4ycR_RUU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLwCvOcBVEfVEbrMpfEcUBD3WbMO34SzOVH7IIR9EepD4aUkhkFlC9AS7e_Fb4Y5KgxwNwAj5MwXwqe8TDYNbUwFITkOEWQxdqADURgu225RHOI0WmDz7vBcWGycT04Lb8_euf3EygdmSM-yCGbszzIcWIE4vzFPg_ulSRUzW9Oe1mehyTUmdPHsPIyPtS1AOU67xYsJ4CBEqRsrd7vRxkWZ5M8ZDKAQ7VSNinl6DBoXZmADW-lL_qTDDX5XkhG7R2DASG2-Djcj6M5dyJcoVdnklnMEAUalf8p0LdcQQDKg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMQK-TQXPPizPkpXaLqRQmyMQ3uYtqjW_gEYZDai81D5atxsahsvqVZ9V3whefKsGcPhmMmRhrUijU_tuYQhKQhgDsQv1N86v_f_4IKK2cgzHaOoeOFBYWAxAAKIZ3N50h6Hj97xS4OZ1IKPuTKY-5Rsp14dHUYaoqZDrvcMsZTtcVetW-roU5Y_UOnni0jHOL8SAEktG7SwijMvcqNNhDitL6oZWRgdkKac7wcGNoTqxtbbPa4Wr5dWkAOhQR-XcIpbrbwqM5_MOMyt_k5fFILHE9iSukXTxaTKuZZKaB9M8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLCwvutRSdtyKbuzySR2As9BYn73-C7uLXg0V441TlrvR9Wb6JvJl1UQ9cfzrDahVc5-owZfNZsRCLptgxzrKiCo2Q5cXHJ35bP3d7dwBMFutvSDWmLlin2BUWvZ7F-WMQxu5HwDBO08sclbd1GSIF6UsobvJFtGyLt7lzNCv4D7BCW5MHttCMmk4NNXnCUrG2J8Ch03kW5QenCXqqKnKPx8HLPuL0YE64wut2VBBVzJVvPmc-kufar6IsUK3NOQEPMq_UaUtl_fc8PAgan5IK-J7IBtXA0yDzSvFN_fTDl4=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMp-QwDyC0Bdk7u8228d5297r8mbEwnH_MrpXUmx2YeThVlFZSikDBIqTEXJhHdSc6eKab1MmZrEU7MWVqB4YoM28obgLVCqUYWVhb34QmRWiIIRwH9EXigIhc0uequU6_7Iwvk7RpxWcl0OQd2a6YQVWNlhvwNnBR-4Mzok_TAh_vfDGjWZvPWKlyN5RPhvfLmfym9S3mhTfRH-aihKKo3ojcYMXiUmRMFzT1VScWNMt_rakDYLGBiEEUR5XoYhSz1Wi_Rj3i5AsArbI1N-q-jDls5d-rlVx2yC66Q08Fn-A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMSFsEARbcZqoKwuG4ntzjFCpBNKps58dAElpqQeQJAe2aj5BGjvj1VpzKw2_pVLI0Nz3iPWfs_hM1nIF9Y-DKFLA7wLZBP1Nf1x0cKOuJjQVVffwg9DD4RZJx3PaXaP0ZWtIiJNENEtR4zVQPjxwTr9FifQR-_07ACMTFPbHrwdwByhJCW9y41ucF2cmNca5Nkskk0KBBMn7hOypuNSpgDdCnWykMKEJ-nyA1BKvhsYCcA4nsSIjSi5Ur2_RwsvsKPnC-q9a4ElCXDfeP1rFmosdXE4mmBJt1dXnd-ye5uaQ="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.70316341136895,
+            "long": -73.99528710543053,
+            "name": "Bargemusic",
+            "score": 8.43191595847798,
+            "id": "Bargemusic",
+            "snippet": "A truly hidden gem.",
+            "img": [],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7036769,
+            "long": -73.9948035,
+            "name": "The River Café",
+            "score": 9.6121463991642,
+            "id": "N__1227678751",
+            "snippet": "Superb cocktails in a quite nice vibe.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMr9K4mBFHunomYghqlak11eSSlGIZKL-1_UlFqi80AAYSySUQS7uM8LcfhDwib3TGzZ28x-xmVCfiwkHog1rNPAdbeVa1s8M9oIgw0nzAGo5oA0kmRM2X4V7r8WXxeOs9hgmRa92jQ_xckTbt8Xk5MxeosqJ9rd12NXr2WSs2A51ASHM5prlCJOFFlNxrdaL01LtbZMnRagArKOtNszv3BEUnxBsFuSwfjnV3V6I7nznMZs63teLeob-6-5PDAugLotRbWLkZ42ih5KlDwHCGvL0yGasVq504UyrvpMrdqiQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMxa-Kk2CQku4rdnkA9xMpMpHwuhL5GDpbV7xaHXU8M2aqrlEtOpZ5KP2UAJSWj5VkjNneV39Mi_fovB_d8wRG1Jhi9yKAHCwv6GFzAyGPsDkg-OVT_NKILIsM3Wz07q5zpxmxIcztdfh7FAaKhv5mjAOCiNc1dAILnoWKWnMByXx0FcAsGKxG2QMYCHGOSTG4zZzfmEnZk6GDzFbz3n5OK4NBYXjUDZMxzWxI5PSY2Hme3ul0PxOMAWRjkCfllRaD6EWwiQ9K0I5rKXu3Wl9HCgEXudo3PXyOgRyjEobH6dM="
+            ],
+            "inPlan": true
+        }
+    ],
+    [
+        {
+            "lat": 40.759817643930866,
+            "long": -73.97927424753343,
+            "name": "Radio City Music Hall",
+            "score": 9.49979031538213,
+            "id": "W__118472379",
+            "snippet": "See the Rockettes, another show, or just tour the famous Art Deco masterpiece.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMmZUEm_ZigqulXZzuZ_NI66Rf2gGB7R_a_Ej-CK15pzqbWnqdkzm3G5J8u8atMVRytT-2Jw8zZwWSEeHhCGBiw6jvgLhyqkVszvqEi_yE_m2Oh8zhteKazhs2zYINRTQGeQ2LwMAF0w36JSst3wHioa6NCcwx4xkj7jU85-qNIZM_s9hJhJ9TN5l8czA21VoNMbc_DYXY23h2JfnGinYfZOSkxJI1qqPdhQxg3kbLUFqkQbmMQRbc63IfHl7acadw4rfa2jNeNJMfcThLWMSF9sZbd6-QNADeCe_hRjDRaQc=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMRes7WP0ku9ISoa9QR3Fv-8nQ032DRnbNC850MP_59DVnpYsoKwckbohpXF2KYyi0xPCORB05KHW401jV0U6YhZJfmtQYpq8AI5Ched34BZxHZADLnh6L2I-Za3WGpL9DItMbMbchTV0HePpuv7dUlxiOiqBJZVPuKcPZF6V8O7Wl6SLZQyXNtS4P8zONE0-L-06wCJ6uUWO8gm2HRhGcKSXna6H2XLsR04osqnuSaJ4yMZMyF3J8HqlZkliEmJ1PWno-AtkU7v_w08oBthYT6UXFll0OvKJtURnlSWtqMBk=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMnBSYV2kHHvnhcnkgJCqx9OMStgUeW-UJKGtfE_VkZlxOHLNnkdm4bC3HUw56zAhXawKz-VDzuOmDhRbIuHKKYXfwczrae7pL_Nh4L0wlkDh0riek7AeJdQt3oLPLXRlNI42CbMkCasgilNrLTfaQzElf0-G9lA32FQ2yrX0PgF1Vs0d7Mhg9dNsE5gHc4C-yGNNr5gAXaA3apSZY7a-XEKLY8gVwT49RNeATyK_Wg0OIix0kRGrVm3039qyqgUUY5EuCQvuiVaiunzng8w15phrZA2F7LPG9Z3xT8eThFRE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM6bteRbkqswGAYnASdUOMdHzlImEmMv3GsSXbQ-OUO20tx9gTXK4MwsieMvM7RP3LWOlt5VcB2jT6LIRhExv2znrF_faJWJOygJ0IBa3L2o0rlKHjDzDCh86-1izgrMLuf2IxquNiq1HRu8vwjKwQfWVvjY5e8eLMHaHm_T2nL2MDcVZmg5z5hFDkVDjvoWSASm_J_l_l0QLLv42Yzyx1vcU1RX6py_GhbnnkmFcInd8MgxYKr6q3SBr50KG8apvDx4KM7TPvzK9yIJ7bYqoTKdA21iAjwqYkvoUZECqAW3Y=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM2Ky9kRwrq0uij69RIKQGNBeaK7u-voFf9gqPIACA9zg1kJm8zMWs-Z-ZTXIqS6fResMXuy-v50vIqS5Frmhfc89Hfi9HofPpGL4Cr26q5NRD89jaeB8A6z-L3LqGJGaDmSP_T-ko7-7fgeQJfZJowSbPvVPGAbkxRh1NQnoCMuZOWW7p3w_2dtCZd_iwgGLjN5pdC8CWZI_yg4CyVacYKvC-b5xuzwqY7M_nLhjJ_0PxHhsCwH2cjwuG5k0onsnfdMwqW-SohZ-rSgOQ1_oPTQItFVI04IEefL9T70XY1jQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMrYfCyycY1kbSg7MfHikBQLUgzgTiRigFVhcbA8aNgnOfgH4DRgmpcginh-9TeMly6z4KGFPl3HNU1CZL0QpLh910oQjLie86O4Aj9lo0IFGXRGsMvQlMewbrFE8rKmcR9Ukvd8PsBjBzxuk45nGvi5PFHUaEKZS9jq0F83h0YatMhtrZxhk3Wq7_azLoKLvPWTTqrzYDY6gDDyKyJkmgj7fo1A1x6GrE1FBIlyYwh2H2cCBlhlia4WyCV9g6jJCfYM2RPMPnFXhU7OjiA6UnbQAki0MSI9S8KrOvOWAvTC8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM5AVX-JbGeqO7efASOdeF1sBRyGQClVlZPJ2vdN1IwRkE78P7kLX3yK8sk1rtn4hGU6B4NOnNRr-RGDIW3oLL_42MP_WXT-9E3dMV5Ki8XTQ9O7zpXmVnbjMcLMmrfqG2amcJ9KiY3QWv-pw0w_wihdEbqCLPcnJHaFFKHBoJ8t2qRTxUHf8sv4ndfgH46oRb7vEYd0gh_uI-oJ0t8KAnoEC1OH_5XJK9o-gfgXO1O3txWtBH_S6q6xQhIlm5fSViXeGSYZ_ibhB_fMesbt1YScWS4WWACxfudUxI_QBn6ZI=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLLk8hM_bF4RD4bYsOl9L5bWi2qCz0L6DiYfXRzBkMuBa1ntikwp0z3BSvqjF5eHP5zu_TcXwgbFxuV2637nRIFoXN4MlDnlj2KSqN9EubIXQacOxQVinGldPrSR4VaMFpWPlm3gxjsYMroz84P0y-sonYp16_GQyLqK0Zpco830nlpo8phQGCp2Ti6m0iayMI1YXeBGykktwUAu9hFqlvvhlkHpt-JVgyDxNKmBEGgbSHZszs-e5em1HX0aHIR5l-ImfWY2aoswiOmBUaBMyAn5uOkMktKTtWXVPrjYjA_A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMIBiCKTu_p9kwlYO1eAIyscEq3O1Snxvq3aX6mKs3uJCHUvHwmEZ1oU43NgocS7hDFaExkfMgL7AE5YXXvH4c_bcZ-i0NtAEl8CnP07cNT4cL_hSyXuhJL1ld0ZvFFjmVc6WI404bDeirOUZNYSioV555xo2zrMyQWrZ_7CIjoknrYIptM5ZT8FPmSIRGdTtY0H08q4IOybzxlTfqTQz0vL0CU6JFMOfW2Mwf-bQ88Oz2U-3dWtAHPYnsZN3_RAKKXO5REFD-vNUi6AbEuKyo5NslZdSP5nSG8JlsY4eCnnU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM32dZKznqAamAB9v0bePamxRYW_Yh8of-ookhdK5xeOVw4UVP5K4QneAT5wHEkIOtLEsrEVkiNFN6zwA0bQMzewtDaZd4WzV8brO-irQI8HKbVdMiXli8NPEc-e3ea0fmtWGG0wcXkNm76C8aiS_bxnYtdzW3zveihltggjhgXJOBfvX2QpTaUZNXsV8rkghwrM6-YbJl4ieyS_9jqAUbGHZ0A7ZAZNSZ1KDT4FWL_4lDknukLJh9atKZEkjxVtluZcvfXvl5wCXN2SGglGL9q8r2xHLDHYUSnF2X2hpWIXk="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7616338,
+            "long": -73.9778136,
+            "name": "Museum of Modern Art",
+            "score": 9.98764116201725,
+            "id": "W__118476494",
+            "snippet": "One of the greatest and most popular collections of modern art, on a par with the Tate Modern in London or Paris's Centre Georges Pompidou.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMXS4UNuPAUHVKMQtAlN7ixaub71NOmsKrZpAJMd1k6_8nd_hWp7aqYh0JJxK4dHgnUaDTlVnLwO8ViF3rT7hHG2HKicGZWj2M5M9dpcFoFcymGZHU9jGYPYq0aG2PJxpvZI5JotjQbmWyQdQi-ju-Tj2RVDU6D84AboK94WatzeYbYWRdF9zzSsRkyVdT-Z_40NbnwAuLcX96cj3KfHMax_jal-h42SEVPiXUlZ_uxLkg47MuUcTMsN4Li3Jb13DibyVlr1OnzLMQL1aFJuq8BO-E2kZSIfqdgNke3zd4C6E=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvJ1zJrTyHwYiBip0hd883Z6KRYnKSr_v-9j9Wv88lgYWzlLBJmrLGsLypzUOekjLBS_NtxIoHURTx1FgSxPp-QVksF_iJjVqNB0RMuxaqthejkmawNhWoRn_HaYeiz4_N37hr2Qq35Js6N6BhgUbZkqTteD8MzqkAKN-cEYGlXt78lnhvCBS-Ga-r4cKbqoqdk6mq1s4cVuA4nH2grRy_fiHl7IEdv1m0JIan6zHbZc1d4__yh_LHFX9YkufUezqI-k1nfRBk2s4r2Dga7jZC79EiGQJpR8I10pc6oWgTeQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuw9RXX4Z7l9PwSKza9umFwqiTwLHB3Jsxa7w_AC3Fl2LLYYGHBSlxDeHqK3nUvhhT8KXCBmvJE0jQcpc6o6y9wHOkK5dMTDyvWSZVQVA4JQ_kcxV6ax_f0gEpf_4lXG9jjLLPlqzm24xpogucJYGA1xeRU_zLCUhxlNH4BB9z-xrdl6Eg90P39U3uy7nbCxpv9volY7plNOuRMXrezM44OD6vv6RunZeQdKyL8-SFiCSoZEaiLN3U3Rhk8fJX1JfKrIiIf_Iwou48LIgalgnWZsAg5DSSu77PgO0m8cUjPo=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMbQDdA4-0NwaoIoL1EReQZYcG64fR4NMkjs-fiRmwMgf1WCU4rIi2f3-hGgwm6rkWbSY4We7W1OzDK8xLbLFn-wxM8lCh2l6J1BhxftyCWiQEE0j2m4G6xzrvver6CRXrlexb1eXpoSj7XJ5QIWoioYL_5Rkq7uuFfOfWQBrxuBx5HXvT1eRs8uDdYz1rvR6vhUREY9yAy6_zA-QV5naYIXcr1jRgdYcJpBmrVjFMdB-fkJ_2DXIHD5M0t8WIdXz2zv1XUKAwQuK7sN8l4G2wugbH4zWK1yOLH5Z4DUAalWw=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMW1I4z69rhKpzk3WSMwayzWw4qSR2x8Q7gSJgoFPzMO65xrlwSIjpnbp2-D1QiPt5_qdl-mn8DZFPzrsecLnRc5D-uU7cSlx4rOZy1G8Ai_AjfdcoO1zqpRtOFsw5eNgEqZAJuUqy56NxSk5x96LFUBn5-iOsmHy9-rI3YNC5XxiAteJv89K7sCXIEK-h1BQCREG6OqJkexdTwiNUGDrz7PNp2Sry60-RpS7E-Ue_yaEIHVo6BzLBsRw-D0-wARSydJLN0FvQYEwPcb0foxm39H-J6F7JO4kB-OYSnEqg9Ds=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuLbd69UnuIiRuvfoFjL9--gB9Ah9v0_tBFqsPFanuZO2YlXG6per8FAp6OzvuUlNQV9R9V6W2_bHMFnZyRYbDexchTDf44R-kQxjM1aXbccTAFTDyUupntR32Rbr9VIjcfgbzETpq_lt2ECsVZ3ntmqpOjo6sBznXf2V2AXtghu_eQJx9_orJdoCzFnSssULllytU2DpgjMfsAtQiVGOtEbAn2-T2Gnkekvvq-__JeL2cEqBa7PSqBbjfNG8BFZwQ4mW44OOWdBDuQwNl2TfxBvx2lvuIKLpaRAChl9SfpU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMD0_q8U_H6MMkontgjMhjOgHxjp5BUe4NBWg3Yd5fuRZ555b69Kw9dIsHmzQulZfm1LaAO-LrQDrZSRkr2HgRsgvarzopghA-mlj3qjQjGeGeydmI3rlA2bPs2lyWONUEByKrZnEIqod5-nD4Lv0-oKai9kAx6dhudVSpKKpDWDHl0HNRg1jkeuY_WAHzXUr0ueoHYS6Xsy_JUH3rispsGRI2Bhqibivbz4IFqYp8j1F_YoIp87dyl3D4WCbuGPCwpmwfYVpQjsdbvNuM9n4zYZx2WodYhrea8rNWos5XJeg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMJ0EdN7j3_Iq0s4QO_B6IofyOgXN0GtG-uFlZubvfViOcbFzHfPVs7_QG9pd8V2Tvdjtziq8BPIZF8sLzPSgMvc123mPLjT2i0zIU-ICH3xzMojy9JlTiHLthIVblFA057lrEk9r_zpBkkuBDFPnMKT6ZaVDeUM90Uws0kDcZ2hKrlMVTMT0LVXU5xid58U3UdP5RZif5WUwHJPKOw1XJiZfbQeCdTSKMqA5h91i01qlcbLX6AhUYuZV-27ktwICDUHd_irq9isDai8UX3FP3rnZN91EBmWvndQepCUVrL0c=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvfhNgWPifitkQmoGdQ3a5puJdwbbE0uLhDkrg8DE9dY1hFN3D7aS68zay2Ssb6WWQtA2N9cCy1ifo06WHiAkfc3rZFbV378UQzEqnUnfl_-s9pSKMBU86vWiZHrVPK4hAXs5zLWu3g3sRRgxTsWqJ_0rOBh8V7smfwGD9CMN5pNO5eU_yVGS2W8PhA_Y4JGL6EgAHHWpeQU7p4FpfBVrDAxGFeAKX-u3uXbQTLJOPo0aRA8RB_9WpfXWrGc1lb89dmNopyQuXa2x5oAIdpez07tygbYBSSJL8csmDpnweI8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM1ig2eaZn4VrmjANzY_pw1xEHUt0jisGP6a-mPl940tDLjwDLSkGQB8hFh2lwsY2OYLgkCHq1YX7dKaWCIY5b0RlN1rF9RbphIa6uRBJCl45dR40MvTEKQ7gQjAvBCn_l3CLZNbHN1_uR7zo6guFOqTOK39x8qHGxcmdxA7q8IFQY3ZrfvbAQorGyqbDIZgQRmkZ2WBmI2shRYPL4vRp_hVMdH-1t9J40ASpQ1KY3QlON_fGz4XWdXWQQY5pDg20fXJKuSMtvlXT6eQN9M4sKRersmxsMOlCRFeOH1BfArdA="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.706124830328655,
+            "long": -73.99689784264993,
+            "name": "Brooklyn Bridge",
+            "score": 9.86701506842443,
+            "id": "Brooklyn_Bridge",
+            "snippet": "It was designated a National Historic Landmark in 1964 and a National Historic Civil Engineering Landmark by the American Society of Civil Engineers in 1972.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM_tdotnZq0Nf7RUGUpTnS3m1hNs-6SUOjvbECn5q9-vdjORwjIEquSHIwmJd3vDRR_ilFe4E4r64R-fP4XkDpHldVfzYH9qXVoq7p_Op82mrIMLJ3i7YbA6DCfwys_IQjCMSM_ZM_8o8hXt6I06RruL3rIhUb9Bb8IoMujCIYEhdGqgMSi3TgsRc65yDbdbRfWc2zeTDUqBcLn3FehivHsFF0DiC6bnnZqioeY9HnjZhNuFSPop0p5PcSaWqaLnNJlnTEzTFtWBrpBv8M7BZcNKAZvgnhi5DEjR1IgwXYQQQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM8p8mTuDNNFOrBaqCDaDmGMMaxuUqdSRE_SKtXWICn7PX4JKkFAN3z8Pmt55lZSp9JuDwY8Yq5JvR5PrEbKk0SY3dnrqHpoe27m8k2U6Of6GmSRTH7AufyL-NR-vCpOIMS50T3zwJtDk3ZKAsv5RaIzmzE7KMEq7nI4TF0Hxk50fKKT1ytwH3j4Ch8CeC3j-6WlHQD7eTJPPZD9Csx8p9S2258mCnP0uS0MxPJgfjodzPgmUfyZFNI32kexqfAr-Leb5fnltol6eHpAZxlfjqSg2lQIDEwS5DkgLrmFQCSus=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMY4KLvUdUdkNQ1zdpkkhs_xl-bvtNrXOtlA1Qh6pbEeN9xrr6quDYYaThcRIG3LqJNIiXUH5Jc2GeqyP8WIpaiVgy1EjMWiMLgyNWz729L0lIFdagJ_siSIVPngwcuB9jg6Y8E7KF-8vykSPR0OWcCPm220STO7cdjkLgoDFEwz5X3raFT1ugbSec-lkwPNutCCKcDsgWH4WbfkljQYBo4bf9dmPZHv4C_eS2AtFfSNg-vwoUmxPutAOg6WstgJxP9tLAQjb_lMnbGC8hyxACQoSE_MFFNieRgJlJfwNEmF0=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM4xF8dFzdsq5SPpYz8A7fIkMUsFXAK4Tunh1MbE6Td0kILyB65OAHoVoagMn8RqxAw92OYS166I1PKPfT15heZbHSnt9bE24FZAg6MJocsB2xBXSsdGVY9WYaVef6-NkJgT4vWN-vOvQ3kpq0lvCRRLbXL0Tkf21MZ2U9B_hinhqa2UYZSeiiSNqyCKEZt4I9ShxgH5xWW3Tf3rrW8aM26XdzEyFlmF-H3EctBdwlNMh4xVGY3VKNtGLlBTqmGmyQjzaM-h7VH1hC1Z17DVAxq9hHKJvB4fA8OMoEaBBPgBE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMeKukNL6Kvv4BRxPeiGWAEQYOQcuwwU8kQMtPK29-wu8-Rcdt_m0kcB9iNoth2sF-EbywSM3nxSrsVZxFrw7mxlO7xulWKrgwqxdHFdh1kI8Rd7nhUUnaMfdDueB7EbgBT-b1Dk5qgjbnDcr6srs_GDHavMzn7iDzOH3TaYaC-dyOKD1K4WqPLPOA4Dpuh6NsLP8POQh7eiHq0WogjXOgxOtOpTT7M_ivfaomp8-KVdymbW15oGp1yZ4RyaMuIMdzkbU7Qod6nh6zycKbLaG_igaFzT8eujkZfJt4ycR_RUU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLwCvOcBVEfVEbrMpfEcUBD3WbMO34SzOVH7IIR9EepD4aUkhkFlC9AS7e_Fb4Y5KgxwNwAj5MwXwqe8TDYNbUwFITkOEWQxdqADURgu225RHOI0WmDz7vBcWGycT04Lb8_euf3EygdmSM-yCGbszzIcWIE4vzFPg_ulSRUzW9Oe1mehyTUmdPHsPIyPtS1AOU67xYsJ4CBEqRsrd7vRxkWZ5M8ZDKAQ7VSNinl6DBoXZmADW-lL_qTDDX5XkhG7R2DASG2-Djcj6M5dyJcoVdnklnMEAUalf8p0LdcQQDKg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMQK-TQXPPizPkpXaLqRQmyMQ3uYtqjW_gEYZDai81D5atxsahsvqVZ9V3whefKsGcPhmMmRhrUijU_tuYQhKQhgDsQv1N86v_f_4IKK2cgzHaOoeOFBYWAxAAKIZ3N50h6Hj97xS4OZ1IKPuTKY-5Rsp14dHUYaoqZDrvcMsZTtcVetW-roU5Y_UOnni0jHOL8SAEktG7SwijMvcqNNhDitL6oZWRgdkKac7wcGNoTqxtbbPa4Wr5dWkAOhQR-XcIpbrbwqM5_MOMyt_k5fFILHE9iSukXTxaTKuZZKaB9M8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLCwvutRSdtyKbuzySR2As9BYn73-C7uLXg0V441TlrvR9Wb6JvJl1UQ9cfzrDahVc5-owZfNZsRCLptgxzrKiCo2Q5cXHJ35bP3d7dwBMFutvSDWmLlin2BUWvZ7F-WMQxu5HwDBO08sclbd1GSIF6UsobvJFtGyLt7lzNCv4D7BCW5MHttCMmk4NNXnCUrG2J8Ch03kW5QenCXqqKnKPx8HLPuL0YE64wut2VBBVzJVvPmc-kufar6IsUK3NOQEPMq_UaUtl_fc8PAgan5IK-J7IBtXA0yDzSvFN_fTDl4=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMp-QwDyC0Bdk7u8228d5297r8mbEwnH_MrpXUmx2YeThVlFZSikDBIqTEXJhHdSc6eKab1MmZrEU7MWVqB4YoM28obgLVCqUYWVhb34QmRWiIIRwH9EXigIhc0uequU6_7Iwvk7RpxWcl0OQd2a6YQVWNlhvwNnBR-4Mzok_TAh_vfDGjWZvPWKlyN5RPhvfLmfym9S3mhTfRH-aihKKo3ojcYMXiUmRMFzT1VScWNMt_rakDYLGBiEEUR5XoYhSz1Wi_Rj3i5AsArbI1N-q-jDls5d-rlVx2yC66Q08Fn-A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMSFsEARbcZqoKwuG4ntzjFCpBNKps58dAElpqQeQJAe2aj5BGjvj1VpzKw2_pVLI0Nz3iPWfs_hM1nIF9Y-DKFLA7wLZBP1Nf1x0cKOuJjQVVffwg9DD4RZJx3PaXaP0ZWtIiJNENEtR4zVQPjxwTr9FifQR-_07ACMTFPbHrwdwByhJCW9y41ucF2cmNca5Nkskk0KBBMn7hOypuNSpgDdCnWykMKEJ-nyA1BKvhsYCcA4nsSIjSi5Ur2_RwsvsKPnC-q9a4ElCXDfeP1rFmosdXE4mmBJt1dXnd-ye5uaQ="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.70316341136895,
+            "long": -73.99528710543053,
+            "name": "Bargemusic",
+            "score": 8.43191595847798,
+            "id": "Bargemusic",
+            "snippet": "A truly hidden gem.",
+            "img": [],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7036769,
+            "long": -73.9948035,
+            "name": "The River Café",
+            "score": 9.6121463991642,
+            "id": "N__1227678751",
+            "snippet": "Superb cocktails in a quite nice vibe.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMr9K4mBFHunomYghqlak11eSSlGIZKL-1_UlFqi80AAYSySUQS7uM8LcfhDwib3TGzZ28x-xmVCfiwkHog1rNPAdbeVa1s8M9oIgw0nzAGo5oA0kmRM2X4V7r8WXxeOs9hgmRa92jQ_xckTbt8Xk5MxeosqJ9rd12NXr2WSs2A51ASHM5prlCJOFFlNxrdaL01LtbZMnRagArKOtNszv3BEUnxBsFuSwfjnV3V6I7nznMZs63teLeob-6-5PDAugLotRbWLkZ42ih5KlDwHCGvL0yGasVq504UyrvpMrdqiQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMxa-Kk2CQku4rdnkA9xMpMpHwuhL5GDpbV7xaHXU8M2aqrlEtOpZ5KP2UAJSWj5VkjNneV39Mi_fovB_d8wRG1Jhi9yKAHCwv6GFzAyGPsDkg-OVT_NKILIsM3Wz07q5zpxmxIcztdfh7FAaKhv5mjAOCiNc1dAILnoWKWnMByXx0FcAsGKxG2QMYCHGOSTG4zZzfmEnZk6GDzFbz3n5OK4NBYXjUDZMxzWxI5PSY2Hme3ul0PxOMAWRjkCfllRaD6EWwiQ9K0I5rKXu3Wl9HCgEXudo3PXyOgRyjEobH6dM="
+            ],
+            "inPlan": true
+        }
+    ],
+    [
+        {
+            "lat": 40.759817643930866,
+            "long": -73.97927424753343,
+            "name": "Radio City Music Hall",
+            "score": 9.49979031538213,
+            "id": "W__118472379",
+            "snippet": "See the Rockettes, another show, or just tour the famous Art Deco masterpiece.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMmZUEm_ZigqulXZzuZ_NI66Rf2gGB7R_a_Ej-CK15pzqbWnqdkzm3G5J8u8atMVRytT-2Jw8zZwWSEeHhCGBiw6jvgLhyqkVszvqEi_yE_m2Oh8zhteKazhs2zYINRTQGeQ2LwMAF0w36JSst3wHioa6NCcwx4xkj7jU85-qNIZM_s9hJhJ9TN5l8czA21VoNMbc_DYXY23h2JfnGinYfZOSkxJI1qqPdhQxg3kbLUFqkQbmMQRbc63IfHl7acadw4rfa2jNeNJMfcThLWMSF9sZbd6-QNADeCe_hRjDRaQc=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMRes7WP0ku9ISoa9QR3Fv-8nQ032DRnbNC850MP_59DVnpYsoKwckbohpXF2KYyi0xPCORB05KHW401jV0U6YhZJfmtQYpq8AI5Ched34BZxHZADLnh6L2I-Za3WGpL9DItMbMbchTV0HePpuv7dUlxiOiqBJZVPuKcPZF6V8O7Wl6SLZQyXNtS4P8zONE0-L-06wCJ6uUWO8gm2HRhGcKSXna6H2XLsR04osqnuSaJ4yMZMyF3J8HqlZkliEmJ1PWno-AtkU7v_w08oBthYT6UXFll0OvKJtURnlSWtqMBk=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMnBSYV2kHHvnhcnkgJCqx9OMStgUeW-UJKGtfE_VkZlxOHLNnkdm4bC3HUw56zAhXawKz-VDzuOmDhRbIuHKKYXfwczrae7pL_Nh4L0wlkDh0riek7AeJdQt3oLPLXRlNI42CbMkCasgilNrLTfaQzElf0-G9lA32FQ2yrX0PgF1Vs0d7Mhg9dNsE5gHc4C-yGNNr5gAXaA3apSZY7a-XEKLY8gVwT49RNeATyK_Wg0OIix0kRGrVm3039qyqgUUY5EuCQvuiVaiunzng8w15phrZA2F7LPG9Z3xT8eThFRE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM6bteRbkqswGAYnASdUOMdHzlImEmMv3GsSXbQ-OUO20tx9gTXK4MwsieMvM7RP3LWOlt5VcB2jT6LIRhExv2znrF_faJWJOygJ0IBa3L2o0rlKHjDzDCh86-1izgrMLuf2IxquNiq1HRu8vwjKwQfWVvjY5e8eLMHaHm_T2nL2MDcVZmg5z5hFDkVDjvoWSASm_J_l_l0QLLv42Yzyx1vcU1RX6py_GhbnnkmFcInd8MgxYKr6q3SBr50KG8apvDx4KM7TPvzK9yIJ7bYqoTKdA21iAjwqYkvoUZECqAW3Y=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM2Ky9kRwrq0uij69RIKQGNBeaK7u-voFf9gqPIACA9zg1kJm8zMWs-Z-ZTXIqS6fResMXuy-v50vIqS5Frmhfc89Hfi9HofPpGL4Cr26q5NRD89jaeB8A6z-L3LqGJGaDmSP_T-ko7-7fgeQJfZJowSbPvVPGAbkxRh1NQnoCMuZOWW7p3w_2dtCZd_iwgGLjN5pdC8CWZI_yg4CyVacYKvC-b5xuzwqY7M_nLhjJ_0PxHhsCwH2cjwuG5k0onsnfdMwqW-SohZ-rSgOQ1_oPTQItFVI04IEefL9T70XY1jQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMrYfCyycY1kbSg7MfHikBQLUgzgTiRigFVhcbA8aNgnOfgH4DRgmpcginh-9TeMly6z4KGFPl3HNU1CZL0QpLh910oQjLie86O4Aj9lo0IFGXRGsMvQlMewbrFE8rKmcR9Ukvd8PsBjBzxuk45nGvi5PFHUaEKZS9jq0F83h0YatMhtrZxhk3Wq7_azLoKLvPWTTqrzYDY6gDDyKyJkmgj7fo1A1x6GrE1FBIlyYwh2H2cCBlhlia4WyCV9g6jJCfYM2RPMPnFXhU7OjiA6UnbQAki0MSI9S8KrOvOWAvTC8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM5AVX-JbGeqO7efASOdeF1sBRyGQClVlZPJ2vdN1IwRkE78P7kLX3yK8sk1rtn4hGU6B4NOnNRr-RGDIW3oLL_42MP_WXT-9E3dMV5Ki8XTQ9O7zpXmVnbjMcLMmrfqG2amcJ9KiY3QWv-pw0w_wihdEbqCLPcnJHaFFKHBoJ8t2qRTxUHf8sv4ndfgH46oRb7vEYd0gh_uI-oJ0t8KAnoEC1OH_5XJK9o-gfgXO1O3txWtBH_S6q6xQhIlm5fSViXeGSYZ_ibhB_fMesbt1YScWS4WWACxfudUxI_QBn6ZI=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLLk8hM_bF4RD4bYsOl9L5bWi2qCz0L6DiYfXRzBkMuBa1ntikwp0z3BSvqjF5eHP5zu_TcXwgbFxuV2637nRIFoXN4MlDnlj2KSqN9EubIXQacOxQVinGldPrSR4VaMFpWPlm3gxjsYMroz84P0y-sonYp16_GQyLqK0Zpco830nlpo8phQGCp2Ti6m0iayMI1YXeBGykktwUAu9hFqlvvhlkHpt-JVgyDxNKmBEGgbSHZszs-e5em1HX0aHIR5l-ImfWY2aoswiOmBUaBMyAn5uOkMktKTtWXVPrjYjA_A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMIBiCKTu_p9kwlYO1eAIyscEq3O1Snxvq3aX6mKs3uJCHUvHwmEZ1oU43NgocS7hDFaExkfMgL7AE5YXXvH4c_bcZ-i0NtAEl8CnP07cNT4cL_hSyXuhJL1ld0ZvFFjmVc6WI404bDeirOUZNYSioV555xo2zrMyQWrZ_7CIjoknrYIptM5ZT8FPmSIRGdTtY0H08q4IOybzxlTfqTQz0vL0CU6JFMOfW2Mwf-bQ88Oz2U-3dWtAHPYnsZN3_RAKKXO5REFD-vNUi6AbEuKyo5NslZdSP5nSG8JlsY4eCnnU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM32dZKznqAamAB9v0bePamxRYW_Yh8of-ookhdK5xeOVw4UVP5K4QneAT5wHEkIOtLEsrEVkiNFN6zwA0bQMzewtDaZd4WzV8brO-irQI8HKbVdMiXli8NPEc-e3ea0fmtWGG0wcXkNm76C8aiS_bxnYtdzW3zveihltggjhgXJOBfvX2QpTaUZNXsV8rkghwrM6-YbJl4ieyS_9jqAUbGHZ0A7ZAZNSZ1KDT4FWL_4lDknukLJh9atKZEkjxVtluZcvfXvl5wCXN2SGglGL9q8r2xHLDHYUSnF2X2hpWIXk="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7616338,
+            "long": -73.9778136,
+            "name": "Museum of Modern Art",
+            "score": 9.98764116201725,
+            "id": "W__118476494",
+            "snippet": "One of the greatest and most popular collections of modern art, on a par with the Tate Modern in London or Paris's Centre Georges Pompidou.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMXS4UNuPAUHVKMQtAlN7ixaub71NOmsKrZpAJMd1k6_8nd_hWp7aqYh0JJxK4dHgnUaDTlVnLwO8ViF3rT7hHG2HKicGZWj2M5M9dpcFoFcymGZHU9jGYPYq0aG2PJxpvZI5JotjQbmWyQdQi-ju-Tj2RVDU6D84AboK94WatzeYbYWRdF9zzSsRkyVdT-Z_40NbnwAuLcX96cj3KfHMax_jal-h42SEVPiXUlZ_uxLkg47MuUcTMsN4Li3Jb13DibyVlr1OnzLMQL1aFJuq8BO-E2kZSIfqdgNke3zd4C6E=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvJ1zJrTyHwYiBip0hd883Z6KRYnKSr_v-9j9Wv88lgYWzlLBJmrLGsLypzUOekjLBS_NtxIoHURTx1FgSxPp-QVksF_iJjVqNB0RMuxaqthejkmawNhWoRn_HaYeiz4_N37hr2Qq35Js6N6BhgUbZkqTteD8MzqkAKN-cEYGlXt78lnhvCBS-Ga-r4cKbqoqdk6mq1s4cVuA4nH2grRy_fiHl7IEdv1m0JIan6zHbZc1d4__yh_LHFX9YkufUezqI-k1nfRBk2s4r2Dga7jZC79EiGQJpR8I10pc6oWgTeQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuw9RXX4Z7l9PwSKza9umFwqiTwLHB3Jsxa7w_AC3Fl2LLYYGHBSlxDeHqK3nUvhhT8KXCBmvJE0jQcpc6o6y9wHOkK5dMTDyvWSZVQVA4JQ_kcxV6ax_f0gEpf_4lXG9jjLLPlqzm24xpogucJYGA1xeRU_zLCUhxlNH4BB9z-xrdl6Eg90P39U3uy7nbCxpv9volY7plNOuRMXrezM44OD6vv6RunZeQdKyL8-SFiCSoZEaiLN3U3Rhk8fJX1JfKrIiIf_Iwou48LIgalgnWZsAg5DSSu77PgO0m8cUjPo=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMbQDdA4-0NwaoIoL1EReQZYcG64fR4NMkjs-fiRmwMgf1WCU4rIi2f3-hGgwm6rkWbSY4We7W1OzDK8xLbLFn-wxM8lCh2l6J1BhxftyCWiQEE0j2m4G6xzrvver6CRXrlexb1eXpoSj7XJ5QIWoioYL_5Rkq7uuFfOfWQBrxuBx5HXvT1eRs8uDdYz1rvR6vhUREY9yAy6_zA-QV5naYIXcr1jRgdYcJpBmrVjFMdB-fkJ_2DXIHD5M0t8WIdXz2zv1XUKAwQuK7sN8l4G2wugbH4zWK1yOLH5Z4DUAalWw=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMW1I4z69rhKpzk3WSMwayzWw4qSR2x8Q7gSJgoFPzMO65xrlwSIjpnbp2-D1QiPt5_qdl-mn8DZFPzrsecLnRc5D-uU7cSlx4rOZy1G8Ai_AjfdcoO1zqpRtOFsw5eNgEqZAJuUqy56NxSk5x96LFUBn5-iOsmHy9-rI3YNC5XxiAteJv89K7sCXIEK-h1BQCREG6OqJkexdTwiNUGDrz7PNp2Sry60-RpS7E-Ue_yaEIHVo6BzLBsRw-D0-wARSydJLN0FvQYEwPcb0foxm39H-J6F7JO4kB-OYSnEqg9Ds=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuLbd69UnuIiRuvfoFjL9--gB9Ah9v0_tBFqsPFanuZO2YlXG6per8FAp6OzvuUlNQV9R9V6W2_bHMFnZyRYbDexchTDf44R-kQxjM1aXbccTAFTDyUupntR32Rbr9VIjcfgbzETpq_lt2ECsVZ3ntmqpOjo6sBznXf2V2AXtghu_eQJx9_orJdoCzFnSssULllytU2DpgjMfsAtQiVGOtEbAn2-T2Gnkekvvq-__JeL2cEqBa7PSqBbjfNG8BFZwQ4mW44OOWdBDuQwNl2TfxBvx2lvuIKLpaRAChl9SfpU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMD0_q8U_H6MMkontgjMhjOgHxjp5BUe4NBWg3Yd5fuRZ555b69Kw9dIsHmzQulZfm1LaAO-LrQDrZSRkr2HgRsgvarzopghA-mlj3qjQjGeGeydmI3rlA2bPs2lyWONUEByKrZnEIqod5-nD4Lv0-oKai9kAx6dhudVSpKKpDWDHl0HNRg1jkeuY_WAHzXUr0ueoHYS6Xsy_JUH3rispsGRI2Bhqibivbz4IFqYp8j1F_YoIp87dyl3D4WCbuGPCwpmwfYVpQjsdbvNuM9n4zYZx2WodYhrea8rNWos5XJeg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMJ0EdN7j3_Iq0s4QO_B6IofyOgXN0GtG-uFlZubvfViOcbFzHfPVs7_QG9pd8V2Tvdjtziq8BPIZF8sLzPSgMvc123mPLjT2i0zIU-ICH3xzMojy9JlTiHLthIVblFA057lrEk9r_zpBkkuBDFPnMKT6ZaVDeUM90Uws0kDcZ2hKrlMVTMT0LVXU5xid58U3UdP5RZif5WUwHJPKOw1XJiZfbQeCdTSKMqA5h91i01qlcbLX6AhUYuZV-27ktwICDUHd_irq9isDai8UX3FP3rnZN91EBmWvndQepCUVrL0c=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvfhNgWPifitkQmoGdQ3a5puJdwbbE0uLhDkrg8DE9dY1hFN3D7aS68zay2Ssb6WWQtA2N9cCy1ifo06WHiAkfc3rZFbV378UQzEqnUnfl_-s9pSKMBU86vWiZHrVPK4hAXs5zLWu3g3sRRgxTsWqJ_0rOBh8V7smfwGD9CMN5pNO5eU_yVGS2W8PhA_Y4JGL6EgAHHWpeQU7p4FpfBVrDAxGFeAKX-u3uXbQTLJOPo0aRA8RB_9WpfXWrGc1lb89dmNopyQuXa2x5oAIdpez07tygbYBSSJL8csmDpnweI8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM1ig2eaZn4VrmjANzY_pw1xEHUt0jisGP6a-mPl940tDLjwDLSkGQB8hFh2lwsY2OYLgkCHq1YX7dKaWCIY5b0RlN1rF9RbphIa6uRBJCl45dR40MvTEKQ7gQjAvBCn_l3CLZNbHN1_uR7zo6guFOqTOK39x8qHGxcmdxA7q8IFQY3ZrfvbAQorGyqbDIZgQRmkZ2WBmI2shRYPL4vRp_hVMdH-1t9J40ASpQ1KY3QlON_fGz4XWdXWQQY5pDg20fXJKuSMtvlXT6eQN9M4sKRersmxsMOlCRFeOH1BfArdA="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.706124830328655,
+            "long": -73.99689784264993,
+            "name": "Brooklyn Bridge",
+            "score": 9.86701506842443,
+            "id": "Brooklyn_Bridge",
+            "snippet": "It was designated a National Historic Landmark in 1964 and a National Historic Civil Engineering Landmark by the American Society of Civil Engineers in 1972.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM_tdotnZq0Nf7RUGUpTnS3m1hNs-6SUOjvbECn5q9-vdjORwjIEquSHIwmJd3vDRR_ilFe4E4r64R-fP4XkDpHldVfzYH9qXVoq7p_Op82mrIMLJ3i7YbA6DCfwys_IQjCMSM_ZM_8o8hXt6I06RruL3rIhUb9Bb8IoMujCIYEhdGqgMSi3TgsRc65yDbdbRfWc2zeTDUqBcLn3FehivHsFF0DiC6bnnZqioeY9HnjZhNuFSPop0p5PcSaWqaLnNJlnTEzTFtWBrpBv8M7BZcNKAZvgnhi5DEjR1IgwXYQQQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM8p8mTuDNNFOrBaqCDaDmGMMaxuUqdSRE_SKtXWICn7PX4JKkFAN3z8Pmt55lZSp9JuDwY8Yq5JvR5PrEbKk0SY3dnrqHpoe27m8k2U6Of6GmSRTH7AufyL-NR-vCpOIMS50T3zwJtDk3ZKAsv5RaIzmzE7KMEq7nI4TF0Hxk50fKKT1ytwH3j4Ch8CeC3j-6WlHQD7eTJPPZD9Csx8p9S2258mCnP0uS0MxPJgfjodzPgmUfyZFNI32kexqfAr-Leb5fnltol6eHpAZxlfjqSg2lQIDEwS5DkgLrmFQCSus=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMY4KLvUdUdkNQ1zdpkkhs_xl-bvtNrXOtlA1Qh6pbEeN9xrr6quDYYaThcRIG3LqJNIiXUH5Jc2GeqyP8WIpaiVgy1EjMWiMLgyNWz729L0lIFdagJ_siSIVPngwcuB9jg6Y8E7KF-8vykSPR0OWcCPm220STO7cdjkLgoDFEwz5X3raFT1ugbSec-lkwPNutCCKcDsgWH4WbfkljQYBo4bf9dmPZHv4C_eS2AtFfSNg-vwoUmxPutAOg6WstgJxP9tLAQjb_lMnbGC8hyxACQoSE_MFFNieRgJlJfwNEmF0=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM4xF8dFzdsq5SPpYz8A7fIkMUsFXAK4Tunh1MbE6Td0kILyB65OAHoVoagMn8RqxAw92OYS166I1PKPfT15heZbHSnt9bE24FZAg6MJocsB2xBXSsdGVY9WYaVef6-NkJgT4vWN-vOvQ3kpq0lvCRRLbXL0Tkf21MZ2U9B_hinhqa2UYZSeiiSNqyCKEZt4I9ShxgH5xWW3Tf3rrW8aM26XdzEyFlmF-H3EctBdwlNMh4xVGY3VKNtGLlBTqmGmyQjzaM-h7VH1hC1Z17DVAxq9hHKJvB4fA8OMoEaBBPgBE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMeKukNL6Kvv4BRxPeiGWAEQYOQcuwwU8kQMtPK29-wu8-Rcdt_m0kcB9iNoth2sF-EbywSM3nxSrsVZxFrw7mxlO7xulWKrgwqxdHFdh1kI8Rd7nhUUnaMfdDueB7EbgBT-b1Dk5qgjbnDcr6srs_GDHavMzn7iDzOH3TaYaC-dyOKD1K4WqPLPOA4Dpuh6NsLP8POQh7eiHq0WogjXOgxOtOpTT7M_ivfaomp8-KVdymbW15oGp1yZ4RyaMuIMdzkbU7Qod6nh6zycKbLaG_igaFzT8eujkZfJt4ycR_RUU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLwCvOcBVEfVEbrMpfEcUBD3WbMO34SzOVH7IIR9EepD4aUkhkFlC9AS7e_Fb4Y5KgxwNwAj5MwXwqe8TDYNbUwFITkOEWQxdqADURgu225RHOI0WmDz7vBcWGycT04Lb8_euf3EygdmSM-yCGbszzIcWIE4vzFPg_ulSRUzW9Oe1mehyTUmdPHsPIyPtS1AOU67xYsJ4CBEqRsrd7vRxkWZ5M8ZDKAQ7VSNinl6DBoXZmADW-lL_qTDDX5XkhG7R2DASG2-Djcj6M5dyJcoVdnklnMEAUalf8p0LdcQQDKg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMQK-TQXPPizPkpXaLqRQmyMQ3uYtqjW_gEYZDai81D5atxsahsvqVZ9V3whefKsGcPhmMmRhrUijU_tuYQhKQhgDsQv1N86v_f_4IKK2cgzHaOoeOFBYWAxAAKIZ3N50h6Hj97xS4OZ1IKPuTKY-5Rsp14dHUYaoqZDrvcMsZTtcVetW-roU5Y_UOnni0jHOL8SAEktG7SwijMvcqNNhDitL6oZWRgdkKac7wcGNoTqxtbbPa4Wr5dWkAOhQR-XcIpbrbwqM5_MOMyt_k5fFILHE9iSukXTxaTKuZZKaB9M8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLCwvutRSdtyKbuzySR2As9BYn73-C7uLXg0V441TlrvR9Wb6JvJl1UQ9cfzrDahVc5-owZfNZsRCLptgxzrKiCo2Q5cXHJ35bP3d7dwBMFutvSDWmLlin2BUWvZ7F-WMQxu5HwDBO08sclbd1GSIF6UsobvJFtGyLt7lzNCv4D7BCW5MHttCMmk4NNXnCUrG2J8Ch03kW5QenCXqqKnKPx8HLPuL0YE64wut2VBBVzJVvPmc-kufar6IsUK3NOQEPMq_UaUtl_fc8PAgan5IK-J7IBtXA0yDzSvFN_fTDl4=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMp-QwDyC0Bdk7u8228d5297r8mbEwnH_MrpXUmx2YeThVlFZSikDBIqTEXJhHdSc6eKab1MmZrEU7MWVqB4YoM28obgLVCqUYWVhb34QmRWiIIRwH9EXigIhc0uequU6_7Iwvk7RpxWcl0OQd2a6YQVWNlhvwNnBR-4Mzok_TAh_vfDGjWZvPWKlyN5RPhvfLmfym9S3mhTfRH-aihKKo3ojcYMXiUmRMFzT1VScWNMt_rakDYLGBiEEUR5XoYhSz1Wi_Rj3i5AsArbI1N-q-jDls5d-rlVx2yC66Q08Fn-A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMSFsEARbcZqoKwuG4ntzjFCpBNKps58dAElpqQeQJAe2aj5BGjvj1VpzKw2_pVLI0Nz3iPWfs_hM1nIF9Y-DKFLA7wLZBP1Nf1x0cKOuJjQVVffwg9DD4RZJx3PaXaP0ZWtIiJNENEtR4zVQPjxwTr9FifQR-_07ACMTFPbHrwdwByhJCW9y41ucF2cmNca5Nkskk0KBBMn7hOypuNSpgDdCnWykMKEJ-nyA1BKvhsYCcA4nsSIjSi5Ur2_RwsvsKPnC-q9a4ElCXDfeP1rFmosdXE4mmBJt1dXnd-ye5uaQ="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.70316341136895,
+            "long": -73.99528710543053,
+            "name": "Bargemusic",
+            "score": 8.43191595847798,
+            "id": "Bargemusic",
+            "snippet": "A truly hidden gem.",
+            "img": [],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7036769,
+            "long": -73.9948035,
+            "name": "The River Café",
+            "score": 9.6121463991642,
+            "id": "N__1227678751",
+            "snippet": "Superb cocktails in a quite nice vibe.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMr9K4mBFHunomYghqlak11eSSlGIZKL-1_UlFqi80AAYSySUQS7uM8LcfhDwib3TGzZ28x-xmVCfiwkHog1rNPAdbeVa1s8M9oIgw0nzAGo5oA0kmRM2X4V7r8WXxeOs9hgmRa92jQ_xckTbt8Xk5MxeosqJ9rd12NXr2WSs2A51ASHM5prlCJOFFlNxrdaL01LtbZMnRagArKOtNszv3BEUnxBsFuSwfjnV3V6I7nznMZs63teLeob-6-5PDAugLotRbWLkZ42ih5KlDwHCGvL0yGasVq504UyrvpMrdqiQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMxa-Kk2CQku4rdnkA9xMpMpHwuhL5GDpbV7xaHXU8M2aqrlEtOpZ5KP2UAJSWj5VkjNneV39Mi_fovB_d8wRG1Jhi9yKAHCwv6GFzAyGPsDkg-OVT_NKILIsM3Wz07q5zpxmxIcztdfh7FAaKhv5mjAOCiNc1dAILnoWKWnMByXx0FcAsGKxG2QMYCHGOSTG4zZzfmEnZk6GDzFbz3n5OK4NBYXjUDZMxzWxI5PSY2Hme3ul0PxOMAWRjkCfllRaD6EWwiQ9K0I5rKXu3Wl9HCgEXudo3PXyOgRyjEobH6dM="
+            ],
+            "inPlan": true
+        }
+    ],
+    [
+        {
+            "lat": 40.759817643930866,
+            "long": -73.97927424753343,
+            "name": "Radio City Music Hall",
+            "score": 9.49979031538213,
+            "id": "W__118472379",
+            "snippet": "See the Rockettes, another show, or just tour the famous Art Deco masterpiece.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMmZUEm_ZigqulXZzuZ_NI66Rf2gGB7R_a_Ej-CK15pzqbWnqdkzm3G5J8u8atMVRytT-2Jw8zZwWSEeHhCGBiw6jvgLhyqkVszvqEi_yE_m2Oh8zhteKazhs2zYINRTQGeQ2LwMAF0w36JSst3wHioa6NCcwx4xkj7jU85-qNIZM_s9hJhJ9TN5l8czA21VoNMbc_DYXY23h2JfnGinYfZOSkxJI1qqPdhQxg3kbLUFqkQbmMQRbc63IfHl7acadw4rfa2jNeNJMfcThLWMSF9sZbd6-QNADeCe_hRjDRaQc=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMRes7WP0ku9ISoa9QR3Fv-8nQ032DRnbNC850MP_59DVnpYsoKwckbohpXF2KYyi0xPCORB05KHW401jV0U6YhZJfmtQYpq8AI5Ched34BZxHZADLnh6L2I-Za3WGpL9DItMbMbchTV0HePpuv7dUlxiOiqBJZVPuKcPZF6V8O7Wl6SLZQyXNtS4P8zONE0-L-06wCJ6uUWO8gm2HRhGcKSXna6H2XLsR04osqnuSaJ4yMZMyF3J8HqlZkliEmJ1PWno-AtkU7v_w08oBthYT6UXFll0OvKJtURnlSWtqMBk=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMnBSYV2kHHvnhcnkgJCqx9OMStgUeW-UJKGtfE_VkZlxOHLNnkdm4bC3HUw56zAhXawKz-VDzuOmDhRbIuHKKYXfwczrae7pL_Nh4L0wlkDh0riek7AeJdQt3oLPLXRlNI42CbMkCasgilNrLTfaQzElf0-G9lA32FQ2yrX0PgF1Vs0d7Mhg9dNsE5gHc4C-yGNNr5gAXaA3apSZY7a-XEKLY8gVwT49RNeATyK_Wg0OIix0kRGrVm3039qyqgUUY5EuCQvuiVaiunzng8w15phrZA2F7LPG9Z3xT8eThFRE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM6bteRbkqswGAYnASdUOMdHzlImEmMv3GsSXbQ-OUO20tx9gTXK4MwsieMvM7RP3LWOlt5VcB2jT6LIRhExv2znrF_faJWJOygJ0IBa3L2o0rlKHjDzDCh86-1izgrMLuf2IxquNiq1HRu8vwjKwQfWVvjY5e8eLMHaHm_T2nL2MDcVZmg5z5hFDkVDjvoWSASm_J_l_l0QLLv42Yzyx1vcU1RX6py_GhbnnkmFcInd8MgxYKr6q3SBr50KG8apvDx4KM7TPvzK9yIJ7bYqoTKdA21iAjwqYkvoUZECqAW3Y=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM2Ky9kRwrq0uij69RIKQGNBeaK7u-voFf9gqPIACA9zg1kJm8zMWs-Z-ZTXIqS6fResMXuy-v50vIqS5Frmhfc89Hfi9HofPpGL4Cr26q5NRD89jaeB8A6z-L3LqGJGaDmSP_T-ko7-7fgeQJfZJowSbPvVPGAbkxRh1NQnoCMuZOWW7p3w_2dtCZd_iwgGLjN5pdC8CWZI_yg4CyVacYKvC-b5xuzwqY7M_nLhjJ_0PxHhsCwH2cjwuG5k0onsnfdMwqW-SohZ-rSgOQ1_oPTQItFVI04IEefL9T70XY1jQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMrYfCyycY1kbSg7MfHikBQLUgzgTiRigFVhcbA8aNgnOfgH4DRgmpcginh-9TeMly6z4KGFPl3HNU1CZL0QpLh910oQjLie86O4Aj9lo0IFGXRGsMvQlMewbrFE8rKmcR9Ukvd8PsBjBzxuk45nGvi5PFHUaEKZS9jq0F83h0YatMhtrZxhk3Wq7_azLoKLvPWTTqrzYDY6gDDyKyJkmgj7fo1A1x6GrE1FBIlyYwh2H2cCBlhlia4WyCV9g6jJCfYM2RPMPnFXhU7OjiA6UnbQAki0MSI9S8KrOvOWAvTC8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM5AVX-JbGeqO7efASOdeF1sBRyGQClVlZPJ2vdN1IwRkE78P7kLX3yK8sk1rtn4hGU6B4NOnNRr-RGDIW3oLL_42MP_WXT-9E3dMV5Ki8XTQ9O7zpXmVnbjMcLMmrfqG2amcJ9KiY3QWv-pw0w_wihdEbqCLPcnJHaFFKHBoJ8t2qRTxUHf8sv4ndfgH46oRb7vEYd0gh_uI-oJ0t8KAnoEC1OH_5XJK9o-gfgXO1O3txWtBH_S6q6xQhIlm5fSViXeGSYZ_ibhB_fMesbt1YScWS4WWACxfudUxI_QBn6ZI=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLLk8hM_bF4RD4bYsOl9L5bWi2qCz0L6DiYfXRzBkMuBa1ntikwp0z3BSvqjF5eHP5zu_TcXwgbFxuV2637nRIFoXN4MlDnlj2KSqN9EubIXQacOxQVinGldPrSR4VaMFpWPlm3gxjsYMroz84P0y-sonYp16_GQyLqK0Zpco830nlpo8phQGCp2Ti6m0iayMI1YXeBGykktwUAu9hFqlvvhlkHpt-JVgyDxNKmBEGgbSHZszs-e5em1HX0aHIR5l-ImfWY2aoswiOmBUaBMyAn5uOkMktKTtWXVPrjYjA_A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMIBiCKTu_p9kwlYO1eAIyscEq3O1Snxvq3aX6mKs3uJCHUvHwmEZ1oU43NgocS7hDFaExkfMgL7AE5YXXvH4c_bcZ-i0NtAEl8CnP07cNT4cL_hSyXuhJL1ld0ZvFFjmVc6WI404bDeirOUZNYSioV555xo2zrMyQWrZ_7CIjoknrYIptM5ZT8FPmSIRGdTtY0H08q4IOybzxlTfqTQz0vL0CU6JFMOfW2Mwf-bQ88Oz2U-3dWtAHPYnsZN3_RAKKXO5REFD-vNUi6AbEuKyo5NslZdSP5nSG8JlsY4eCnnU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM32dZKznqAamAB9v0bePamxRYW_Yh8of-ookhdK5xeOVw4UVP5K4QneAT5wHEkIOtLEsrEVkiNFN6zwA0bQMzewtDaZd4WzV8brO-irQI8HKbVdMiXli8NPEc-e3ea0fmtWGG0wcXkNm76C8aiS_bxnYtdzW3zveihltggjhgXJOBfvX2QpTaUZNXsV8rkghwrM6-YbJl4ieyS_9jqAUbGHZ0A7ZAZNSZ1KDT4FWL_4lDknukLJh9atKZEkjxVtluZcvfXvl5wCXN2SGglGL9q8r2xHLDHYUSnF2X2hpWIXk="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7616338,
+            "long": -73.9778136,
+            "name": "Museum of Modern Art",
+            "score": 9.98764116201725,
+            "id": "W__118476494",
+            "snippet": "One of the greatest and most popular collections of modern art, on a par with the Tate Modern in London or Paris's Centre Georges Pompidou.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMXS4UNuPAUHVKMQtAlN7ixaub71NOmsKrZpAJMd1k6_8nd_hWp7aqYh0JJxK4dHgnUaDTlVnLwO8ViF3rT7hHG2HKicGZWj2M5M9dpcFoFcymGZHU9jGYPYq0aG2PJxpvZI5JotjQbmWyQdQi-ju-Tj2RVDU6D84AboK94WatzeYbYWRdF9zzSsRkyVdT-Z_40NbnwAuLcX96cj3KfHMax_jal-h42SEVPiXUlZ_uxLkg47MuUcTMsN4Li3Jb13DibyVlr1OnzLMQL1aFJuq8BO-E2kZSIfqdgNke3zd4C6E=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvJ1zJrTyHwYiBip0hd883Z6KRYnKSr_v-9j9Wv88lgYWzlLBJmrLGsLypzUOekjLBS_NtxIoHURTx1FgSxPp-QVksF_iJjVqNB0RMuxaqthejkmawNhWoRn_HaYeiz4_N37hr2Qq35Js6N6BhgUbZkqTteD8MzqkAKN-cEYGlXt78lnhvCBS-Ga-r4cKbqoqdk6mq1s4cVuA4nH2grRy_fiHl7IEdv1m0JIan6zHbZc1d4__yh_LHFX9YkufUezqI-k1nfRBk2s4r2Dga7jZC79EiGQJpR8I10pc6oWgTeQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuw9RXX4Z7l9PwSKza9umFwqiTwLHB3Jsxa7w_AC3Fl2LLYYGHBSlxDeHqK3nUvhhT8KXCBmvJE0jQcpc6o6y9wHOkK5dMTDyvWSZVQVA4JQ_kcxV6ax_f0gEpf_4lXG9jjLLPlqzm24xpogucJYGA1xeRU_zLCUhxlNH4BB9z-xrdl6Eg90P39U3uy7nbCxpv9volY7plNOuRMXrezM44OD6vv6RunZeQdKyL8-SFiCSoZEaiLN3U3Rhk8fJX1JfKrIiIf_Iwou48LIgalgnWZsAg5DSSu77PgO0m8cUjPo=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMbQDdA4-0NwaoIoL1EReQZYcG64fR4NMkjs-fiRmwMgf1WCU4rIi2f3-hGgwm6rkWbSY4We7W1OzDK8xLbLFn-wxM8lCh2l6J1BhxftyCWiQEE0j2m4G6xzrvver6CRXrlexb1eXpoSj7XJ5QIWoioYL_5Rkq7uuFfOfWQBrxuBx5HXvT1eRs8uDdYz1rvR6vhUREY9yAy6_zA-QV5naYIXcr1jRgdYcJpBmrVjFMdB-fkJ_2DXIHD5M0t8WIdXz2zv1XUKAwQuK7sN8l4G2wugbH4zWK1yOLH5Z4DUAalWw=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMW1I4z69rhKpzk3WSMwayzWw4qSR2x8Q7gSJgoFPzMO65xrlwSIjpnbp2-D1QiPt5_qdl-mn8DZFPzrsecLnRc5D-uU7cSlx4rOZy1G8Ai_AjfdcoO1zqpRtOFsw5eNgEqZAJuUqy56NxSk5x96LFUBn5-iOsmHy9-rI3YNC5XxiAteJv89K7sCXIEK-h1BQCREG6OqJkexdTwiNUGDrz7PNp2Sry60-RpS7E-Ue_yaEIHVo6BzLBsRw-D0-wARSydJLN0FvQYEwPcb0foxm39H-J6F7JO4kB-OYSnEqg9Ds=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuLbd69UnuIiRuvfoFjL9--gB9Ah9v0_tBFqsPFanuZO2YlXG6per8FAp6OzvuUlNQV9R9V6W2_bHMFnZyRYbDexchTDf44R-kQxjM1aXbccTAFTDyUupntR32Rbr9VIjcfgbzETpq_lt2ECsVZ3ntmqpOjo6sBznXf2V2AXtghu_eQJx9_orJdoCzFnSssULllytU2DpgjMfsAtQiVGOtEbAn2-T2Gnkekvvq-__JeL2cEqBa7PSqBbjfNG8BFZwQ4mW44OOWdBDuQwNl2TfxBvx2lvuIKLpaRAChl9SfpU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMD0_q8U_H6MMkontgjMhjOgHxjp5BUe4NBWg3Yd5fuRZ555b69Kw9dIsHmzQulZfm1LaAO-LrQDrZSRkr2HgRsgvarzopghA-mlj3qjQjGeGeydmI3rlA2bPs2lyWONUEByKrZnEIqod5-nD4Lv0-oKai9kAx6dhudVSpKKpDWDHl0HNRg1jkeuY_WAHzXUr0ueoHYS6Xsy_JUH3rispsGRI2Bhqibivbz4IFqYp8j1F_YoIp87dyl3D4WCbuGPCwpmwfYVpQjsdbvNuM9n4zYZx2WodYhrea8rNWos5XJeg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMJ0EdN7j3_Iq0s4QO_B6IofyOgXN0GtG-uFlZubvfViOcbFzHfPVs7_QG9pd8V2Tvdjtziq8BPIZF8sLzPSgMvc123mPLjT2i0zIU-ICH3xzMojy9JlTiHLthIVblFA057lrEk9r_zpBkkuBDFPnMKT6ZaVDeUM90Uws0kDcZ2hKrlMVTMT0LVXU5xid58U3UdP5RZif5WUwHJPKOw1XJiZfbQeCdTSKMqA5h91i01qlcbLX6AhUYuZV-27ktwICDUHd_irq9isDai8UX3FP3rnZN91EBmWvndQepCUVrL0c=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvfhNgWPifitkQmoGdQ3a5puJdwbbE0uLhDkrg8DE9dY1hFN3D7aS68zay2Ssb6WWQtA2N9cCy1ifo06WHiAkfc3rZFbV378UQzEqnUnfl_-s9pSKMBU86vWiZHrVPK4hAXs5zLWu3g3sRRgxTsWqJ_0rOBh8V7smfwGD9CMN5pNO5eU_yVGS2W8PhA_Y4JGL6EgAHHWpeQU7p4FpfBVrDAxGFeAKX-u3uXbQTLJOPo0aRA8RB_9WpfXWrGc1lb89dmNopyQuXa2x5oAIdpez07tygbYBSSJL8csmDpnweI8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM1ig2eaZn4VrmjANzY_pw1xEHUt0jisGP6a-mPl940tDLjwDLSkGQB8hFh2lwsY2OYLgkCHq1YX7dKaWCIY5b0RlN1rF9RbphIa6uRBJCl45dR40MvTEKQ7gQjAvBCn_l3CLZNbHN1_uR7zo6guFOqTOK39x8qHGxcmdxA7q8IFQY3ZrfvbAQorGyqbDIZgQRmkZ2WBmI2shRYPL4vRp_hVMdH-1t9J40ASpQ1KY3QlON_fGz4XWdXWQQY5pDg20fXJKuSMtvlXT6eQN9M4sKRersmxsMOlCRFeOH1BfArdA="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.706124830328655,
+            "long": -73.99689784264993,
+            "name": "Brooklyn Bridge",
+            "score": 9.86701506842443,
+            "id": "Brooklyn_Bridge",
+            "snippet": "It was designated a National Historic Landmark in 1964 and a National Historic Civil Engineering Landmark by the American Society of Civil Engineers in 1972.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM_tdotnZq0Nf7RUGUpTnS3m1hNs-6SUOjvbECn5q9-vdjORwjIEquSHIwmJd3vDRR_ilFe4E4r64R-fP4XkDpHldVfzYH9qXVoq7p_Op82mrIMLJ3i7YbA6DCfwys_IQjCMSM_ZM_8o8hXt6I06RruL3rIhUb9Bb8IoMujCIYEhdGqgMSi3TgsRc65yDbdbRfWc2zeTDUqBcLn3FehivHsFF0DiC6bnnZqioeY9HnjZhNuFSPop0p5PcSaWqaLnNJlnTEzTFtWBrpBv8M7BZcNKAZvgnhi5DEjR1IgwXYQQQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM8p8mTuDNNFOrBaqCDaDmGMMaxuUqdSRE_SKtXWICn7PX4JKkFAN3z8Pmt55lZSp9JuDwY8Yq5JvR5PrEbKk0SY3dnrqHpoe27m8k2U6Of6GmSRTH7AufyL-NR-vCpOIMS50T3zwJtDk3ZKAsv5RaIzmzE7KMEq7nI4TF0Hxk50fKKT1ytwH3j4Ch8CeC3j-6WlHQD7eTJPPZD9Csx8p9S2258mCnP0uS0MxPJgfjodzPgmUfyZFNI32kexqfAr-Leb5fnltol6eHpAZxlfjqSg2lQIDEwS5DkgLrmFQCSus=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMY4KLvUdUdkNQ1zdpkkhs_xl-bvtNrXOtlA1Qh6pbEeN9xrr6quDYYaThcRIG3LqJNIiXUH5Jc2GeqyP8WIpaiVgy1EjMWiMLgyNWz729L0lIFdagJ_siSIVPngwcuB9jg6Y8E7KF-8vykSPR0OWcCPm220STO7cdjkLgoDFEwz5X3raFT1ugbSec-lkwPNutCCKcDsgWH4WbfkljQYBo4bf9dmPZHv4C_eS2AtFfSNg-vwoUmxPutAOg6WstgJxP9tLAQjb_lMnbGC8hyxACQoSE_MFFNieRgJlJfwNEmF0=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM4xF8dFzdsq5SPpYz8A7fIkMUsFXAK4Tunh1MbE6Td0kILyB65OAHoVoagMn8RqxAw92OYS166I1PKPfT15heZbHSnt9bE24FZAg6MJocsB2xBXSsdGVY9WYaVef6-NkJgT4vWN-vOvQ3kpq0lvCRRLbXL0Tkf21MZ2U9B_hinhqa2UYZSeiiSNqyCKEZt4I9ShxgH5xWW3Tf3rrW8aM26XdzEyFlmF-H3EctBdwlNMh4xVGY3VKNtGLlBTqmGmyQjzaM-h7VH1hC1Z17DVAxq9hHKJvB4fA8OMoEaBBPgBE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMeKukNL6Kvv4BRxPeiGWAEQYOQcuwwU8kQMtPK29-wu8-Rcdt_m0kcB9iNoth2sF-EbywSM3nxSrsVZxFrw7mxlO7xulWKrgwqxdHFdh1kI8Rd7nhUUnaMfdDueB7EbgBT-b1Dk5qgjbnDcr6srs_GDHavMzn7iDzOH3TaYaC-dyOKD1K4WqPLPOA4Dpuh6NsLP8POQh7eiHq0WogjXOgxOtOpTT7M_ivfaomp8-KVdymbW15oGp1yZ4RyaMuIMdzkbU7Qod6nh6zycKbLaG_igaFzT8eujkZfJt4ycR_RUU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLwCvOcBVEfVEbrMpfEcUBD3WbMO34SzOVH7IIR9EepD4aUkhkFlC9AS7e_Fb4Y5KgxwNwAj5MwXwqe8TDYNbUwFITkOEWQxdqADURgu225RHOI0WmDz7vBcWGycT04Lb8_euf3EygdmSM-yCGbszzIcWIE4vzFPg_ulSRUzW9Oe1mehyTUmdPHsPIyPtS1AOU67xYsJ4CBEqRsrd7vRxkWZ5M8ZDKAQ7VSNinl6DBoXZmADW-lL_qTDDX5XkhG7R2DASG2-Djcj6M5dyJcoVdnklnMEAUalf8p0LdcQQDKg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMQK-TQXPPizPkpXaLqRQmyMQ3uYtqjW_gEYZDai81D5atxsahsvqVZ9V3whefKsGcPhmMmRhrUijU_tuYQhKQhgDsQv1N86v_f_4IKK2cgzHaOoeOFBYWAxAAKIZ3N50h6Hj97xS4OZ1IKPuTKY-5Rsp14dHUYaoqZDrvcMsZTtcVetW-roU5Y_UOnni0jHOL8SAEktG7SwijMvcqNNhDitL6oZWRgdkKac7wcGNoTqxtbbPa4Wr5dWkAOhQR-XcIpbrbwqM5_MOMyt_k5fFILHE9iSukXTxaTKuZZKaB9M8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLCwvutRSdtyKbuzySR2As9BYn73-C7uLXg0V441TlrvR9Wb6JvJl1UQ9cfzrDahVc5-owZfNZsRCLptgxzrKiCo2Q5cXHJ35bP3d7dwBMFutvSDWmLlin2BUWvZ7F-WMQxu5HwDBO08sclbd1GSIF6UsobvJFtGyLt7lzNCv4D7BCW5MHttCMmk4NNXnCUrG2J8Ch03kW5QenCXqqKnKPx8HLPuL0YE64wut2VBBVzJVvPmc-kufar6IsUK3NOQEPMq_UaUtl_fc8PAgan5IK-J7IBtXA0yDzSvFN_fTDl4=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMp-QwDyC0Bdk7u8228d5297r8mbEwnH_MrpXUmx2YeThVlFZSikDBIqTEXJhHdSc6eKab1MmZrEU7MWVqB4YoM28obgLVCqUYWVhb34QmRWiIIRwH9EXigIhc0uequU6_7Iwvk7RpxWcl0OQd2a6YQVWNlhvwNnBR-4Mzok_TAh_vfDGjWZvPWKlyN5RPhvfLmfym9S3mhTfRH-aihKKo3ojcYMXiUmRMFzT1VScWNMt_rakDYLGBiEEUR5XoYhSz1Wi_Rj3i5AsArbI1N-q-jDls5d-rlVx2yC66Q08Fn-A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMSFsEARbcZqoKwuG4ntzjFCpBNKps58dAElpqQeQJAe2aj5BGjvj1VpzKw2_pVLI0Nz3iPWfs_hM1nIF9Y-DKFLA7wLZBP1Nf1x0cKOuJjQVVffwg9DD4RZJx3PaXaP0ZWtIiJNENEtR4zVQPjxwTr9FifQR-_07ACMTFPbHrwdwByhJCW9y41ucF2cmNca5Nkskk0KBBMn7hOypuNSpgDdCnWykMKEJ-nyA1BKvhsYCcA4nsSIjSi5Ur2_RwsvsKPnC-q9a4ElCXDfeP1rFmosdXE4mmBJt1dXnd-ye5uaQ="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.70316341136895,
+            "long": -73.99528710543053,
+            "name": "Bargemusic",
+            "score": 8.43191595847798,
+            "id": "Bargemusic",
+            "snippet": "A truly hidden gem.",
+            "img": [],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7036769,
+            "long": -73.9948035,
+            "name": "The River Café",
+            "score": 9.6121463991642,
+            "id": "N__1227678751",
+            "snippet": "Superb cocktails in a quite nice vibe.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMr9K4mBFHunomYghqlak11eSSlGIZKL-1_UlFqi80AAYSySUQS7uM8LcfhDwib3TGzZ28x-xmVCfiwkHog1rNPAdbeVa1s8M9oIgw0nzAGo5oA0kmRM2X4V7r8WXxeOs9hgmRa92jQ_xckTbt8Xk5MxeosqJ9rd12NXr2WSs2A51ASHM5prlCJOFFlNxrdaL01LtbZMnRagArKOtNszv3BEUnxBsFuSwfjnV3V6I7nznMZs63teLeob-6-5PDAugLotRbWLkZ42ih5KlDwHCGvL0yGasVq504UyrvpMrdqiQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMxa-Kk2CQku4rdnkA9xMpMpHwuhL5GDpbV7xaHXU8M2aqrlEtOpZ5KP2UAJSWj5VkjNneV39Mi_fovB_d8wRG1Jhi9yKAHCwv6GFzAyGPsDkg-OVT_NKILIsM3Wz07q5zpxmxIcztdfh7FAaKhv5mjAOCiNc1dAILnoWKWnMByXx0FcAsGKxG2QMYCHGOSTG4zZzfmEnZk6GDzFbz3n5OK4NBYXjUDZMxzWxI5PSY2Hme3ul0PxOMAWRjkCfllRaD6EWwiQ9K0I5rKXu3Wl9HCgEXudo3PXyOgRyjEobH6dM="
+            ],
+            "inPlan": true
+        }
+    ],
+    [
+        {
+            "lat": 40.759817643930866,
+            "long": -73.97927424753343,
+            "name": "Radio City Music Hall",
+            "score": 9.49979031538213,
+            "id": "W__118472379",
+            "snippet": "See the Rockettes, another show, or just tour the famous Art Deco masterpiece.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMmZUEm_ZigqulXZzuZ_NI66Rf2gGB7R_a_Ej-CK15pzqbWnqdkzm3G5J8u8atMVRytT-2Jw8zZwWSEeHhCGBiw6jvgLhyqkVszvqEi_yE_m2Oh8zhteKazhs2zYINRTQGeQ2LwMAF0w36JSst3wHioa6NCcwx4xkj7jU85-qNIZM_s9hJhJ9TN5l8czA21VoNMbc_DYXY23h2JfnGinYfZOSkxJI1qqPdhQxg3kbLUFqkQbmMQRbc63IfHl7acadw4rfa2jNeNJMfcThLWMSF9sZbd6-QNADeCe_hRjDRaQc=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMRes7WP0ku9ISoa9QR3Fv-8nQ032DRnbNC850MP_59DVnpYsoKwckbohpXF2KYyi0xPCORB05KHW401jV0U6YhZJfmtQYpq8AI5Ched34BZxHZADLnh6L2I-Za3WGpL9DItMbMbchTV0HePpuv7dUlxiOiqBJZVPuKcPZF6V8O7Wl6SLZQyXNtS4P8zONE0-L-06wCJ6uUWO8gm2HRhGcKSXna6H2XLsR04osqnuSaJ4yMZMyF3J8HqlZkliEmJ1PWno-AtkU7v_w08oBthYT6UXFll0OvKJtURnlSWtqMBk=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMnBSYV2kHHvnhcnkgJCqx9OMStgUeW-UJKGtfE_VkZlxOHLNnkdm4bC3HUw56zAhXawKz-VDzuOmDhRbIuHKKYXfwczrae7pL_Nh4L0wlkDh0riek7AeJdQt3oLPLXRlNI42CbMkCasgilNrLTfaQzElf0-G9lA32FQ2yrX0PgF1Vs0d7Mhg9dNsE5gHc4C-yGNNr5gAXaA3apSZY7a-XEKLY8gVwT49RNeATyK_Wg0OIix0kRGrVm3039qyqgUUY5EuCQvuiVaiunzng8w15phrZA2F7LPG9Z3xT8eThFRE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM6bteRbkqswGAYnASdUOMdHzlImEmMv3GsSXbQ-OUO20tx9gTXK4MwsieMvM7RP3LWOlt5VcB2jT6LIRhExv2znrF_faJWJOygJ0IBa3L2o0rlKHjDzDCh86-1izgrMLuf2IxquNiq1HRu8vwjKwQfWVvjY5e8eLMHaHm_T2nL2MDcVZmg5z5hFDkVDjvoWSASm_J_l_l0QLLv42Yzyx1vcU1RX6py_GhbnnkmFcInd8MgxYKr6q3SBr50KG8apvDx4KM7TPvzK9yIJ7bYqoTKdA21iAjwqYkvoUZECqAW3Y=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM2Ky9kRwrq0uij69RIKQGNBeaK7u-voFf9gqPIACA9zg1kJm8zMWs-Z-ZTXIqS6fResMXuy-v50vIqS5Frmhfc89Hfi9HofPpGL4Cr26q5NRD89jaeB8A6z-L3LqGJGaDmSP_T-ko7-7fgeQJfZJowSbPvVPGAbkxRh1NQnoCMuZOWW7p3w_2dtCZd_iwgGLjN5pdC8CWZI_yg4CyVacYKvC-b5xuzwqY7M_nLhjJ_0PxHhsCwH2cjwuG5k0onsnfdMwqW-SohZ-rSgOQ1_oPTQItFVI04IEefL9T70XY1jQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMrYfCyycY1kbSg7MfHikBQLUgzgTiRigFVhcbA8aNgnOfgH4DRgmpcginh-9TeMly6z4KGFPl3HNU1CZL0QpLh910oQjLie86O4Aj9lo0IFGXRGsMvQlMewbrFE8rKmcR9Ukvd8PsBjBzxuk45nGvi5PFHUaEKZS9jq0F83h0YatMhtrZxhk3Wq7_azLoKLvPWTTqrzYDY6gDDyKyJkmgj7fo1A1x6GrE1FBIlyYwh2H2cCBlhlia4WyCV9g6jJCfYM2RPMPnFXhU7OjiA6UnbQAki0MSI9S8KrOvOWAvTC8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM5AVX-JbGeqO7efASOdeF1sBRyGQClVlZPJ2vdN1IwRkE78P7kLX3yK8sk1rtn4hGU6B4NOnNRr-RGDIW3oLL_42MP_WXT-9E3dMV5Ki8XTQ9O7zpXmVnbjMcLMmrfqG2amcJ9KiY3QWv-pw0w_wihdEbqCLPcnJHaFFKHBoJ8t2qRTxUHf8sv4ndfgH46oRb7vEYd0gh_uI-oJ0t8KAnoEC1OH_5XJK9o-gfgXO1O3txWtBH_S6q6xQhIlm5fSViXeGSYZ_ibhB_fMesbt1YScWS4WWACxfudUxI_QBn6ZI=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLLk8hM_bF4RD4bYsOl9L5bWi2qCz0L6DiYfXRzBkMuBa1ntikwp0z3BSvqjF5eHP5zu_TcXwgbFxuV2637nRIFoXN4MlDnlj2KSqN9EubIXQacOxQVinGldPrSR4VaMFpWPlm3gxjsYMroz84P0y-sonYp16_GQyLqK0Zpco830nlpo8phQGCp2Ti6m0iayMI1YXeBGykktwUAu9hFqlvvhlkHpt-JVgyDxNKmBEGgbSHZszs-e5em1HX0aHIR5l-ImfWY2aoswiOmBUaBMyAn5uOkMktKTtWXVPrjYjA_A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMIBiCKTu_p9kwlYO1eAIyscEq3O1Snxvq3aX6mKs3uJCHUvHwmEZ1oU43NgocS7hDFaExkfMgL7AE5YXXvH4c_bcZ-i0NtAEl8CnP07cNT4cL_hSyXuhJL1ld0ZvFFjmVc6WI404bDeirOUZNYSioV555xo2zrMyQWrZ_7CIjoknrYIptM5ZT8FPmSIRGdTtY0H08q4IOybzxlTfqTQz0vL0CU6JFMOfW2Mwf-bQ88Oz2U-3dWtAHPYnsZN3_RAKKXO5REFD-vNUi6AbEuKyo5NslZdSP5nSG8JlsY4eCnnU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM32dZKznqAamAB9v0bePamxRYW_Yh8of-ookhdK5xeOVw4UVP5K4QneAT5wHEkIOtLEsrEVkiNFN6zwA0bQMzewtDaZd4WzV8brO-irQI8HKbVdMiXli8NPEc-e3ea0fmtWGG0wcXkNm76C8aiS_bxnYtdzW3zveihltggjhgXJOBfvX2QpTaUZNXsV8rkghwrM6-YbJl4ieyS_9jqAUbGHZ0A7ZAZNSZ1KDT4FWL_4lDknukLJh9atKZEkjxVtluZcvfXvl5wCXN2SGglGL9q8r2xHLDHYUSnF2X2hpWIXk="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7616338,
+            "long": -73.9778136,
+            "name": "Museum of Modern Art",
+            "score": 9.98764116201725,
+            "id": "W__118476494",
+            "snippet": "One of the greatest and most popular collections of modern art, on a par with the Tate Modern in London or Paris's Centre Georges Pompidou.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMXS4UNuPAUHVKMQtAlN7ixaub71NOmsKrZpAJMd1k6_8nd_hWp7aqYh0JJxK4dHgnUaDTlVnLwO8ViF3rT7hHG2HKicGZWj2M5M9dpcFoFcymGZHU9jGYPYq0aG2PJxpvZI5JotjQbmWyQdQi-ju-Tj2RVDU6D84AboK94WatzeYbYWRdF9zzSsRkyVdT-Z_40NbnwAuLcX96cj3KfHMax_jal-h42SEVPiXUlZ_uxLkg47MuUcTMsN4Li3Jb13DibyVlr1OnzLMQL1aFJuq8BO-E2kZSIfqdgNke3zd4C6E=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvJ1zJrTyHwYiBip0hd883Z6KRYnKSr_v-9j9Wv88lgYWzlLBJmrLGsLypzUOekjLBS_NtxIoHURTx1FgSxPp-QVksF_iJjVqNB0RMuxaqthejkmawNhWoRn_HaYeiz4_N37hr2Qq35Js6N6BhgUbZkqTteD8MzqkAKN-cEYGlXt78lnhvCBS-Ga-r4cKbqoqdk6mq1s4cVuA4nH2grRy_fiHl7IEdv1m0JIan6zHbZc1d4__yh_LHFX9YkufUezqI-k1nfRBk2s4r2Dga7jZC79EiGQJpR8I10pc6oWgTeQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuw9RXX4Z7l9PwSKza9umFwqiTwLHB3Jsxa7w_AC3Fl2LLYYGHBSlxDeHqK3nUvhhT8KXCBmvJE0jQcpc6o6y9wHOkK5dMTDyvWSZVQVA4JQ_kcxV6ax_f0gEpf_4lXG9jjLLPlqzm24xpogucJYGA1xeRU_zLCUhxlNH4BB9z-xrdl6Eg90P39U3uy7nbCxpv9volY7plNOuRMXrezM44OD6vv6RunZeQdKyL8-SFiCSoZEaiLN3U3Rhk8fJX1JfKrIiIf_Iwou48LIgalgnWZsAg5DSSu77PgO0m8cUjPo=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMbQDdA4-0NwaoIoL1EReQZYcG64fR4NMkjs-fiRmwMgf1WCU4rIi2f3-hGgwm6rkWbSY4We7W1OzDK8xLbLFn-wxM8lCh2l6J1BhxftyCWiQEE0j2m4G6xzrvver6CRXrlexb1eXpoSj7XJ5QIWoioYL_5Rkq7uuFfOfWQBrxuBx5HXvT1eRs8uDdYz1rvR6vhUREY9yAy6_zA-QV5naYIXcr1jRgdYcJpBmrVjFMdB-fkJ_2DXIHD5M0t8WIdXz2zv1XUKAwQuK7sN8l4G2wugbH4zWK1yOLH5Z4DUAalWw=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMW1I4z69rhKpzk3WSMwayzWw4qSR2x8Q7gSJgoFPzMO65xrlwSIjpnbp2-D1QiPt5_qdl-mn8DZFPzrsecLnRc5D-uU7cSlx4rOZy1G8Ai_AjfdcoO1zqpRtOFsw5eNgEqZAJuUqy56NxSk5x96LFUBn5-iOsmHy9-rI3YNC5XxiAteJv89K7sCXIEK-h1BQCREG6OqJkexdTwiNUGDrz7PNp2Sry60-RpS7E-Ue_yaEIHVo6BzLBsRw-D0-wARSydJLN0FvQYEwPcb0foxm39H-J6F7JO4kB-OYSnEqg9Ds=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuLbd69UnuIiRuvfoFjL9--gB9Ah9v0_tBFqsPFanuZO2YlXG6per8FAp6OzvuUlNQV9R9V6W2_bHMFnZyRYbDexchTDf44R-kQxjM1aXbccTAFTDyUupntR32Rbr9VIjcfgbzETpq_lt2ECsVZ3ntmqpOjo6sBznXf2V2AXtghu_eQJx9_orJdoCzFnSssULllytU2DpgjMfsAtQiVGOtEbAn2-T2Gnkekvvq-__JeL2cEqBa7PSqBbjfNG8BFZwQ4mW44OOWdBDuQwNl2TfxBvx2lvuIKLpaRAChl9SfpU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMD0_q8U_H6MMkontgjMhjOgHxjp5BUe4NBWg3Yd5fuRZ555b69Kw9dIsHmzQulZfm1LaAO-LrQDrZSRkr2HgRsgvarzopghA-mlj3qjQjGeGeydmI3rlA2bPs2lyWONUEByKrZnEIqod5-nD4Lv0-oKai9kAx6dhudVSpKKpDWDHl0HNRg1jkeuY_WAHzXUr0ueoHYS6Xsy_JUH3rispsGRI2Bhqibivbz4IFqYp8j1F_YoIp87dyl3D4WCbuGPCwpmwfYVpQjsdbvNuM9n4zYZx2WodYhrea8rNWos5XJeg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMJ0EdN7j3_Iq0s4QO_B6IofyOgXN0GtG-uFlZubvfViOcbFzHfPVs7_QG9pd8V2Tvdjtziq8BPIZF8sLzPSgMvc123mPLjT2i0zIU-ICH3xzMojy9JlTiHLthIVblFA057lrEk9r_zpBkkuBDFPnMKT6ZaVDeUM90Uws0kDcZ2hKrlMVTMT0LVXU5xid58U3UdP5RZif5WUwHJPKOw1XJiZfbQeCdTSKMqA5h91i01qlcbLX6AhUYuZV-27ktwICDUHd_irq9isDai8UX3FP3rnZN91EBmWvndQepCUVrL0c=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvfhNgWPifitkQmoGdQ3a5puJdwbbE0uLhDkrg8DE9dY1hFN3D7aS68zay2Ssb6WWQtA2N9cCy1ifo06WHiAkfc3rZFbV378UQzEqnUnfl_-s9pSKMBU86vWiZHrVPK4hAXs5zLWu3g3sRRgxTsWqJ_0rOBh8V7smfwGD9CMN5pNO5eU_yVGS2W8PhA_Y4JGL6EgAHHWpeQU7p4FpfBVrDAxGFeAKX-u3uXbQTLJOPo0aRA8RB_9WpfXWrGc1lb89dmNopyQuXa2x5oAIdpez07tygbYBSSJL8csmDpnweI8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM1ig2eaZn4VrmjANzY_pw1xEHUt0jisGP6a-mPl940tDLjwDLSkGQB8hFh2lwsY2OYLgkCHq1YX7dKaWCIY5b0RlN1rF9RbphIa6uRBJCl45dR40MvTEKQ7gQjAvBCn_l3CLZNbHN1_uR7zo6guFOqTOK39x8qHGxcmdxA7q8IFQY3ZrfvbAQorGyqbDIZgQRmkZ2WBmI2shRYPL4vRp_hVMdH-1t9J40ASpQ1KY3QlON_fGz4XWdXWQQY5pDg20fXJKuSMtvlXT6eQN9M4sKRersmxsMOlCRFeOH1BfArdA="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.706124830328655,
+            "long": -73.99689784264993,
+            "name": "Brooklyn Bridge",
+            "score": 9.86701506842443,
+            "id": "Brooklyn_Bridge",
+            "snippet": "It was designated a National Historic Landmark in 1964 and a National Historic Civil Engineering Landmark by the American Society of Civil Engineers in 1972.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM_tdotnZq0Nf7RUGUpTnS3m1hNs-6SUOjvbECn5q9-vdjORwjIEquSHIwmJd3vDRR_ilFe4E4r64R-fP4XkDpHldVfzYH9qXVoq7p_Op82mrIMLJ3i7YbA6DCfwys_IQjCMSM_ZM_8o8hXt6I06RruL3rIhUb9Bb8IoMujCIYEhdGqgMSi3TgsRc65yDbdbRfWc2zeTDUqBcLn3FehivHsFF0DiC6bnnZqioeY9HnjZhNuFSPop0p5PcSaWqaLnNJlnTEzTFtWBrpBv8M7BZcNKAZvgnhi5DEjR1IgwXYQQQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM8p8mTuDNNFOrBaqCDaDmGMMaxuUqdSRE_SKtXWICn7PX4JKkFAN3z8Pmt55lZSp9JuDwY8Yq5JvR5PrEbKk0SY3dnrqHpoe27m8k2U6Of6GmSRTH7AufyL-NR-vCpOIMS50T3zwJtDk3ZKAsv5RaIzmzE7KMEq7nI4TF0Hxk50fKKT1ytwH3j4Ch8CeC3j-6WlHQD7eTJPPZD9Csx8p9S2258mCnP0uS0MxPJgfjodzPgmUfyZFNI32kexqfAr-Leb5fnltol6eHpAZxlfjqSg2lQIDEwS5DkgLrmFQCSus=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMY4KLvUdUdkNQ1zdpkkhs_xl-bvtNrXOtlA1Qh6pbEeN9xrr6quDYYaThcRIG3LqJNIiXUH5Jc2GeqyP8WIpaiVgy1EjMWiMLgyNWz729L0lIFdagJ_siSIVPngwcuB9jg6Y8E7KF-8vykSPR0OWcCPm220STO7cdjkLgoDFEwz5X3raFT1ugbSec-lkwPNutCCKcDsgWH4WbfkljQYBo4bf9dmPZHv4C_eS2AtFfSNg-vwoUmxPutAOg6WstgJxP9tLAQjb_lMnbGC8hyxACQoSE_MFFNieRgJlJfwNEmF0=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM4xF8dFzdsq5SPpYz8A7fIkMUsFXAK4Tunh1MbE6Td0kILyB65OAHoVoagMn8RqxAw92OYS166I1PKPfT15heZbHSnt9bE24FZAg6MJocsB2xBXSsdGVY9WYaVef6-NkJgT4vWN-vOvQ3kpq0lvCRRLbXL0Tkf21MZ2U9B_hinhqa2UYZSeiiSNqyCKEZt4I9ShxgH5xWW3Tf3rrW8aM26XdzEyFlmF-H3EctBdwlNMh4xVGY3VKNtGLlBTqmGmyQjzaM-h7VH1hC1Z17DVAxq9hHKJvB4fA8OMoEaBBPgBE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMeKukNL6Kvv4BRxPeiGWAEQYOQcuwwU8kQMtPK29-wu8-Rcdt_m0kcB9iNoth2sF-EbywSM3nxSrsVZxFrw7mxlO7xulWKrgwqxdHFdh1kI8Rd7nhUUnaMfdDueB7EbgBT-b1Dk5qgjbnDcr6srs_GDHavMzn7iDzOH3TaYaC-dyOKD1K4WqPLPOA4Dpuh6NsLP8POQh7eiHq0WogjXOgxOtOpTT7M_ivfaomp8-KVdymbW15oGp1yZ4RyaMuIMdzkbU7Qod6nh6zycKbLaG_igaFzT8eujkZfJt4ycR_RUU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLwCvOcBVEfVEbrMpfEcUBD3WbMO34SzOVH7IIR9EepD4aUkhkFlC9AS7e_Fb4Y5KgxwNwAj5MwXwqe8TDYNbUwFITkOEWQxdqADURgu225RHOI0WmDz7vBcWGycT04Lb8_euf3EygdmSM-yCGbszzIcWIE4vzFPg_ulSRUzW9Oe1mehyTUmdPHsPIyPtS1AOU67xYsJ4CBEqRsrd7vRxkWZ5M8ZDKAQ7VSNinl6DBoXZmADW-lL_qTDDX5XkhG7R2DASG2-Djcj6M5dyJcoVdnklnMEAUalf8p0LdcQQDKg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMQK-TQXPPizPkpXaLqRQmyMQ3uYtqjW_gEYZDai81D5atxsahsvqVZ9V3whefKsGcPhmMmRhrUijU_tuYQhKQhgDsQv1N86v_f_4IKK2cgzHaOoeOFBYWAxAAKIZ3N50h6Hj97xS4OZ1IKPuTKY-5Rsp14dHUYaoqZDrvcMsZTtcVetW-roU5Y_UOnni0jHOL8SAEktG7SwijMvcqNNhDitL6oZWRgdkKac7wcGNoTqxtbbPa4Wr5dWkAOhQR-XcIpbrbwqM5_MOMyt_k5fFILHE9iSukXTxaTKuZZKaB9M8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLCwvutRSdtyKbuzySR2As9BYn73-C7uLXg0V441TlrvR9Wb6JvJl1UQ9cfzrDahVc5-owZfNZsRCLptgxzrKiCo2Q5cXHJ35bP3d7dwBMFutvSDWmLlin2BUWvZ7F-WMQxu5HwDBO08sclbd1GSIF6UsobvJFtGyLt7lzNCv4D7BCW5MHttCMmk4NNXnCUrG2J8Ch03kW5QenCXqqKnKPx8HLPuL0YE64wut2VBBVzJVvPmc-kufar6IsUK3NOQEPMq_UaUtl_fc8PAgan5IK-J7IBtXA0yDzSvFN_fTDl4=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMp-QwDyC0Bdk7u8228d5297r8mbEwnH_MrpXUmx2YeThVlFZSikDBIqTEXJhHdSc6eKab1MmZrEU7MWVqB4YoM28obgLVCqUYWVhb34QmRWiIIRwH9EXigIhc0uequU6_7Iwvk7RpxWcl0OQd2a6YQVWNlhvwNnBR-4Mzok_TAh_vfDGjWZvPWKlyN5RPhvfLmfym9S3mhTfRH-aihKKo3ojcYMXiUmRMFzT1VScWNMt_rakDYLGBiEEUR5XoYhSz1Wi_Rj3i5AsArbI1N-q-jDls5d-rlVx2yC66Q08Fn-A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMSFsEARbcZqoKwuG4ntzjFCpBNKps58dAElpqQeQJAe2aj5BGjvj1VpzKw2_pVLI0Nz3iPWfs_hM1nIF9Y-DKFLA7wLZBP1Nf1x0cKOuJjQVVffwg9DD4RZJx3PaXaP0ZWtIiJNENEtR4zVQPjxwTr9FifQR-_07ACMTFPbHrwdwByhJCW9y41ucF2cmNca5Nkskk0KBBMn7hOypuNSpgDdCnWykMKEJ-nyA1BKvhsYCcA4nsSIjSi5Ur2_RwsvsKPnC-q9a4ElCXDfeP1rFmosdXE4mmBJt1dXnd-ye5uaQ="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.70316341136895,
+            "long": -73.99528710543053,
+            "name": "Bargemusic",
+            "score": 8.43191595847798,
+            "id": "Bargemusic",
+            "snippet": "A truly hidden gem.",
+            "img": [],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7036769,
+            "long": -73.9948035,
+            "name": "The River Café",
+            "score": 9.6121463991642,
+            "id": "N__1227678751",
+            "snippet": "Superb cocktails in a quite nice vibe.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMr9K4mBFHunomYghqlak11eSSlGIZKL-1_UlFqi80AAYSySUQS7uM8LcfhDwib3TGzZ28x-xmVCfiwkHog1rNPAdbeVa1s8M9oIgw0nzAGo5oA0kmRM2X4V7r8WXxeOs9hgmRa92jQ_xckTbt8Xk5MxeosqJ9rd12NXr2WSs2A51ASHM5prlCJOFFlNxrdaL01LtbZMnRagArKOtNszv3BEUnxBsFuSwfjnV3V6I7nznMZs63teLeob-6-5PDAugLotRbWLkZ42ih5KlDwHCGvL0yGasVq504UyrvpMrdqiQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMxa-Kk2CQku4rdnkA9xMpMpHwuhL5GDpbV7xaHXU8M2aqrlEtOpZ5KP2UAJSWj5VkjNneV39Mi_fovB_d8wRG1Jhi9yKAHCwv6GFzAyGPsDkg-OVT_NKILIsM3Wz07q5zpxmxIcztdfh7FAaKhv5mjAOCiNc1dAILnoWKWnMByXx0FcAsGKxG2QMYCHGOSTG4zZzfmEnZk6GDzFbz3n5OK4NBYXjUDZMxzWxI5PSY2Hme3ul0PxOMAWRjkCfllRaD6EWwiQ9K0I5rKXu3Wl9HCgEXudo3PXyOgRyjEobH6dM="
+            ],
+            "inPlan": true
+        }
+    ],
+    [
+        {
+            "lat": 40.759817643930866,
+            "long": -73.97927424753343,
+            "name": "Radio City Music Hall",
+            "score": 9.49979031538213,
+            "id": "W__118472379",
+            "snippet": "See the Rockettes, another show, or just tour the famous Art Deco masterpiece.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMmZUEm_ZigqulXZzuZ_NI66Rf2gGB7R_a_Ej-CK15pzqbWnqdkzm3G5J8u8atMVRytT-2Jw8zZwWSEeHhCGBiw6jvgLhyqkVszvqEi_yE_m2Oh8zhteKazhs2zYINRTQGeQ2LwMAF0w36JSst3wHioa6NCcwx4xkj7jU85-qNIZM_s9hJhJ9TN5l8czA21VoNMbc_DYXY23h2JfnGinYfZOSkxJI1qqPdhQxg3kbLUFqkQbmMQRbc63IfHl7acadw4rfa2jNeNJMfcThLWMSF9sZbd6-QNADeCe_hRjDRaQc=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMRes7WP0ku9ISoa9QR3Fv-8nQ032DRnbNC850MP_59DVnpYsoKwckbohpXF2KYyi0xPCORB05KHW401jV0U6YhZJfmtQYpq8AI5Ched34BZxHZADLnh6L2I-Za3WGpL9DItMbMbchTV0HePpuv7dUlxiOiqBJZVPuKcPZF6V8O7Wl6SLZQyXNtS4P8zONE0-L-06wCJ6uUWO8gm2HRhGcKSXna6H2XLsR04osqnuSaJ4yMZMyF3J8HqlZkliEmJ1PWno-AtkU7v_w08oBthYT6UXFll0OvKJtURnlSWtqMBk=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMnBSYV2kHHvnhcnkgJCqx9OMStgUeW-UJKGtfE_VkZlxOHLNnkdm4bC3HUw56zAhXawKz-VDzuOmDhRbIuHKKYXfwczrae7pL_Nh4L0wlkDh0riek7AeJdQt3oLPLXRlNI42CbMkCasgilNrLTfaQzElf0-G9lA32FQ2yrX0PgF1Vs0d7Mhg9dNsE5gHc4C-yGNNr5gAXaA3apSZY7a-XEKLY8gVwT49RNeATyK_Wg0OIix0kRGrVm3039qyqgUUY5EuCQvuiVaiunzng8w15phrZA2F7LPG9Z3xT8eThFRE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM6bteRbkqswGAYnASdUOMdHzlImEmMv3GsSXbQ-OUO20tx9gTXK4MwsieMvM7RP3LWOlt5VcB2jT6LIRhExv2znrF_faJWJOygJ0IBa3L2o0rlKHjDzDCh86-1izgrMLuf2IxquNiq1HRu8vwjKwQfWVvjY5e8eLMHaHm_T2nL2MDcVZmg5z5hFDkVDjvoWSASm_J_l_l0QLLv42Yzyx1vcU1RX6py_GhbnnkmFcInd8MgxYKr6q3SBr50KG8apvDx4KM7TPvzK9yIJ7bYqoTKdA21iAjwqYkvoUZECqAW3Y=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM2Ky9kRwrq0uij69RIKQGNBeaK7u-voFf9gqPIACA9zg1kJm8zMWs-Z-ZTXIqS6fResMXuy-v50vIqS5Frmhfc89Hfi9HofPpGL4Cr26q5NRD89jaeB8A6z-L3LqGJGaDmSP_T-ko7-7fgeQJfZJowSbPvVPGAbkxRh1NQnoCMuZOWW7p3w_2dtCZd_iwgGLjN5pdC8CWZI_yg4CyVacYKvC-b5xuzwqY7M_nLhjJ_0PxHhsCwH2cjwuG5k0onsnfdMwqW-SohZ-rSgOQ1_oPTQItFVI04IEefL9T70XY1jQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMrYfCyycY1kbSg7MfHikBQLUgzgTiRigFVhcbA8aNgnOfgH4DRgmpcginh-9TeMly6z4KGFPl3HNU1CZL0QpLh910oQjLie86O4Aj9lo0IFGXRGsMvQlMewbrFE8rKmcR9Ukvd8PsBjBzxuk45nGvi5PFHUaEKZS9jq0F83h0YatMhtrZxhk3Wq7_azLoKLvPWTTqrzYDY6gDDyKyJkmgj7fo1A1x6GrE1FBIlyYwh2H2cCBlhlia4WyCV9g6jJCfYM2RPMPnFXhU7OjiA6UnbQAki0MSI9S8KrOvOWAvTC8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM5AVX-JbGeqO7efASOdeF1sBRyGQClVlZPJ2vdN1IwRkE78P7kLX3yK8sk1rtn4hGU6B4NOnNRr-RGDIW3oLL_42MP_WXT-9E3dMV5Ki8XTQ9O7zpXmVnbjMcLMmrfqG2amcJ9KiY3QWv-pw0w_wihdEbqCLPcnJHaFFKHBoJ8t2qRTxUHf8sv4ndfgH46oRb7vEYd0gh_uI-oJ0t8KAnoEC1OH_5XJK9o-gfgXO1O3txWtBH_S6q6xQhIlm5fSViXeGSYZ_ibhB_fMesbt1YScWS4WWACxfudUxI_QBn6ZI=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLLk8hM_bF4RD4bYsOl9L5bWi2qCz0L6DiYfXRzBkMuBa1ntikwp0z3BSvqjF5eHP5zu_TcXwgbFxuV2637nRIFoXN4MlDnlj2KSqN9EubIXQacOxQVinGldPrSR4VaMFpWPlm3gxjsYMroz84P0y-sonYp16_GQyLqK0Zpco830nlpo8phQGCp2Ti6m0iayMI1YXeBGykktwUAu9hFqlvvhlkHpt-JVgyDxNKmBEGgbSHZszs-e5em1HX0aHIR5l-ImfWY2aoswiOmBUaBMyAn5uOkMktKTtWXVPrjYjA_A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMIBiCKTu_p9kwlYO1eAIyscEq3O1Snxvq3aX6mKs3uJCHUvHwmEZ1oU43NgocS7hDFaExkfMgL7AE5YXXvH4c_bcZ-i0NtAEl8CnP07cNT4cL_hSyXuhJL1ld0ZvFFjmVc6WI404bDeirOUZNYSioV555xo2zrMyQWrZ_7CIjoknrYIptM5ZT8FPmSIRGdTtY0H08q4IOybzxlTfqTQz0vL0CU6JFMOfW2Mwf-bQ88Oz2U-3dWtAHPYnsZN3_RAKKXO5REFD-vNUi6AbEuKyo5NslZdSP5nSG8JlsY4eCnnU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM32dZKznqAamAB9v0bePamxRYW_Yh8of-ookhdK5xeOVw4UVP5K4QneAT5wHEkIOtLEsrEVkiNFN6zwA0bQMzewtDaZd4WzV8brO-irQI8HKbVdMiXli8NPEc-e3ea0fmtWGG0wcXkNm76C8aiS_bxnYtdzW3zveihltggjhgXJOBfvX2QpTaUZNXsV8rkghwrM6-YbJl4ieyS_9jqAUbGHZ0A7ZAZNSZ1KDT4FWL_4lDknukLJh9atKZEkjxVtluZcvfXvl5wCXN2SGglGL9q8r2xHLDHYUSnF2X2hpWIXk="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7616338,
+            "long": -73.9778136,
+            "name": "Museum of Modern Art",
+            "score": 9.98764116201725,
+            "id": "W__118476494",
+            "snippet": "One of the greatest and most popular collections of modern art, on a par with the Tate Modern in London or Paris's Centre Georges Pompidou.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMXS4UNuPAUHVKMQtAlN7ixaub71NOmsKrZpAJMd1k6_8nd_hWp7aqYh0JJxK4dHgnUaDTlVnLwO8ViF3rT7hHG2HKicGZWj2M5M9dpcFoFcymGZHU9jGYPYq0aG2PJxpvZI5JotjQbmWyQdQi-ju-Tj2RVDU6D84AboK94WatzeYbYWRdF9zzSsRkyVdT-Z_40NbnwAuLcX96cj3KfHMax_jal-h42SEVPiXUlZ_uxLkg47MuUcTMsN4Li3Jb13DibyVlr1OnzLMQL1aFJuq8BO-E2kZSIfqdgNke3zd4C6E=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvJ1zJrTyHwYiBip0hd883Z6KRYnKSr_v-9j9Wv88lgYWzlLBJmrLGsLypzUOekjLBS_NtxIoHURTx1FgSxPp-QVksF_iJjVqNB0RMuxaqthejkmawNhWoRn_HaYeiz4_N37hr2Qq35Js6N6BhgUbZkqTteD8MzqkAKN-cEYGlXt78lnhvCBS-Ga-r4cKbqoqdk6mq1s4cVuA4nH2grRy_fiHl7IEdv1m0JIan6zHbZc1d4__yh_LHFX9YkufUezqI-k1nfRBk2s4r2Dga7jZC79EiGQJpR8I10pc6oWgTeQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuw9RXX4Z7l9PwSKza9umFwqiTwLHB3Jsxa7w_AC3Fl2LLYYGHBSlxDeHqK3nUvhhT8KXCBmvJE0jQcpc6o6y9wHOkK5dMTDyvWSZVQVA4JQ_kcxV6ax_f0gEpf_4lXG9jjLLPlqzm24xpogucJYGA1xeRU_zLCUhxlNH4BB9z-xrdl6Eg90P39U3uy7nbCxpv9volY7plNOuRMXrezM44OD6vv6RunZeQdKyL8-SFiCSoZEaiLN3U3Rhk8fJX1JfKrIiIf_Iwou48LIgalgnWZsAg5DSSu77PgO0m8cUjPo=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMbQDdA4-0NwaoIoL1EReQZYcG64fR4NMkjs-fiRmwMgf1WCU4rIi2f3-hGgwm6rkWbSY4We7W1OzDK8xLbLFn-wxM8lCh2l6J1BhxftyCWiQEE0j2m4G6xzrvver6CRXrlexb1eXpoSj7XJ5QIWoioYL_5Rkq7uuFfOfWQBrxuBx5HXvT1eRs8uDdYz1rvR6vhUREY9yAy6_zA-QV5naYIXcr1jRgdYcJpBmrVjFMdB-fkJ_2DXIHD5M0t8WIdXz2zv1XUKAwQuK7sN8l4G2wugbH4zWK1yOLH5Z4DUAalWw=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMW1I4z69rhKpzk3WSMwayzWw4qSR2x8Q7gSJgoFPzMO65xrlwSIjpnbp2-D1QiPt5_qdl-mn8DZFPzrsecLnRc5D-uU7cSlx4rOZy1G8Ai_AjfdcoO1zqpRtOFsw5eNgEqZAJuUqy56NxSk5x96LFUBn5-iOsmHy9-rI3YNC5XxiAteJv89K7sCXIEK-h1BQCREG6OqJkexdTwiNUGDrz7PNp2Sry60-RpS7E-Ue_yaEIHVo6BzLBsRw-D0-wARSydJLN0FvQYEwPcb0foxm39H-J6F7JO4kB-OYSnEqg9Ds=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuLbd69UnuIiRuvfoFjL9--gB9Ah9v0_tBFqsPFanuZO2YlXG6per8FAp6OzvuUlNQV9R9V6W2_bHMFnZyRYbDexchTDf44R-kQxjM1aXbccTAFTDyUupntR32Rbr9VIjcfgbzETpq_lt2ECsVZ3ntmqpOjo6sBznXf2V2AXtghu_eQJx9_orJdoCzFnSssULllytU2DpgjMfsAtQiVGOtEbAn2-T2Gnkekvvq-__JeL2cEqBa7PSqBbjfNG8BFZwQ4mW44OOWdBDuQwNl2TfxBvx2lvuIKLpaRAChl9SfpU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMD0_q8U_H6MMkontgjMhjOgHxjp5BUe4NBWg3Yd5fuRZ555b69Kw9dIsHmzQulZfm1LaAO-LrQDrZSRkr2HgRsgvarzopghA-mlj3qjQjGeGeydmI3rlA2bPs2lyWONUEByKrZnEIqod5-nD4Lv0-oKai9kAx6dhudVSpKKpDWDHl0HNRg1jkeuY_WAHzXUr0ueoHYS6Xsy_JUH3rispsGRI2Bhqibivbz4IFqYp8j1F_YoIp87dyl3D4WCbuGPCwpmwfYVpQjsdbvNuM9n4zYZx2WodYhrea8rNWos5XJeg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMJ0EdN7j3_Iq0s4QO_B6IofyOgXN0GtG-uFlZubvfViOcbFzHfPVs7_QG9pd8V2Tvdjtziq8BPIZF8sLzPSgMvc123mPLjT2i0zIU-ICH3xzMojy9JlTiHLthIVblFA057lrEk9r_zpBkkuBDFPnMKT6ZaVDeUM90Uws0kDcZ2hKrlMVTMT0LVXU5xid58U3UdP5RZif5WUwHJPKOw1XJiZfbQeCdTSKMqA5h91i01qlcbLX6AhUYuZV-27ktwICDUHd_irq9isDai8UX3FP3rnZN91EBmWvndQepCUVrL0c=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvfhNgWPifitkQmoGdQ3a5puJdwbbE0uLhDkrg8DE9dY1hFN3D7aS68zay2Ssb6WWQtA2N9cCy1ifo06WHiAkfc3rZFbV378UQzEqnUnfl_-s9pSKMBU86vWiZHrVPK4hAXs5zLWu3g3sRRgxTsWqJ_0rOBh8V7smfwGD9CMN5pNO5eU_yVGS2W8PhA_Y4JGL6EgAHHWpeQU7p4FpfBVrDAxGFeAKX-u3uXbQTLJOPo0aRA8RB_9WpfXWrGc1lb89dmNopyQuXa2x5oAIdpez07tygbYBSSJL8csmDpnweI8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM1ig2eaZn4VrmjANzY_pw1xEHUt0jisGP6a-mPl940tDLjwDLSkGQB8hFh2lwsY2OYLgkCHq1YX7dKaWCIY5b0RlN1rF9RbphIa6uRBJCl45dR40MvTEKQ7gQjAvBCn_l3CLZNbHN1_uR7zo6guFOqTOK39x8qHGxcmdxA7q8IFQY3ZrfvbAQorGyqbDIZgQRmkZ2WBmI2shRYPL4vRp_hVMdH-1t9J40ASpQ1KY3QlON_fGz4XWdXWQQY5pDg20fXJKuSMtvlXT6eQN9M4sKRersmxsMOlCRFeOH1BfArdA="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.706124830328655,
+            "long": -73.99689784264993,
+            "name": "Brooklyn Bridge",
+            "score": 9.86701506842443,
+            "id": "Brooklyn_Bridge",
+            "snippet": "It was designated a National Historic Landmark in 1964 and a National Historic Civil Engineering Landmark by the American Society of Civil Engineers in 1972.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM_tdotnZq0Nf7RUGUpTnS3m1hNs-6SUOjvbECn5q9-vdjORwjIEquSHIwmJd3vDRR_ilFe4E4r64R-fP4XkDpHldVfzYH9qXVoq7p_Op82mrIMLJ3i7YbA6DCfwys_IQjCMSM_ZM_8o8hXt6I06RruL3rIhUb9Bb8IoMujCIYEhdGqgMSi3TgsRc65yDbdbRfWc2zeTDUqBcLn3FehivHsFF0DiC6bnnZqioeY9HnjZhNuFSPop0p5PcSaWqaLnNJlnTEzTFtWBrpBv8M7BZcNKAZvgnhi5DEjR1IgwXYQQQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM8p8mTuDNNFOrBaqCDaDmGMMaxuUqdSRE_SKtXWICn7PX4JKkFAN3z8Pmt55lZSp9JuDwY8Yq5JvR5PrEbKk0SY3dnrqHpoe27m8k2U6Of6GmSRTH7AufyL-NR-vCpOIMS50T3zwJtDk3ZKAsv5RaIzmzE7KMEq7nI4TF0Hxk50fKKT1ytwH3j4Ch8CeC3j-6WlHQD7eTJPPZD9Csx8p9S2258mCnP0uS0MxPJgfjodzPgmUfyZFNI32kexqfAr-Leb5fnltol6eHpAZxlfjqSg2lQIDEwS5DkgLrmFQCSus=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMY4KLvUdUdkNQ1zdpkkhs_xl-bvtNrXOtlA1Qh6pbEeN9xrr6quDYYaThcRIG3LqJNIiXUH5Jc2GeqyP8WIpaiVgy1EjMWiMLgyNWz729L0lIFdagJ_siSIVPngwcuB9jg6Y8E7KF-8vykSPR0OWcCPm220STO7cdjkLgoDFEwz5X3raFT1ugbSec-lkwPNutCCKcDsgWH4WbfkljQYBo4bf9dmPZHv4C_eS2AtFfSNg-vwoUmxPutAOg6WstgJxP9tLAQjb_lMnbGC8hyxACQoSE_MFFNieRgJlJfwNEmF0=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM4xF8dFzdsq5SPpYz8A7fIkMUsFXAK4Tunh1MbE6Td0kILyB65OAHoVoagMn8RqxAw92OYS166I1PKPfT15heZbHSnt9bE24FZAg6MJocsB2xBXSsdGVY9WYaVef6-NkJgT4vWN-vOvQ3kpq0lvCRRLbXL0Tkf21MZ2U9B_hinhqa2UYZSeiiSNqyCKEZt4I9ShxgH5xWW3Tf3rrW8aM26XdzEyFlmF-H3EctBdwlNMh4xVGY3VKNtGLlBTqmGmyQjzaM-h7VH1hC1Z17DVAxq9hHKJvB4fA8OMoEaBBPgBE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMeKukNL6Kvv4BRxPeiGWAEQYOQcuwwU8kQMtPK29-wu8-Rcdt_m0kcB9iNoth2sF-EbywSM3nxSrsVZxFrw7mxlO7xulWKrgwqxdHFdh1kI8Rd7nhUUnaMfdDueB7EbgBT-b1Dk5qgjbnDcr6srs_GDHavMzn7iDzOH3TaYaC-dyOKD1K4WqPLPOA4Dpuh6NsLP8POQh7eiHq0WogjXOgxOtOpTT7M_ivfaomp8-KVdymbW15oGp1yZ4RyaMuIMdzkbU7Qod6nh6zycKbLaG_igaFzT8eujkZfJt4ycR_RUU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLwCvOcBVEfVEbrMpfEcUBD3WbMO34SzOVH7IIR9EepD4aUkhkFlC9AS7e_Fb4Y5KgxwNwAj5MwXwqe8TDYNbUwFITkOEWQxdqADURgu225RHOI0WmDz7vBcWGycT04Lb8_euf3EygdmSM-yCGbszzIcWIE4vzFPg_ulSRUzW9Oe1mehyTUmdPHsPIyPtS1AOU67xYsJ4CBEqRsrd7vRxkWZ5M8ZDKAQ7VSNinl6DBoXZmADW-lL_qTDDX5XkhG7R2DASG2-Djcj6M5dyJcoVdnklnMEAUalf8p0LdcQQDKg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMQK-TQXPPizPkpXaLqRQmyMQ3uYtqjW_gEYZDai81D5atxsahsvqVZ9V3whefKsGcPhmMmRhrUijU_tuYQhKQhgDsQv1N86v_f_4IKK2cgzHaOoeOFBYWAxAAKIZ3N50h6Hj97xS4OZ1IKPuTKY-5Rsp14dHUYaoqZDrvcMsZTtcVetW-roU5Y_UOnni0jHOL8SAEktG7SwijMvcqNNhDitL6oZWRgdkKac7wcGNoTqxtbbPa4Wr5dWkAOhQR-XcIpbrbwqM5_MOMyt_k5fFILHE9iSukXTxaTKuZZKaB9M8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLCwvutRSdtyKbuzySR2As9BYn73-C7uLXg0V441TlrvR9Wb6JvJl1UQ9cfzrDahVc5-owZfNZsRCLptgxzrKiCo2Q5cXHJ35bP3d7dwBMFutvSDWmLlin2BUWvZ7F-WMQxu5HwDBO08sclbd1GSIF6UsobvJFtGyLt7lzNCv4D7BCW5MHttCMmk4NNXnCUrG2J8Ch03kW5QenCXqqKnKPx8HLPuL0YE64wut2VBBVzJVvPmc-kufar6IsUK3NOQEPMq_UaUtl_fc8PAgan5IK-J7IBtXA0yDzSvFN_fTDl4=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMp-QwDyC0Bdk7u8228d5297r8mbEwnH_MrpXUmx2YeThVlFZSikDBIqTEXJhHdSc6eKab1MmZrEU7MWVqB4YoM28obgLVCqUYWVhb34QmRWiIIRwH9EXigIhc0uequU6_7Iwvk7RpxWcl0OQd2a6YQVWNlhvwNnBR-4Mzok_TAh_vfDGjWZvPWKlyN5RPhvfLmfym9S3mhTfRH-aihKKo3ojcYMXiUmRMFzT1VScWNMt_rakDYLGBiEEUR5XoYhSz1Wi_Rj3i5AsArbI1N-q-jDls5d-rlVx2yC66Q08Fn-A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMSFsEARbcZqoKwuG4ntzjFCpBNKps58dAElpqQeQJAe2aj5BGjvj1VpzKw2_pVLI0Nz3iPWfs_hM1nIF9Y-DKFLA7wLZBP1Nf1x0cKOuJjQVVffwg9DD4RZJx3PaXaP0ZWtIiJNENEtR4zVQPjxwTr9FifQR-_07ACMTFPbHrwdwByhJCW9y41ucF2cmNca5Nkskk0KBBMn7hOypuNSpgDdCnWykMKEJ-nyA1BKvhsYCcA4nsSIjSi5Ur2_RwsvsKPnC-q9a4ElCXDfeP1rFmosdXE4mmBJt1dXnd-ye5uaQ="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.70316341136895,
+            "long": -73.99528710543053,
+            "name": "Bargemusic",
+            "score": 8.43191595847798,
+            "id": "Bargemusic",
+            "snippet": "A truly hidden gem.",
+            "img": [],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7036769,
+            "long": -73.9948035,
+            "name": "The River Café",
+            "score": 9.6121463991642,
+            "id": "N__1227678751",
+            "snippet": "Superb cocktails in a quite nice vibe.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMr9K4mBFHunomYghqlak11eSSlGIZKL-1_UlFqi80AAYSySUQS7uM8LcfhDwib3TGzZ28x-xmVCfiwkHog1rNPAdbeVa1s8M9oIgw0nzAGo5oA0kmRM2X4V7r8WXxeOs9hgmRa92jQ_xckTbt8Xk5MxeosqJ9rd12NXr2WSs2A51ASHM5prlCJOFFlNxrdaL01LtbZMnRagArKOtNszv3BEUnxBsFuSwfjnV3V6I7nznMZs63teLeob-6-5PDAugLotRbWLkZ42ih5KlDwHCGvL0yGasVq504UyrvpMrdqiQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMxa-Kk2CQku4rdnkA9xMpMpHwuhL5GDpbV7xaHXU8M2aqrlEtOpZ5KP2UAJSWj5VkjNneV39Mi_fovB_d8wRG1Jhi9yKAHCwv6GFzAyGPsDkg-OVT_NKILIsM3Wz07q5zpxmxIcztdfh7FAaKhv5mjAOCiNc1dAILnoWKWnMByXx0FcAsGKxG2QMYCHGOSTG4zZzfmEnZk6GDzFbz3n5OK4NBYXjUDZMxzWxI5PSY2Hme3ul0PxOMAWRjkCfllRaD6EWwiQ9K0I5rKXu3Wl9HCgEXudo3PXyOgRyjEobH6dM="
+            ],
+            "inPlan": true
+        }
+    ],
+    [
+        {
+            "lat": 40.759817643930866,
+            "long": -73.97927424753343,
+            "name": "Radio City Music Hall",
+            "score": 9.49979031538213,
+            "id": "W__118472379",
+            "snippet": "See the Rockettes, another show, or just tour the famous Art Deco masterpiece.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMmZUEm_ZigqulXZzuZ_NI66Rf2gGB7R_a_Ej-CK15pzqbWnqdkzm3G5J8u8atMVRytT-2Jw8zZwWSEeHhCGBiw6jvgLhyqkVszvqEi_yE_m2Oh8zhteKazhs2zYINRTQGeQ2LwMAF0w36JSst3wHioa6NCcwx4xkj7jU85-qNIZM_s9hJhJ9TN5l8czA21VoNMbc_DYXY23h2JfnGinYfZOSkxJI1qqPdhQxg3kbLUFqkQbmMQRbc63IfHl7acadw4rfa2jNeNJMfcThLWMSF9sZbd6-QNADeCe_hRjDRaQc=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMRes7WP0ku9ISoa9QR3Fv-8nQ032DRnbNC850MP_59DVnpYsoKwckbohpXF2KYyi0xPCORB05KHW401jV0U6YhZJfmtQYpq8AI5Ched34BZxHZADLnh6L2I-Za3WGpL9DItMbMbchTV0HePpuv7dUlxiOiqBJZVPuKcPZF6V8O7Wl6SLZQyXNtS4P8zONE0-L-06wCJ6uUWO8gm2HRhGcKSXna6H2XLsR04osqnuSaJ4yMZMyF3J8HqlZkliEmJ1PWno-AtkU7v_w08oBthYT6UXFll0OvKJtURnlSWtqMBk=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMnBSYV2kHHvnhcnkgJCqx9OMStgUeW-UJKGtfE_VkZlxOHLNnkdm4bC3HUw56zAhXawKz-VDzuOmDhRbIuHKKYXfwczrae7pL_Nh4L0wlkDh0riek7AeJdQt3oLPLXRlNI42CbMkCasgilNrLTfaQzElf0-G9lA32FQ2yrX0PgF1Vs0d7Mhg9dNsE5gHc4C-yGNNr5gAXaA3apSZY7a-XEKLY8gVwT49RNeATyK_Wg0OIix0kRGrVm3039qyqgUUY5EuCQvuiVaiunzng8w15phrZA2F7LPG9Z3xT8eThFRE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM6bteRbkqswGAYnASdUOMdHzlImEmMv3GsSXbQ-OUO20tx9gTXK4MwsieMvM7RP3LWOlt5VcB2jT6LIRhExv2znrF_faJWJOygJ0IBa3L2o0rlKHjDzDCh86-1izgrMLuf2IxquNiq1HRu8vwjKwQfWVvjY5e8eLMHaHm_T2nL2MDcVZmg5z5hFDkVDjvoWSASm_J_l_l0QLLv42Yzyx1vcU1RX6py_GhbnnkmFcInd8MgxYKr6q3SBr50KG8apvDx4KM7TPvzK9yIJ7bYqoTKdA21iAjwqYkvoUZECqAW3Y=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM2Ky9kRwrq0uij69RIKQGNBeaK7u-voFf9gqPIACA9zg1kJm8zMWs-Z-ZTXIqS6fResMXuy-v50vIqS5Frmhfc89Hfi9HofPpGL4Cr26q5NRD89jaeB8A6z-L3LqGJGaDmSP_T-ko7-7fgeQJfZJowSbPvVPGAbkxRh1NQnoCMuZOWW7p3w_2dtCZd_iwgGLjN5pdC8CWZI_yg4CyVacYKvC-b5xuzwqY7M_nLhjJ_0PxHhsCwH2cjwuG5k0onsnfdMwqW-SohZ-rSgOQ1_oPTQItFVI04IEefL9T70XY1jQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMrYfCyycY1kbSg7MfHikBQLUgzgTiRigFVhcbA8aNgnOfgH4DRgmpcginh-9TeMly6z4KGFPl3HNU1CZL0QpLh910oQjLie86O4Aj9lo0IFGXRGsMvQlMewbrFE8rKmcR9Ukvd8PsBjBzxuk45nGvi5PFHUaEKZS9jq0F83h0YatMhtrZxhk3Wq7_azLoKLvPWTTqrzYDY6gDDyKyJkmgj7fo1A1x6GrE1FBIlyYwh2H2cCBlhlia4WyCV9g6jJCfYM2RPMPnFXhU7OjiA6UnbQAki0MSI9S8KrOvOWAvTC8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM5AVX-JbGeqO7efASOdeF1sBRyGQClVlZPJ2vdN1IwRkE78P7kLX3yK8sk1rtn4hGU6B4NOnNRr-RGDIW3oLL_42MP_WXT-9E3dMV5Ki8XTQ9O7zpXmVnbjMcLMmrfqG2amcJ9KiY3QWv-pw0w_wihdEbqCLPcnJHaFFKHBoJ8t2qRTxUHf8sv4ndfgH46oRb7vEYd0gh_uI-oJ0t8KAnoEC1OH_5XJK9o-gfgXO1O3txWtBH_S6q6xQhIlm5fSViXeGSYZ_ibhB_fMesbt1YScWS4WWACxfudUxI_QBn6ZI=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLLk8hM_bF4RD4bYsOl9L5bWi2qCz0L6DiYfXRzBkMuBa1ntikwp0z3BSvqjF5eHP5zu_TcXwgbFxuV2637nRIFoXN4MlDnlj2KSqN9EubIXQacOxQVinGldPrSR4VaMFpWPlm3gxjsYMroz84P0y-sonYp16_GQyLqK0Zpco830nlpo8phQGCp2Ti6m0iayMI1YXeBGykktwUAu9hFqlvvhlkHpt-JVgyDxNKmBEGgbSHZszs-e5em1HX0aHIR5l-ImfWY2aoswiOmBUaBMyAn5uOkMktKTtWXVPrjYjA_A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMIBiCKTu_p9kwlYO1eAIyscEq3O1Snxvq3aX6mKs3uJCHUvHwmEZ1oU43NgocS7hDFaExkfMgL7AE5YXXvH4c_bcZ-i0NtAEl8CnP07cNT4cL_hSyXuhJL1ld0ZvFFjmVc6WI404bDeirOUZNYSioV555xo2zrMyQWrZ_7CIjoknrYIptM5ZT8FPmSIRGdTtY0H08q4IOybzxlTfqTQz0vL0CU6JFMOfW2Mwf-bQ88Oz2U-3dWtAHPYnsZN3_RAKKXO5REFD-vNUi6AbEuKyo5NslZdSP5nSG8JlsY4eCnnU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM32dZKznqAamAB9v0bePamxRYW_Yh8of-ookhdK5xeOVw4UVP5K4QneAT5wHEkIOtLEsrEVkiNFN6zwA0bQMzewtDaZd4WzV8brO-irQI8HKbVdMiXli8NPEc-e3ea0fmtWGG0wcXkNm76C8aiS_bxnYtdzW3zveihltggjhgXJOBfvX2QpTaUZNXsV8rkghwrM6-YbJl4ieyS_9jqAUbGHZ0A7ZAZNSZ1KDT4FWL_4lDknukLJh9atKZEkjxVtluZcvfXvl5wCXN2SGglGL9q8r2xHLDHYUSnF2X2hpWIXk="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7616338,
+            "long": -73.9778136,
+            "name": "Museum of Modern Art",
+            "score": 9.98764116201725,
+            "id": "W__118476494",
+            "snippet": "One of the greatest and most popular collections of modern art, on a par with the Tate Modern in London or Paris's Centre Georges Pompidou.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMXS4UNuPAUHVKMQtAlN7ixaub71NOmsKrZpAJMd1k6_8nd_hWp7aqYh0JJxK4dHgnUaDTlVnLwO8ViF3rT7hHG2HKicGZWj2M5M9dpcFoFcymGZHU9jGYPYq0aG2PJxpvZI5JotjQbmWyQdQi-ju-Tj2RVDU6D84AboK94WatzeYbYWRdF9zzSsRkyVdT-Z_40NbnwAuLcX96cj3KfHMax_jal-h42SEVPiXUlZ_uxLkg47MuUcTMsN4Li3Jb13DibyVlr1OnzLMQL1aFJuq8BO-E2kZSIfqdgNke3zd4C6E=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvJ1zJrTyHwYiBip0hd883Z6KRYnKSr_v-9j9Wv88lgYWzlLBJmrLGsLypzUOekjLBS_NtxIoHURTx1FgSxPp-QVksF_iJjVqNB0RMuxaqthejkmawNhWoRn_HaYeiz4_N37hr2Qq35Js6N6BhgUbZkqTteD8MzqkAKN-cEYGlXt78lnhvCBS-Ga-r4cKbqoqdk6mq1s4cVuA4nH2grRy_fiHl7IEdv1m0JIan6zHbZc1d4__yh_LHFX9YkufUezqI-k1nfRBk2s4r2Dga7jZC79EiGQJpR8I10pc6oWgTeQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuw9RXX4Z7l9PwSKza9umFwqiTwLHB3Jsxa7w_AC3Fl2LLYYGHBSlxDeHqK3nUvhhT8KXCBmvJE0jQcpc6o6y9wHOkK5dMTDyvWSZVQVA4JQ_kcxV6ax_f0gEpf_4lXG9jjLLPlqzm24xpogucJYGA1xeRU_zLCUhxlNH4BB9z-xrdl6Eg90P39U3uy7nbCxpv9volY7plNOuRMXrezM44OD6vv6RunZeQdKyL8-SFiCSoZEaiLN3U3Rhk8fJX1JfKrIiIf_Iwou48LIgalgnWZsAg5DSSu77PgO0m8cUjPo=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMbQDdA4-0NwaoIoL1EReQZYcG64fR4NMkjs-fiRmwMgf1WCU4rIi2f3-hGgwm6rkWbSY4We7W1OzDK8xLbLFn-wxM8lCh2l6J1BhxftyCWiQEE0j2m4G6xzrvver6CRXrlexb1eXpoSj7XJ5QIWoioYL_5Rkq7uuFfOfWQBrxuBx5HXvT1eRs8uDdYz1rvR6vhUREY9yAy6_zA-QV5naYIXcr1jRgdYcJpBmrVjFMdB-fkJ_2DXIHD5M0t8WIdXz2zv1XUKAwQuK7sN8l4G2wugbH4zWK1yOLH5Z4DUAalWw=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMW1I4z69rhKpzk3WSMwayzWw4qSR2x8Q7gSJgoFPzMO65xrlwSIjpnbp2-D1QiPt5_qdl-mn8DZFPzrsecLnRc5D-uU7cSlx4rOZy1G8Ai_AjfdcoO1zqpRtOFsw5eNgEqZAJuUqy56NxSk5x96LFUBn5-iOsmHy9-rI3YNC5XxiAteJv89K7sCXIEK-h1BQCREG6OqJkexdTwiNUGDrz7PNp2Sry60-RpS7E-Ue_yaEIHVo6BzLBsRw-D0-wARSydJLN0FvQYEwPcb0foxm39H-J6F7JO4kB-OYSnEqg9Ds=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuLbd69UnuIiRuvfoFjL9--gB9Ah9v0_tBFqsPFanuZO2YlXG6per8FAp6OzvuUlNQV9R9V6W2_bHMFnZyRYbDexchTDf44R-kQxjM1aXbccTAFTDyUupntR32Rbr9VIjcfgbzETpq_lt2ECsVZ3ntmqpOjo6sBznXf2V2AXtghu_eQJx9_orJdoCzFnSssULllytU2DpgjMfsAtQiVGOtEbAn2-T2Gnkekvvq-__JeL2cEqBa7PSqBbjfNG8BFZwQ4mW44OOWdBDuQwNl2TfxBvx2lvuIKLpaRAChl9SfpU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMD0_q8U_H6MMkontgjMhjOgHxjp5BUe4NBWg3Yd5fuRZ555b69Kw9dIsHmzQulZfm1LaAO-LrQDrZSRkr2HgRsgvarzopghA-mlj3qjQjGeGeydmI3rlA2bPs2lyWONUEByKrZnEIqod5-nD4Lv0-oKai9kAx6dhudVSpKKpDWDHl0HNRg1jkeuY_WAHzXUr0ueoHYS6Xsy_JUH3rispsGRI2Bhqibivbz4IFqYp8j1F_YoIp87dyl3D4WCbuGPCwpmwfYVpQjsdbvNuM9n4zYZx2WodYhrea8rNWos5XJeg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMJ0EdN7j3_Iq0s4QO_B6IofyOgXN0GtG-uFlZubvfViOcbFzHfPVs7_QG9pd8V2Tvdjtziq8BPIZF8sLzPSgMvc123mPLjT2i0zIU-ICH3xzMojy9JlTiHLthIVblFA057lrEk9r_zpBkkuBDFPnMKT6ZaVDeUM90Uws0kDcZ2hKrlMVTMT0LVXU5xid58U3UdP5RZif5WUwHJPKOw1XJiZfbQeCdTSKMqA5h91i01qlcbLX6AhUYuZV-27ktwICDUHd_irq9isDai8UX3FP3rnZN91EBmWvndQepCUVrL0c=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvfhNgWPifitkQmoGdQ3a5puJdwbbE0uLhDkrg8DE9dY1hFN3D7aS68zay2Ssb6WWQtA2N9cCy1ifo06WHiAkfc3rZFbV378UQzEqnUnfl_-s9pSKMBU86vWiZHrVPK4hAXs5zLWu3g3sRRgxTsWqJ_0rOBh8V7smfwGD9CMN5pNO5eU_yVGS2W8PhA_Y4JGL6EgAHHWpeQU7p4FpfBVrDAxGFeAKX-u3uXbQTLJOPo0aRA8RB_9WpfXWrGc1lb89dmNopyQuXa2x5oAIdpez07tygbYBSSJL8csmDpnweI8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM1ig2eaZn4VrmjANzY_pw1xEHUt0jisGP6a-mPl940tDLjwDLSkGQB8hFh2lwsY2OYLgkCHq1YX7dKaWCIY5b0RlN1rF9RbphIa6uRBJCl45dR40MvTEKQ7gQjAvBCn_l3CLZNbHN1_uR7zo6guFOqTOK39x8qHGxcmdxA7q8IFQY3ZrfvbAQorGyqbDIZgQRmkZ2WBmI2shRYPL4vRp_hVMdH-1t9J40ASpQ1KY3QlON_fGz4XWdXWQQY5pDg20fXJKuSMtvlXT6eQN9M4sKRersmxsMOlCRFeOH1BfArdA="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.706124830328655,
+            "long": -73.99689784264993,
+            "name": "Brooklyn Bridge",
+            "score": 9.86701506842443,
+            "id": "Brooklyn_Bridge",
+            "snippet": "It was designated a National Historic Landmark in 1964 and a National Historic Civil Engineering Landmark by the American Society of Civil Engineers in 1972.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM_tdotnZq0Nf7RUGUpTnS3m1hNs-6SUOjvbECn5q9-vdjORwjIEquSHIwmJd3vDRR_ilFe4E4r64R-fP4XkDpHldVfzYH9qXVoq7p_Op82mrIMLJ3i7YbA6DCfwys_IQjCMSM_ZM_8o8hXt6I06RruL3rIhUb9Bb8IoMujCIYEhdGqgMSi3TgsRc65yDbdbRfWc2zeTDUqBcLn3FehivHsFF0DiC6bnnZqioeY9HnjZhNuFSPop0p5PcSaWqaLnNJlnTEzTFtWBrpBv8M7BZcNKAZvgnhi5DEjR1IgwXYQQQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM8p8mTuDNNFOrBaqCDaDmGMMaxuUqdSRE_SKtXWICn7PX4JKkFAN3z8Pmt55lZSp9JuDwY8Yq5JvR5PrEbKk0SY3dnrqHpoe27m8k2U6Of6GmSRTH7AufyL-NR-vCpOIMS50T3zwJtDk3ZKAsv5RaIzmzE7KMEq7nI4TF0Hxk50fKKT1ytwH3j4Ch8CeC3j-6WlHQD7eTJPPZD9Csx8p9S2258mCnP0uS0MxPJgfjodzPgmUfyZFNI32kexqfAr-Leb5fnltol6eHpAZxlfjqSg2lQIDEwS5DkgLrmFQCSus=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMY4KLvUdUdkNQ1zdpkkhs_xl-bvtNrXOtlA1Qh6pbEeN9xrr6quDYYaThcRIG3LqJNIiXUH5Jc2GeqyP8WIpaiVgy1EjMWiMLgyNWz729L0lIFdagJ_siSIVPngwcuB9jg6Y8E7KF-8vykSPR0OWcCPm220STO7cdjkLgoDFEwz5X3raFT1ugbSec-lkwPNutCCKcDsgWH4WbfkljQYBo4bf9dmPZHv4C_eS2AtFfSNg-vwoUmxPutAOg6WstgJxP9tLAQjb_lMnbGC8hyxACQoSE_MFFNieRgJlJfwNEmF0=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM4xF8dFzdsq5SPpYz8A7fIkMUsFXAK4Tunh1MbE6Td0kILyB65OAHoVoagMn8RqxAw92OYS166I1PKPfT15heZbHSnt9bE24FZAg6MJocsB2xBXSsdGVY9WYaVef6-NkJgT4vWN-vOvQ3kpq0lvCRRLbXL0Tkf21MZ2U9B_hinhqa2UYZSeiiSNqyCKEZt4I9ShxgH5xWW3Tf3rrW8aM26XdzEyFlmF-H3EctBdwlNMh4xVGY3VKNtGLlBTqmGmyQjzaM-h7VH1hC1Z17DVAxq9hHKJvB4fA8OMoEaBBPgBE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMeKukNL6Kvv4BRxPeiGWAEQYOQcuwwU8kQMtPK29-wu8-Rcdt_m0kcB9iNoth2sF-EbywSM3nxSrsVZxFrw7mxlO7xulWKrgwqxdHFdh1kI8Rd7nhUUnaMfdDueB7EbgBT-b1Dk5qgjbnDcr6srs_GDHavMzn7iDzOH3TaYaC-dyOKD1K4WqPLPOA4Dpuh6NsLP8POQh7eiHq0WogjXOgxOtOpTT7M_ivfaomp8-KVdymbW15oGp1yZ4RyaMuIMdzkbU7Qod6nh6zycKbLaG_igaFzT8eujkZfJt4ycR_RUU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLwCvOcBVEfVEbrMpfEcUBD3WbMO34SzOVH7IIR9EepD4aUkhkFlC9AS7e_Fb4Y5KgxwNwAj5MwXwqe8TDYNbUwFITkOEWQxdqADURgu225RHOI0WmDz7vBcWGycT04Lb8_euf3EygdmSM-yCGbszzIcWIE4vzFPg_ulSRUzW9Oe1mehyTUmdPHsPIyPtS1AOU67xYsJ4CBEqRsrd7vRxkWZ5M8ZDKAQ7VSNinl6DBoXZmADW-lL_qTDDX5XkhG7R2DASG2-Djcj6M5dyJcoVdnklnMEAUalf8p0LdcQQDKg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMQK-TQXPPizPkpXaLqRQmyMQ3uYtqjW_gEYZDai81D5atxsahsvqVZ9V3whefKsGcPhmMmRhrUijU_tuYQhKQhgDsQv1N86v_f_4IKK2cgzHaOoeOFBYWAxAAKIZ3N50h6Hj97xS4OZ1IKPuTKY-5Rsp14dHUYaoqZDrvcMsZTtcVetW-roU5Y_UOnni0jHOL8SAEktG7SwijMvcqNNhDitL6oZWRgdkKac7wcGNoTqxtbbPa4Wr5dWkAOhQR-XcIpbrbwqM5_MOMyt_k5fFILHE9iSukXTxaTKuZZKaB9M8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLCwvutRSdtyKbuzySR2As9BYn73-C7uLXg0V441TlrvR9Wb6JvJl1UQ9cfzrDahVc5-owZfNZsRCLptgxzrKiCo2Q5cXHJ35bP3d7dwBMFutvSDWmLlin2BUWvZ7F-WMQxu5HwDBO08sclbd1GSIF6UsobvJFtGyLt7lzNCv4D7BCW5MHttCMmk4NNXnCUrG2J8Ch03kW5QenCXqqKnKPx8HLPuL0YE64wut2VBBVzJVvPmc-kufar6IsUK3NOQEPMq_UaUtl_fc8PAgan5IK-J7IBtXA0yDzSvFN_fTDl4=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMp-QwDyC0Bdk7u8228d5297r8mbEwnH_MrpXUmx2YeThVlFZSikDBIqTEXJhHdSc6eKab1MmZrEU7MWVqB4YoM28obgLVCqUYWVhb34QmRWiIIRwH9EXigIhc0uequU6_7Iwvk7RpxWcl0OQd2a6YQVWNlhvwNnBR-4Mzok_TAh_vfDGjWZvPWKlyN5RPhvfLmfym9S3mhTfRH-aihKKo3ojcYMXiUmRMFzT1VScWNMt_rakDYLGBiEEUR5XoYhSz1Wi_Rj3i5AsArbI1N-q-jDls5d-rlVx2yC66Q08Fn-A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMSFsEARbcZqoKwuG4ntzjFCpBNKps58dAElpqQeQJAe2aj5BGjvj1VpzKw2_pVLI0Nz3iPWfs_hM1nIF9Y-DKFLA7wLZBP1Nf1x0cKOuJjQVVffwg9DD4RZJx3PaXaP0ZWtIiJNENEtR4zVQPjxwTr9FifQR-_07ACMTFPbHrwdwByhJCW9y41ucF2cmNca5Nkskk0KBBMn7hOypuNSpgDdCnWykMKEJ-nyA1BKvhsYCcA4nsSIjSi5Ur2_RwsvsKPnC-q9a4ElCXDfeP1rFmosdXE4mmBJt1dXnd-ye5uaQ="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.70316341136895,
+            "long": -73.99528710543053,
+            "name": "Bargemusic",
+            "score": 8.43191595847798,
+            "id": "Bargemusic",
+            "snippet": "A truly hidden gem.",
+            "img": [],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7036769,
+            "long": -73.9948035,
+            "name": "The River Café",
+            "score": 9.6121463991642,
+            "id": "N__1227678751",
+            "snippet": "Superb cocktails in a quite nice vibe.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMr9K4mBFHunomYghqlak11eSSlGIZKL-1_UlFqi80AAYSySUQS7uM8LcfhDwib3TGzZ28x-xmVCfiwkHog1rNPAdbeVa1s8M9oIgw0nzAGo5oA0kmRM2X4V7r8WXxeOs9hgmRa92jQ_xckTbt8Xk5MxeosqJ9rd12NXr2WSs2A51ASHM5prlCJOFFlNxrdaL01LtbZMnRagArKOtNszv3BEUnxBsFuSwfjnV3V6I7nznMZs63teLeob-6-5PDAugLotRbWLkZ42ih5KlDwHCGvL0yGasVq504UyrvpMrdqiQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMxa-Kk2CQku4rdnkA9xMpMpHwuhL5GDpbV7xaHXU8M2aqrlEtOpZ5KP2UAJSWj5VkjNneV39Mi_fovB_d8wRG1Jhi9yKAHCwv6GFzAyGPsDkg-OVT_NKILIsM3Wz07q5zpxmxIcztdfh7FAaKhv5mjAOCiNc1dAILnoWKWnMByXx0FcAsGKxG2QMYCHGOSTG4zZzfmEnZk6GDzFbz3n5OK4NBYXjUDZMxzWxI5PSY2Hme3ul0PxOMAWRjkCfllRaD6EWwiQ9K0I5rKXu3Wl9HCgEXudo3PXyOgRyjEobH6dM="
+            ],
+            "inPlan": true
+        }
+    ],
+    [
+        {
+            "lat": 40.759817643930866,
+            "long": -73.97927424753343,
+            "name": "Radio City Music Hall",
+            "score": 9.49979031538213,
+            "id": "W__118472379",
+            "snippet": "See the Rockettes, another show, or just tour the famous Art Deco masterpiece.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMmZUEm_ZigqulXZzuZ_NI66Rf2gGB7R_a_Ej-CK15pzqbWnqdkzm3G5J8u8atMVRytT-2Jw8zZwWSEeHhCGBiw6jvgLhyqkVszvqEi_yE_m2Oh8zhteKazhs2zYINRTQGeQ2LwMAF0w36JSst3wHioa6NCcwx4xkj7jU85-qNIZM_s9hJhJ9TN5l8czA21VoNMbc_DYXY23h2JfnGinYfZOSkxJI1qqPdhQxg3kbLUFqkQbmMQRbc63IfHl7acadw4rfa2jNeNJMfcThLWMSF9sZbd6-QNADeCe_hRjDRaQc=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMRes7WP0ku9ISoa9QR3Fv-8nQ032DRnbNC850MP_59DVnpYsoKwckbohpXF2KYyi0xPCORB05KHW401jV0U6YhZJfmtQYpq8AI5Ched34BZxHZADLnh6L2I-Za3WGpL9DItMbMbchTV0HePpuv7dUlxiOiqBJZVPuKcPZF6V8O7Wl6SLZQyXNtS4P8zONE0-L-06wCJ6uUWO8gm2HRhGcKSXna6H2XLsR04osqnuSaJ4yMZMyF3J8HqlZkliEmJ1PWno-AtkU7v_w08oBthYT6UXFll0OvKJtURnlSWtqMBk=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMnBSYV2kHHvnhcnkgJCqx9OMStgUeW-UJKGtfE_VkZlxOHLNnkdm4bC3HUw56zAhXawKz-VDzuOmDhRbIuHKKYXfwczrae7pL_Nh4L0wlkDh0riek7AeJdQt3oLPLXRlNI42CbMkCasgilNrLTfaQzElf0-G9lA32FQ2yrX0PgF1Vs0d7Mhg9dNsE5gHc4C-yGNNr5gAXaA3apSZY7a-XEKLY8gVwT49RNeATyK_Wg0OIix0kRGrVm3039qyqgUUY5EuCQvuiVaiunzng8w15phrZA2F7LPG9Z3xT8eThFRE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM6bteRbkqswGAYnASdUOMdHzlImEmMv3GsSXbQ-OUO20tx9gTXK4MwsieMvM7RP3LWOlt5VcB2jT6LIRhExv2znrF_faJWJOygJ0IBa3L2o0rlKHjDzDCh86-1izgrMLuf2IxquNiq1HRu8vwjKwQfWVvjY5e8eLMHaHm_T2nL2MDcVZmg5z5hFDkVDjvoWSASm_J_l_l0QLLv42Yzyx1vcU1RX6py_GhbnnkmFcInd8MgxYKr6q3SBr50KG8apvDx4KM7TPvzK9yIJ7bYqoTKdA21iAjwqYkvoUZECqAW3Y=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM2Ky9kRwrq0uij69RIKQGNBeaK7u-voFf9gqPIACA9zg1kJm8zMWs-Z-ZTXIqS6fResMXuy-v50vIqS5Frmhfc89Hfi9HofPpGL4Cr26q5NRD89jaeB8A6z-L3LqGJGaDmSP_T-ko7-7fgeQJfZJowSbPvVPGAbkxRh1NQnoCMuZOWW7p3w_2dtCZd_iwgGLjN5pdC8CWZI_yg4CyVacYKvC-b5xuzwqY7M_nLhjJ_0PxHhsCwH2cjwuG5k0onsnfdMwqW-SohZ-rSgOQ1_oPTQItFVI04IEefL9T70XY1jQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMrYfCyycY1kbSg7MfHikBQLUgzgTiRigFVhcbA8aNgnOfgH4DRgmpcginh-9TeMly6z4KGFPl3HNU1CZL0QpLh910oQjLie86O4Aj9lo0IFGXRGsMvQlMewbrFE8rKmcR9Ukvd8PsBjBzxuk45nGvi5PFHUaEKZS9jq0F83h0YatMhtrZxhk3Wq7_azLoKLvPWTTqrzYDY6gDDyKyJkmgj7fo1A1x6GrE1FBIlyYwh2H2cCBlhlia4WyCV9g6jJCfYM2RPMPnFXhU7OjiA6UnbQAki0MSI9S8KrOvOWAvTC8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM5AVX-JbGeqO7efASOdeF1sBRyGQClVlZPJ2vdN1IwRkE78P7kLX3yK8sk1rtn4hGU6B4NOnNRr-RGDIW3oLL_42MP_WXT-9E3dMV5Ki8XTQ9O7zpXmVnbjMcLMmrfqG2amcJ9KiY3QWv-pw0w_wihdEbqCLPcnJHaFFKHBoJ8t2qRTxUHf8sv4ndfgH46oRb7vEYd0gh_uI-oJ0t8KAnoEC1OH_5XJK9o-gfgXO1O3txWtBH_S6q6xQhIlm5fSViXeGSYZ_ibhB_fMesbt1YScWS4WWACxfudUxI_QBn6ZI=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLLk8hM_bF4RD4bYsOl9L5bWi2qCz0L6DiYfXRzBkMuBa1ntikwp0z3BSvqjF5eHP5zu_TcXwgbFxuV2637nRIFoXN4MlDnlj2KSqN9EubIXQacOxQVinGldPrSR4VaMFpWPlm3gxjsYMroz84P0y-sonYp16_GQyLqK0Zpco830nlpo8phQGCp2Ti6m0iayMI1YXeBGykktwUAu9hFqlvvhlkHpt-JVgyDxNKmBEGgbSHZszs-e5em1HX0aHIR5l-ImfWY2aoswiOmBUaBMyAn5uOkMktKTtWXVPrjYjA_A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMIBiCKTu_p9kwlYO1eAIyscEq3O1Snxvq3aX6mKs3uJCHUvHwmEZ1oU43NgocS7hDFaExkfMgL7AE5YXXvH4c_bcZ-i0NtAEl8CnP07cNT4cL_hSyXuhJL1ld0ZvFFjmVc6WI404bDeirOUZNYSioV555xo2zrMyQWrZ_7CIjoknrYIptM5ZT8FPmSIRGdTtY0H08q4IOybzxlTfqTQz0vL0CU6JFMOfW2Mwf-bQ88Oz2U-3dWtAHPYnsZN3_RAKKXO5REFD-vNUi6AbEuKyo5NslZdSP5nSG8JlsY4eCnnU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM32dZKznqAamAB9v0bePamxRYW_Yh8of-ookhdK5xeOVw4UVP5K4QneAT5wHEkIOtLEsrEVkiNFN6zwA0bQMzewtDaZd4WzV8brO-irQI8HKbVdMiXli8NPEc-e3ea0fmtWGG0wcXkNm76C8aiS_bxnYtdzW3zveihltggjhgXJOBfvX2QpTaUZNXsV8rkghwrM6-YbJl4ieyS_9jqAUbGHZ0A7ZAZNSZ1KDT4FWL_4lDknukLJh9atKZEkjxVtluZcvfXvl5wCXN2SGglGL9q8r2xHLDHYUSnF2X2hpWIXk="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7616338,
+            "long": -73.9778136,
+            "name": "Museum of Modern Art",
+            "score": 9.98764116201725,
+            "id": "W__118476494",
+            "snippet": "One of the greatest and most popular collections of modern art, on a par with the Tate Modern in London or Paris's Centre Georges Pompidou.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMXS4UNuPAUHVKMQtAlN7ixaub71NOmsKrZpAJMd1k6_8nd_hWp7aqYh0JJxK4dHgnUaDTlVnLwO8ViF3rT7hHG2HKicGZWj2M5M9dpcFoFcymGZHU9jGYPYq0aG2PJxpvZI5JotjQbmWyQdQi-ju-Tj2RVDU6D84AboK94WatzeYbYWRdF9zzSsRkyVdT-Z_40NbnwAuLcX96cj3KfHMax_jal-h42SEVPiXUlZ_uxLkg47MuUcTMsN4Li3Jb13DibyVlr1OnzLMQL1aFJuq8BO-E2kZSIfqdgNke3zd4C6E=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvJ1zJrTyHwYiBip0hd883Z6KRYnKSr_v-9j9Wv88lgYWzlLBJmrLGsLypzUOekjLBS_NtxIoHURTx1FgSxPp-QVksF_iJjVqNB0RMuxaqthejkmawNhWoRn_HaYeiz4_N37hr2Qq35Js6N6BhgUbZkqTteD8MzqkAKN-cEYGlXt78lnhvCBS-Ga-r4cKbqoqdk6mq1s4cVuA4nH2grRy_fiHl7IEdv1m0JIan6zHbZc1d4__yh_LHFX9YkufUezqI-k1nfRBk2s4r2Dga7jZC79EiGQJpR8I10pc6oWgTeQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuw9RXX4Z7l9PwSKza9umFwqiTwLHB3Jsxa7w_AC3Fl2LLYYGHBSlxDeHqK3nUvhhT8KXCBmvJE0jQcpc6o6y9wHOkK5dMTDyvWSZVQVA4JQ_kcxV6ax_f0gEpf_4lXG9jjLLPlqzm24xpogucJYGA1xeRU_zLCUhxlNH4BB9z-xrdl6Eg90P39U3uy7nbCxpv9volY7plNOuRMXrezM44OD6vv6RunZeQdKyL8-SFiCSoZEaiLN3U3Rhk8fJX1JfKrIiIf_Iwou48LIgalgnWZsAg5DSSu77PgO0m8cUjPo=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMbQDdA4-0NwaoIoL1EReQZYcG64fR4NMkjs-fiRmwMgf1WCU4rIi2f3-hGgwm6rkWbSY4We7W1OzDK8xLbLFn-wxM8lCh2l6J1BhxftyCWiQEE0j2m4G6xzrvver6CRXrlexb1eXpoSj7XJ5QIWoioYL_5Rkq7uuFfOfWQBrxuBx5HXvT1eRs8uDdYz1rvR6vhUREY9yAy6_zA-QV5naYIXcr1jRgdYcJpBmrVjFMdB-fkJ_2DXIHD5M0t8WIdXz2zv1XUKAwQuK7sN8l4G2wugbH4zWK1yOLH5Z4DUAalWw=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMW1I4z69rhKpzk3WSMwayzWw4qSR2x8Q7gSJgoFPzMO65xrlwSIjpnbp2-D1QiPt5_qdl-mn8DZFPzrsecLnRc5D-uU7cSlx4rOZy1G8Ai_AjfdcoO1zqpRtOFsw5eNgEqZAJuUqy56NxSk5x96LFUBn5-iOsmHy9-rI3YNC5XxiAteJv89K7sCXIEK-h1BQCREG6OqJkexdTwiNUGDrz7PNp2Sry60-RpS7E-Ue_yaEIHVo6BzLBsRw-D0-wARSydJLN0FvQYEwPcb0foxm39H-J6F7JO4kB-OYSnEqg9Ds=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMuLbd69UnuIiRuvfoFjL9--gB9Ah9v0_tBFqsPFanuZO2YlXG6per8FAp6OzvuUlNQV9R9V6W2_bHMFnZyRYbDexchTDf44R-kQxjM1aXbccTAFTDyUupntR32Rbr9VIjcfgbzETpq_lt2ECsVZ3ntmqpOjo6sBznXf2V2AXtghu_eQJx9_orJdoCzFnSssULllytU2DpgjMfsAtQiVGOtEbAn2-T2Gnkekvvq-__JeL2cEqBa7PSqBbjfNG8BFZwQ4mW44OOWdBDuQwNl2TfxBvx2lvuIKLpaRAChl9SfpU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMD0_q8U_H6MMkontgjMhjOgHxjp5BUe4NBWg3Yd5fuRZ555b69Kw9dIsHmzQulZfm1LaAO-LrQDrZSRkr2HgRsgvarzopghA-mlj3qjQjGeGeydmI3rlA2bPs2lyWONUEByKrZnEIqod5-nD4Lv0-oKai9kAx6dhudVSpKKpDWDHl0HNRg1jkeuY_WAHzXUr0ueoHYS6Xsy_JUH3rispsGRI2Bhqibivbz4IFqYp8j1F_YoIp87dyl3D4WCbuGPCwpmwfYVpQjsdbvNuM9n4zYZx2WodYhrea8rNWos5XJeg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMJ0EdN7j3_Iq0s4QO_B6IofyOgXN0GtG-uFlZubvfViOcbFzHfPVs7_QG9pd8V2Tvdjtziq8BPIZF8sLzPSgMvc123mPLjT2i0zIU-ICH3xzMojy9JlTiHLthIVblFA057lrEk9r_zpBkkuBDFPnMKT6ZaVDeUM90Uws0kDcZ2hKrlMVTMT0LVXU5xid58U3UdP5RZif5WUwHJPKOw1XJiZfbQeCdTSKMqA5h91i01qlcbLX6AhUYuZV-27ktwICDUHd_irq9isDai8UX3FP3rnZN91EBmWvndQepCUVrL0c=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMvfhNgWPifitkQmoGdQ3a5puJdwbbE0uLhDkrg8DE9dY1hFN3D7aS68zay2Ssb6WWQtA2N9cCy1ifo06WHiAkfc3rZFbV378UQzEqnUnfl_-s9pSKMBU86vWiZHrVPK4hAXs5zLWu3g3sRRgxTsWqJ_0rOBh8V7smfwGD9CMN5pNO5eU_yVGS2W8PhA_Y4JGL6EgAHHWpeQU7p4FpfBVrDAxGFeAKX-u3uXbQTLJOPo0aRA8RB_9WpfXWrGc1lb89dmNopyQuXa2x5oAIdpez07tygbYBSSJL8csmDpnweI8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM1ig2eaZn4VrmjANzY_pw1xEHUt0jisGP6a-mPl940tDLjwDLSkGQB8hFh2lwsY2OYLgkCHq1YX7dKaWCIY5b0RlN1rF9RbphIa6uRBJCl45dR40MvTEKQ7gQjAvBCn_l3CLZNbHN1_uR7zo6guFOqTOK39x8qHGxcmdxA7q8IFQY3ZrfvbAQorGyqbDIZgQRmkZ2WBmI2shRYPL4vRp_hVMdH-1t9J40ASpQ1KY3QlON_fGz4XWdXWQQY5pDg20fXJKuSMtvlXT6eQN9M4sKRersmxsMOlCRFeOH1BfArdA="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.706124830328655,
+            "long": -73.99689784264993,
+            "name": "Brooklyn Bridge",
+            "score": 9.86701506842443,
+            "id": "Brooklyn_Bridge",
+            "snippet": "It was designated a National Historic Landmark in 1964 and a National Historic Civil Engineering Landmark by the American Society of Civil Engineers in 1972.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM_tdotnZq0Nf7RUGUpTnS3m1hNs-6SUOjvbECn5q9-vdjORwjIEquSHIwmJd3vDRR_ilFe4E4r64R-fP4XkDpHldVfzYH9qXVoq7p_Op82mrIMLJ3i7YbA6DCfwys_IQjCMSM_ZM_8o8hXt6I06RruL3rIhUb9Bb8IoMujCIYEhdGqgMSi3TgsRc65yDbdbRfWc2zeTDUqBcLn3FehivHsFF0DiC6bnnZqioeY9HnjZhNuFSPop0p5PcSaWqaLnNJlnTEzTFtWBrpBv8M7BZcNKAZvgnhi5DEjR1IgwXYQQQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM8p8mTuDNNFOrBaqCDaDmGMMaxuUqdSRE_SKtXWICn7PX4JKkFAN3z8Pmt55lZSp9JuDwY8Yq5JvR5PrEbKk0SY3dnrqHpoe27m8k2U6Of6GmSRTH7AufyL-NR-vCpOIMS50T3zwJtDk3ZKAsv5RaIzmzE7KMEq7nI4TF0Hxk50fKKT1ytwH3j4Ch8CeC3j-6WlHQD7eTJPPZD9Csx8p9S2258mCnP0uS0MxPJgfjodzPgmUfyZFNI32kexqfAr-Leb5fnltol6eHpAZxlfjqSg2lQIDEwS5DkgLrmFQCSus=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMY4KLvUdUdkNQ1zdpkkhs_xl-bvtNrXOtlA1Qh6pbEeN9xrr6quDYYaThcRIG3LqJNIiXUH5Jc2GeqyP8WIpaiVgy1EjMWiMLgyNWz729L0lIFdagJ_siSIVPngwcuB9jg6Y8E7KF-8vykSPR0OWcCPm220STO7cdjkLgoDFEwz5X3raFT1ugbSec-lkwPNutCCKcDsgWH4WbfkljQYBo4bf9dmPZHv4C_eS2AtFfSNg-vwoUmxPutAOg6WstgJxP9tLAQjb_lMnbGC8hyxACQoSE_MFFNieRgJlJfwNEmF0=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmM4xF8dFzdsq5SPpYz8A7fIkMUsFXAK4Tunh1MbE6Td0kILyB65OAHoVoagMn8RqxAw92OYS166I1PKPfT15heZbHSnt9bE24FZAg6MJocsB2xBXSsdGVY9WYaVef6-NkJgT4vWN-vOvQ3kpq0lvCRRLbXL0Tkf21MZ2U9B_hinhqa2UYZSeiiSNqyCKEZt4I9ShxgH5xWW3Tf3rrW8aM26XdzEyFlmF-H3EctBdwlNMh4xVGY3VKNtGLlBTqmGmyQjzaM-h7VH1hC1Z17DVAxq9hHKJvB4fA8OMoEaBBPgBE=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMeKukNL6Kvv4BRxPeiGWAEQYOQcuwwU8kQMtPK29-wu8-Rcdt_m0kcB9iNoth2sF-EbywSM3nxSrsVZxFrw7mxlO7xulWKrgwqxdHFdh1kI8Rd7nhUUnaMfdDueB7EbgBT-b1Dk5qgjbnDcr6srs_GDHavMzn7iDzOH3TaYaC-dyOKD1K4WqPLPOA4Dpuh6NsLP8POQh7eiHq0WogjXOgxOtOpTT7M_ivfaomp8-KVdymbW15oGp1yZ4RyaMuIMdzkbU7Qod6nh6zycKbLaG_igaFzT8eujkZfJt4ycR_RUU=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLwCvOcBVEfVEbrMpfEcUBD3WbMO34SzOVH7IIR9EepD4aUkhkFlC9AS7e_Fb4Y5KgxwNwAj5MwXwqe8TDYNbUwFITkOEWQxdqADURgu225RHOI0WmDz7vBcWGycT04Lb8_euf3EygdmSM-yCGbszzIcWIE4vzFPg_ulSRUzW9Oe1mehyTUmdPHsPIyPtS1AOU67xYsJ4CBEqRsrd7vRxkWZ5M8ZDKAQ7VSNinl6DBoXZmADW-lL_qTDDX5XkhG7R2DASG2-Djcj6M5dyJcoVdnklnMEAUalf8p0LdcQQDKg=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMQK-TQXPPizPkpXaLqRQmyMQ3uYtqjW_gEYZDai81D5atxsahsvqVZ9V3whefKsGcPhmMmRhrUijU_tuYQhKQhgDsQv1N86v_f_4IKK2cgzHaOoeOFBYWAxAAKIZ3N50h6Hj97xS4OZ1IKPuTKY-5Rsp14dHUYaoqZDrvcMsZTtcVetW-roU5Y_UOnni0jHOL8SAEktG7SwijMvcqNNhDitL6oZWRgdkKac7wcGNoTqxtbbPa4Wr5dWkAOhQR-XcIpbrbwqM5_MOMyt_k5fFILHE9iSukXTxaTKuZZKaB9M8=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMLCwvutRSdtyKbuzySR2As9BYn73-C7uLXg0V441TlrvR9Wb6JvJl1UQ9cfzrDahVc5-owZfNZsRCLptgxzrKiCo2Q5cXHJ35bP3d7dwBMFutvSDWmLlin2BUWvZ7F-WMQxu5HwDBO08sclbd1GSIF6UsobvJFtGyLt7lzNCv4D7BCW5MHttCMmk4NNXnCUrG2J8Ch03kW5QenCXqqKnKPx8HLPuL0YE64wut2VBBVzJVvPmc-kufar6IsUK3NOQEPMq_UaUtl_fc8PAgan5IK-J7IBtXA0yDzSvFN_fTDl4=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMp-QwDyC0Bdk7u8228d5297r8mbEwnH_MrpXUmx2YeThVlFZSikDBIqTEXJhHdSc6eKab1MmZrEU7MWVqB4YoM28obgLVCqUYWVhb34QmRWiIIRwH9EXigIhc0uequU6_7Iwvk7RpxWcl0OQd2a6YQVWNlhvwNnBR-4Mzok_TAh_vfDGjWZvPWKlyN5RPhvfLmfym9S3mhTfRH-aihKKo3ojcYMXiUmRMFzT1VScWNMt_rakDYLGBiEEUR5XoYhSz1Wi_Rj3i5AsArbI1N-q-jDls5d-rlVx2yC66Q08Fn-A=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMSFsEARbcZqoKwuG4ntzjFCpBNKps58dAElpqQeQJAe2aj5BGjvj1VpzKw2_pVLI0Nz3iPWfs_hM1nIF9Y-DKFLA7wLZBP1Nf1x0cKOuJjQVVffwg9DD4RZJx3PaXaP0ZWtIiJNENEtR4zVQPjxwTr9FifQR-_07ACMTFPbHrwdwByhJCW9y41ucF2cmNca5Nkskk0KBBMn7hOypuNSpgDdCnWykMKEJ-nyA1BKvhsYCcA4nsSIjSi5Ur2_RwsvsKPnC-q9a4ElCXDfeP1rFmosdXE4mmBJt1dXnd-ye5uaQ="
+            ],
+            "inPlan": true
+        },
+        {
+            "lat": 40.70316341136895,
+            "long": -73.99528710543053,
+            "name": "Bargemusic",
+            "score": 8.43191595847798,
+            "id": "Bargemusic",
+            "snippet": "A truly hidden gem.",
+            "img": [],
+            "inPlan": true
+        },
+        {
+            "lat": 40.7036769,
+            "long": -73.9948035,
+            "name": "The River Café",
+            "score": 9.6121463991642,
+            "id": "N__1227678751",
+            "snippet": "Superb cocktails in a quite nice vibe.",
+            "img": [
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMr9K4mBFHunomYghqlak11eSSlGIZKL-1_UlFqi80AAYSySUQS7uM8LcfhDwib3TGzZ28x-xmVCfiwkHog1rNPAdbeVa1s8M9oIgw0nzAGo5oA0kmRM2X4V7r8WXxeOs9hgmRa92jQ_xckTbt8Xk5MxeosqJ9rd12NXr2WSs2A51ASHM5prlCJOFFlNxrdaL01LtbZMnRagArKOtNszv3BEUnxBsFuSwfjnV3V6I7nznMZs63teLeob-6-5PDAugLotRbWLkZ42ih5KlDwHCGvL0yGasVq504UyrvpMrdqiQ=",
+                "http://api-images-www.triposo.com/20200405/gAAAAABemkmMxa-Kk2CQku4rdnkA9xMpMpHwuhL5GDpbV7xaHXU8M2aqrlEtOpZ5KP2UAJSWj5VkjNneV39Mi_fovB_d8wRG1Jhi9yKAHCwv6GFzAyGPsDkg-OVT_NKILIsM3Wz07q5zpxmxIcztdfh7FAaKhv5mjAOCiNc1dAILnoWKWnMByXx0FcAsGKxG2QMYCHGOSTG4zZzfmEnZk6GDzFbz3n5OK4NBYXjUDZMxzWxI5PSY2Hme3ul0PxOMAWRjkCfllRaD6EWwiQ9K0I5rKXu3Wl9HCgEXudo3PXyOgRyjEobH6dM="
+            ],
+            "inPlan": true
+        }
+    ],
+    [
+        {
             "lat": 40.78115346226707,
             "long": -73.97404712124002,
             "name": "American Museum of Natural History",

@@ -5,8 +5,10 @@ const getListStyle = isDraggingOver => ({
   //background: isDraggingOver ? "lightblue" : "blue",
   background: "white",
   padding: 8,
-  width: 100,
+  width: 110,
   borderColor: '#000000',
+  position: "absolute",
+  overflow: "auto",
 
 });
 
@@ -24,6 +26,7 @@ const getItemStyle = (isDragging, draggableStyle) => ({
   color: '#343F67',
   // color: '#FFFFFF',
   // styles we need to apply on draggables
+  flexWrap: "wrap",
   ...draggableStyle
 });
 

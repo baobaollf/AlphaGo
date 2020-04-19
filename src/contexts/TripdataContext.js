@@ -30,6 +30,7 @@ class TripdataContextProvider extends Component {
 
   closePopup = () => {
     this.setState({ popupInfo: null })
+    return true;
   }
 
   componentDidMount() {
