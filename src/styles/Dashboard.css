@@ -89,11 +89,11 @@
 }
 
 .cityListImg:hover {
-    border: 5px solid #9966ff;
+    border: 5px solid #663300;
     border-width: thick;
     border-style: groove;
     opacity: 0.6;
     transition: 0.7s ease;
-    background-color: #9966ff;
+    background-color: #663300;
 }
 

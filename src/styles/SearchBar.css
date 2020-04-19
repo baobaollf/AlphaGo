@@ -1,6 +1,17 @@
-.search-box {
-    margin-left: 225px;
+.search-box  {
+    margin-left: 200px;
     margin-top: -80px;
     box-sizing: border-box;
-    
+    margin-bottom: 0px;
 }
+
+.ant-select-auto-complete.ant-select .ant-input {
+    height: 30px !important;
+    padding-inline-start: 10px;
+    width: 97%;
+}
+
+
+ .ant-select-search {
+     margin-bottom:-40px;
+ }

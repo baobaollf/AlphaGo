@@ -42,7 +42,6 @@ class Dashboard extends Component {
     }
 
     
-    
 
     render() {
         return (
@@ -68,6 +67,7 @@ class Dashboard extends Component {
                             coordinates={this.state.coordinates}
                             setCity={this.setCity}
                             setCoordinates={this.setCoordinates.bind(this)}
+                            setCityInfo={this.setCityInfo.bind(this)}
                         />
                     </div>
                     <div>
@@ -76,6 +76,7 @@ class Dashboard extends Component {
                             setDay={this.setDay}
                         />
                         <NextPageButton
+                            data={alphaCityList}
                             city={this.state.city}
                             coordinates={this.state.coordinates}
                             day={this.state.day}

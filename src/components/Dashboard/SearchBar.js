@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import 'antd/dist/antd.css';
 import {AutoComplete} from 'antd';
+// import "../../styles/SearchBar.css";
 
 class SearchBar extends Component {
 
@@ -9,7 +10,9 @@ class SearchBar extends Component {
         for(let i = 0; i < this.props.data.default.length; i++) {
             if(this.props.data.default[i].name + ", " + this.props.data.default[i].country === city){
                 this.props.setCoordinates(this.props.data.default[i].coordinates.latitude, this.props.data.default[i].coordinates.longitude)
+                this.props.setCityInfo(this.props.data.default[i].snippet, this.props.data.default[i].name);
             }
+
         }
     }
 
@@ -24,8 +27,10 @@ class SearchBar extends Component {
     render() {
         return (
             <div className="search-box">
-                <AutoComplete
-                    style={{width: 300}}
+                <AutoComplete id="userinput"
+                    style={{width: 300,
+                            paddingleft: 2
+                    }}
                     dataSource={this.cityList(this.props.data.default)}
                     value={this.props.city}
                     placeholder="Enter your destination"
