@@ -1,12 +1,3 @@
-body {
-    background-image: url("../../assets/images/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/*TODO: 1. Signup,signin Button touchup
-          2. Form grid shape revise
-          3.change background image(not for body)*/
 .form {
     margin-left: 36%;
     margin-right: 30%;
@@ -62,4 +53,11 @@ body {
     background-clip: padding-box;
     background-color: #fff;
     align-content: center;
+}
+
+.newuser{
+    margin-left: 110%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }

@@ -29,15 +29,25 @@ class SignInPage extends Component {
         <Form className="form" onSubmit={this.handleSubmit}>
           <FormGroup className="form-group" size="sm">
             <ControlLabel className="label">Username</ControlLabel>
-            <FormControl id="username" type="username" placeholder="Username" onChange={this.handleChange}/>
+            <FormControl id="username" type="username" placeholder="Input Username" onChange={this.handleChange}/>
+          </FormGroup>
+          <FormGroup className="form-group" size="sm">
+            <ControlLabel className="label">Email</ControlLabel>
+            <FormControl id="username" type="username" placeholder="Input Email" onChange={this.handleChange}/>
           </FormGroup>
           <FormGroup  className="form-group" size="sm">
             <ControlLabel className="label">Password</ControlLabel>
-            <FormControl id="password" type="password" placeholder="Password" onChange={this.handleChange}/>
+            <FormControl id="password" type="password" placeholder="Input Password" onChange={this.handleChange}/>
           </FormGroup>
           <Button className="button" size="sm" variant="warning" type="submit">
-            Sign In
+            <p className="signup">Sign In</p>
           </Button>
+          <FormGroup  className="newuser" size="sm">
+              <p>
+                "New User?"
+                <a href="./signup">Sign Up Free!</a>
+              </p>
+            </FormGroup>
         </Form>
       </div>
     )

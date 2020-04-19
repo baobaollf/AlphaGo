@@ -59,7 +59,7 @@ class SignUpPage extends Component {
           {/*  By signing up, you agree to all user terms.*/}
           {/*</TextArea>*/}
           <Button className="button" size="sm" variant="warning" type="submit" >
-            Sign up
+            <p className="signup">Sign up</p>
           </Button>
         </Form>
       </div>
