@@ -54,7 +54,6 @@ class TripdataContextProvider extends Component {
   }
 
   fetchMoreTopListData() {
-    //console.log(this.state.TopList.length)
     var len = this.state.TopList.length
     if (len % 10 === 0) {
       const url = "http://13.58.39.66/api/topPoi?cityName=New York&type=all&score=" + 
