@@ -53,8 +53,23 @@ class TripdataContextProvider extends Component {
       .catch(error => console.log("Load data failed"));
   }
 
+  fetchMoreTopListData() {
+    //console.log(this.state.TopList.length)
+    var len = this.state.TopList.length
+    if (len % 10 === 0) {
+      const url = "http://13.58.39.66/api/topPoi?cityName=New York&type=all&score=" + 
+        this.state.TopList[len - 1].score + "&poiId=" + this.state.TopList[len - 1].id;
+      return fetch(url)
+        .then(response => response.json())
+        .then(data => this.setState({
+          TopList: this.state.TopList.concat(data)
+        }))
+        .catch(error => console.log("Load data failed"));
+    }
+  }
+
   fetchDayPlanData() {
-    const url = "http://13.58.39.66/api/dayPlan?cityName=New%20York&days=" + this.props.city.days
+    const url = "http://13.58.39.66/api/dayPlan?cityName=New%20York&days=3"
     return fetch(url)
       .then(response => response.json())
       .then(data => this.setState({ dayList: data, currentDayList: data[0] }))
@@ -138,7 +153,8 @@ class TripdataContextProvider extends Component {
           deleteByLoop: this.deleteByLoop,
           setPopupinfo: this.setPopupinfo,
           closePopup: this.closePopup,
-          setTopList: this.setTopList
+          setTopList: this.setTopList,
+          fetchMoreTopListData: this.fetchMoreTopListData.bind(this),
           }}>
         {this.props.children}
       </TripdataContext.Provider>

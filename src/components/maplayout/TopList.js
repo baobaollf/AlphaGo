@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -39,15 +39,24 @@ const useStyles = makeStyles((theme) => ({
 
 export default function NestedList(props) {
   const classes = useStyles();
+  const scrollRef = useRef();
   const [open, setOpen] = React.useState(true);
-  const { TopList, setPopupinfo } = React.useContext(TripdataContext)
+  const { TopList, setPopupinfo,fetchMoreTopListData } = React.useContext(TripdataContext)
 
   const handleClick = () => {
     setOpen(!open);
   };
 
-  const createGridList = (data) => {
+  const loadData = () => {
+    // console.log("scrollTop:" + scrollRef.current.scrollTop);
+    // console.log("scrollHeight:" + scrollRef.current.scrollHeight);
+    // console.log("clientHeight:" + scrollRef.current.clientHeight);
+    if (scrollRef.current.scrollTop + scrollRef.current.clientHeight >= scrollRef.current.scrollHeight) {
+      fetchMoreTopListData();
+    }
+  }
 
+  const createGridList = (data) => {
     return TopList.map((point) => (
       <GridListTile key={point.id} onClick={() => setPopupinfo(point)}>
         <img src={point.img[0]} alt=" " />} />
@@ -61,7 +70,7 @@ export default function NestedList(props) {
       </GridListTile>
     ))
   }
-
+  
   return (
     <div className="TopList">
       <List
@@ -76,11 +85,8 @@ export default function NestedList(props) {
           {open ? <ExpandLess /> : <ExpandMore />}
         </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit>
-          {/* <List component="div" disablePadding>
-            {props.data && createList(props.data)}
-          </List> */}
-          <div className={classes.gridroot}>
-            <GridList cellHeight={200} spacing={1} className={classes.gridList} cols={1}>
+          <div className={classes.gridroot} onScroll={loadData}>
+            <GridList cellHeight={200} spacing={1} className={classes.gridList} cols={1} ref={scrollRef}>
               {TopList && createGridList(TopList)}
             </GridList>
           </div>

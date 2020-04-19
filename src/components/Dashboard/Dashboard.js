@@ -34,8 +34,8 @@ class Dashboard extends Component {
 
     render() {
         return (
-            <div>
-                <body className="dashboard-container">
+          <div className="dashboard-container">
+                {/* <body className="dashboard-container"> */}
                 <div className="left-side">
                     <p className="promo-text">
                         Plan your own unique itinerary as detailed as you'd like.
@@ -73,7 +73,7 @@ class Dashboard extends Component {
                               setCity={this.setCity}
                     />
                 </div>
-                </body>
+                {/* </body> */}
             </div>
         )
     }

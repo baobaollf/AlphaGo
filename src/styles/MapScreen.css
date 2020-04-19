@@ -50,6 +50,8 @@
 }
 
 .MapGL {
-  position: absolute;
+  position: fixed;
   margin-top: -13px;
+  width:100%;
+  height:100%;
 }
