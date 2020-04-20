@@ -33,7 +33,7 @@ export class MapScreen extends Component {
       viewport: {
         latitude: pointInfo.lat,
         longitude: pointInfo.long,
-        zoom: 12,
+        zoom: 13,
         pitch: 40
       },
     })
