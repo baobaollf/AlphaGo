@@ -1,37 +1,3 @@
-/* body {
-    background-image: url("../../assets/images/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
-.signuppage{
-    background-image: url("../../assets/images/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 1500px;
-}
-
-.signupform {
-    padding-top: 200px;
-    margin-top: -200px;
-    position: center;
-}
-
-.signinpage{
-    background-image: url("../../assets/images/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 1500px;
-}
-
-.signinform {
-    padding-top: 200px;
-
-    margin-top: -200px;
-    position: center;
-}
-
-
 .form {
     margin-left: 36%;
     margin-right: 30%;
@@ -87,11 +53,6 @@
     background-clip: padding-box;
     background-color: #fff;
     align-content: center;
-}
-
-.signup {
-    position: center;
-    margin-right: 10px;
 }
 
 .newuser{
