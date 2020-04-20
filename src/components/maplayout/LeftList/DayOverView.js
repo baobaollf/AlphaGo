@@ -38,8 +38,8 @@ class DayOverView extends Component {
     return this.props.reorder(list, start, end);
   }
 
-  add(poi) {
-    this.props.updateItem(poi);
+  add(poi, index) {
+    this.props.updateItem(poi,index);
   }
 
   onDragEnd(result) {
@@ -71,7 +71,7 @@ class DayOverView extends Component {
                     {(provided, snapshot) => (
                       <div
                         onClick={() => {
-                          this.add(item);
+                          this.add(item,index);
                         }}
                         ref={provided.innerRef}
                         {...provided.draggableProps}

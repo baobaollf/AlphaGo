@@ -93,7 +93,7 @@ export class MapScreen extends Component {
 
 
   render() {
-    const { currentDayList, TopList } = this.context;
+    const { currentDayList, CurrentAround } = this.context;
     const data = this.createLinear(currentDayList)
     const {viewport} = this.state;
     const layers = [
@@ -113,7 +113,7 @@ export class MapScreen extends Component {
           
         
           <DeckGL viewState={viewport} layers={layers}>
-            <Pin data={TopList} onClickMarker={this._onClickMarker} color={"#FA6585"} />
+            <Pin data={CurrentAround} onClickMarker={this._onClickMarker} color={"#FA6585"} />
             <Pin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>
             {this._renderPopup()}
           </DeckGL>

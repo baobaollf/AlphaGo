@@ -11,6 +11,8 @@ class TripdataContextProvider extends Component {
     this.state = {
       dayList: [],
       currentDayList: [],
+      AroundList: [],
+      CurrentAround: [],
       TopList: [],
       showplan: false,
       popupInfo: null,
@@ -71,11 +73,11 @@ class TripdataContextProvider extends Component {
     const url = "http://13.58.39.66/api/dayPlan?cityName=New%20York&days=3"
     return fetch(url)
       .then(response => response.json())
-      .then(data => this.setState({ dayList: data[0], currentDayList: data[0][0] }))
+      .then(data => this.setState({ dayList: data[0], currentDayList: data[0][0], AroundList: data[1], CurrentAround: data[1][0] }))
       .catch(error => console.log("Load data failed"));
   }
 
-  updateItem = (list) => {
+  updateItem = (list,index) => {
     if (list === this.state.currentDayList) {
       this.showPlan();
     } else if (this.state.showplan === false) {
@@ -83,6 +85,7 @@ class TripdataContextProvider extends Component {
     }
     this.setState({
       currentDayList: list,
+      CurrentAround: this.state.AroundList[index]
     });
     
   }
@@ -142,7 +145,7 @@ class TripdataContextProvider extends Component {
     return (
       <TripdataContext.Provider value={{
           ...this.state,
-          updateItem: this.updateItem,
+          updateItem: this.updateItem.bind(this),
           reorder: this.reorder,
           reorder_day: this.reorder_day,
           deleteItem: this.deleteItem,
