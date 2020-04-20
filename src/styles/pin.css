@@ -13,3 +13,7 @@
   width: 30px;
   height: 30px;
 }
+
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 3.1875rem !important;
+}

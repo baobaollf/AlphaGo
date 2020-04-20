@@ -10,11 +10,12 @@ import { TripdataContext } from "../../contexts/TripdataContext";
 
 export class MapScreen extends Component {
   static contextType = TripdataContext
-
+  //40.730610, -73.935242
+  //this.props.coordinates.latitude
   state = {
     viewport: {
-      latitude: 40.730610,
-      longitude: -73.935242,
+      latitude: this.props.coordinates.latitude,
+      longitude: this.props.coordinates.longitude,
       zoom: 12,
       pitch: 40,
     },
@@ -32,7 +33,7 @@ export class MapScreen extends Component {
       viewport: {
         latitude: pointInfo.lat,
         longitude: pointInfo.long,
-        zoom: 12,
+        zoom: 13,
         pitch: 40
       },
     })
@@ -93,7 +94,7 @@ export class MapScreen extends Component {
 
 
   render() {
-    const { currentDayList, TopList } = this.context;
+    const { currentDayList, CurrentAround } = this.context;
     const data = this.createLinear(currentDayList)
     const {viewport} = this.state;
     const layers = [
@@ -113,7 +114,7 @@ export class MapScreen extends Component {
 
 
           <DeckGL viewState={viewport} layers={layers}>
-            <Pin data={TopList} onClickMarker={this._onClickMarker} color={"#FA6585"} />
+            <Pin data={CurrentAround} onClickMarker={this._onClickMarker} color={"#FA6585"} />
             <Pin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>
             {this._renderPopup()}
           </DeckGL>

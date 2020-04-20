@@ -14,7 +14,7 @@ class ListView extends Component {
             <div className="flexbox">
                 <DayOverView
                     items={dayList}
-                    updateItem={updateItem.bind(this.context)}
+                    updateItem={updateItem.bind(this)}
                     reorder={reorder_day.bind(this.context)}
                     showPlan={showPlan}/>
                 {

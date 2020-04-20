@@ -1,6 +1,9 @@
 @import "../styles/SearchBar.css";
 
 .dashboard-container {
+    position:fixed;
+    width:100%;
+    height:100%;
     margin: -14px
 }
 

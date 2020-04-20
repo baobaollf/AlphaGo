@@ -1,24 +1,34 @@
 import React, { Component, createContext } from 'react'
 // import * as TopPlacesData from "../testData/response.json";
 //import backEndData from "../testData/dayPlannerTemplate.json"
-import backEndData from "../testData/dayScheduleList.json"
-import TopList from "../testData/topPOIList.json"
 
 export const TripdataContext = createContext();
 
 class TripdataContextProvider extends Component {
 
-  state = {
-    dayList: [],
-    currentDayList: [],
-    TopList:[],
-    showplan: false,
-    popupInfo: null,
+  constructor(props) {
+    super(props);
+    this.state = {
+      dayList: [],
+      currentDayList: [],
+      AroundList: [],
+      CurrentAround: [],
+      TopList: [],
+      showplan: false,
+      popupInfo: null,
+      city: this.props.city
+    }
   }
 
   showPlan() {
     this.setState({
       showplan: !this.state.showplan
+    })
+  }
+
+  setTopList = (list) => {
+    this.setState({
+      TopList: list
     })
   }
 
@@ -34,14 +44,41 @@ class TripdataContextProvider extends Component {
   }
 
   componentDidMount() {
-    this.setState({
-      dayList: backEndData,
-      currentDayList: backEndData[0],
-      TopList: TopList
-    })
+    this.fetchTopListData()
+    this.fetchDayPlanData()
   }
 
-  updateItem = (list) => {
+  fetchTopListData() {
+    const url = "http://13.58.39.66/api/topPoi?cityName=New York&type=all"
+    return fetch(url)
+      .then(response => response.json())
+      .then(data => this.setState({ TopList: data   }))
+      .catch(error => console.log("Load data failed"));
+  }
+
+  fetchMoreTopListData() {
+    var len = this.state.TopList.length
+    if (len % 10 === 0) {
+      const url = "http://13.58.39.66/api/topPoi?cityName=New York&type=all&score=" + 
+        this.state.TopList[len - 1].score + "&poiId=" + this.state.TopList[len - 1].id;
+      return fetch(url)
+        .then(response => response.json())
+        .then(data => this.setState({
+          TopList: this.state.TopList.concat(data)
+        }))
+        .catch(error => console.log("Load data failed"));
+    }
+  }
+
+  fetchDayPlanData() {
+    const url = "http://13.58.39.66/api/dayPlan?cityName=New%20York&days=3"
+    return fetch(url)
+      .then(response => response.json())
+      .then(data => this.setState({ dayList: data[0], currentDayList: data[0][0], AroundList: data[1], CurrentAround: data[1][0] }))
+      .catch(error => console.log("Load data failed"));
+  }
+
+  updateItem = (list,index) => {
     if (list === this.state.currentDayList) {
       this.showPlan();
     } else if (this.state.showplan === false) {
@@ -49,6 +86,7 @@ class TripdataContextProvider extends Component {
     }
     this.setState({
       currentDayList: list,
+      CurrentAround: this.state.AroundList[index]
     });
     
   }
@@ -103,14 +141,12 @@ class TripdataContextProvider extends Component {
       currentDayList: result,
     });
   }
-
-
-
+  
   render() {
     return (
       <TripdataContext.Provider value={{
           ...this.state,
-          updateItem: this.updateItem,
+          updateItem: this.updateItem.bind(this),
           reorder: this.reorder,
           reorder_day: this.reorder_day,
           deleteItem: this.deleteItem,
@@ -120,6 +156,8 @@ class TripdataContextProvider extends Component {
           deleteByLoop: this.deleteByLoop,
           setPopupinfo: this.setPopupinfo,
           closePopup: this.closePopup,
+          setTopList: this.setTopList,
+          fetchMoreTopListData: this.fetchMoreTopListData.bind(this),
           }}>
         {this.props.children}
       </TripdataContext.Provider>
