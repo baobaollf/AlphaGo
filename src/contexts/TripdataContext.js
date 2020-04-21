@@ -16,7 +16,7 @@ class TripdataContextProvider extends Component {
       TopList: [],
       showplan: false,
       popupInfo: null,
-      city: this.props.city
+      city: this.props.details
     }
   }
 
@@ -49,17 +49,17 @@ class TripdataContextProvider extends Component {
   }
 
   fetchTopListData() {
-    const url = "http://13.58.39.66/api/topPoi?cityName=New York&type=all"
+    const url = "http://13.58.39.66/api/topPoi?cityName=" + this.props.details.city + "&type=all"
     return fetch(url)
       .then(response => response.json())
-      .then(data => this.setState({ TopList: data   }))
+      .then(data => this.setState({ TopList: data }))
       .catch(error => console.log("Load data failed"));
   }
 
   fetchMoreTopListData() {
     var len = this.state.TopList.length
     if (len % 10 === 0) {
-      const url = "http://13.58.39.66/api/topPoi?cityName=New York&type=all&score=" + 
+      const url = "http://13.58.39.66/api/topPoi?cityName=" + this.state.city.city + "&type=all&score=" + 
         this.state.TopList[len - 1].score + "&poiId=" + this.state.TopList[len - 1].id;
       return fetch(url)
         .then(response => response.json())
@@ -71,7 +71,8 @@ class TripdataContextProvider extends Component {
   }
 
   fetchDayPlanData() {
-    const url = "http://13.58.39.66/api/dayPlan?cityName=New%20York&days=3"
+    const url = "http://13.58.39.66/api/dayPlan?cityName="+ this.props.details.city + "&days=" + this.props.details.days
+    console.log(url)
     return fetch(url)
       .then(response => response.json())
       .then(data => this.setState({ dayList: data[0], currentDayList: data[0][0], AroundList: data[1], CurrentAround: data[1][0] }))
