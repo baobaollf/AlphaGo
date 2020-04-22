@@ -1,42 +1,32 @@
 import React, { Component } from 'react';
 import { MAPBOX_TOKEN, MAP_STYLE_URL } from '../../constants';
-import MapGL, { Popup, NavigationControl, FullscreenControl, ScaleControl } from 'react-map-gl';
+import MapGL, { Popup, NavigationControl, FullscreenControl, ScaleControl, FlyToInterpolator } from 'react-map-gl';
 import {Pin} from './pin';
 import CityInfo from './CityInfo';
 import DeckGL from '@deck.gl/react';
 import { LineLayer } from '@deck.gl/layers';
 import { TripdataContext } from "../../contexts/TripdataContext";
+//import WebMercatorViewport from 'viewport-mercator-project';
 
 
 export class MapScreen extends Component {
   static contextType = TripdataContext
   //40.730610, -73.935242
   //this.props.coordinates.latitude
-  state = {
-    viewport: {
-      latitude: this.props.coordinates.latitude,
-      longitude: this.props.coordinates.longitude,
-      zoom: 12,
-      pitch: 40,
-    },
-  }
-
-  _updateViewport = viewport => {
-    this.setState({
-      viewport
-    })
-  }
 
   _onClickMarker = pointInfo => {
-    const { setPopupinfo } = this.context;
+    const { setPopupinfo, setViewport } = this.context;
     this.setState({
       viewport: {
         latitude: pointInfo.lat,
         longitude: pointInfo.long,
         zoom: 13,
-        pitch: 40
+        pitch: 40,
+        transitionDuration: 1000,
+        transitionInterpolator: new FlyToInterpolator()
       },
     })
+    setViewport(pointInfo.lat, pointInfo.long, 13);
     setPopupinfo(pointInfo);
   };
 
@@ -94,12 +84,13 @@ export class MapScreen extends Component {
 
 
   render() {
-    const { currentDayList, CurrentAround } = this.context;
+    const { currentDayList, CurrentAround, viewport, _updateViewport } = this.context;
     const data = this.createLinear(currentDayList)
-    const {viewport} = this.state;
+    //const {viewport} = this.state;
     const layers = [
       new LineLayer({ id: 'line-layer', data, getWidth: 6, getColor: [52,63,103]})
-    ];
+    ]; 
+    
     return (
       
       <div className="MapGL">
@@ -108,8 +99,9 @@ export class MapScreen extends Component {
           width="100vw" 
           height="100vh"
           mapStyle= {MAP_STYLE_URL}
-          onViewportChange={this._updateViewport}
+          onViewportChange={_updateViewport}
           mapboxApiAccessToken={MAPBOX_TOKEN}
+          ref = "mapref"
         >
 
 
