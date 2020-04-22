@@ -238,14 +238,15 @@ var style = {
     }
   }
 };
-const thArray = ["Day", "Destination", "Operation Time", "Description", "City"];
+const thArray = ["City", "Day(s)"];
 const tdArray = [
-  ["1", "Skydeck", "10:00 - 22:00", "Some description", "Chicago"],
-  ["2", "Architecture River Cruise", "10:00 - 22:00", "Some description", "Chicago"],
-  ["3", "Millennium Park", "10:00 - 22:00", "Some description", "Chicago"],
-  ["4", "The Field Museume", "10:00 - 22:00", "Some description", "Chicago"],
-  ["5", "Shedd Aquarium", "10:00 - 22:00", "Some description", "Chicago"],
-  ["6", "Adler Planetarium", "10:00 - 22:00", "Some description", "Chicago"]
+  ["Chicago", "3"],
+  ["New York", "4"],
+  ["Seattle", "5"],
+  ["Beijing", "6"],
+  ["Tianjin", "7"],
+  ["Shenzhen", "8"],
+  ["Shanghai", "12"],
 ];
 
 module.exports = {

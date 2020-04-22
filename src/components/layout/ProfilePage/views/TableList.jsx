@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import { Grid, Row, Col, Table } from "react-bootstrap";
 import Card from "../Card/Card.jsx";
 import { thArray, tdArray } from "../variables/Variables.jsx";
+import data from "../../../../testData/dayScheduleList.json"
 // TODO: how to show save ROUTES?
+
+
 class TableList extends Component {
   render() {
     return (
@@ -11,12 +14,12 @@ class TableList extends Component {
           <Row>
             <Col md={12}>
               <Card
-                title="Saved Route 1 - Striped Table with Hover"
-                category= "subtitle"
+                title="Your Saved Histroy"
+                category= ""
                 ctTableFullWidth
                 ctTableResponsive
                 content={
-                  <Table striped hover>
+                  <Table id="table" striped hover>
                     <thead>
                       <tr>
                         {thArray.map((prop, key) => {
@@ -27,41 +30,13 @@ class TableList extends Component {
                     <tbody>
                       {tdArray.map((prop, key) => {
                         return (
-                          <tr key={key}>
+                          <tr key={key} onClick={(event) => {
+                            console.log(prop[0]);
+                          }}>
                             {prop.map((prop, key) => {
-                              return <td key={key}>{prop}</td>;
-                            })}
-                          </tr>
-                        );
-                      })}
-                    </tbody>
-                  </Table>
-                }
-              />
-            </Col>
 
-            <Col md={12}>
-              <Card
-                plain
-                title="Saved Route 2"
-                category="subtitle"
-                ctTableFullWidth
-                ctTableResponsive
-                content={
-                  <Table hover>
-                    <thead>
-                      <tr>
-                        {thArray.map((prop, key) => {
-                          return <th key={key}>{prop}</th>;
-                        })}
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {tdArray.map((prop, key) => {
-                        return (
-                          <tr key={key}>
-                            {prop.map((prop, key) => {
-                              return <td key={key}>{prop}</td>;
+                              return <td key={key} >
+                                {prop}</td>;
                             })}
                           </tr>
                         );
@@ -69,36 +44,6 @@ class TableList extends Component {
                     </tbody>
                   </Table>
                 }
-              />
-            </Col>
-            <Col md={12}>
-              <Card
-                  title="Saved Route 3"
-                  category= "subtitle"
-                  ctTableFullWidth
-                  ctTableResponsive
-                  content={
-                    <Table striped hover>
-                      <thead>
-                      <tr>
-                        {thArray.map((prop, key) => {
-                          return <th key={key}>{prop}</th>;
-                        })}
-                      </tr>
-                      </thead>
-                      <tbody>
-                      {tdArray.map((prop, key) => {
-                        return (
-                            <tr key={key}>
-                              {prop.map((prop, key) => {
-                                return <td key={key}>{prop}</td>;
-                              })}
-                            </tr>
-                        );
-                      })}
-                      </tbody>
-                    </Table>
-                  }
               />
             </Col>
           </Row>
