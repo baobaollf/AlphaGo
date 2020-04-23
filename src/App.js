@@ -21,9 +21,12 @@ class App extends Component{
     )}
     const AdminRoute = ({ component: Component, ...rest }) => {
       return (
-          <Route
-              {...rest}
-              component={(props)=> (<Component {...props} />)}
+          <Route {...rest}  component={(props)=>(
+              <div>
+                  <Navbar/> {/* Navbar ALWAYS VISIBLE */}
+                  <Component {...props} />
+              </div>
+          )}
           />
       );
     }

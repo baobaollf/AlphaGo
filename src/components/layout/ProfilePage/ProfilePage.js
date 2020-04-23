@@ -1,20 +1,59 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import AdminLayout from "../ProfilePage/layouts/Admin.jsx";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../../../assets/sass/react-profile.scss";
-import "../../../assets/css/pe-icon-7-stroke.css";
+import React, {Component} from 'react';
+import {Menu} from 'antd';
+import {AppstoreOutlined} from '@ant-design/icons';
+import Navbar from "../Navbar";
+import PageController from "./Pages/PageController";
+
+const {SubMenu} = Menu;
 
 class ProfilePage extends Component {
-  render(){
-    return(
-        <BrowserRouter>
-          <Switch>
-            <Route path="/profile" render={props => <AdminLayout {...props} />} />
-            <Redirect from="/" to="/profile/user" />
-          </Switch>
-        </BrowserRouter>
-    )
-  }
+
+    constructor() {
+        super();
+        this.state = {
+            page: "Profile"
+        }
+    }
+
+    handleClick = e => {
+        this.setState({
+            page: e.key
+        })
+    };
+
+    render() {
+        return (
+            <div style={{
+                display: "flex"
+            }}>
+                <Menu
+                    onClick={this.handleClick}
+                    style={{width: 200}}
+                    defaultSelectedKeys={['1']}
+                    defaultOpenKeys={['sub1']}
+                    mode="inline"
+                >
+                    <SubMenu
+                        key="sub1"
+                        title={
+                            <span>
+              <AppstoreOutlined/>
+              <span>Menu</span>
+            </span>
+                        }
+                    >
+                        <Menu.Item key="Profile">Profile</Menu.Item>
+                        <Menu.Item key="History">History</Menu.Item>
+                        <Menu.Item key="About us">About us</Menu.Item>
+                    </SubMenu>
+                </Menu>
+                <PageController page={this.state.page}/>
+
+
+            </div>
+
+        )
+    }
 }
+
 export default ProfilePage;
