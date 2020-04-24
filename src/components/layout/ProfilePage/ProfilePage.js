@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Menu} from 'antd';
 import {AppstoreOutlined} from '@ant-design/icons';
-import Navbar from "../Navbar";
 import PageController from "./Pages/PageController";
 
 const {SubMenu} = Menu;
