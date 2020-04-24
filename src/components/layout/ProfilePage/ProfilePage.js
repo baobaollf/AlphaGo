@@ -24,7 +24,7 @@ class ProfilePage extends Component {
     render() {
         return (
             <div style={{
-                display: "flex"
+                display: "flex",
             }}>
                 <Menu
                     onClick={this.handleClick}
@@ -47,7 +47,9 @@ class ProfilePage extends Component {
                         <Menu.Item key="About us">About us</Menu.Item>
                     </SubMenu>
                 </Menu>
-                <PageController page={this.state.page}/>
+                <PageController
+                    page={this.state.page}
+                />
 
 
             </div>

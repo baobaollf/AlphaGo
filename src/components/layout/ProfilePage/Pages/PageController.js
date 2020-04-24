@@ -9,7 +9,9 @@ const selectPage = (props) => {
     } else if (props.page === "History") {
         return <History/>
     } else {
-        return <Profile/>
+        return <Profile style={{
+            padding: 500,
+        }}/>
     }
 }
 

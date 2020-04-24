@@ -3,7 +3,6 @@ import MapScreen from '../maplayout/MapScreen';
 import ListView from '../maplayout/LeftList/ListView'
 import TopList from '../maplayout/TopList';
 import TripdataContextProvider from "../../contexts/TripdataContext";
-import ProfilePage from "./ProfilePage/ProfilePage";
 
 class EditMapPage extends Component {
   

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Button, Table} from 'antd';
 import {NavLink} from "react-router-dom";
+import backEndData from "../../../../testData/dayScheduleList.json"
 
 const dataSource = [
     {
@@ -20,12 +21,6 @@ const columns = [
         title: 'Name',
         dataIndex: 'name',
         key: 'name',
-        // render: (text, record) => (
-        //     <span>
-        //         <a onClick={console.log("text")}>{record.name}</a>
-        //
-        //     </span>
-        // ),
     },
     {
         title: 'Day(s)',
@@ -51,28 +46,14 @@ const columns = [
         }}>
                         Action
                     </NavLink>
-        <a>Delete</a>
       </span>
         ),
     }
 
 ];
 
-const navLinkHelper = (record) => {
-    return (
-        <NavLink to={
-            {pathname: "https://www.google.com/"}
-        }
-
-        >
-        </NavLink>
-    );
-}
-
 
 class History extends Component {
-
-
     render() {
         return (
             <div>
@@ -99,12 +80,6 @@ class History extends Component {
                                    </Button>
                                </NavLink>
                            )
-
-                           // onClick: event => {
-                           //     navLinkHelper(record)
-                           //     // console.log(record.name)
-                           // }, // click row
-
                        }}
 
                 />
