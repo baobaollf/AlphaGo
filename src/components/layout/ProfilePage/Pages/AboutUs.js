@@ -13,9 +13,22 @@ class AboutUs extends Component {
                 </h1>
                 <p>
                     <div>
-                        <a href='https://www.linkedin.com/in/baobaollf?trk=profile-badge'>
-                            Linfeng Li
-                        </a>
+                        <p>
+                            <a href='https://www.linkedin.com/in/baobaollf'>
+                                Linfeng Li
+                            </a>
+                        </p>
+                        <p>
+                            <a href='https://www.linkedin.com/in/yuqiwangyuqi'>
+                                Yuqi Wang
+                            </a>
+                        </p>
+                        <p>
+                            <a href='https://github.com/ccait'>
+                                Tianqi Cai
+                            </a>
+                        </p>
+
                     </div>
                 </p>
             </div>

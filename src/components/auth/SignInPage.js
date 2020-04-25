@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Form, FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
+import {TripdataContext} from "../../contexts/TripdataContext";
 
 
 class SignInPage extends Component {
+  static contextType = TripdataContext
+
+
   constructor(props) {
     super(props);
     this.state = {
@@ -23,7 +27,9 @@ class SignInPage extends Component {
     e.preventDefault();
     console.log(this.state);
   }
+
   render() {
+    console.log(this.props.dayList)
     return (
       <div>
         <Form className="form" onSubmit={this.handleSubmit}>

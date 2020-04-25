@@ -8,6 +8,7 @@ import SignedInLinks from "./SignedInLinks";
 import SignedOutLinks from "./SignedOutLinks";
 
 const Navbar = () => {
+
     return (
         <div className="navbar-fixed">
             <nav className="nav-wrapper">

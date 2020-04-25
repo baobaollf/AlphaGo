@@ -7,14 +7,13 @@ import SignInPage from './components/auth/SignInPage';
 import SignUpPage from './components/auth/SignUpPage';
 import Navbar from './components/layout/Navbar';
 
-
 class App extends Component{
   render() {
     const PublicRoute = ({ component: Component , ...rest})=>{
       return(
           <Route {...rest}  component={(props)=>(
               <div>
-                <Navbar/> {/* Navbar ALWAYS VISIBLE */}
+                <Navbar /> {/* Navbar ALWAYS VISIBLE */}
                 <Component {...props} />
               </div>
           )}
