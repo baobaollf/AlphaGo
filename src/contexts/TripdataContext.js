@@ -54,6 +54,7 @@ class TripdataContextProvider extends Component {
   }
 
   componentDidMount() {
+    console.log(this.props.details)
     this.fetchTopListData()
     this.fetchDayPlanData()
     this.setState({
@@ -73,7 +74,7 @@ class TripdataContextProvider extends Component {
   }
 
   fetchTopListData() {
-    const url = "http://13.58.39.66/api/topPoi?cityName=" + this.props.details.city + "&type=all"
+    const url = "http://13.58.39.66/api/topPoi?cityName=" + this.state.city.city + "&type=all"
     return fetch(url)
       .then(response => response.json())
       .then(data => this.setState({ TopList: data }))

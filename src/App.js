@@ -33,7 +33,7 @@ class App extends Component{
         <div className="App">
           <Switch>
             <PublicRoute exact path='/' component={Dashboard} />
-            <PublicRoute path='/map/:id' component={EditMapPage}/>
+            <PublicRoute path='/map/:lat/:long/:days/:city' component={EditMapPage}/>
             <PublicRoute path='/signin' component={SignInPage} />
             <PublicRoute path='/signup' component={SignUpPage} />
             <AdminRoute path='/profile' component={ProfilePage} />

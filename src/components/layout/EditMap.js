@@ -7,10 +7,17 @@ import TripdataContextProvider from "../../contexts/TripdataContext";
 class EditMapPage extends Component {
   
   render() {
+    const { lat, long, days, city } = this.props.match.params
+    const details = {
+      city: city,
+      coordinates: { latitude: parseFloat(lat), longitude: parseFloat(long)},
+      days: days
+    }
+    console.log(details)
     return (
       <div className="EditMap">
-        <TripdataContextProvider details={this.props.location.details}>
-          <MapScreen coordinates={this.props.location.details.coordinates}/>
+        <TripdataContextProvider details={details} >
+          <MapScreen />
           <ListView />
           <TopList className="TopList"/>
         </TripdataContextProvider>

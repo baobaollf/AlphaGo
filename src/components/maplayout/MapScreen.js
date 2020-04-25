@@ -101,7 +101,6 @@ export class MapScreen extends Component {
           mapStyle= {MAP_STYLE_URL}
           onViewportChange={_updateViewport}
           mapboxApiAccessToken={MAPBOX_TOKEN}
-          ref = "mapref"
         >
 
 
