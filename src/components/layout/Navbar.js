@@ -11,10 +11,10 @@ import SignedOutLinks from "./SignedOutLinks";
 
 class Navbar extends Component {  
  
-setUid = (id) => {
-  console.log("inside nacbar setuid")
-  this.props.setUid(id);
-}
+// setUid = (id) => {
+//   console.log("inside nacbar setuid")
+//   this.props.setUid(id);
+// }
 
   render () {
     let links = <SignedInLinks setUid={this.props.setUid}/>;
