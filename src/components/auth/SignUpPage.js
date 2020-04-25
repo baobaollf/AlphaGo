@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { userSignUp } from './Authentication.js';
+import {NavLink} from "react-router-dom";
 
 import { Button, Form, FormGroup, FormControl, ControlLabel} from 'react-bootstrap';
 
@@ -8,7 +10,6 @@ class SignUpPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
       email: '',
       password: ''
     }
@@ -20,9 +21,18 @@ class SignUpPage extends Component {
       [e.target.id]: e.target.value
     })
   }
-  handleSubmit = (e) => {
+
+  handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(this.state);
+    try {
+      const result = await userSignUp(this.state.email, this.state.password);
+      if (result !== 0) {
+        console.log(this.props.history);
+        this.props.history.push("/signin");
+      }
+    } catch (error) {
+        return error.message;
+      }
   }
 
   
@@ -41,10 +51,10 @@ class SignUpPage extends Component {
           </div> */}
 
         <Form className="form" onSubmit={this.handleSubmit}>
-          <FormGroup size="lg">
+          {/* <FormGroup size="lg">
             <ControlLabel className="label">Username</ControlLabel>
             <FormControl id="username" type="username" placeholder="Username" onChange={this.handleChange}/>
-          </FormGroup>
+          </FormGroup> */}
           <FormGroup size="lg">
             <ControlLabel className="label">Email address</ControlLabel>
             <FormControl id="email" type="emails" placeholder="Email" onChange={this.handleChange}/>
@@ -58,9 +68,11 @@ class SignUpPage extends Component {
           <ControlLabel>By signing up, you agree to all user terms.</ControlLabel>
           {/*  By signing up, you agree to all user terms.*/}
           {/*</TextArea>*/}
-          <Button className="button" size="sm" variant="warning" type="submit" >
-            <p className="signup">Sign up</p>
-          </Button>
+          {/* <NavLink to={{pathname: '/signin'}}> */}
+            <Button className="button" size="sm" variant="warning" type="submit" >
+              <p className="signup">Sign up</p>
+            </Button>
+          {/* </NavLink> */}
         </Form>
       </div>
 

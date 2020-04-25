@@ -3,11 +3,12 @@ import firebase from './Client';
 export const userSignUp = async (email, password) => {
     try {
         const user = await firebase.auth().createUserWithEmailAndPassword(email, password);
+        console.log(user);
         if (user.user) {
             return 'SignUp OK';
         }
     } catch (error) {
-        return error.message;
+        return 0;
     }
 };
 
@@ -19,8 +20,7 @@ export const userSignIn = async (email, password) => {
             return user.uid;
         }
     } catch (error) {
-        var errorMessage = error.message;
-        return `${errorMessage} Sign in failed, please try again!`;
+        return 0;
     }
 };
 
