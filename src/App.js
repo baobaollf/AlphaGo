@@ -7,6 +7,7 @@ import SignInPage from './components/auth/SignInPage';
 import SignUpPage from './components/auth/SignUpPage';
 import Navbar from './components/layout/Navbar';
 import MapNav from './components/layout/MapNavBar';
+import AuthContextProvider from './contexts/AuthContext';
 
 class App extends Component{
 
@@ -44,6 +45,7 @@ class App extends Component{
 
     return (
       <BrowserRouter>
+        <AuthContextProvider>
         <div className="App">
           <Switch>
             <PublicRoute exact path='/'  setUid={this.setUid} component={Dashboard} />
@@ -53,6 +55,7 @@ class App extends Component{
             <AdminRoute path='/profile' setUid={this.setUid} component={ProfilePage} />
           </Switch>
         </div>
+        </AuthContextProvider>
       </BrowserRouter>
     );
   }

@@ -3,9 +3,11 @@ import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Form, FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
 import { userSignIn } from './Authentication.js';
-import {useHistory, withRouter } from "react-router-dom";
+import {withRouter } from "react-router-dom";
+import { AuthContext } from "../../contexts/AuthContext";
 
 class SignInPage extends Component {
+  static contextType = AuthContext;
   constructor(props) {
     super(props);
     this.state = {
@@ -25,6 +27,8 @@ class SignInPage extends Component {
  handleSubmit = async (e) => {
     
     e.preventDefault();
+   const { setUid } = this.context;
+   console.log(setUid)
     try {
       const result = await userSignIn(this.state.email, this.state.password);
       this.setState({
@@ -35,6 +39,7 @@ class SignInPage extends Component {
       if (result !== 0) {
         // console.log(this.props.history);
         // this.props.history.push("/");
+        setUid(result)
         this.props.history.goBack();
       }
       
@@ -42,15 +47,14 @@ class SignInPage extends Component {
       // console.log("signin page UID setted");
     } catch (error) {
         console.log(error.message);
-      
     }
     
   }
 
   
   render() {
+    console.log(this.context)
     return (
-      
       <div>
         <Form className="form" onSubmit={this.handleSubmit}>
           {/* <FormGroup className="form-group" size="sm">
