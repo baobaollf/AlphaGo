@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { userSignUp } from './Authentication.js';
+import { userSignUp } from '../firebase/Authentication';
 
 import { Button, Form, FormGroup, FormControl, ControlLabel} from 'react-bootstrap';
 
@@ -9,8 +9,10 @@ class SignUpPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      username: '',
       email: '',
       password: ''
+
     }
   }
 
@@ -24,9 +26,10 @@ class SignUpPage extends Component {
   handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const result = await userSignUp(this.state.email, this.state.password);
+      const result = await userSignUp(this.state.username, this.state.email, this.state.password);
+      console.log(result);
       if (result !== 0) {
-        console.log(this.props.history);
+        // console.log(this.props.history);
         this.props.history.push("/signin");
       }
     } catch (error) {
@@ -50,10 +53,10 @@ class SignUpPage extends Component {
           </div> */}
 
         <Form className="form" onSubmit={this.handleSubmit}>
-          {/* <FormGroup size="lg">
+          <FormGroup size="lg">
             <ControlLabel className="label">Username</ControlLabel>
             <FormControl id="username" type="username" placeholder="Username" onChange={this.handleChange}/>
-          </FormGroup> */}
+          </FormGroup>
           <FormGroup size="lg">
             <ControlLabel className="label">Email address</ControlLabel>
             <FormControl id="email" type="emails" placeholder="Email" onChange={this.handleChange}/>

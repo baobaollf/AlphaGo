@@ -3,8 +3,8 @@ import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button, Form, FormGroup, FormControl, ControlLabel} from 'react-bootstrap';
 
-import {userSignIn} from './Authentication.js';
-import { withRouter} from "react-router-dom";
+import { userSignIn } from '../firebase/Authentication'
+import { withRouter } from "react-router-dom";
 
 
 class SignInPage extends Component {
