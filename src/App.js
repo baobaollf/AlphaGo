@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React, {Component} from 'react';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Dashboard from "./components/Dashboard/Dashboard";
 import EditMapPage from './components/layout/EditMap';
 import ProfilePage from './components/layout/ProfilePage/ProfilePage';
 import SignInPage from './components/auth/SignInPage';
 import SignUpPage from './components/auth/SignUpPage';
 import Navbar from './components/layout/Navbar';
-
-
+import MapNav from './components/layout/MapNavBar';
 
 class App extends Component{
 
@@ -20,8 +19,6 @@ class App extends Component{
     })
     console.log(this.state.uid)
   }
-  
-  
 
   render() {
     // console.log(this.state.uid)

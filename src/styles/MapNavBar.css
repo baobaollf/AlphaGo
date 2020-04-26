@@ -1,7 +1,7 @@
 .nav-wrapper {
-     background-color: #202639;
-     max-height: fit-content;
-     height: 50px !important;
+    background-color: #202639;
+    max-height: fit-content;
+    height: 50px !important;
 }
 
 .navbar-fixed {
@@ -26,4 +26,6 @@
     margin-top: -7px;
 }
 
-
+.MapNavBtn {
+    margin-left: 500px;
+}

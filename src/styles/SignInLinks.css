@@ -6,11 +6,16 @@
 
 .btn {
     width: 50%;
-    padding-left: 6% !important;
-    margin-bottom: 10px;
-    font-size: 11px !important;
+    padding-left: 12% !important;
     border-radius: 50% !important;
     background-color: white !important;
-    text-align: center !important;
-    margin-top: -5px !important;
+    margin-top: -17px !important;
+}
+
+.AccountIcon {
+    width: 1.5em !important;
+    height: 1.5em !important;
+    display: inherit !important;
+    margin-top: -8px !important;
+    margin-left: -8.5px !important;
 }
