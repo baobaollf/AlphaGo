@@ -4,18 +4,14 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { userLogout } from '../../components/auth/Authentication';
 
 
-
-
 class SignedInLinks extends Component {
   handleOnclick = async () =>  {
   
     try {
       const result = await userLogout();
       this.props.setUid("");
-      // console.log(this.props.uid + " sign in");
-      // console.log(result);
-      
-    } catch (error) {
+
+    } catch (error) { 
         return error.message;
     }
   }
