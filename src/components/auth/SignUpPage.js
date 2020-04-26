@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { userSignUp } from './Authentication.js';
-import {NavLink} from "react-router-dom";
 
 import { Button, Form, FormGroup, FormControl, ControlLabel} from 'react-bootstrap';
 

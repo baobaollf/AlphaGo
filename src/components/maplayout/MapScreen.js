@@ -10,8 +10,6 @@ import { TripdataContext } from "../../contexts/TripdataContext";
 
 export class MapScreen extends Component {
   static contextType = TripdataContext
-  //40.730610, -73.935242
-  //this.props.coordinates.latitude
   state = {
     viewport: {
       latitude: this.props.coordinates.latitude,
