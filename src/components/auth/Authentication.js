@@ -1,4 +1,4 @@
-import firebase from './Client';
+import firebase from '../firebase/Client';
 
 export const userSignUp = async (email, password) => {
     try {

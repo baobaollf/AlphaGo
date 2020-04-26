@@ -34,17 +34,17 @@ class App extends Component {
                 />
             )
         }
-        const AdminRoute = ({component: Component, ...rest}) => {
-            return (
-                <Route {...rest} component={(props) => (
-                    <div>
-                        <Navbar/> {/* Navbar ALWAYS VISIBLE */}
-                        <Component {...props} />
-                    </div>
-                )}
-                />
-            );
-        }
+        // const AdminRoute = ({component: Component, ...rest}) => {
+        //     return (
+        //         <Route {...rest} component={(props) => (
+        //             <div>
+        //                 <Navbar/> {/* Navbar ALWAYS VISIBLE */}
+        //                 <Component {...props} />
+        //             </div>
+        //         )}
+        //         />
+        //     );
+        // }
 
         return (
             <BrowserRouter>
@@ -54,7 +54,7 @@ class App extends Component {
                         <PublicRoute path='/map/:id' setUid={this.setUid} component={EditMapPage}/>
                         <PublicRoute path='/signin' setUid={this.setUid} component={SignInPage}/>
                         <PublicRoute path='/signup' setUid={this.setUid} component={SignUpPage}/>
-                        <AdminRoute path='/profile' setUid={this.setUid} component={ProfilePage}/>
+                        <PublicRoute path='/profile' setUid={this.setUid} component={ProfilePage}/>
                     </Switch>
                 </div>
             </BrowserRouter>

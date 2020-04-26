@@ -25,6 +25,7 @@ class SignInPage extends Component {
         e.preventDefault();
         try {
             const result = await userSignIn(this.state.email, this.state.password);
+            console.log(result)
             this.setState({
                 uid: result
             })
@@ -32,13 +33,13 @@ class SignInPage extends Component {
                 this.props.history.goBack();
             }
             this.props.setUid(this.state.uid);
+
         } catch (error) {
             console.log(error.message);
         }
     }
 
     render() {
-        console.log(this.props.dayList)
         return (
 
             <div>
