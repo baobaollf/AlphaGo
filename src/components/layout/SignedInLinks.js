@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import { userLogout } from '../../components/firebase/Authentication';
+import { userLogout } from '../firebase/Authentication';
 
 class SignedInLinks extends Component {
     handleOnclick = async () => {

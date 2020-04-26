@@ -24,6 +24,7 @@ class SignInPage extends Component {
         e.preventDefault();
         try {
             const result = await userSignIn(this.state.email, this.state.password);
+            console.log(result);
             this.setState({
                 uid: result
             });
@@ -37,7 +38,6 @@ class SignInPage extends Component {
     };
 
     render() {
-        console.log(this.props.dayList);
         return (
             <div>
                 <Form className="form" onSubmit={this.handleSubmit}>

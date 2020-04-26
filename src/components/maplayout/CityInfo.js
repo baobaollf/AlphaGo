@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import {Link} from 'react-router-dom';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import backupImg from "../../assets/images/mapbackground.png"
 //import {TripdataContext} from "../../contexts/TripdataContext";
 
 const useStyles = makeStyles({
@@ -41,12 +42,15 @@ export default function CityInfo(props) {
             setColor('disabled')
         }
     }
+
+    console.log(info)
     return (
+
         <div>
             <Card className={classes.card}>
                 <CardMedia component="img"
                            className={classes.cardMedia}
-                           image={info.img[0]}
+                           image={info.images.length !== 0 ? info.images[0] : backupImg}
                 />
                 <CardContent>
                     <Typography component="h2" variant="h5">

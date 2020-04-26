@@ -4,8 +4,6 @@ import {NavLink} from "react-router-dom";
 
 const {Panel} = Collapse;
 
-
-
 const dayList = [
     {
         created_time: 10.15,
