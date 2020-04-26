@@ -14,9 +14,11 @@
     "bootstrap": "^4.4.1",
     "chartist": "0.10.1",
     "deck.gl": "^8.1.1",
+
     "firebase": "^7.14.1",
     "firebase-admin": "^8.10.0",
     "node-sass": "^4.14.0",
+
     "react": "^16.13.1",
     "react-beautiful-dnd": "^13.0.0",
     "react-bootstrap": "0.32.4",
