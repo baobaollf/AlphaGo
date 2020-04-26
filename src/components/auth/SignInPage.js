@@ -1,11 +1,10 @@
-import React, {Component} from 'react';
-import "./Style.css";
+import React, { Component } from 'react';
+import './Style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button, Form, FormGroup, FormControl, ControlLabel} from 'react-bootstrap';
+import { Button, Form, FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
 
-import {userSignIn} from './Authentication.js';
-import { withRouter} from "react-router-dom";
-
+import { userSignIn } from '../firebase/Authentication';
+import { withRouter } from 'react-router-dom';
 
 class SignInPage extends Component {
     constructor(props) {
@@ -14,20 +13,20 @@ class SignInPage extends Component {
             email: '',
             password: '',
             uid: ''
-        }
+        };
     }
     handleChange = (e) => {
         this.setState({
             [e.target.id]: e.target.value
-        })
-    }
+        });
+    };
     handleSubmit = async (e) => {
         e.preventDefault();
         try {
             const result = await userSignIn(this.state.email, this.state.password);
             this.setState({
                 uid: result
-            })
+            });
             if (result !== 0) {
                 this.props.history.goBack();
             }
@@ -35,22 +34,30 @@ class SignInPage extends Component {
         } catch (error) {
             console.log(error.message);
         }
-    }
+    };
 
     render() {
-        console.log(this.props.dayList)
+        console.log(this.props.dayList);
         return (
-
             <div>
                 <Form className="form" onSubmit={this.handleSubmit}>
                     <FormGroup className="form-group" size="sm">
                         <ControlLabel className="label">Email</ControlLabel>
-                        <FormControl id="email" type="username" placeholder="Input Email" onChange={this.handleChange}/>
+                        <FormControl
+                            id="email"
+                            type="username"
+                            placeholder="Input Email"
+                            onChange={this.handleChange}
+                        />
                     </FormGroup>
                     <FormGroup className="form-group" size="sm">
                         <ControlLabel className="label">Password</ControlLabel>
-                        <FormControl id="password" type="password" placeholder="Input Password"
-                                     onChange={this.handleChange}/>
+                        <FormControl
+                            id="password"
+                            type="password"
+                            placeholder="Input Password"
+                            onChange={this.handleChange}
+                        />
                     </FormGroup>
                     <Button className="button" size="sm" variant="warning" type="submit">
                         <p className="signup">Sign In</p>
@@ -63,7 +70,7 @@ class SignInPage extends Component {
                     </FormGroup>
                 </Form>
             </div>
-        )
+        );
     }
 }
 
