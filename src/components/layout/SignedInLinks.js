@@ -10,8 +10,7 @@ class SignedInLinks extends Component {
   handleOnclick = async () =>  {
   
     try {
-      // const result = await userLogout();
-      
+      const result = await userLogout();
       this.props.setUid("");
       // console.log(this.props.uid + " sign in");
       // console.log(result);
@@ -24,7 +23,7 @@ class SignedInLinks extends Component {
   render () {
     return (
       <ul className="right">
-          <li><NavLink to='/' onClick={this.handleOnclick } className="log-out-text">Log out</NavLink></li>
+          <li><NavLink to='/' onClick={this.handleOnclick} className="log-out-text">Log out</NavLink></li>
   
           <li><NavLink to='/profile/user' className="btn"><AccountCircleIcon></AccountCircleIcon></NavLink></li>
   

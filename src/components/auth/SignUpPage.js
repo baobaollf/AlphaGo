@@ -65,7 +65,7 @@ class SignUpPage extends Component {
           </FormGroup>
           
           {/*<TextArea className="text-muted">*/}
-          <ControlLabel>By signing up, you agree to all user terms.</ControlLabel>
+          <ControlLabel className="notice">By signing up, you agree to all user terms.</ControlLabel>
           {/*  By signing up, you agree to all user terms.*/}
           {/*</TextArea>*/}
           {/* <NavLink to={{pathname: '/signin'}}> */}
