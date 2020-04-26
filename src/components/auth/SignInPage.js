@@ -27,8 +27,8 @@ class SignInPage extends Component {
  handleSubmit = async (e) => {
     
     e.preventDefault();
-   const { setUid } = this.context;
-   console.log(setUid)
+    const { setUid } = this.context;
+    console.log(setUid)
     try {
       const result = await userSignIn(this.state.email, this.state.password);
       this.setState({
