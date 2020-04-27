@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { userSignUp } from '../firebase/Authentication';
-
 import { Button, Form, FormGroup, FormControl, ControlLabel} from 'react-bootstrap';
 
 class SignUpPage extends Component {
@@ -29,7 +28,6 @@ class SignUpPage extends Component {
       const result = await userSignUp(this.state.username, this.state.email, this.state.password);
       console.log(result);
       if (result !== 0) {
-        // console.log(this.props.history);
         this.props.history.push("/signin");
       }
     } catch (error) {
@@ -43,15 +41,6 @@ class SignUpPage extends Component {
     return (
 
       <div className="signuppage">
-        {/* <div className="background" 
-          style={{  
-            backgroundImage: backgroundPic,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat'
-          }}> 
-          </div> */}
-
         <Form className="form" onSubmit={this.handleSubmit}>
           <FormGroup size="lg">
             <ControlLabel className="label">Username</ControlLabel>
@@ -65,16 +54,10 @@ class SignUpPage extends Component {
             <ControlLabel className="label">Password</ControlLabel>
             <FormControl id="password" type="password" placeholder="Password" onChange={this.handleChange}/>
           </FormGroup>
-          
-          {/*<TextArea className="text-muted">*/}
           <ControlLabel className="notice">By signing up, you agree to all user terms.</ControlLabel>
-          {/*  By signing up, you agree to all user terms.*/}
-          {/*</TextArea>*/}
-          {/* <NavLink to={{pathname: '/signin'}}> */}
             <Button className="button" size="sm" variant="warning" type="submit" >
               <p className="signup">Sign up</p>
             </Button>
-          {/* </NavLink> */}
         </Form>
       </div>
 

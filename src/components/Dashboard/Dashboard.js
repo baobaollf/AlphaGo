@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import * as alphaCityList from '../../tests/alphacityFront.json';
+import * as alphaCityList from '../../testData/alphacityFront.json';
 import SearchBar from "./SearchBar";
 import DaySeletcor from "./DaySelector";
 import NextPageButton from "./NextPageButton";
