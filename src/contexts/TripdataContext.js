@@ -1,7 +1,8 @@
 import React, { Component, createContext } from 'react'
 // import * as TopPlacesData from "../testData/response.json";
 //import backEndData from "../testData/dayPlannerTemplate.json"
-
+import { FlyToInterpolator } from 'react-map-gl';
+//import WebMercatorViewport from 'viewport-mercator-project';
 export const TripdataContext = createContext();
 
 class TripdataContextProvider extends Component {
@@ -16,7 +17,8 @@ class TripdataContextProvider extends Component {
       TopList: [],
       showplan: false,
       popupInfo: null,
-      city: this.props.details
+      city: this.props.details,
+      poiList: [],
     }
   }
 
@@ -34,7 +36,15 @@ class TripdataContextProvider extends Component {
 
   setPopupinfo = (info) => {
     this.setState({
-      popupInfo: info
+      popupInfo: info,
+      viewport: {
+        latitude: info.lat,
+        longitude: info.long,
+        zoom: 13,
+        pitch: 40,
+        transitionDuration: 1000,
+        transitionInterpolator: new FlyToInterpolator()
+      }
     })
   }
 
@@ -44,12 +54,27 @@ class TripdataContextProvider extends Component {
   }
 
   componentDidMount() {
+    console.log(this.props.details)
     this.fetchTopListData()
     this.fetchDayPlanData()
+    this.setState({
+      viewport: {
+        latitude: this.props.details.coordinates.latitude,
+        longitude: this.props.details.coordinates.longitude,
+        zoom: 13,
+        pitch: 40,
+      },
+    })
+  }
+
+  _updateViewport = viewport => {
+    this.setState({
+      viewport
+    })
   }
 
   fetchTopListData() {
-    const url = "http://13.58.39.66/api/topPoi?cityName=" + this.props.details.city + "&type=all"
+    const url = "http://13.58.39.66/api/topPoi?cityName=" + this.state.city.city + "&type=all"
     return fetch(url)
       .then(response => response.json())
       .then(data => this.setState({ TopList: data }))
@@ -84,9 +109,20 @@ class TripdataContextProvider extends Component {
     } else if (this.state.showplan === false) {
       this.showPlan();
     }
+    let poilist = []
+    for (var i = 0; i < list.length; i++) {
+      let ele = []
+      ele.push(list[i].lat)
+      ele.push(list[i].long)
+      poilist.push(ele)
+    }
+    // console.log(this.state.viewport)
+    // const { longitude, latitude, zoom } = new WebMercatorViewport(this.state.viewport).fitBounds(poilist)
+    // console.log(longitude + " " + latitude + " " + zoom)
+    //this.setViewport(longitude, latitude, zoom)
     this.setState({
       currentDayList: list,
-      CurrentAround: this.state.AroundList[index]
+      CurrentAround: this.state.AroundList[index],
     });
     
   }
@@ -141,6 +177,19 @@ class TripdataContextProvider extends Component {
       currentDayList: result,
     });
   }
+
+  setViewport = (lat, long, zoom) => {
+    this.setState({
+      viewport: {
+        latitude: lat,
+        longitude: long,
+        zoom: zoom,
+        pitch: 40,
+        transitionDuration: 1000,
+        transitionInterpolator: new FlyToInterpolator()
+      }
+    })
+  }
   
   render() {
     return (
@@ -158,6 +207,8 @@ class TripdataContextProvider extends Component {
           closePopup: this.closePopup,
           setTopList: this.setTopList,
           fetchMoreTopListData: this.fetchMoreTopListData.bind(this),
+          _updateViewport: this._updateViewport,
+          setViewport: this.setViewport
           }}>
         {this.props.children}
       </TripdataContext.Provider>

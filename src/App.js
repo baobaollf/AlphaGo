@@ -49,7 +49,7 @@ class App extends Component {
                     <div className="App">
                         <Switch>
                             <PublicRoute exact path='/' setUid={this.setUid} component={Dashboard}/>
-                            <PublicRoute path='/map/:id' setUid={this.setUid} component={EditMapPage}/>
+                            <PublicRoute path='/map/:lat/:long/:days/:city' setUid={this.setUid} component={EditMapPage}/>
                             <PublicRoute path='/signin' setUid={this.setUid} component={SignInPage}/>
                             <PublicRoute path='/signup' setUid={this.setUid} component={SignUpPage}/>
                             <PublicRoute path='/profile' setUid={this.setUid} component={ProfilePage}/>
