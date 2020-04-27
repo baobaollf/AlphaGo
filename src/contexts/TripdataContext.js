@@ -55,7 +55,6 @@ class TripdataContextProvider extends Component {
       .then(data => this.setState({ TopList: data }))
       .catch(error => console.log("Load data failed"));
   }
-
   fetchMoreTopListData() {
     var len = this.state.TopList.length
     if (len % 10 === 0) {
