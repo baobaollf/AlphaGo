@@ -9,56 +9,57 @@ import Navbar from './components/layout/Navbar';
 import MapNav from './components/layout/MapNavBar';
 import AuthContextProvider from './contexts/AuthContext';
 
-class App extends Component{
+class App extends Component {
 
-  state = { 
-    uid: ""
-  }
-  setUid = (uid) => {
-    this.setState({
-      uid: uid
-    })
-    console.log(this.state.uid)
-  }
-
-  render() {
-    // console.log(this.state.uid)
-    const PublicRoute = ({ component: Component , ...rest})=>{
-      return(
-          <Route {...rest}  component={(props)=>(
-              <div>
-                <Navbar uid={this.state.uid} setUid={this.setUid}/> {/* Navbar ALWAYS VISIBLE */}
-                
-                <Component setUid={this.setUid} {...props} />
-              </div>
-          )}
-    />
-    )}
-    const AdminRoute = ({ component: Component, ...rest }) => {
-      return (
-          <Route
-              {...rest}
-              component={(props)=> (<Component {...props} />)}
-          />
-      );
+    state = {
+        uid: ""
+    }
+    setUid = (uid) => {
+        this.setState({
+            uid: uid
+        })
+        // console.log(this.state.uid)
     }
 
-    return (
-      <BrowserRouter>
-        <AuthContextProvider>
-        <div className="App">
-          <Switch>
-            <PublicRoute exact path='/'  setUid={this.setUid} component={Dashboard} />
-            <PublicRoute path='/map/:id' setUid={this.setUid} component={EditMapPage}/>
-            <PublicRoute path='/signin' setUid={this.setUid} component={SignInPage} />
-            <PublicRoute path='/signup' setUid={this.setUid} component={SignUpPage} />
-            <AdminRoute path='/profile' setUid={this.setUid} component={ProfilePage} />
-          </Switch>
-        </div>
-        </AuthContextProvider>
-      </BrowserRouter>
-    );
-  }
+    render() {
+        // console.log(this.state.uid)
+        const PublicRoute = ({component: Component, ...rest}) => {
+            return (
+                <Route {...rest} component={(props) => (
+                    <div>
+                        <Navbar uid={this.state.uid} setUid={this.setUid}/> {/* Navbar ALWAYS VISIBLE */}
+
+                        <Component setUid={this.setUid} {...props} />
+                    </div>
+                )}
+                />
+            )
+        }
+        const AdminRoute = ({component: Component, ...rest}) => {
+            return (
+                <Route
+                    {...rest}
+                    component={(props) => (<Component {...props} />)}
+                />
+            );
+        }
+
+        return (
+            <BrowserRouter>
+                <AuthContextProvider>
+                    <div className="App">
+                        <Switch>
+                            <PublicRoute exact path='/' setUid={this.setUid} component={Dashboard}/>
+                            <PublicRoute path='/map/:id' setUid={this.setUid} component={EditMapPage}/>
+                            <PublicRoute path='/signin' setUid={this.setUid} component={SignInPage}/>
+                            <PublicRoute path='/signup' setUid={this.setUid} component={SignUpPage}/>
+                            <PublicRoute path='/profile' setUid={this.setUid} component={ProfilePage}/>
+                        </Switch>
+                    </div>
+                </AuthContextProvider>
+            </BrowserRouter>
+        );
+    }
 }
 
 export default App;
