@@ -59,7 +59,7 @@ export default function NestedList(props) {
   const createGridList = (data) => {
     return TopList.map((point) => (
       <GridListTile key={point.id} onClick={() => setPopupinfo(point)}>
-        <img src={point.img[0]} alt=" " />} />
+        <img src={point.images[0]} alt=" " />} />
         <GridListTileBar
           title={point.name}
           classes={{

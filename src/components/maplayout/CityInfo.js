@@ -46,7 +46,7 @@ export default function CityInfo(props) {
             <Card className={classes.card}>
                 <CardMedia component="img"
                            className={classes.cardMedia}
-                           image={info.img[0]}
+                            image={info.images[0]}
                 />
                 <CardContent>
                     <Typography component="h2" variant="h5">
