@@ -21,7 +21,6 @@ class App extends Component {
     }
 
     render() {
-        // console.log(this.state.uid)
         const PublicRoute = ({component: Component, ...rest}) => {
             return (
                 <Route {...rest} component={(props) => (
@@ -34,14 +33,6 @@ class App extends Component {
                 />
             )
         }
-        const AdminRoute = ({component: Component, ...rest}) => {
-            return (
-                <Route
-                    {...rest}
-                    component={(props) => (<Component {...props} />)}
-                />
-            );
-        }
 
         return (
             <BrowserRouter>
@@ -49,7 +40,7 @@ class App extends Component {
                     <div className="App">
                         <Switch>
                             <PublicRoute exact path='/' setUid={this.setUid} component={Dashboard}/>
-                            <PublicRoute path='/map/:lat/:long/:days/:city' setUid={this.setUid} component={EditMapPage}/>
+                            <PublicRoute path='/map/:lat/:long/:days/:city/:planId' setUid={this.setUid} component={EditMapPage}/>
                             <PublicRoute path='/signin' setUid={this.setUid} component={SignInPage}/>
                             <PublicRoute path='/signup' setUid={this.setUid} component={SignUpPage}/>
                             <PublicRoute path='/profile' setUid={this.setUid} component={ProfilePage}/>

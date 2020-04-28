@@ -6,11 +6,12 @@ import TripdataContextProvider from "../../contexts/TripdataContext";
 
 class EditMapPage extends Component {
   render() {
-    const { lat, long, days, city } = this.props.match.params
+    const { lat, long, days, city, planId} = this.props.match.params
     const details = {
       city: city,
       coordinates: { latitude: parseFloat(lat), longitude: parseFloat(long)},
-      days: days
+      days: days,
+      planId: planId
     }
     console.log(details)
     return (

@@ -28,7 +28,7 @@ class NextPageButton extends Component {
                 <div className="next-page">
                     <NavLink to={{
                   pathname: '/map/' + this.props.coordinates.latitude + '/' + this.props.coordinates.longitude
-                        + '/' + this.props.day + '/' + this.props.city.split(',')[0],
+                        + '/' + this.props.day + '/' + this.props.city.split(',')[0] + '/0',
                         details: {
                             city: this.props.city.split(',')[0],
                             coordinates: this.props.coordinates,

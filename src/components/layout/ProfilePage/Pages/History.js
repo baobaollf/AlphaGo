@@ -1,88 +1,84 @@
 import React, {Component} from 'react';
 import {Button, Collapse, List} from 'antd';
 import {NavLink} from "react-router-dom";
+import {getAllBriefHistory, getDetailHistory} from "../../../firebase/History"
+import {AuthContext} from "../../../../contexts/AuthContext";
+import alphaCityList from "../../../../testData/alphacityFront.json"
 
 const {Panel} = Collapse;
 
-const dayList = [
-    {
-        created_time: 10.15,
-        last_modified_time: 10.15,
-        city: "Chicago",
-        days: 4,
-        simplify_dayPlan: [
-            "Radio City Music Hall",
-            "Museum of Modern Art",
-            "Brooklyn Bridge",
-
-        ]
-    },
-    {
-        created_time: 10.15,
-        last_modified_time: 10.15,
-        city: "New York",
-        days: 4,
-        simplify_dayPlan: ["Radio City Music Hall",
-            "Museum of Modern Art",
-            "Brooklyn Bridge",
-        ]
-    },
-    {
-        created_time: 10.15,
-        last_modified_time: 10.15,
-        city: "Seattle",
-        days: 4,
-        simplify_dayPlan: ["Radio City Music Hall",
-            "Museum of Modern Art",
-            "Brooklyn Bridge",
-        ]
-    },
-]
-
-const makePoiList = (name) => {
-    for (let i = 0; i < dayList.length; i++) {
-        if (dayList[i].city === name) {
-            return dayList[i].simplify_dayPlan
-        }
-    }
-}
-
-const makeCityList = () => {
+const makePoiList = (item) => {
     const array = [];
-    for (let i = 0; i < dayList.length; i++) {
-        array.push(dayList[i].city)
+    const briefPlan = item.info.briefPlan;
+    for (let i = 0; i < briefPlan.length; i++) {
+        for (let j in briefPlan[i]) {
+            for (let k = 0; k < briefPlan[i][j].length; k++) {
+                array.push(briefPlan[i][j][k]);
+            }
+        }
     }
     return array;
 }
 
-const findCity = (name) => {
-    for (let i = 0; i < dayList.length; i++) {
-        if (name === dayList[i].city) {
-            return dayList[i];
+class History extends Component {
+    constructor() {
+        super();
+        this.state = {
+            briefHistory: [],
         }
     }
-}
 
-const genExtra = (item) => (
-    <NavLink to={{
-        pathname: '/map/3',
-        details: {
-            city: item,
-            coordinates: {
-                "latitude": 41.878113,
-                "longitude": -87.629799
-            },
-            days: findCity(item).days
+    static contextType = AuthContext;
+
+    findCoordinates = (cityName) => {
+        for (let i = 0; i < alphaCityList[0].length; i++) {
+            if (alphaCityList[0][i].name === cityName) {
+                console.log(alphaCityList[0][i]);
+                return alphaCityList[0][i].coordinates;
+            }
         }
-    }}>
-        <Button type="primary" icon="thunderbolt">
-            Let's Go
-        </Button>
-    </NavLink>
-);
+    }
 
-class History extends Component {
+    genExtra = (item) => {
+        return (
+            <NavLink to={{
+                pathname: '/map/' + item.info.cityName.coordinates.latitude + '/' +
+                    item.info.cityName.coordinates.longitude
+                    + '/' + item.info.days + '/' + item.info.cityName.city + '/' + item.planId,
+                details: {
+                    city: item.info.cityName.city,
+                    coordinates: {
+                        latitude: item.info.cityName.coordinates.latitude,
+                        longitude: item.info.cityName.coordinates.longitude,
+                    },
+                    days: item.info.days,
+
+                }
+            }}>
+                <Button type="primary" icon="thunderbolt">
+                    View
+                </Button>
+            </NavLink>
+        )};
+
+    getBriefHistory = async () => {
+        const {uid} = this.context;
+        try {
+            const result = await getAllBriefHistory(uid);
+            this.setState({
+                briefHistory: result,
+            })
+        } catch (error) {
+            console.log(error.message);
+        }
+    }
+
+    componentDidMount() {
+        this.getBriefHistory();
+    }
+
     render() {
+        // this.getBriefHistory();
         return (
             <div style={{
                 marginTop: 50,
@@ -101,13 +97,14 @@ class History extends Component {
                         },
                         pageSize: 3,
                     }}
-                    dataSource={makeCityList()}
+                    dataSource={this.state.briefHistory}
                     renderItem={item =>
                         (
-                            <Collapse accordion >
+                            <Collapse accordion>
                                 <Panel key="1"
-                                       header={item + " " + findCity(item).days + " Day(s)"}
-                                       extra={genExtra(item)}>
+                                       header={item.info.cityName.city + " " + item.info.days + " Day(s)"}
+                                       extra={this.genExtra(item)}
+                                >
                                     <List
                                         size="small"
                                         bordered

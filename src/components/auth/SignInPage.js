@@ -26,7 +26,6 @@ class SignInPage extends Component {
 
 
     handleSubmit = async (e) => {
-
         e.preventDefault();
         const {setUid} = this.context;
         console.log(setUid)
