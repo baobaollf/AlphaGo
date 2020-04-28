@@ -1,7 +1,6 @@
 import { db, fieldValue } from './Client.js';
 import { generateBriefDayPlan, generateDetailDayPlan, poiArrayConverter } from './Utils.js';
-import { userSignIn } from './Authentication.js';
-export const addHistory = async (uid, cityName, dayPlan, nearBy) => {
+export const addHistory = async (uid, planId, cityName, dayPlan, nearBy) => {
     const briefDayPlan = generateBriefDayPlan(dayPlan);
     const detailPlan = generateDetailDayPlan(dayPlan, nearBy);
     const history = {
@@ -14,7 +13,7 @@ export const addHistory = async (uid, cityName, dayPlan, nearBy) => {
     try {
         let batch = db.batch();
         //save briefPlan
-        const planRef = db.collection('Users').doc(uid).collection('dayPlan').doc();
+        const planRef = db.collection('Users').doc(uid).collection('dayPlan').doc(planId);
         batch.set(planRef, history);
 
         //save detail plan
@@ -92,8 +91,14 @@ export const getDetailHistory = async (uid, planId) => {
     }
 };
 
-userSignIn('skipwen2008@gmail.com', 'testtest').then((uid) => {
-    console.log(uid);
-    // addHistory(uid, 'New York', test1, test2);
-    getDetailHistory(uid, 'OOvGYPKUOnSbRGTXxx81');
-});
+export const generateNewPlanId = async (uid) => {
+    try {
+        const document = db.collection('Users').doc(uid).collection('dayPlan').doc();
+        const planId = document.id;
+        await document.set({});
+        return planId;
+    } catch (error) {
+        console.log(error.message);
+        return error.message;
+    }
+};
