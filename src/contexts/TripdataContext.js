@@ -79,7 +79,6 @@ class TripdataContextProvider extends Component {
     fetchDayPlanData() {
         const url =
             '/api/dayPlan?cityName=' + this.props.details.city + '&days=' + this.props.details.days;
-        console.log(url);
         return fetch(url)
             .then((response) => response.json())
             .then((data) =>

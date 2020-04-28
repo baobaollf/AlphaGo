@@ -1,9 +1,9 @@
 import { db, fieldValue } from './Client.js';
 import { generateBriefDayPlan, generateDetailDayPlan, poiArrayConverter } from './Utils.js';
-
-export const addHistory = async (uid, cityName, dayPlan) => {
+import { userSignIn } from './Authentication.js';
+export const addHistory = async (uid, cityName, dayPlan, nearBy) => {
     const briefDayPlan = generateBriefDayPlan(dayPlan);
-    const detailPlan = generateDetailDayPlan(dayPlan);
+    const detailPlan = generateDetailDayPlan(dayPlan, nearBy);
     const history = {
         createdAt: fieldValue.serverTimestamp(),
         lastModifiedAt: fieldValue.serverTimestamp(),
@@ -22,7 +22,6 @@ export const addHistory = async (uid, cityName, dayPlan) => {
         batch.set(detailRef, detailPlan);
 
         await batch.commit();
-        console.log('save success');
         return 'add history success';
     } catch (error) {
         console.log(error);
@@ -30,9 +29,9 @@ export const addHistory = async (uid, cityName, dayPlan) => {
     }
 };
 
-export const updateHistory = async (uid, planId, cityName, newDayPlan) => {
+export const updateHistory = async (uid, planId, cityName, newDayPlan, newNearBy) => {
     const briefDayPlan = generateBriefDayPlan(newDayPlan);
-    const detailPlan = generateDetailDayPlan(newDayPlan);
+    const detailPlan = generateDetailDayPlan(newDayPlan, newNearBy);
     const modified = {
         lastModifiedAt: fieldValue.serverTimestamp(),
         briefPlan: briefDayPlan,
@@ -49,7 +48,6 @@ export const updateHistory = async (uid, planId, cityName, newDayPlan) => {
         const detailRef = planRef.collection('detailPlan').doc('plan');
         batch.update(detailRef, detailPlan);
         await batch.commit();
-        console.log('updated');
         return 'update history success';
     } catch (error) {
         console.log(error.message);
@@ -85,10 +83,17 @@ export const getDetailHistory = async (uid, planId) => {
             .collection('detailPlan')
             .doc('plan')
             .get();
-        const poiArray = poiArrayConverter(document.data());
-        return poiArray;
+        const planAndNearBy = poiArrayConverter(document.data());
+        console.log(planAndNearBy);
+        return planAndNearBy;
     } catch (error) {
         console.log(error.message);
         return error.message;
     }
 };
+
+userSignIn('skipwen2008@gmail.com', 'testtest').then((uid) => {
+    console.log(uid);
+    // addHistory(uid, 'New York', test1, test2);
+    getDetailHistory(uid, 'OOvGYPKUOnSbRGTXxx81');
+});
