@@ -7,13 +7,17 @@ import DeckGL from '@deck.gl/react';
 import { LineLayer } from '@deck.gl/layers';
 import { TripdataContext } from "../../contexts/TripdataContext";
 //import WebMercatorViewport from 'viewport-mercator-project';
+import { addHistory, updateHistory } from "../../components/firebase/History";
+import {AuthContext} from "../../contexts/AuthContext";
+import TripdataContextProvider from "../../contexts/TripdataContext";
 
 
 export class MapScreen extends Component {
   static contextType = TripdataContext
   //40.730610, -73.935242
   //this.props.coordinates.latitude
-
+  
+  
   _onClickMarker = pointInfo => {
     const { setPopupinfo, setViewport } = this.context;
     this.setState({
@@ -82,6 +86,24 @@ export class MapScreen extends Component {
     return result;
   }
 
+  handleSubmit = async (e) => {
+    const {dayList, city} = this.context;
+    e.preventDefault();
+    try {
+        // console.log(this.props.uid);
+        const result = await addHistory(this.props.uid, city, dayList);
+        alert("You have successfully saved your plan!");
+        // console.log(result);
+    } catch (error) {
+        console.log(error.message);
+    }
+
+  }
+
+  jumpFunc = () => {
+    window.location.replace("/signup")
+  }
+
 
   render() {
     const { currentDayList, CurrentAround, viewport, _updateViewport } = this.context;
@@ -90,42 +112,81 @@ export class MapScreen extends Component {
     const layers = [
       new LineLayer({ id: 'line-layer', data, getWidth: 6, getColor: [52,63,103]})
     ]; 
-    
-    return (
-      
-      <div className="MapGL">
-        <MapGL
-          {...viewport}
-          width="100vw" 
-          height="100vh"
-          mapStyle= {MAP_STYLE_URL}
-          onViewportChange={_updateViewport}
-          mapboxApiAccessToken={MAPBOX_TOKEN}
-        >
-
-
-          <DeckGL viewState={viewport} layers={layers}>
-            <Pin data={CurrentAround} onClickMarker={this._onClickMarker} color={"#FA6585"} />
-            <Pin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>
-            {this._renderPopup()}
-          </DeckGL>
-
-          <div className="scale">
-            <ScaleControl />
-          </div>
-
-          <div className="fullscreenControl">
-            <FullscreenControl />
-          </div>
+    if (this.props.uid !== "") {
+      return (
+        <div className="MapGL">
+          <MapGL
+            {...viewport}
+            width="100vw" 
+            height="100vh"
+            mapStyle= {MAP_STYLE_URL}
+            onViewportChange={_updateViewport}
+            mapboxApiAccessToken={MAPBOX_TOKEN}
+          >
+            <DeckGL viewState={viewport} layers={layers}>
+              <Pin data={CurrentAround} onClickMarker={this._onClickMarker} color={"#FA6585"} />
+              <Pin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>
+              {this._renderPopup()}
+            </DeckGL>
+  
+            <div className="scale">
+              <ScaleControl />
+            </div>
+  
+            <div className="fullscreenControl">
+              <FullscreenControl />
+            </div>
+            
+            <button className="save" onClick={this.handleSubmit}>
+              Save your plan
+            </button>
+            <div className="navControl">
+              <NavigationControl />
+            </div>
           
-          <div className="navControl">
-            <NavigationControl />
-          </div>
-        
-        </MapGL>
+          </MapGL>
+  
+        </div>
+      ) 
+    } else {
+      return (
+        <div className="MapGL">
+          <MapGL
+            {...viewport}
+            width="100vw" 
+            height="100vh"
+            mapStyle= {MAP_STYLE_URL}
+            onViewportChange={_updateViewport}
+            mapboxApiAccessToken={MAPBOX_TOKEN}
+          >
+              <DeckGL viewState={viewport} layers={layers}>
+              <Pin data={CurrentAround} onClickMarker={this._onClickMarker} color={"#FA6585"} />
+              <Pin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>
+              {this._renderPopup()}
+            </DeckGL>
+  
+            <div className="scale">
+              <ScaleControl />
+            </div>
+            <div className="fullscreenControl">
+              <FullscreenControl />
+            </div>
+            
+            <button onClick={this.jumpFunc} className="savInput">
+              Please Sign up to save your plan
+            </button>
+            
+            <div className="navControl">
+              <NavigationControl />
+            </div>
+          
+          </MapGL>
+  
+        </div>
 
-      </div>
-    )
+    );
+    }
+    
   }
 }
 

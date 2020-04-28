@@ -3,10 +3,12 @@ import React, { Component, createContext } from 'react'
 //import backEndData from "../testData/dayPlannerTemplate.json"
 import { FlyToInterpolator } from 'react-map-gl';
 //import WebMercatorViewport from 'viewport-mercator-project';
+import { AuthContext } from './AuthContext';
 export const TripdataContext = createContext();
 
-class TripdataContextProvider extends Component {
 
+class TripdataContextProvider extends Component {
+  static contextType = AuthContext;
   constructor(props) {
     super(props);
     this.state = {
@@ -19,6 +21,7 @@ class TripdataContextProvider extends Component {
       popupInfo: null,
       city: this.props.details,
       poiList: [],
+      uid: ""
     }
   }
 
@@ -57,15 +60,20 @@ class TripdataContextProvider extends Component {
     console.log(this.props.details)
     this.fetchTopListData()
     this.fetchDayPlanData()
+    const {uid}=this.context;
+    console.log(uid);
     this.setState({
       viewport: {
         latitude: this.props.details.coordinates.latitude,
         longitude: this.props.details.coordinates.longitude,
+        
         zoom: 13,
         pitch: 40,
+        uid: uid
       },
     })
   }
+  
 
   _updateViewport = viewport => {
     this.setState({
