@@ -27,7 +27,7 @@ class SignInPage extends Component {
 
     handleSubmit = async (e) => {
         e.preventDefault();
-        const {setUid} = this.context;
+        const {setUid, setOther} = this.context;
         console.log(setUid)
         try {
             const result = await userSignIn(this.state.email, this.state.password);
@@ -39,7 +39,8 @@ class SignInPage extends Component {
             if (result !== 0) {
                 // console.log(this.props.history);
                 // this.props.history.push("/");
-                setUid(result)
+                setUid(result);
+                setOther(this.state.email, '');
                 this.props.history.goBack();
             }
 
