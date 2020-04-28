@@ -179,6 +179,7 @@ class TripdataContextProvider extends Component {
         const result = this.state.currentDayList;
         for (let i = 0; i < result.length; i++) {
             if (result[i].name === item.name) {
+
                 this.deleteItem(i);
             }
         }
@@ -190,8 +191,15 @@ class TripdataContextProvider extends Component {
     // delete by index
     deleteItem = (index) => {
         const result = this.state.currentDayList;
-
+        for (let i = 0; i < this.state.TopList.length; i++) {
+            if (result[index].name === this.state.TopList.name) {
+                this.state.TopList.inPlan = false;
+                break;
+            }
+        }
+        result[index].inPlan = false;
         result.splice(index, 1);
+
         this.setState({
             currentDayList: result,
         });
