@@ -55,3 +55,17 @@
   width:100%;
   height:100%;
 }
+
+.TopListSpinner{
+  display: flex;
+  justify-content: center;
+}
+
+.LeftListSpinner{
+  display: flex;
+  justify-content: center;
+}
+
+.mapboxgl-popup-close-button{
+  color: #fff;
+}

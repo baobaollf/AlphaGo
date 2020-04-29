@@ -19,7 +19,8 @@ class TripdataContextProvider extends Component {
       popupInfo: null,
       city: this.props.details,
       poiList: [],
-      loading: true
+      loading: true,
+      TopListLoading: true
     }
   }
 
@@ -88,15 +89,22 @@ class TripdataContextProvider extends Component {
   }
   fetchMoreTopListData() {
     var len = this.state.TopList.length
+    console.log(len)
     if (len % 10 === 0) {
       const url = "http://13.58.39.66/api/topPoi?cityName=" + this.state.city.city + "&type=all&score=" + 
         this.state.TopList[len - 1].score + "&poiId=" + this.state.TopList[len - 1].id;
       return fetch(url)
         .then(response => response.json())
         .then(data => this.setState({
-          TopList: this.state.TopList.concat(data)
+          TopList: this.state.TopList.concat(data),
+          TopListLoading: data.length && true
         }))
         .catch(error => console.log("Load data failed"));
+    } else {
+      console.log("go here")
+      this.setState({
+        TopListLoading: false
+      })
     }
   }
 

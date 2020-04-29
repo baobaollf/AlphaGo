@@ -70,7 +70,7 @@ class DayOverView extends Component {
                 ref={provided.innerRef}
                 style={getListStyle()}
               >
-                {this.props.loading && <CircularIndeterminate></CircularIndeterminate>}
+                {this.props.loading && <div className="LeftListSpinner"><CircularIndeterminate></CircularIndeterminate></div>}
                 {this.props.items.map((item, index) => (
                   <Draggable key={index} draggableId={index + ""} index={index}>
                     {(provided, snapshot) => (
