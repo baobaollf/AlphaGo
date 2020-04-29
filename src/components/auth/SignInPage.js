@@ -3,6 +3,7 @@ import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button, Form, FormGroup, FormControl, ControlLabel} from 'react-bootstrap';
 import {userSignIn} from "../firebase/Authentication";
+// import background from '../../assets/images/background.jpg';
 
 import {withRouter} from "react-router-dom";
 import {AuthContext} from "../../contexts/AuthContext";
@@ -55,12 +56,12 @@ class SignInPage extends Component {
     render() {
         // console.log(this.context)
         return (
-            <div>
+            <div className="container">
                 <Form className="form" onSubmit={this.handleSubmit}>
                     {/* <FormGroup className="form-group" size="sm">
-            <ControlLabel className="label">Username</ControlLabel>
-            <FormControl id="username" type="username" placeholder="Input Username" onChange={this.handleChange}/>
-          </FormGroup> */}
+                            <ControlLabel className="label">Username</ControlLabel>
+                            <FormControl id="username" type="username" placeholder="Input Username" onChange={this.handleChange}/>
+                        </FormGroup> */}
                     <FormGroup className="form-group" size="sm">
                         <ControlLabel className="label">Email</ControlLabel>
                         <FormControl id="email" type="username" placeholder="Input Email" onChange={this.handleChange}/>
