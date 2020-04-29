@@ -14,13 +14,18 @@ class AboutUs extends Component {
                 <p>
                     <div>
                         <p>
+                            <a href='https://github.com/gwd0715'>
+                                Chris
+                            </a>
+                        </p>
+                        <p>
                             <a href='https://www.linkedin.com/in/baobaollf'>
                                 Linfeng Li
                             </a>
                         </p>
                         <p>
-                            <a href='https://www.linkedin.com/in/yuqiwangyuqi'>
-                                Yuqi Wang
+                            <a href='https://github.com/peteryang11'>
+                                Qi Yang
                             </a>
                         </p>
                         <p>
@@ -28,9 +33,15 @@ class AboutUs extends Component {
                                 Tianqi Cai
                             </a>
                         </p>
+
                         <p>
-                            <a href='https://github.com/peteryang11'>
-                                Qi Yang
+                            <a href='https://www.linkedin.com/in/yuqiwangyuqi'>
+                                Yuqi Wang
+                            </a>
+                        </p>
+                        <p>
+                            <a href=''>
+                                Yuqi Sha
                             </a>
                         </p>
 
