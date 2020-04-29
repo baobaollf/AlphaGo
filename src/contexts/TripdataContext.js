@@ -19,12 +19,19 @@ class TripdataContextProvider extends Component {
       popupInfo: null,
       city: this.props.details,
       poiList: [],
+      loading: true
     }
   }
 
   showPlan() {
     this.setState({
       showplan: !this.state.showplan
+    })
+  }
+
+  setLoading() {
+    this.setState({
+      loading: false
     })
   }
 
@@ -54,7 +61,6 @@ class TripdataContextProvider extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.details)
     this.fetchTopListData()
     this.fetchDayPlanData()
     this.setState({
@@ -96,10 +102,11 @@ class TripdataContextProvider extends Component {
 
   fetchDayPlanData() {
     const url = "http://13.58.39.66/api/dayPlan?cityName="+ this.props.details.city + "&days=" + this.props.details.days
-    console.log(url)
     return fetch(url)
       .then(response => response.json())
-      .then(data => this.setState({ dayList: data[0], currentDayList: data[0][0], AroundList: data[1], CurrentAround: data[1][0] }))
+      .then(data => {this.setState({ dayList: data[0], currentDayList: data[0][0], AroundList: data[1], CurrentAround: data[1][0] })
+              this.setLoading()
+            })
       .catch(error => console.log("Load data failed"));
   }
 
@@ -189,6 +196,17 @@ class TripdataContextProvider extends Component {
         transitionInterpolator: new FlyToInterpolator()
       }
     })
+  }
+
+  findCenter = (list) => {
+    let len = list.length
+    var lat = 0;
+    var long = 0;
+    for (var i = 0; i < len; i++) {
+      lat += list[i].lat
+      long += list[i].long
+    }
+    return [long / len, lat / len]
   }
   
   render() {

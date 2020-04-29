@@ -42,7 +42,6 @@ export class MapScreen extends Component {
 
   _renderPopup() {
     const { popupInfo, closePopup, addItem, deleteByLoop } = this.context;
-    // {closePopup()}
     return (
       popupInfo && (
         <Popup
@@ -84,7 +83,7 @@ export class MapScreen extends Component {
 
 
   render() {
-    const { currentDayList, CurrentAround, viewport, _updateViewport } = this.context;
+    const { currentDayList, CurrentAround, viewport, _updateViewport, popupInfo } = this.context;
     const data = this.createLinear(currentDayList)
     //const {viewport} = this.state;
     const layers = [
@@ -107,12 +106,15 @@ export class MapScreen extends Component {
           <DeckGL viewState={viewport} layers={layers}>
             <Pin data={CurrentAround} onClickMarker={this._onClickMarker} color={"#FA6585"} />
             <Pin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>
+            {popupInfo && <Pin data={[popupInfo]} onClickMarker={this._onClickMarker} color={"#FFA500"} />}
             {this._renderPopup()}
           </DeckGL>
 
           <div className="scale">
             <ScaleControl />
           </div>
+
+          
 
           <div className="fullscreenControl">
             <FullscreenControl />

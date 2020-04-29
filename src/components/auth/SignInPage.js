@@ -29,7 +29,6 @@ class SignInPage extends Component {
 
         e.preventDefault();
         const {setUid} = this.context;
-        console.log(setUid)
         try {
             const result = await userSignIn(this.state.email, this.state.password);
             this.setState({
@@ -54,7 +53,6 @@ class SignInPage extends Component {
 
 
     render() {
-        console.log(this.context)
         return (
             <div>
                 <Form className="form" onSubmit={this.handleSubmit}>

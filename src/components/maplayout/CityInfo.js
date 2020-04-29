@@ -57,7 +57,7 @@ export default function CityInfo(props) {
                         {info.name}
                     </Typography>
                     <Typography variant="body2" component="p" color="textSecondary">
-                        {info.snippet.substring(0, 150) + "..."}
+                      {info.snippet.length > 150 ? info.snippet.substring(0, 150) + "..." : info.snippet}
                     </Typography>
                     <FavoriteIcon
                         className="FavoriteIcon"
