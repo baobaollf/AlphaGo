@@ -1,9 +1,6 @@
 import React, { Component, createContext } from 'react'
-// import * as TopPlacesData from "../testData/response.json";
-//import backEndData from "../testData/dayPlannerTemplate.json"
 import { FlyToInterpolator } from 'react-map-gl';
-//import WebMercatorViewport from 'viewport-mercator-project';
-import {getDetailHistory} from "../components/firebase/History";
+import { getDetailHistory } from "../components/firebase/History";
 import { AuthContext } from './AuthContext';
 
 export const TripdataContext = createContext();
@@ -24,7 +21,9 @@ class TripdataContextProvider extends Component {
       city: this.props.details,
       poiList: [],
       uid: "",
-      planId:""
+      planId: "",
+      loading: true,
+      TopListLoading: true
     }
   }
   setPlanId = (planId) => {
@@ -36,6 +35,12 @@ class TripdataContextProvider extends Component {
   showPlan() {
     this.setState({
       showplan: !this.state.showplan
+    })
+  }
+
+  setLoading() {
+    this.setState({
+      loading: false
     })
   }
 
@@ -64,38 +69,40 @@ class TripdataContextProvider extends Component {
     return true;
   }
 
-    componentDidMount() {
+  componentDidMount() {
     this.fetchTopListData()
     if (this.props.details.planId === "0") {
-    this.fetchDayPlanData()
-} else {
-    this.fetchRemoteDayPlan(this.props.details.planId)
-}
+      this.fetchDayPlanData()
+    } else {
+      this.fetchRemoteDayPlan(this.props.details.planId)
+    }
     this.setState({
-    viewport: {
-    latitude: this.props.details.coordinates.latitude,
-    longitude: this.props.details.coordinates.longitude,
-    zoom: 13,
-    pitch: 40,
-},
-})
-}
+      viewport: {
+        latitude: this.props.details.coordinates.latitude,
+        longitude: this.props.details.coordinates.longitude,
+        zoom: 13,
+        pitch: 40,
+      },
+    })
+  }
 
-    fetchRemoteDayPlan = async (planId) => {
-    const {uid} = this.context;
+  fetchRemoteDayPlan = async (planId) => {
+    // const { uid } = this.context;
     try {
-    const data = await getDetailHistory(uid, planId);
-    this.setState({
-    dayList: data[0],
-    currentDayList: data[0][0],
-    AroundList: data[1],
-    CurrentAround: data[1][0],
-})
-} catch (e) {
-    console.log(e.message)
-}
-}
-  
+      console.log(localStorage.getItem('uid'))
+      const data = await getDetailHistory(localStorage.getItem('uid'), planId);
+      this.setState({
+        dayList: data[0],
+        currentDayList: data[0][0],
+        AroundList: data[1],
+        CurrentAround: data[1][0],
+      })
+      this.setLoading()
+    } catch (e) {
+      console.log(e.message)
+    }
+  }
+
 
   _updateViewport = viewport => {
     this.setState({
@@ -113,27 +120,35 @@ class TripdataContextProvider extends Component {
   fetchMoreTopListData() {
     var len = this.state.TopList.length
     if (len % 10 === 0) {
-      const url = "http://13.58.39.66/api/topPoi?cityName=" + this.state.city.city + "&type=all&score=" + 
+      const url = "http://13.58.39.66/api/topPoi?cityName=" + this.state.city.city + "&type=all&score=" +
         this.state.TopList[len - 1].score + "&poiId=" + this.state.TopList[len - 1].id;
       return fetch(url)
         .then(response => response.json())
         .then(data => this.setState({
-          TopList: this.state.TopList.concat(data)
+          TopList: this.state.TopList.concat(data),
+          TopListLoading: data.length && true
         }))
         .catch(error => console.log("Load data failed"));
+    } else {
+      console.log("go here")
+      this.setState({
+        TopListLoading: false
+      })
     }
   }
 
   fetchDayPlanData() {
-    const url = "http://13.58.39.66/api/dayPlan?cityName="+ this.props.details.city + "&days=" + this.props.details.days
-    console.log(url)
+    const url = "http://13.58.39.66/api/dayPlan?cityName=" + this.props.details.city + "&days=" + this.props.details.days
     return fetch(url)
       .then(response => response.json())
-      .then(data => this.setState({ dayList: data[0], currentDayList: data[0][0], AroundList: data[1], CurrentAround: data[1][0] }))
+      .then(data => {
+        this.setState({ dayList: data[0], currentDayList: data[0][0], AroundList: data[1], CurrentAround: data[1][0] })
+        this.setLoading()
+      })
       .catch(error => console.log("Load data failed"));
   }
 
-  updateItem = (list,index) => {
+  updateItem = (list, index) => {
     if (list === this.state.currentDayList) {
       this.showPlan();
     } else if (this.state.showplan === false) {
@@ -154,7 +169,7 @@ class TripdataContextProvider extends Component {
       currentDayList: list,
       CurrentAround: this.state.AroundList[index],
     });
-    
+
   }
 
   reorder = (list, startIndex, endIndex) => {
@@ -220,26 +235,37 @@ class TripdataContextProvider extends Component {
       }
     })
   }
-  
+
+  findCenter = (list) => {
+    let len = list.length
+    var lat = 0;
+    var long = 0;
+    for (var i = 0; i < len; i++) {
+      lat += list[i].lat
+      long += list[i].long
+    }
+    return [long / len, lat / len]
+  }
+
   render() {
     return (
       <TripdataContext.Provider value={{
-          ...this.state,
-          updateItem: this.updateItem.bind(this),
-          reorder: this.reorder,
-          reorder_day: this.reorder_day,
-          deleteItem: this.deleteItem,
-          showPlan: this.showPlan,
-          setPlanId: this.setPlanId,
-          addItem: this.addItem,
-          deleteByLoop: this.deleteByLoop,
-          setPopupinfo: this.setPopupinfo,
-          closePopup: this.closePopup,
-          setTopList: this.setTopList,
-          fetchMoreTopListData: this.fetchMoreTopListData.bind(this),
-          _updateViewport: this._updateViewport,
-          setViewport: this.setViewport
-          }}>
+        ...this.state,
+        updateItem: this.updateItem.bind(this),
+        reorder: this.reorder,
+        reorder_day: this.reorder_day,
+        deleteItem: this.deleteItem,
+        showPlan: this.showPlan,
+        setPlanId: this.setPlanId,
+        addItem: this.addItem,
+        deleteByLoop: this.deleteByLoop,
+        setPopupinfo: this.setPopupinfo,
+        closePopup: this.closePopup,
+        setTopList: this.setTopList,
+        fetchMoreTopListData: this.fetchMoreTopListData.bind(this),
+        _updateViewport: this._updateViewport,
+        setViewport: this.setViewport
+      }}>
         {this.props.children}
       </TripdataContext.Provider>
     )

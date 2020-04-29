@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import DehazeIcon from "@material-ui/icons/Dehaze";
+import CircularIndeterminate from './spinner';
 
 const getListStyle = isDraggingOver => ({
   //background: isDraggingOver ? "lightblue" : "blue",
@@ -57,7 +58,7 @@ class DayOverView extends Component {
       )
     }
   }
-
+  
   render() {
     return (
       <div>
@@ -70,6 +71,7 @@ class DayOverView extends Component {
                 ref={provided.innerRef}
                 style={getListStyle()}
               >
+                {this.props.loading && <div className="LeftListSpinner"><CircularIndeterminate></CircularIndeterminate></div>}
                 {this.props.items.map((item, index) => (
                   <Draggable key={index} draggableId={index + ""} index={index}>
                     {(provided, snapshot) => (

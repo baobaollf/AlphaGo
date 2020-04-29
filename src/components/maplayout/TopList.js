@@ -12,6 +12,7 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import { TripdataContext } from "../../contexts/TripdataContext";
+import CircularIndeterminate from "../maplayout/LeftList/spinner";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,7 +42,7 @@ export default function NestedList(props) {
   const classes = useStyles();
   const scrollRef = useRef();
   const [open, setOpen] = React.useState(true);
-  const { TopList, setPopupinfo, fetchMoreTopListData } = React.useContext(TripdataContext)
+  const { TopList, setPopupinfo, fetchMoreTopListData, TopListLoading } = React.useContext(TripdataContext)
 
   const handleClick = () => {
     setOpen(!open);
@@ -85,7 +86,9 @@ export default function NestedList(props) {
           <div className={classes.gridroot} onScroll={loadData}>
             <GridList cellHeight={200} spacing={1} className={classes.gridList} cols={1} ref={scrollRef}>
               {TopList && createGridList(TopList)}
+              {TopListLoading && <div className="TopListSpinner"><CircularIndeterminate></CircularIndeterminate></div> } 
             </GridList>
+            
           </div>
           
         </Collapse>

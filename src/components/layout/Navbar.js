@@ -12,7 +12,7 @@ class Navbar extends Component {
 
     render() {
         let links = <SignedInLinks setUid={this.props.setUid}/>;
-        if (this.props.uid === "") {
+        if (localStorage.getItem("uid") === "") {
             links = <SignedOutLinks/>;
         } else {
             links = <SignedInLinks setUid={this.props.setUid}/>;

@@ -16,11 +16,11 @@ class EditMapPage extends Component {
       days: days,
       planId: planId
     }
-    const {uid} =  this.context;
-    console.log(details)
+    const {uid} = this.context;
+    console.log(uid)
     return (
       <div className="EditMap">
-        <TripdataContextProvider details={details} >
+        <TripdataContextProvider uid={uid} details={details} >
           <MapScreen uid={uid}/>
           <ListView />
           <TopList className="TopList" />

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Button, Collapse, List} from 'antd';
 import {NavLink} from "react-router-dom";
-import {getAllBriefHistory, getDetailHistory} from "../../../firebase/History"
+import {getAllBriefHistory} from "../../../firebase/History"
 import {AuthContext} from "../../../../contexts/AuthContext";
 import alphaCityList from "../../../../testData/alphacityFront.json"
 

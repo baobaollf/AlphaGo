@@ -7,13 +7,13 @@ import {TripdataContext} from "../../../contexts/TripdataContext";
 class ListView extends Component {
     static contextType = TripdataContext;
 
-
     render() {
-        const {showPlan, dayList, currentDayList, updateItem, reorder, reorder_day, deleteItem, showplan, setPopupinfo} = this.context;
+      const {loading, showPlan, dayList, currentDayList, updateItem, reorder, reorder_day, deleteItem, showplan, setPopupinfo} = this.context;
         return (
             <div className="flexbox">
                 <DayOverView
                     items={dayList}
+                    loading={loading}
                     updateItem={updateItem.bind(this)}
                     reorder={reorder_day.bind(this.context)}
                     showPlan={showPlan}/>

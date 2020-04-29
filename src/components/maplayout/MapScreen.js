@@ -7,9 +7,8 @@ import DeckGL from '@deck.gl/react';
 import { LineLayer } from '@deck.gl/layers';
 import { TripdataContext } from "../../contexts/TripdataContext";
 //import WebMercatorViewport from 'viewport-mercator-project';
-import { addHistory, updateHistory, generateNewPlanId } from "../../components/firebase/History";
-import {AuthContext} from "../../contexts/AuthContext";
-import TripdataContextProvider from "../../contexts/TripdataContext";
+import { addHistory, generateNewPlanId } from "../../components/firebase/History";
+
 
 
 export class MapScreen extends Component {
@@ -34,6 +33,18 @@ export class MapScreen extends Component {
     setPopupinfo(pointInfo);
   };
 
+  getButton = (id) => {
+    if (id !== "") {
+      return (<button className="save" onClick={this.handleSubmit}>
+                Save your plan
+              </button>)
+    } else {
+      return (<button onClick={this.jumpFunc} className="savInput">
+                Please Sign up to save your plan
+              </button>)
+    }
+  }
+
   findPOIinDayList(popupInfo) {
     const { currentDayList } = this.context;
     for (let i = 0; i < currentDayList.length; i++) {
@@ -46,7 +57,6 @@ export class MapScreen extends Component {
 
   _renderPopup() {
     const { popupInfo, closePopup, addItem, deleteByLoop } = this.context;
-    // {closePopup()}
     return (
       popupInfo && (
         <Popup
@@ -117,85 +127,43 @@ export class MapScreen extends Component {
   render() {
     const { currentDayList, CurrentAround, viewport, _updateViewport } = this.context;
     const data = this.createLinear(currentDayList)
-    //const {viewport} = this.state;
     const layers = [
       new LineLayer({ id: 'line-layer', data, getWidth: 6, getColor: [52,63,103]})
     ]; 
-    if (this.props.uid !== "") {
-      return (
-        <div className="MapGL">
-          <MapGL
-            {...viewport}
-            width="100vw" 
-            height="100vh"
-            mapStyle= {MAP_STYLE_URL}
-            onViewportChange={_updateViewport}
-            mapboxApiAccessToken={MAPBOX_TOKEN}
-          >
-            <DeckGL viewState={viewport} layers={layers}>
-              <Pin data={CurrentAround} onClickMarker={this._onClickMarker} color={"#FA6585"} />
-              <Pin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>
-              {this._renderPopup()}
-            </DeckGL>
-  
-            <div className="scale">
-              <ScaleControl />
-            </div>
-  
-            <div className="fullscreenControl">
-              <FullscreenControl />
-            </div>
-            
-            <button className="save" onClick={this.handleSubmit}>
-              Save your plan
-            </button>
-            <div className="navControl">
-              <NavigationControl />
-            </div>
-          
-          </MapGL>
-  
-        </div>
-      ) 
-    } else {
-      return (
-        <div className="MapGL">
-          <MapGL
-            {...viewport}
-            width="100vw" 
-            height="100vh"
-            mapStyle= {MAP_STYLE_URL}
-            onViewportChange={_updateViewport}
-            mapboxApiAccessToken={MAPBOX_TOKEN}
-          >
-              <DeckGL viewState={viewport} layers={layers}>
-              <Pin data={CurrentAround} onClickMarker={this._onClickMarker} color={"#FA6585"} />
-              <Pin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>
-              {this._renderPopup()}
-            </DeckGL>
-  
-            <div className="scale">
-              <ScaleControl />
-            </div>
-            <div className="fullscreenControl">
-              <FullscreenControl />
-            </div>
-            
-            <button onClick={this.jumpFunc} className="savInput">
-              Please Sign up to save your plan
-            </button>
-            
-            <div className="navControl">
-              <NavigationControl />
-            </div>
-          
-          </MapGL>
-  
-        </div>
+    return (
+      <div className="MapGL">
+        <MapGL
+          {...viewport}
+          width="100vw" 
+          height="100vh"
+          mapStyle= {MAP_STYLE_URL}
+          onViewportChange={_updateViewport}
+          mapboxApiAccessToken={MAPBOX_TOKEN}
+        >
+          <DeckGL viewState={viewport} layers={layers}>
+            <Pin data={CurrentAround} onClickMarker={this._onClickMarker} color={"#FA6585"} />
+            <Pin data={currentDayList} onClickMarker={this._onClickMarker} color={"#343F67"}/>
+            {this._renderPopup()}
+          </DeckGL>
 
-    );
-    }
-    
+          <div className="scale">
+            <ScaleControl />
+          </div>
+
+          <div className="fullscreenControl">
+            <FullscreenControl />
+          </div>
+          
+          {this.getButton(this.props.uid)}
+          
+          <div className="navControl">
+            <NavigationControl />
+          </div>
+        
+        </MapGL>
+
+      </div>
+    ) 
   }
 }
 

@@ -87,3 +87,17 @@
   background-color:#343f67;
   position: relative;
 }
+
+.TopListSpinner{
+  display: flex;
+  justify-content: center;
+}
+
+.LeftListSpinner{
+  display: flex;
+  justify-content: center;
+}
+
+.mapboxgl-popup-close-button{
+  color: #fff;
+}

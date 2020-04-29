@@ -10,7 +10,8 @@ class SignedInLinks extends Component {
     handleOnclick = async () => {
         const { setUid } = this.context;
         try {
-            const result = await userLogout();
+            await userLogout();
+            localStorage.setItem('uid',"")
             this.props.setUid("");
             setUid("");
         } catch (error) {

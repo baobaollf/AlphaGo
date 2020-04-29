@@ -23,7 +23,6 @@ class NextPageButton extends Component {
 
     render() {
         if (this.checkEnter(this.props.city)) {
-            console.log(this.props.city)
             return (
                 <div className="next-page">
                     <NavLink to={{
