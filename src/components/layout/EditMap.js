@@ -17,7 +17,6 @@ class EditMapPage extends Component {
       planId: planId
     }
     const {uid} = this.context;
-    console.log(uid)
     return (
       <div className="EditMap">
         <TripdataContextProvider uid={uid} details={details} >
