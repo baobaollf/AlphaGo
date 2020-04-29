@@ -28,13 +28,12 @@ class SignInPage extends Component {
     handleSubmit = async (e) => {
         e.preventDefault();
         const {setUid} = this.context;
-        console.log(setUid)
+        // console.log(setUid)
         try {
             const result = await userSignIn(this.state.email, this.state.password);
             this.setState({
                 uid: result
             })
-            // console.log(result);
             // console.log(this.state.uid);
             if (result !== 0) {
                 // console.log(this.props.history);
@@ -44,7 +43,6 @@ class SignInPage extends Component {
             }
 
             this.props.setUid(this.state.uid);
-            // console.log("signin page UID setted");
         } catch (error) {
             console.log(error.message);
         }
@@ -53,7 +51,7 @@ class SignInPage extends Component {
 
 
     render() {
-        console.log(this.context)
+        // console.log(this.context)
         return (
             <div>
                 <Form className="form" onSubmit={this.handleSubmit}>
@@ -76,7 +74,7 @@ class SignInPage extends Component {
                     </Button>
                     {/* </NavLink> */}
                     <FormGroup className="newuser" size="sm">
-                        <p>
+                        <p className="fontsize">
                             "New User?"
                             <a href="./signup">Sign Up Free!</a>
                         </p>
