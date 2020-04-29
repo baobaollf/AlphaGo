@@ -57,40 +57,33 @@
 }
 
 .save {
-  margin-top: 2%;
+  margin-top: 2.2%;
   margin-bottom: 100px;
-  margin-left: 45%;
+  margin-left: 40%;
   margin-right: 40%;
-  border-radius: 5px;
-  font-size: 20px;
-  width: 12%;
-  height: 5%;
-  background-color:rgb(248, 176, 43);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: aliceblue;
+  width: 15%;
+  height: 4%;
+  background-color:#343f67;
   position: relative;
 }
 
 .savInput {
   align-items: flex-start;
-  margin-top: 50px;
-  margin-left: 50%;
+  margin-top: 3%;
+  margin-left: 40%;
+  margin-right: 40%;
   width: 20%;
   height: 5%;
   padding: 0;
   padding-left: -10px;
   padding-right: -10px;
-  font-size: 15px;
+  font-size: 1rem;
+  color: aliceblue;
   text-align: center;
   border-radius: 5px;
-  background-color:rgb(248, 176, 43);
+  background-color:#343f67;
   position: relative;
 }
-
-/* .save1 {
-  width:10px;
-  height:9%;
-  font-size: 10px;
-  padding-left: 100px;
-  padding-right: 0px;
-  background-color:rgb(248, 176, 43);
-  position: relative;
-} */

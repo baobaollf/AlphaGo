@@ -21,8 +21,14 @@ class TripdataContextProvider extends Component {
       popupInfo: null,
       city: this.props.details,
       poiList: [],
-      uid: ""
+      uid: "",
+      planId:""
     }
+  }
+  setPlanId = (planId) => {
+    this.setState({
+      planId: planId
+    })
   }
 
   showPlan() {
@@ -208,7 +214,7 @@ class TripdataContextProvider extends Component {
           reorder_day: this.reorder_day,
           deleteItem: this.deleteItem,
           showPlan: this.showPlan,
-
+          setPlanId: this.setPlanId,
           addItem: this.addItem,
           deleteByLoop: this.deleteByLoop,
           setPopupinfo: this.setPopupinfo,

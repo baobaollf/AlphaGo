@@ -7,7 +7,7 @@ import DeckGL from '@deck.gl/react';
 import { LineLayer } from '@deck.gl/layers';
 import { TripdataContext } from "../../contexts/TripdataContext";
 //import WebMercatorViewport from 'viewport-mercator-project';
-import { addHistory, updateHistory } from "../../components/firebase/History";
+import { addHistory, updateHistory, generateNewPlanId } from "../../components/firebase/History";
 import {AuthContext} from "../../contexts/AuthContext";
 import TripdataContextProvider from "../../contexts/TripdataContext";
 
@@ -87,13 +87,22 @@ export class MapScreen extends Component {
   }
 
   handleSubmit = async (e) => {
-    const {dayList, city} = this.context;
+    const {dayList, city, AroundList, setPlanId, planId } = this.context;
     e.preventDefault();
+    var pId;
     try {
         // console.log(this.props.uid);
-        const result = await addHistory(this.props.uid, city, dayList);
+        if (planId === "") {
+          pId = await generateNewPlanId(this.props.uid);
+          setPlanId(pId);
+        } else {
+            pId = planId;
+        }
+        
+        // console.log(pId);
+        const result = await addHistory(this.props.uid, pId, city, dayList, AroundList);
         alert("You have successfully saved your plan!");
-        // console.log(result);
+        console.log(result);
     } catch (error) {
         console.log(error.message);
     }

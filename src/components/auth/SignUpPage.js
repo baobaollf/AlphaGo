@@ -52,7 +52,7 @@ class SignUpPage extends Component {
           </FormGroup>
           <FormGroup size="lg">
             <ControlLabel className="label">Password</ControlLabel>
-            <FormControl id="password" type="password" placeholder="Password" onChange={this.handleChange}/>
+            <FormControl id="password" minlength="6" type="password" placeholder="Password" onChange={this.handleChange}/>
           </FormGroup>
           <ControlLabel className="notice">By signing up, you agree to all user terms.</ControlLabel>
             <Button className="button" size="sm" variant="warning" type="submit" >
