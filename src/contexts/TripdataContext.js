@@ -2,7 +2,8 @@ import React, { Component, createContext } from 'react'
 import { FlyToInterpolator } from 'react-map-gl';
 import { getDetailHistory } from "../components/firebase/History";
 import { AuthContext } from './AuthContext';
-
+import { distanceInKmBetweenEarthCoordinates } from '../components/maplayout/calcDistance'
+//import WebMercatorViewport from 'viewport-mercator-project';
 export const TripdataContext = createContext();
 
 
@@ -23,7 +24,9 @@ class TripdataContextProvider extends Component {
       uid: "",
       planId: "",
       loading: true,
-      TopListLoading: true
+      TopListLoading: true,
+      listCenter: [],
+      day: 0,
     }
   }
   setPlanId = (planId) => {
@@ -91,11 +94,13 @@ class TripdataContextProvider extends Component {
     try {
       console.log(localStorage.getItem('uid'))
       const data = await getDetailHistory(localStorage.getItem('uid'), planId);
+      const center = this.findCenter(data[1][0]);
       this.setState({
         dayList: data[0],
         currentDayList: data[0][0],
         AroundList: data[1],
         CurrentAround: data[1][0],
+        listCenter: center
       })
       this.setLoading()
     } catch (e) {
@@ -117,6 +122,7 @@ class TripdataContextProvider extends Component {
       .then(data => this.setState({ TopList: data }))
       .catch(error => console.log("Load data failed"));
   }
+
   fetchMoreTopListData() {
     var len = this.state.TopList.length
     if (len % 10 === 0) {
@@ -142,8 +148,28 @@ class TripdataContextProvider extends Component {
     return fetch(url)
       .then(response => response.json())
       .then(data => {
-        this.setState({ dayList: data[0], currentDayList: data[0][0], AroundList: data[1], CurrentAround: data[1][0] })
+        const center = this.findCenter(data[1][0])
+        this.setState({ dayList: data[0], currentDayList: data[0][0], AroundList: data[1], CurrentAround: data[1][0], listCenter: center })
         this.setLoading()
+      })
+      .catch(error => console.log("Load data failed"));
+  }
+
+  fetchAround(lat, long) {
+    const url = "http://13.58.39.66/api/nearBy?lat=" + lat + "&lon=" + long;
+    const AroundList = this.state.AroundList;
+    console.log(AroundList)
+    console.log(url);
+    return fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+        AroundList[this.state.day] = data;
+        console.log(AroundList)
+        this.setState({
+          //AroundList: AroundList,
+          CurrentAround: data
+        })
       })
       .catch(error => console.log("Load data failed"));
   }
@@ -154,22 +180,25 @@ class TripdataContextProvider extends Component {
     } else if (this.state.showplan === false) {
       this.showPlan();
     }
-    let poilist = []
-    for (var i = 0; i < list.length; i++) {
-      let ele = []
-      ele.push(list[i].lat)
-      ele.push(list[i].long)
-      poilist.push(ele)
-    }
-    // console.log(this.state.viewport)
-    // const { longitude, latitude, zoom } = new WebMercatorViewport(this.state.viewport).fitBounds(poilist)
+    // let poilist = []
+    // for (var i = 0; i < list.length; i++) {
+    //   let ele = []
+    //   ele.push(list[i].long)
+    //   ele.push(list[i].lat)
+    //   poilist.push(ele)
+    // }
+    //console.log(this.state.viewport)
+    // console.log(poilist)
+    const center = this.findCenter(list);
+    // const { longitude, latitude, zoom } = new WebMercatorViewport({ longitude: center[1], latitude: center[0], zoom: 15 }).fitBounds(poilist)
     // console.log(longitude + " " + latitude + " " + zoom)
-    //this.setViewport(longitude, latitude, zoom)
+    this.setViewport(center[0], center[1], 13)
     this.setState({
       currentDayList: list,
       CurrentAround: this.state.AroundList[index],
+      day: index,
+      listCenter: center
     });
-
   }
 
   reorder = (list, startIndex, endIndex) => {
@@ -206,10 +235,18 @@ class TripdataContextProvider extends Component {
   // delete by index
   deleteItem = (index) => {
     const result = this.state.currentDayList;
-
     result.splice(index, 1);
+    const preCenter = this.state.listCenter;
+    const curCenter = this.findCenter(result);
+    const dis = distanceInKmBetweenEarthCoordinates(preCenter[0], preCenter[1], curCenter[0], curCenter[1]);
+    console.log(dis)
+    if (dis > 2 && result.length !== 0) {
+      this.fetchAround(curCenter[0], curCenter[1]);
+    }
     this.setState({
       currentDayList: result,
+      listCenter: curCenter,
+      popupInfo: null
     });
     // console.log(this.state.currentDayList)
   }
@@ -244,7 +281,7 @@ class TripdataContextProvider extends Component {
       lat += list[i].lat
       long += list[i].long
     }
-    return [long / len, lat / len]
+    return [lat / len, long / len]
   }
 
   render() {

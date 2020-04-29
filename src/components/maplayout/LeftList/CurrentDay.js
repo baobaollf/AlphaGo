@@ -87,7 +87,6 @@ class CurrentDay extends Component {
                         <DeleteIcon
                           className="deleteIcon"
                           onClick={(e) => {
-                            console.log(e)
                             e.stopPropagation();
                             this.props.deleteItem(index);
                           }}
