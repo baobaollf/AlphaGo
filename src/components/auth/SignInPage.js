@@ -59,17 +59,17 @@ class SignInPage extends Component {
             <div className="container">
                 <Form className="form" onSubmit={this.handleSubmit}>
                     {/* <FormGroup className="form-group" size="sm">
-                            <ControlLabel className="label">Username</ControlLabel>
-                            <FormControl id="username" type="username" placeholder="Input Username" onChange={this.handleChange}/>
-                        </FormGroup> */}
+                        <ControlLabel className="label">Username</ControlLabel>
+                        <FormControl id="username" type="username" placeholder="Input Username" onChange={this.handleChange}/>
+                    </FormGroup> */}
                     <FormGroup className="form-group" size="sm">
                         <ControlLabel className="label">Email</ControlLabel>
-                        <FormControl id="email" type="username" placeholder="Input Email" onChange={this.handleChange}/>
+                        <FormControl id="email" type="username" placeholder="Input Email" onChange={this.handleChange} required/>
                     </FormGroup>
                     <FormGroup className="form-group" size="sm">
                         <ControlLabel className="label">Password</ControlLabel>
                         <FormControl id="password" type="password" placeholder="Input Password"
-                                     onChange={this.handleChange}/>
+                                     onChange={this.handleChange} required/>
                     </FormGroup>
                     {/* <NavLink to={{pathname: '/profile',}}> */}
                     <Button className="button" size="sm" variant="warning" type="submit">

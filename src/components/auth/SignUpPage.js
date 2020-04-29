@@ -42,20 +42,19 @@ class SignUpPage extends Component {
   render() {
     
     return (
-
-      <div className="signuppage">
+      <div className="container">
         <Form className="form" onSubmit={this.handleSubmit}>
           <FormGroup size="lg">
             <ControlLabel className="label">Username</ControlLabel>
-            <FormControl id="username" type="username" placeholder="Username" onChange={this.handleChange}/>
+            <FormControl id="username" type="username" placeholder="Username" onChange={this.handleChange} required />
           </FormGroup>
           <FormGroup size="lg">
-            <ControlLabel className="label">Email address</ControlLabel>
-            <FormControl id="email" type="emails" placeholder="Email" onChange={this.handleChange}/>
+            <ControlLabel className="label" required>Email address</ControlLabel>
+            <FormControl id="email" type="emails" placeholder="Email" onChange={this.handleChange} required/>
           </FormGroup>
           <FormGroup size="lg">
-            <ControlLabel className="label">Password</ControlLabel>
-            <FormControl id="password" minlength="6" type="password" placeholder="Password" onChange={this.handleChange}/>
+            <ControlLabel className="label" required>Password</ControlLabel>
+            <FormControl id="password" minlength="6" type="password" placeholder="Password" onChange={this.handleChange} required/>
           </FormGroup>
           <ControlLabel className="notice">By signing up, you agree to all user terms.</ControlLabel>
             <Button className="button" size="sm" variant="warning" type="submit" >
