@@ -35,11 +35,11 @@ export class MapScreen extends Component {
 
   getButton = (id) => {
     if (id !== "") {
-      return (<button className="save" onClick={this.handleSubmit}>
+      return (<button className="save" onClick={this.handleSubmit} style={{fontFamily: "-apple-system,system-ui"}}>
                 Save your plan
               </button>)
     } else {
-      return (<button onClick={this.jumpFunc} className="savInput">
+      return (<button onClick={this.jumpFunc} className="savInput" style={{fontFamily: "-apple-system,system-ui"}}>
                 Please Sign up to save your plan
               </button>)
     }

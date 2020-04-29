@@ -3,7 +3,7 @@ import {Button, Collapse, List} from 'antd';
 import {NavLink} from "react-router-dom";
 import {getAllBriefHistory} from "../../../firebase/History"
 import {AuthContext} from "../../../../contexts/AuthContext";
-import alphaCityList from "../../../../testData/alphacityFront.json"
+
 
 const {Panel} = Collapse;
 
@@ -30,15 +30,6 @@ class History extends Component {
 
     static contextType = AuthContext;
 
-    findCoordinates = (cityName) => {
-        for (let i = 0; i < alphaCityList[0].length; i++) {
-            if (alphaCityList[0][i].name === cityName) {
-                console.log(alphaCityList[0][i]);
-                return alphaCityList[0][i].coordinates;
-            }
-        }
-    }
-
     genExtra = (item) => {
         return (
             <NavLink to={{
@@ -55,8 +46,12 @@ class History extends Component {
 
                 }
             }}>
-                <Button type="primary" icon="thunderbolt">
-                    View
+                <Button type="primary" style={{
+                    background: "#FA6585",
+                    borderColor: "#FA6585",
+                    top: -5,
+                }}>
+                    Retrieve Trips
                 </Button>
             </NavLink>
         )};
@@ -91,13 +86,15 @@ class History extends Component {
                         width: 800,
                     }}
                     size="small"
-                    header={<h2>Your Saved Trips</h2>}
+                    header={<h2>Saved Trips</h2>}
                     bordered
                     pagination={{
                         onChange: page => {
                             //console.log(page);
                         },
                         pageSize: 3,
+
+
                     }}
                     dataSource={this.state.briefHistory}
                     renderItem={item =>

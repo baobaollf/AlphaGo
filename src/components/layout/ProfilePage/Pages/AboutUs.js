@@ -28,6 +28,11 @@ class AboutUs extends Component {
                                 Tianqi Cai
                             </a>
                         </p>
+                        <p>
+                            <a href='https://github.com/peteryang11'>
+                                Qi Yang
+                            </a>
+                        </p>
 
                     </div>
                 </p>

@@ -27,23 +27,38 @@ class ProfilePage extends Component {
             }}>
                 <Menu
                     onClick={this.handleClick}
-                    style={{width: 200}}
+                    style={{
+                        width: 200,
+
+                    }}
                     defaultSelectedKeys={['1']}
                     defaultOpenKeys={['sub1']}
                     mode="inline"
+                    className="profilePage-menu"
                 >
                     <SubMenu
                         key="sub1"
                         title={
                             <span>
               <AppstoreOutlined/>
-              <span>Menu</span>
+              <span style={{
+                  fontSize: 18,
+              }}>
+                  Menu
+              </span>
             </span>
                         }
                     >
-                        <Menu.Item key="Profile">Profile</Menu.Item>
-                        <Menu.Item key="History">History</Menu.Item>
-                        <Menu.Item key="About us">About us</Menu.Item>
+                        <Menu.Item key="Profile" style={{
+                            fontSize: 16,
+                        }}>Profile
+                        </Menu.Item>
+                        <Menu.Item key="History" style={{
+                            fontSize: 16,
+                        }}>History</Menu.Item>
+                        <Menu.Item key="About us" style={{
+                            fontSize: 16,
+                        }}>About us</Menu.Item>
                     </SubMenu>
                 </Menu>
                 <PageController
