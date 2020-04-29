@@ -94,6 +94,7 @@ class CurrentDay extends Component {
                           style={{
                             position: 'absolute',
                             right: 5,
+                            margin: 1,
                             top: 8,
                           }}
                         />

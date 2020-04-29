@@ -77,7 +77,7 @@ export default function NestedList(props) {
       >
         <ListItem button onClick={handleClick}>
           <ListItemIcon>
-            <CollectionsIcon color="secondary"/>
+            <CollectionsIcon color="secondary" style={{marginRight: 5}}/>
           </ListItemIcon>
           <ListItemText primary="Popular Places" />
           {open ? <ExpandLess /> : <ExpandMore />}

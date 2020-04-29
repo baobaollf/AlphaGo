@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     },
     gridList: {
         flexWrap: 'wrap',
-        height: 625,
+        height: '70vh',
         width: 300,
         // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
         transform: 'translateZ(0)',
@@ -42,7 +42,6 @@ export default function CityGrid(props) {
                         props.setCoordinates(point.coordinates.latitude, point.coordinates.longitude);
                         props.setCityInfo(point.snippet, point.name);
                     }
-
                 }
                      src={point.images[0]} alt=" " className="cityListImg"/>
                 <GridListTileBar

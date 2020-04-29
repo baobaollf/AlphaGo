@@ -21,8 +21,8 @@ class SignedInLinks extends Component {
     render() {
         return (
             <ul className="right">
-                <li><NavLink to='/' onClick={this.handleOnclick} className="log-out-text">Log out</NavLink></li>
-                <li><NavLink to='/profile' className="btn"><AccountCircleIcon></AccountCircleIcon></NavLink></li>
+                <li><NavLink to='/' onClick={this.handleOnclick} className="log-out-text">Logout</NavLink></li>
+                <li><NavLink to='/profile' className="btn"><AccountCircleIcon className="AccountIcon"></AccountCircleIcon></NavLink></li>
 
 
             </ul>

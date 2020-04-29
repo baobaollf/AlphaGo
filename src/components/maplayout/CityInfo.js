@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import backupImg from "../../assets/images/mapbackground.png"
 //import {TripdataContext} from "../../contexts/TripdataContext";
@@ -46,7 +46,7 @@ export default function CityInfo(props) {
     return (
 
         <div>
-            <Card className={classes.card}>
+            <Card className={classes.card} style={{cursor: "pointer"}}>
                 <CardMedia component="img"
                            className={classes.cardMedia}
                            image={info.images.length !== 0 ? info.images[0] : backupImg}
@@ -69,9 +69,9 @@ export default function CityInfo(props) {
                         }}/>
 
                     <Typography variant="subtitle1" color="primary">
-                        <Link to="" href="#" onClick={() => console.log("more information")}>
+                        <p to="#" href="#" onClick={() => console.log("more information")}>
                             More information...
-                        </Link>
+                        </p>
                     </Typography>
                 </CardContent>
             </Card>

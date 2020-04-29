@@ -88,7 +88,7 @@ class DayOverView extends Component {
                           provided.draggableProps.style
                         )}
                       >
-                        <DehazeIcon/>
+                        <DehazeIcon style={{marginRight: "5px"}}/>
                         {`Day ${index + 1}`}
                       </div>
                     )}
