@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
 import { Card, Avatar } from 'antd';
+import {AuthContext} from "../../../../contexts/AuthContext";
+
 
 const { Meta } = Card;
 
 
 class Profile extends Component {
+    static contextType = AuthContext;
+
     render() {
+        const {email} = this.context;
         return (
             <div style={{
                 marginTop: 50,
@@ -25,8 +30,7 @@ class Profile extends Component {
                 >
                     <Meta
                         avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                        title="User Name"
-                        description="example@email.com"
+                        title={email}
                     />
                 </Card>
             </div>

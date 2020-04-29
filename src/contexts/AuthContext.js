@@ -6,6 +6,8 @@ class AuthContextProvider extends Component {
 
   state = {
     uid: "",
+    email: '',
+    username: '',
   }
 
   setUid = (id) => {
@@ -14,11 +16,19 @@ class AuthContextProvider extends Component {
     })
   }
 
+  setOther =(email, username) => {
+    this.setState({
+      email: email,
+      username: username,
+    })
+  }
+
   render() {
     return (
       <AuthContext.Provider value={{
         ...this.state,
-        setUid: this.setUid
+        setUid: this.setUid,
+        setOther: this.setOther,
       }}>
         {this.props.children}
       </AuthContext.Provider>

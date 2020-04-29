@@ -3,6 +3,7 @@ import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button, Form, FormGroup, FormControl, ControlLabel} from 'react-bootstrap';
 import {userSignIn} from "../firebase/Authentication";
+
 import {withRouter} from "react-router-dom";
 import {AuthContext} from "../../contexts/AuthContext";
 
@@ -27,8 +28,8 @@ class SignInPage extends Component {
 
     handleSubmit = async (e) => {
         e.preventDefault();
-        const {setUid} = this.context;
-        // console.log(setUid)
+        const {setUid, setOther} = this.context;
+
         try {
             const result = await userSignIn(this.state.email, this.state.password);
             this.setState({
@@ -38,7 +39,8 @@ class SignInPage extends Component {
             if (result !== 0) {
                 // console.log(this.props.history);
                 // this.props.history.push("/");
-                setUid(result)
+                setUid(result);
+                setOther(this.state.email, '');
                 this.props.history.goBack();
             }
 

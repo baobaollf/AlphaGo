@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import DeleteIcon from '@material-ui/icons/Delete';
 
-
 const getListStyle = isDraggingOver => ({
   // background: isDraggingOver ? "lightblue" : "lightblue",
   background: 'white',
@@ -82,7 +81,9 @@ class CurrentDay extends Component {
                           provided.draggableProps.style
                         )}
                       >
+                        {`${index + 1} `}
                         {item.name}
+
                         <DeleteIcon
                           className="deleteIcon"
                           onClick={() => {

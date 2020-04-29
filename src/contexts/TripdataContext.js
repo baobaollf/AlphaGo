@@ -3,6 +3,7 @@ import React, { Component, createContext } from 'react'
 //import backEndData from "../testData/dayPlannerTemplate.json"
 import { FlyToInterpolator } from 'react-map-gl';
 //import WebMercatorViewport from 'viewport-mercator-project';
+import {getDetailHistory} from "../components/firebase/History";
 import { AuthContext } from './AuthContext';
 
 export const TripdataContext = createContext();
@@ -63,23 +64,37 @@ class TripdataContextProvider extends Component {
     return true;
   }
 
-  componentDidMount() {
-    console.log(this.props.details)
+    componentDidMount() {
     this.fetchTopListData()
+    if (this.props.details.planId === "0") {
     this.fetchDayPlanData()
-    const {uid}=this.context;
-    console.log(uid);
+} else {
+    this.fetchRemoteDayPlan(this.props.details.planId)
+}
     this.setState({
-      viewport: {
-        latitude: this.props.details.coordinates.latitude,
-        longitude: this.props.details.coordinates.longitude,
-        
-        zoom: 13,
-        pitch: 40,
-        uid: uid
-      },
-    })
-  }
+    viewport: {
+    latitude: this.props.details.coordinates.latitude,
+    longitude: this.props.details.coordinates.longitude,
+    zoom: 13,
+    pitch: 40,
+},
+})
+}
+
+    fetchRemoteDayPlan = async (planId) => {
+    const {uid} = this.context;
+    try {
+    const data = await getDetailHistory(uid, planId);
+    this.setState({
+    dayList: data[0],
+    currentDayList: data[0][0],
+    AroundList: data[1],
+    CurrentAround: data[1][0],
+})
+} catch (e) {
+    console.log(e.message)
+}
+}
   
 
   _updateViewport = viewport => {
@@ -229,7 +244,6 @@ class TripdataContextProvider extends Component {
       </TripdataContext.Provider>
     )
   }
-
 }
 
 export default TripdataContextProvider

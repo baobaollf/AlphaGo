@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
+import DehazeIcon from "@material-ui/icons/Dehaze";
 
 const getListStyle = isDraggingOver => ({
   //background: isDraggingOver ? "lightblue" : "blue",
   background: "white",
   padding: 8,
-  width: 110,
+  width: 120,
   borderColor: '#000000',
   position: "absolute",
   overflow: "auto",
@@ -85,6 +86,7 @@ class DayOverView extends Component {
                           provided.draggableProps.style
                         )}
                       >
+                        <DehazeIcon/>
                         {`Day ${index + 1}`}
                       </div>
                     )}

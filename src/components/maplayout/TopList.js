@@ -41,16 +41,13 @@ export default function NestedList(props) {
   const classes = useStyles();
   const scrollRef = useRef();
   const [open, setOpen] = React.useState(true);
-  const { TopList, setPopupinfo,fetchMoreTopListData } = React.useContext(TripdataContext)
+  const { TopList, setPopupinfo, fetchMoreTopListData } = React.useContext(TripdataContext)
 
   const handleClick = () => {
     setOpen(!open);
   };
 
   const loadData = () => {
-    // console.log("scrollTop:" + scrollRef.current.scrollTop);
-    // console.log("scrollHeight:" + scrollRef.current.scrollHeight);
-    // console.log("clientHeight:" + scrollRef.current.clientHeight);
     if (scrollRef.current.scrollTop + scrollRef.current.clientHeight >= scrollRef.current.scrollHeight) {
       fetchMoreTopListData();
     }

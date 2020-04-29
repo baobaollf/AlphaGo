@@ -3,8 +3,10 @@ import "./Style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { userSignUp } from '../firebase/Authentication';
 import { Button, Form, FormGroup, FormControl, ControlLabel} from 'react-bootstrap';
+import {AuthContext} from "../../contexts/AuthContext";
 
 class SignUpPage extends Component {
+  static contextType = AuthContext;
   constructor(props) {
     super(props);
     this.state = {
@@ -23,10 +25,11 @@ class SignUpPage extends Component {
   }
 
   handleSubmit = async (e) => {
+    const { setOther } = this.context;
     e.preventDefault();
     try {
       const result = await userSignUp(this.state.username, this.state.email, this.state.password);
-      console.log(result);
+      setOther(this.state.email, this.state.username);
       if (result !== 0) {
         this.props.history.push("/signin");
       }

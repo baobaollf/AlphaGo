@@ -35,3 +35,4 @@ export const poiArrayConverter = (detailPlanObject) => {
     const nearBy = rawNearBy.map((eachDay) => eachDay.nearByArray);
     return [dayPlan, nearBy];
 };
+
