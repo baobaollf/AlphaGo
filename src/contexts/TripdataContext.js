@@ -56,7 +56,6 @@ class TripdataContextProvider extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props.details)
         this.fetchTopListData()
         if (this.props.details.planId === "0") {
             this.fetchDayPlanData()
@@ -75,10 +74,8 @@ class TripdataContextProvider extends Component {
 
     fetchRemoteDayPlan = async (planId) => {
         const {uid} = this.context;
-        //console.log(planId + " " + uid)
         try {
             const data = await getDetailHistory(uid, planId);
-            console.log(data);
             this.setState({
                 dayList: data[0],
                 currentDayList: data[0][0],
@@ -120,7 +117,7 @@ class TripdataContextProvider extends Component {
 
     fetchDayPlanData() {
         const url = "http://13.58.39.66/api/dayPlan?cityName=" + this.props.details.city + "&days=" + this.props.details.days
-        console.log(url)
+        // console.log(url)
         return fetch(url)
             .then(response => response.json())
             .then(data => this.setState({

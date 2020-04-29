@@ -5,20 +5,33 @@ export const generateBriefDayPlan = (dayPlan) => {
     return briefDayPlan;
 };
 
-export const generateDetailDayPlan = (dayPlan) => {
-    let detailPlan = {};
+export const generateDetailDayPlan = (dayPlan, nearBy) => {
+    let detailPlan = {
+        plan: {},
+        nearBy: {}
+    };
     dayPlan.forEach((eachDay, index) => {
-        detailPlan['Day-' + (index + 1)] = { order: index, poiArray: eachDay };
+        detailPlan.plan['Day-' + (index + 1)] = { order: index, poiArray: eachDay };
+    });
+    nearBy.forEach((eachDay, index) => {
+        detailPlan.nearBy['Day-' + (index + 1)] = { order: index, nearByArray: eachDay };
     });
     return detailPlan;
 };
 
-export const poiArrayConverter = (historyObject) => {
-    let raw = [];
-    for (const eachDay in historyObject) {
-        raw.push(historyObject[eachDay]);
+export const poiArrayConverter = (detailPlanObject) => {
+    let rawDayPlan = [];
+    let rawNearBy = [];
+    for (const eachDay in detailPlanObject.plan) {
+        rawDayPlan.push(detailPlanObject.plan[eachDay]);
     }
-    raw.sort((a, b) => a.order - b.order);
-    const result = raw.map((eachDay) => eachDay.poiArray);
-    return result;
+    rawDayPlan.sort((a, b) => a.order - b.order);
+    const dayPlan = rawDayPlan.map((eachDay) => eachDay.poiArray);
+
+    for (const eachDay in detailPlanObject.nearBy) {
+        rawNearBy.push(detailPlanObject.nearBy[eachDay]);
+    }
+    rawNearBy.sort((a, b) => a.order - b.order);
+    const nearBy = rawNearBy.map((eachDay) => eachDay.nearByArray);
+    return [dayPlan, nearBy];
 };
