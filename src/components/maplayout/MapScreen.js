@@ -40,7 +40,7 @@ export class MapScreen extends Component {
               </button>)
     } else {
       return (<button onClick={this.jumpFunc} className="savInput" style={{fontFamily: "-apple-system,system-ui"}}>
-                Please Sign up to save your plan
+                Please Sign in
               </button>)
     }
   }

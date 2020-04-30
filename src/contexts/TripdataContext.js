@@ -199,7 +199,8 @@ class TripdataContextProvider extends Component {
       currentDayList: list,
       CurrentAround: this.state.AroundList[index],
       day: index,
-      listCenter: center
+      listCenter: center,
+      popupInfo: null
     });
   }
 
