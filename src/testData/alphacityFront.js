@@ -11,9 +11,7 @@ export const cityList = [
 			latitude: 51.508129,
 			longitude: -0.128005
 		},
-		images: [
-			'https://cdn.londonandpartners.com/assets/73295-640x360-london-skyline-ns.jpg'
-		]
+		images: ['https://cdn.londonandpartners.com/assets/73295-640x360-london-skyline-ns.jpg']
 	},
 	{
 		id: 'New_York_City',
@@ -104,9 +102,7 @@ export const cityList = [
 			latitude: 48.856613,
 			longitude: 2.352222
 		},
-		images: [
-			'https://photos.mandarinoriental.com/is/image/MandarinOriental/paris-2017-home?wid=2880'
-		]
+		images: ['https://photos.mandarinoriental.com/is/image/MandarinOriental/paris-2017-home']
 	},
 	{
 		id: 'Singapore',
@@ -439,7 +435,7 @@ export const cityList = [
 			latitude: 19.075983,
 			longitude: 72.877655
 		},
-		images: ['https://i.ytimg.com/vi/Dxkn7GtucRA/maxresdefault.jpg']
+		images: ['https://upload.wikimedia.org/wikipedia/commons/b/bc/Mumbai_skyline_BWSL.jpg']
 	},
 	{
 		id: 'Miami',
