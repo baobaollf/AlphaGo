@@ -47,6 +47,7 @@ export default function CityInfo(props) {
 
         <div>
             <Card className={classes.card} style={{cursor: "pointer"}}>
+
                 <CardMedia component="img"
                            className={classes.cardMedia}
                            image={info.images.length !== 0 ? info.images[0] : backupImg}

@@ -79,12 +79,14 @@ export default function NestedList(props) {
           <ListItemIcon>
             <CollectionsIcon color="secondary" style={{marginRight: 5}}/>
           </ListItemIcon>
-          <ListItemText primary="Popular Places" />
+          <ListItemText primary="Popular Places" style={{
+            fontFamily: "-apple-system,system-ui"
+          }}/>
           {open ? <ExpandLess /> : <ExpandMore />}
         </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit>
           <div className={classes.gridroot} onScroll={loadData}>
-            <GridList cellHeight={200} spacing={1} className={classes.gridList} cols={1} ref={scrollRef}>
+            <GridList cellHeight={200} spacing={1} className={classes.gridList} cols={1} ref={scrollRef} style={{fontFamily: "-apple-system,system-ui"}}>
               {TopList && createGridList(TopList)}
               {TopListLoading && <div className="TopListSpinner"><CircularIndeterminate></CircularIndeterminate></div> } 
             </GridList>
