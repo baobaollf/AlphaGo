@@ -9,7 +9,7 @@ import bigLogo from "../../assets/images/bigLogo.png"
 
 class Dashboard extends Component {
   state = {
-    day: 1,
+    day: 0,
     city: "",
     name: "Plan your own unique itinerary as detailed as you'd like.",
     snippet: "Experience the most visual and collaborative workspace to plan travel itineraries. Coordinate anywhere, with anyone, at anytime",

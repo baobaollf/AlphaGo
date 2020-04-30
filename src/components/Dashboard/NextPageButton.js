@@ -12,9 +12,9 @@ class NextPageButton extends Component {
         return cityName
     }
 
-    checkEnter = (input) => {
+    checkEnter = (input,day) => {
         for (let i = 0; i < this.cityList(this.props.data.default).length; i++) {
-            if (input === this.cityList(this.props.data.default)[i]) {
+            if (input === this.cityList(this.props.data.default)[i] && day > 0) {
                 return true;
             }
         }
@@ -22,7 +22,7 @@ class NextPageButton extends Component {
     }
 
     render() {
-        if (this.checkEnter(this.props.city)) {
+        if (this.checkEnter(this.props.city, this.props.day)) {
             return (
                 <div className="next-page">
                     <NavLink to={{
@@ -44,7 +44,7 @@ class NextPageButton extends Component {
             return (
                 <div className="next-page">
                     <Button type="primary" icon="thunderbolt">
-                        Please enter city
+                        Enter City & Day
                     </Button>
                 </div>
             );

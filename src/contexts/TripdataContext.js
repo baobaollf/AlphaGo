@@ -119,7 +119,8 @@ class TripdataContextProvider extends Component {
         const url = "http://13.58.39.66/api/topPoi?cityName=" + this.state.city.city + "&type=all"
         return fetch(url)
             .then(response => response.json())
-            .then(data => this.setState({ TopList: data }))
+            .then(data => { console.log(data)
+              this.setState({ TopList: data })})
             .catch(error => console.log("Load data failed"));
     }
 

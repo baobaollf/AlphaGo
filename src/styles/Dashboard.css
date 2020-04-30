@@ -19,23 +19,23 @@
 }
 
 .promo-text {
-    width: 75%;
+    width: 71%;
     font-style: normal;
     font-weight: bolder;
     font-family: Arial;
     font-size: 30px;
-    margin-left: 19%;
-    margin-top: 10%;
+    margin-left: 25%;
+    margin-top: 9%;
     opacity: 100%;
 }
 
 .small-promo-text {
     font-family: Arial;
-    width: 75%;
+    width: 70%;
     height: 15%;
     font-weight: normal;
     font-size: 20px;
-    margin-left: 19%;
+    margin-left: 25%;
     margin-top: 1%;
     margin-right: 10%;
     opacity: 100%;
@@ -71,11 +71,11 @@
 }
 
 .TopList-text {
-    font-size: 25px;
-    font-weight: bold;
-    font-family: Arial;
-    margin-left: 115px;
-    margin-top: 5vh;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin-left: 42px;
+  margin-top: 25px;
 }
 
 .cityListImg {
@@ -104,6 +104,13 @@
   display: flex;
   justify-content: space-evenly;
   /* flex-wrap: wrap; */
+}
+
+.cityListName {
+  font-weight: bolder;
+  font-style: normal;
+  font-size: x-large;
+  font-family: Arial, sans-serif;
 }
 
 @media (max-width: 1400px) {

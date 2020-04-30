@@ -1,29 +1,32 @@
 .nav-wrapper {
-     background-color: #202639;
-     max-height: fit-content;
-     height: 50px !important;
+  background-color: #202639;
+  max-height: fit-content;
+  height: 50px !important;
 }
 
 .navbar-fixed {
-    height:51px !important;
+  height: 51px !important;
 }
 
 .app-logo {
-    height:55px;
-    float: left;
-    padding-top: 5px;
-    margin-top: -3px;
-    margin-left: 10px;
+  height: 55px;
+  float: left;
+  padding-top: 5px;
+  margin-top: -3px;
+  margin-left: 10px;
 }
 
 .brand-name {
-    font-family: Arial, serif;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 100%;
-    margin-left: 60px;
-    margin-bottom: 15px;
-    margin-top: -7px;
+  font-family: Arial, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 85% !important;
+  margin-left: 60px;
+  margin-bottom: 15px;
+  margin-top: -7px;
+  height: 45px;
 }
 
-
+.brand-logo {
+  height: 50px !important;
+}

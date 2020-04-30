@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         maxWidth: 380,
         backgroundColor: "transparent",
+        marginTop: '4%'
     },
     gridroot: {
         display: 'flex',
@@ -46,6 +47,7 @@ export default function CityGrid(props) {
                      src={point.images[0]} alt=" " className="cityListImg"/>
                 <GridListTileBar
                     title={point.name}
+                    className="cityListName"
                 />
             </GridListTile>
         ))
