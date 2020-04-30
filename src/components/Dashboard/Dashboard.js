@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import * as alphaCityList from '../../testData/alphacityFront.json';
+import { cityList } from '../../testData/alphacityFront';
 import SearchBar from "./SearchBar";
 import DaySeletcor from "./DaySelector";
 import NextPageButton from "./NextPageButton";
@@ -61,7 +61,7 @@ class Dashboard extends Component {
 
             <div className="bars">
               <SearchBar
-                data={alphaCityList}
+                data={cityList}
                 city={this.state.city}
                 coordinates={this.state.coordinates}
                 setCity={this.setCity}
@@ -73,7 +73,7 @@ class Dashboard extends Component {
                 setDay={this.setDay}
               />
               <NextPageButton
-                data={alphaCityList}
+                data={cityList}
                 city={this.state.city}
                 coordinates={this.state.coordinates}
                 day={this.state.day}
@@ -84,7 +84,7 @@ class Dashboard extends Component {
         </div>
 
         <div className="right-side">
-          <CityGrid data={alphaCityList}
+          <CityGrid data={cityList}
             setCity={this.setCity.bind(this)}
             setCoordinates={this.setCoordinates.bind(this)}
             setCityInfo={this.setCityInfo.bind(this)}

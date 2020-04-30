@@ -64,7 +64,7 @@ export default function CityGrid(props) {
             >
                 <div className={classes.gridroot}>
                     <GridList cellHeight={200} spacing={1} className={classes.gridList} cols={1}>
-                        {props.data.default && createGridList(props.data.default)}
+                        {props.data && createGridList(props.data)}
                     </GridList>
                 </div>
             </List>

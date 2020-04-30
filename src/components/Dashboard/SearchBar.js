@@ -7,10 +7,10 @@ class SearchBar extends Component {
 
     getInfo = (city) => {
         this.props.setCity(city);
-        for(let i = 0; i < this.props.data.default.length; i++) {
-            if(this.props.data.default[i].name + ", " + this.props.data.default[i].country === city){
-                this.props.setCoordinates(this.props.data.default[i].coordinates.latitude, this.props.data.default[i].coordinates.longitude)
-                this.props.setCityInfo(this.props.data.default[i].snippet, this.props.data.default[i].name);
+        for(let i = 0; i < this.props.data.length; i++) {
+            if(this.props.data[i].name + ", " + this.props.data[i].country === city){
+                this.props.setCoordinates(this.props.data[i].coordinates.latitude, this.props.data[i].coordinates.longitude)
+                this.props.setCityInfo(this.props.data[i].snippet, this.props.data[i].name);
             }
 
         }
@@ -31,7 +31,7 @@ class SearchBar extends Component {
                     style={{width: 300,
                             paddingleft: 2
                     }}
-                    dataSource={this.cityList(this.props.data.default)}
+                    dataSource={this.cityList(this.props.data)}
                     value={this.props.city}
                     placeholder="Enter your destination"
                     onSelect={this.getInfo}

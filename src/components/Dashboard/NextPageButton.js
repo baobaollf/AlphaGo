@@ -13,8 +13,8 @@ class NextPageButton extends Component {
     }
 
     checkEnter = (input,day) => {
-        for (let i = 0; i < this.cityList(this.props.data.default).length; i++) {
-            if (input === this.cityList(this.props.data.default)[i] && day > 0) {
+        for (let i = 0; i < this.cityList(this.props.data).length; i++) {
+            if (input === this.cityList(this.props.data)[i] && day > 0) {
                 return true;
             }
         }
