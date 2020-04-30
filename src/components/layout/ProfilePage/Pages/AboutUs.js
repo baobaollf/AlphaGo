@@ -52,7 +52,7 @@ class AboutUs extends Component {
                             </a>
                         </p>
                         <p>
-                            <a href=''>
+                            <a href='https://github.com/yuqisha' target="_blank">
                                 Yuqi Sha
                             </a>
                         </p>
