@@ -24,6 +24,7 @@ class SignInPage extends Component {
         this.setState({
             [e.target.id]: e.target.value
         })
+        // console.log(this.state[e.target.id])
     }
 
 
@@ -32,6 +33,7 @@ class SignInPage extends Component {
         const {setUid, setOther} = this.context;
 
         try {
+            // console.log(this.state.email);
             const result = await userSignIn(this.state.email, this.state.password);
             this.setState({
                 uid: result
@@ -41,7 +43,7 @@ class SignInPage extends Component {
                 // console.log(this.props.history);
                 // this.props.history.push("/");
                 setUid(result);
-                setOther(this.state.email, '');
+                setOther(this.state.email);
                 this.props.history.goBack();
             }
 

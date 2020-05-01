@@ -49,9 +49,11 @@ export class MapScreen extends Component {
     const { currentDayList } = this.context;
     for (let i = 0; i < currentDayList.length; i++) {
       if  (popupInfo.name === currentDayList[i].name) {
+        currentDayList[i].inPlan = true;
         return currentDayList[i];
       }
     }
+    popupInfo.inPlan = false;
     return popupInfo;
   }
 
@@ -120,7 +122,7 @@ export class MapScreen extends Component {
   }
 
   jumpFunc = () => {
-    window.location.replace("/signup")
+    window.location.replace("/signin")
   }
 
 

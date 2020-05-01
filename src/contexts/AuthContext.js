@@ -12,7 +12,8 @@ class AuthContextProvider extends Component {
 
   componentDidMount() {
     this.setState({
-      uid: localStorage.getItem('uid')
+      uid: localStorage.getItem('uid'),
+      email: localStorage.getItem('email')
     })
   }
 
@@ -23,11 +24,12 @@ class AuthContextProvider extends Component {
     localStorage.setItem('uid', id)
   }
 
-  setOther =(email, username) => {
+  setOther =(email) => {
     this.setState({
       email: email,
-      username: username,
     })
+    localStorage.setItem('email', email)
+    console.log(email)
   }
 
   render() {

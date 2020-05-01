@@ -63,8 +63,8 @@ class History extends Component {
             this.setState({
                 briefHistory: result,
             })
-            console.log(uid)
-            console.log(this.state.briefHistory)
+            // console.log(uid)
+            // console.log(this.state.briefHistory)
         } catch (error) {
             console.log(error.message);
         }

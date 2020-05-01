@@ -8,9 +8,22 @@ const { Meta } = Card;
 
 class Profile extends Component {
     static contextType = AuthContext;
+    constructor() {
+        super();
+        this.state = {
+            email: null,
+        }
+    }
+    componentDidMount() {
+        const email = localStorage.getItem('email')
+        if (email !== null || email!== '') {
+            this.setState({
+                email: email,
+            })
+        }
+    }
 
     render() {
-        const {email} = this.context;
         return (
             <div style={{
                 marginTop: 50,
@@ -30,7 +43,7 @@ class Profile extends Component {
                 >
                     <Meta
                         avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                        title={email}
+                        title={this.state.email}
                     />
                 </Card>
             </div>
