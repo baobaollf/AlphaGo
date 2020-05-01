@@ -11,7 +11,8 @@ class SignedInLinks extends Component {
         const { setUid } = this.context;
         try {
             await userLogout();
-            localStorage.setItem('uid',"")
+            localStorage.setItem('uid', "")
+            localStorage.removeItem('email')
             this.props.setUid("");
             setUid("");
         } catch (error) {
