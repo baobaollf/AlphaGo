@@ -24,7 +24,7 @@ const getItemStyle = (isDragging, draggableStyle) => ({
     color: '#343F67',
 
     flexWrap: "wrap",
-    width: 200,
+    //width: 260,
 
     // styles we need to apply on draggables
     ...draggableStyle
@@ -87,8 +87,7 @@ class CurrentDay extends Component {
                                                 }}>
 
                                                     <div style={{
-                                                        width: 200,
-                                                        marginRight: 0,
+                                                        width: 260,
                                                     }}>
                                                         {`${index + 1} `}
                                                         {item.name}
@@ -104,9 +103,7 @@ class CurrentDay extends Component {
                                                                 this.props.deleteItem(index);
                                                             }}
                                                             style={{
-                                                                // position: 'relative',
                                                                 top: 8,
-                                                                // width: 50,
                                                             }}
                                                         />
                                                     </div>
