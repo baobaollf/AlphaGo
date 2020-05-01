@@ -7,7 +7,7 @@ const getListStyle = isDraggingOver => ({
     //background: isDraggingOver ? "lightblue" : "blue",
     background: "white",
     padding: 8,
-    width: 120,
+    width: 140,
     borderColor: '#000000',
     position: "absolute",
     overflow: "auto",

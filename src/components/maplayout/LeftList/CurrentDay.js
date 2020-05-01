@@ -6,7 +6,7 @@ const getListStyle = isDraggingOver => ({
     // background: isDraggingOver ? "lightblue" : "lightblue",
     background: 'white',
     padding: 8,
-    marginLeft: 110,
+    marginLeft: 120,
     position: "absolute",
     overflow: "auto",
 });
@@ -24,7 +24,7 @@ const getItemStyle = (isDragging, draggableStyle) => ({
     color: '#343F67',
 
     flexWrap: "wrap",
-    width: 260,
+    width: 200,
 
     // styles we need to apply on draggables
     ...draggableStyle
@@ -81,24 +81,35 @@ class CurrentDay extends Component {
                                                     provided.draggableProps.style
                                                 )}
                                             >
-                                                {`${index + 1} `}
-                                                {item.name}
+                                                <div style={{
+                                                    display: 'flex',
+                                                    // position: 'relative',
+                                                }}>
 
-                                                <div>
-                                                    <DeleteIcon
-                                                        className="deleteIcon"
-                                                        onClick={(e) => {
-                                                            e.stopPropagation();
-                                                            this.props.deleteItem(index);
-                                                        }}
-                                                        style={{
-                                                            position: 'absolute',
-                                                            right: 0,
-                                                            top: 8,
-                                                            paddingLeft: 10,
-                                                            width: 50,
-                                                        }}
-                                                    />
+                                                    <div style={{
+                                                        width: 200,
+                                                        marginRight: 0,
+                                                    }}>
+                                                        {`${index + 1} `}
+                                                        {item.name}
+                                                    </div>
+
+                                                    <div style={{
+                                                        float: "right",
+                                                    }}>
+                                                        <DeleteIcon
+                                                            className="deleteIcon"
+                                                            onClick={(e) => {
+                                                                e.stopPropagation();
+                                                                this.props.deleteItem(index);
+                                                            }}
+                                                            style={{
+                                                                // position: 'relative',
+                                                                top: 8,
+                                                                // width: 50,
+                                                            }}
+                                                        />
+                                                    </div>
                                                 </div>
                                             </div>
                                         )}
