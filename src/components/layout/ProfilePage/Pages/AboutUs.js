@@ -47,13 +47,13 @@ class AboutUs extends Component {
                             </a>
                         </p>
                         <p>
-                            <a href='https://www.linkedin.com/in/yuqiwangyuqi' target="_blank" rel="noopener noreferrer">
-                                Yuqi Wang
+                            <a href='https://github.com/yuqisha' target="_blank" rel="noopener noreferrer">
+                                Yuqi Sha
                             </a>
                         </p>
                         <p>
-                            <a href='https://github.com/yuqisha' target="_blank" rel="noopener noreferrer">
-                                Yuqi Sha
+                            <a href='https://www.linkedin.com/in/yuqiwangyuqi' target="_blank" rel="noopener noreferrer">
+                                Yuqi Wang
                             </a>
                         </p>
                         <p>
