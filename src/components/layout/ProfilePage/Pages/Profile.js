@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Card, Avatar } from 'antd';
 import {AuthContext} from "../../../../contexts/AuthContext";
-
+import {getUserInfo} from "../../../firebase/UserInfo"
 
 const { Meta } = Card;
 
@@ -12,15 +12,25 @@ class Profile extends Component {
         super();
         this.state = {
             email: null,
+            username: null
         }
     }
-    componentDidMount() {
-        const email = localStorage.getItem('email')
-        if (email !== null || email!== '') {
+
+    setUserInfo = async (uid) => {
+        try {
+            const result = await getUserInfo(uid);
             this.setState({
-                email: email,
+                email: result.email,
+                username: result.username,
             })
+        } catch (error) {
+            console.log(error.message);
         }
+    }
+
+    componentDidMount() {
+        const uid = localStorage.getItem('uid')
+        this.setUserInfo(uid);
     }
 
     render() {
@@ -44,6 +54,7 @@ class Profile extends Component {
                     <Meta
                         avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
                         title={this.state.email}
+                        description={this.state.username}
                     />
                 </Card>
             </div>
