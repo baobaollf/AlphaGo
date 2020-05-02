@@ -45,11 +45,14 @@ class SignInPage extends Component {
                 setUid(result);
                 setOther(this.state.email);
                 this.props.history.goBack();
+            } else {
+                alert("Sign-in fail. Try again!");
             }
 
             this.props.setUid(this.state.uid);
         } catch (error) {
             console.log(error.message);
+
         }
 
     }

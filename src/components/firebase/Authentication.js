@@ -19,9 +19,9 @@ export const userSignIn = async (email, password) => {
         const cred = await auth.signInWithEmailAndPassword(email, password);
         return cred.user.uid;
     } catch (error) {
-        var errorMessage = error.message;
+        const errorMessage = error.message;
         console.log(errorMessage);
-        return `${errorMessage} Sign in failed, please try again!`;
+        return 0;
     }
 };
 

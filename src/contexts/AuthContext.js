@@ -29,7 +29,6 @@ class AuthContextProvider extends Component {
       email: email,
     })
     localStorage.setItem('email', email)
-    console.log(email)
   }
 
   render() {
