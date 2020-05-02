@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {Button, Collapse, List} from 'antd';
 import {NavLink} from "react-router-dom";
-import {getAllBriefHistory} from "../../../firebase/History"
+import { getAllBriefHistory, delUserHistory } from "../../../firebase/History"
 import {AuthContext} from "../../../../contexts/AuthContext";
+import DeleteIcon from "@material-ui/icons/Delete";
 
 
 const {Panel} = Collapse;
@@ -32,29 +33,63 @@ class History extends Component {
 
     genExtra = (item) => {
         return (
-            <NavLink to={{
-                pathname: '/map/' + item.info.cityName.coordinates.latitude + '/' +
-                    item.info.cityName.coordinates.longitude
-                    + '/' + item.info.days + '/' + item.info.cityName.city + '/' + item.planId,
-                details: {
-                    city: item.info.cityName.city,
-                    coordinates: {
-                        latitude: item.info.cityName.coordinates.latitude,
-                        longitude: item.info.cityName.coordinates.longitude,
-                    },
-                    days: item.info.days,
+            <div>
+                <NavLink to={{
+                    pathname: '/map/' + item.info.cityName.coordinates.latitude + '/' +
+                        item.info.cityName.coordinates.longitude
+                        + '/' + item.info.days + '/' + item.info.cityName.city + '/' + item.planId,
+                    details: {
+                        city: item.info.cityName.city,
+                        coordinates: {
+                            latitude: item.info.cityName.coordinates.latitude,
+                            longitude: item.info.cityName.coordinates.longitude,
+                        },
+                        days: item.info.days,
 
-                }
-            }}>
-                <Button type="primary" style={{
-                    background: "#FA6585",
-                    borderColor: "#FA6585",
-                    top: -5,
+                    }
                 }}>
-                    Retrieve Trips
-                </Button>
-            </NavLink>
-        )};
+                    <Button type="primary" style={{
+                        background: "#FA6585",
+                        borderColor: "#FA6585",
+
+                    }}>
+                        Retrieve Trips
+                    </Button>
+
+                </NavLink>
+                <DeleteIcon
+                    // className="deleteIcon"
+                    onClick={(event) => {
+                        const {uid} = this.context;
+                        // console.log("got here")
+                        this.delHistory(uid, item.planId);
+                        event.stopPropagation();
+
+                    }}
+                    style={{
+                        color: "#FA6585",
+                        marginLeft: 15,
+
+                    }}
+                />
+
+            </div>
+        )
+    };
+
+    delHistory = async(uid, planId) => {
+        try {
+            const result = await delUserHistory(uid, planId);
+            if (result === 1) {
+                await this.getBriefHistory();
+            } else {
+                alert("Delete Fail");
+            }
+
+        } catch (e) {
+            console.log(e.message);
+        }
+    }
 
     getBriefHistory = async () => {
         const {uid} = this.context;
@@ -62,7 +97,7 @@ class History extends Component {
             const result = await getAllBriefHistory(uid);
             this.setState({
                 briefHistory: result,
-            })
+            });
         } catch (error) {
             console.log(error.message);
         }
@@ -100,7 +135,7 @@ class History extends Component {
                             <Collapse accordion>
                                 <Panel key="1"
                                        header={item.info.cityName.city + " " + item.info.days + " Day(s)"}
-                                       extra={this.genExtra(item)}
+                                       extra={this.genExtra(item) }
                                 >
                                     <List
                                         size="small"

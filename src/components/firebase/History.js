@@ -57,7 +57,8 @@ export const updateHistory = async (uid, planId, cityName, newDayPlan, newNearBy
 export const getAllBriefHistory = async (uid) => {
     try {
         let historyList = [];
-        const planRef = db.collection('Users').doc(uid).collection('dayPlan');
+        const planRef = db.collection('Users').doc(uid).collection('dayPlan')
+            .orderBy('lastModifiedAt', 'desc');
         const planDocuments = await planRef.get();
         planDocuments.forEach((document) => {
             historyList.push({
@@ -71,6 +72,7 @@ export const getAllBriefHistory = async (uid) => {
         return err.message;
     }
 };
+
 
 export const getDetailHistory = async (uid, planId) => {
     try {
@@ -90,6 +92,18 @@ export const getDetailHistory = async (uid, planId) => {
         return error.message;
     }
 };
+
+export const delUserHistory = async(uid, planId) => {
+    try {
+        const historyRef = db.collection('Users').doc(uid).collection('dayPlan').doc(planId);
+        await historyRef.delete();
+        return 1;
+    } catch (error) {
+        console.log(error);
+        return 0;
+    }
+}
+
 
 export const generateNewPlanId = async (uid) => {
     try {
