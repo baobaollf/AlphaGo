@@ -1,5 +1,4 @@
 .ant-collapse-extra {
-    flex-direction: row !important;
-    display: flex !important;
-    align-items: flex-start !important;
+    position: relative !important;
+    top: -5px !important;
 }

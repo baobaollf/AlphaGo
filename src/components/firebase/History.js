@@ -57,7 +57,10 @@ export const updateHistory = async (uid, planId, cityName, newDayPlan, newNearBy
 export const getAllBriefHistory = async (uid) => {
     try {
         let historyList = [];
-        const planRef = db.collection('Users').doc(uid).collection('dayPlan')
+        const planRef = db
+            .collection('Users')
+            .doc(uid)
+            .collection('dayPlan')
             .orderBy('lastModifiedAt', 'desc');
         const planDocuments = await planRef.get();
         planDocuments.forEach((document) => {
@@ -73,7 +76,6 @@ export const getAllBriefHistory = async (uid) => {
     }
 };
 
-
 export const getDetailHistory = async (uid, planId) => {
     try {
         const document = await db
@@ -85,7 +87,6 @@ export const getDetailHistory = async (uid, planId) => {
             .doc('plan')
             .get();
         const planAndNearBy = poiArrayConverter(document.data());
-        console.log(planAndNearBy);
         return planAndNearBy;
     } catch (error) {
         console.log(error.message);
@@ -93,7 +94,7 @@ export const getDetailHistory = async (uid, planId) => {
     }
 };
 
-export const delUserHistory = async(uid, planId) => {
+export const delUserHistory = async (uid, planId) => {
     try {
         const historyRef = db.collection('Users').doc(uid).collection('dayPlan').doc(planId);
         await historyRef.delete();
@@ -102,8 +103,7 @@ export const delUserHistory = async(uid, planId) => {
         console.log(error);
         return 0;
     }
-}
-
+};
 
 export const generateNewPlanId = async (uid) => {
     try {

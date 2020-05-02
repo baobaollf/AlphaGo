@@ -1,29 +1,25 @@
-@import "./styles/Navbar.css";
-@import "./styles/Dashboard.css";
-@import "./styles/SignInLinks.css";
-@import "./styles/SignOutLinks.css";
-@import "./styles/DaySelector.css";
-@import "./styles/NextPageButton.css";
+@import './styles/Navbar.css';
+@import './styles/Dashboard.css';
+@import './styles/SignInLinks.css';
+@import './styles/SignOutLinks.css';
+@import './styles/DaySelector.css';
+@import './styles/NextPageButton.css';
 @import 'styles/pin.css';
 @import 'styles/MapScreen.css';
 @import 'styles/CityInfo.css';
 @import 'styles/control_panel.css';
 @import 'styles/rightList.css';
-@import "styles/MapNavBar.css";
-
-
+@import 'styles/MapNavBar.css';
+@import './styles/History.css';
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
