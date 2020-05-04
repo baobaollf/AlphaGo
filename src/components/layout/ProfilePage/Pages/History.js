@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { getAllBriefHistory, delUserHistory } from '../../../firebase/History';
 import { AuthContext } from '../../../../contexts/AuthContext';
 import DeleteIcon from '@material-ui/icons/Delete';
-import { TripdataContext } from '../../contexts/TripdataContext';
+
 
 const { Panel } = Collapse;
 
@@ -30,7 +30,6 @@ class History extends Component {
     }
 
     static contextType = AuthContext;
-    static contextType2 = TripdataContext;
     genExtra = (item) => {
         return (
             <>
@@ -63,7 +62,6 @@ class History extends Component {
                             background: '#FA6585',
                             borderColor: '#FA6585'
                         }}
-                        onClick={{}}
                     >
                         Retrieve Trips
                     </Button>

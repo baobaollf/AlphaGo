@@ -77,6 +77,9 @@ class TripdataContextProvider extends Component {
             this.fetchDayPlanData();
         } else {
             this.fetchRemoteDayPlan(this.props.details.planId);
+            this.setState({
+                planId: this.props.details.planId
+            })
         }
         this.setState({
             viewport: {
