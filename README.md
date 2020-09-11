@@ -4,7 +4,7 @@ Travel Planner(React + Nodejs + Firebase, AWS)
 
 A geo-location-based interactive website 
 
-![Image of Demo](https://ibb.co/G3YXffF)
+![Image of Demo](https://i.ibb.co/x89yKK3/pasted-image-0.png)
 
 ---
 ## Requirements
