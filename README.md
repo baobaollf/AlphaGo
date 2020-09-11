@@ -1,8 +1,9 @@
-Travel Planner(React + Nodejs + Firebase, AWS)
 
 # AlphaGo
 
-A geo-location-based interactive website 
+A geo-location-based interactive website
+
+React + Nodejs + Firebase, AWS
 
 ![Image of Demo](https://i.ibb.co/x89yKK3/pasted-image-0.png)
 
