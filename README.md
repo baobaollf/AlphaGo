@@ -2,7 +2,9 @@ Travel Planner(React + Nodejs + Firebase, AWS)
 
 # AlphaGo
 
-A nice project with a nice description
+A geo-location-based interactive website 
+
+![Image of Demo](https://ibb.co/G3YXffF)
 
 ---
 ## Requirements
